@@ -1,0 +1,2 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[[:digit:]]+\.[[:digit:]]+\] \[sched_delayed\] 4CE: hpet increased min_delta_ns to [[:digit:]]+ nsec$
+

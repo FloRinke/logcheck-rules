@@ -1,0 +1,4 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ monit\[[[:digit:]]+\]: '[[:alnum:]-]+' process is not running$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ monit\[[[:digit:]]+\]: '[[:alnum:]-]+' trying to restart$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ monit\[[[:digit:]]+\]: '[[:alnum:]-]+' start: [[:alnum:]/\.]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ monit\[[[:digit:]]+\]: '[[:alnum:]-]+' process is running with pid [[:digit:]]+$

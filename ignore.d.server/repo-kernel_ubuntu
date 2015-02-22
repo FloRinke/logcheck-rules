@@ -1,0 +1,11 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[[:digit:]]+\.[[:digit:]]+\] usb [[:digit:]\-]+: new full speed USB device using ohci_hcd and address [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[[:digit:]]+\.[[:digit:]]+\] usb [[:digit:]\-]+: configuration #[[:digit:]]+ chosen from [[:digit:]]+ choice$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[[:digit:]]+\.[[:digit:]]+\] usb [[:digit:]\-]+: USB disconnect, address [[:digit:]]+$
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[[:digit:]]+\.[[:digit:]]+\] usblp[[:digit:]]+: USB Bidirectional printer dev [[:digit:]]+ if [[:digit:]]+ alt [[:digit:]]+ proto [[:digit:]]+ vid [[:xdigit:]x]+ pid [[:xdigit:]x]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[[:digit:]]+\.[[:digit:]]+\] usblp[[:digit:]]+: removed$
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[[:digit:]]+\.[[:digit:]]+\] eth[[:digit:]]: link down\.$
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ logger: loading HP Device [[:digit:]]{3} [[:digit:]]{3}$
+

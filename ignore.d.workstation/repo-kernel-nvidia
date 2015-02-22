@@ -1,0 +1,4 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[[:digit:]]+\.[[:digit:]]+\] NVRM: API mismatch: the client has the version [[:digit:]]+\.[[:digit:]]+, but$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[[:digit:]]+\.[[:digit:]]+\] NVRM: this kernel module has the version [[:digit:]]+\.[[:digit:]]+\.  Please$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[[:digit:]]+\.[[:digit:]]+\] NVRM: make sure that this kernel module and all NVIDIA driver$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[[:digit:]]+\.[[:digit:]]+\] NVRM: components have the same version\.$

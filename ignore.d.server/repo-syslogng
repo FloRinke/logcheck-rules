@@ -1,0 +1,3 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ syslog-ng\[[[:digit:]]+\]: Log statistics; ((processed|stamp)='(destination|center|source|global|src\.(internal))\(\w+(#[[:digit:]])?\)=[[:digit:]]+'(, )?)+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ syslog-ng\[[[:digit:]]+\]: Configuration reload request received, reloading configuration;$
+

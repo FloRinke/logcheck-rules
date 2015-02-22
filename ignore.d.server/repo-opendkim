@@ -1,0 +1,6 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: s=[[:alnum:]\._-]+ d=[[:alnum:]\._-]+ SSL (error:[[:xdigit:]]{8}:[[:alnum:][:space:]_:]+(; )?)+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: bad signature data$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: can't determine message sender; accepting$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: message has signatures from [[:alnum:]\.-]+, [[:alnum:]\.-]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: ADSP query: '[-_\.[:alnum:]]+' reply was unresolved CNAME$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: key retrieval failed \(s=[[:alnum:]\._-]+, d=[[:alnum:]\._-]+\): '[[:alnum:]\._-]+' record not found$

@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ thttpd\[[[:digit:]]+\]:   thttpd - [[:digit:]]+ connections \([[:digit:]e\.\-]+/sec\), [[:digit:]]+ max simultaneous, [[:digit:]]+ bytes \([[:digit:].]+/sec\), [[:digit:]]+ httpd_conns allocated$

@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Dropbox\[[[:digit:]]+\]: Unable to monitor entire Dropbox folder hierarchy. Please run "echo 100000 | sudo tee /proc/sys/fs/inotify/max_user_watches" and restart Dropbox to correct the problem.$

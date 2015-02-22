@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq(-dhcp)?\[[[:digit:]]+\]: (DHCPDISCOVER|DHCPOFFER|DHCPREQUEST|DHCPACK|DHCPRELEASE|DHCPINFORM|BOOTP|DHCPNAK)\([-[:alnum:]]+\) [ :[:alnum:]._-]+$

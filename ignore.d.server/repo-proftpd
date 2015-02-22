@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd: pam_unix\(sshd:session\): session (opened|closed) for user [._[:alnum:]-]+( by \(uid=[[:digit:]]+\))?$

@@ -1,0 +1,3 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[[:digit:]]+\.[[:digit:]]+\] hid-generic [[:xdigit:]:\.]{20} input,hidraw0: USB HID v1\.11 Keyboard \[Yubico Yubico Yubikey II\] on usb-[[:xdigit:]:\.-]+/input0
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? (hid-generic [.:[:xdigit:]]+: )?(input|hiddev[[:digit:]]+)(,hidraw[[:digit:]]+)?: USB HID v[.[:digit:]]+ (Joystick|Keyboard|Mouse|Device) \[[ [:alnum:][:punct:]]+\] on usb-[\:[:xdigit:].-]+(/input[[:digit:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? input: Yubico Yubikey NEO OTP\+U2F\+CCID as /devices/[[:alnum:]\.:/-]+/input/input[[:digit:]]+$

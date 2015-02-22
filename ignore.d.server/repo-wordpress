@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ wordpress\([[:alnum:]\.-]+\)\[[[:digit:]]+\]: Authentication failure for [[:alnum:]]+ from [[:xdigit:]:\.]+$
