@@ -1,0 +1,96 @@
+#debian wheezy
+#common
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (archived|sympa)\[[0-9]+\]: err tools::smime_sign_check\(\) Unable to check S/MIME signature : one of the input files could not be read$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa err tools::valid_email\(\) Invalid email address '[^']'$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (sympa|wwsympa)\[[0-9]+\]: notice List::on_the_fly_sync_include\(\) Synchronizing list members\.\.\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (sympa|wwsympa)\[[0-9]+\]: notice List::remove_task\(\) Removing task file [[:alnum:]@._-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (sympa|wwsympa)\[[0-9]+\]: notice List::sync_include\(\) List:sync_include\([[:alnum:]._-]+\): [[:digit:]]+ users (updated|added)$
+#wwsympa
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: err \[robot [._[:alnum:]-]+\] \[client [[:xdigit:].:]+\] main::get_parameters\(\) get_parameters: syntax error for parameter email value '[^']*' not conform to regexp:[^[:space:]]+ ; dumped vars in /var/spool/sympa/tmp/sympa_dump\.[[:digit:].]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: err \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\] \[user [^[:space:]]+\] missing required parameters for action '[[:alnum:]_-]+'$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: err \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\] \[user [^[:space:]]+\] \[list [._[:alnum:]-]+\] main::do_modindex\(\) do_modindex: no message and no document$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\] main::do_logout\(\) do_logout: logout performed$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\] main::do_login\(\) do_login: missing parameter passwd$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\] main::do_renewpasswd\(\) do_renewpasswd: incorrect email \\"[^\\]+\\"$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\]( \[list [._[:alnum:]-]+\])? main::prevent_visibility_bypass\(\) visibility: List must remain hidden. Returning "home" to prevent visibility bypass$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\]( \[user [^[:space:]]+\])?( \[list [._[:alnum:]-]+\])? main::check_action_parameters\(\) (authorization failed, insufficient privileges|missing parameter '[[:alnum:]\|]+')$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\]( \[user [^[:space:]]+\])?( \[list [._[:alnum:]-]+\])? main::check_authz\(\) check_authz: access denied in do_[[:alpha:]]+ for( [[:alnum:]@_.+-]+)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\]( \[user [^[:space:]]+\])?( \[list [._[:alnum:]-]+\])? main::do_(_copy_list|add|add_request|admin|arc|choosepasswd|create_list|create_list_request|compose_mail|dd|del|distribute|dump|edit_list|edit_list_request|editfile|firstpasswd|help|home|info|lists|login|logout|manage_template|modindex|pref|redirect|reject|rename_list|renewpasswd|resetbounce|review|reviewbouncing|savefile|search|search_list|search_user|serveradmin|setpasswd|setpref|subindex|suboptions|ticket)\(\) do_(_copy_list|add_request|admin|arc|choosepasswd|create_list|create_list_request|compose_mail|dd|del|distribute|dump|edit_list|edit_list_request|editfile|firstpasswd|help|home|info|lists|login|logout|manage_template|modindex|pref|redirect|reject|rename_list|renewpasswd|resetbounce|review|reviewbouncing|savefile|search|search_list|search_user|serveradmin|setpasswd|setpref|subindex|suboptions|ticket)(\([^\)]*\))?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\]( \[user [^[:space:]]+\])?( \[list [._[:alnum:]-]+\])? main::do_add\(\): do:add: [[:alnum:]@._+-]+ already subscriber$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\]( \[user [^[:space:]]+\])?( \[list [._[:alnum:]-]+\])? main::do_del\(\) do_del: ([[:alnum:]@.+-]+ not subscribed|subscriber [[:alnum:]@.+-]+ deleted from list [[:alnum:].+-]+)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\]( \[user [^[:space:]]+\])?( \[list [._[:alnum:]-]+\])? main::do_dump\(\) opening [[:alnum:]/.+-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\]( \[user [^[:space:]]+\])?( \[list [._[:alnum:]-]+\])? main::do_edit_list\(\) No parameter was edited by user$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\]( \[user [^[:space:]]+\])?( \[list [._[:alnum:]-]+\])? main::do_resetbounce\(\) do_resetbounce: bounces for [[:alnum:]@._+-]+ reset$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\]( \[user [^[:space:]]+\])?( \[list [._[:alnum:]-]+\])? main::do_review\(\) do_review: no subscriber$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\]( \[user [^[:space:]]+\])?( \[list [._[:alnum:]-]+\])? main::do_send_me\(\) do_send_me message /var/lib/sympa/wwsarchive/[[:alnum:]@/._-]+ spooled for [[:alnum:]@._+-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\]( \[user [^[:space:]]+\])?( \[list [._[:alnum:]-]+\])? main::do_search_user\(\) do_search_user: no entry for [[:alnum:]@._-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info WWSympa started$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info Auth::create_one_time_ticket\(\) Auth::create_one_time_ticket\([[:alnum:]@.-]+,[[:alnum:].-]+,choosepasswd,[[:xdigit:].:]+\) value = [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info Auth::get_one_time_ticket\(\) xxxx Auth::get_one_time_ticket\([[:digit:]]+\) : result : success$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info info List::_include_users_file\(\) include [[:digit:]]+ new users from file [[:alnum:]/_.-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info List::insert_delete_exclusion\(\) List::insert_delete_exclusion\("[[:alnum:]@._+-]+", "[[:alnum:].-]+", "[[:alnum:].-]+", "(insert|delete)", ""\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info SympaSession::renew\(\) \[robot [._[:alnum:]-]+\] \[session [[:digit:]]{14}\] \[client [[:xdigit:].:]+\] \[user [[:alnum:].@-]+\] new session [[:digit:]]{14}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info admin::check_topics\(\) admin::check_topics\([[:alnum:].,_=+-]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info admin::clone_list_as_empty\(\) Admin::clone_list_as_empty \([^\)]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info admin::install_aliases\(\) admin::install_aliases : Aliases installed successfully$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info admin::rename_list\(\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: notice main::do_distribute\(\) Moderator approves message: [[:alnum:]._-]+ [[:xdigit:]]{32}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: notice main::do_login\(\) Authentication failed$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: notice Redirecting to https?://[[:alnum:]/._-]+$
+#archived
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ archived\[[0-9]+\]: notice Archiving [^[:space:]]+ for list [^[:space:]]+$
+#task-manager
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info main::eval_bouncers\(\) eval_bouncers\([^\)]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info main::process_bouncers\(\) Processing automatic actions on bouncing users$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info main::purge_(tables|session_table|one_time_ticket_table)\(\) task_manager::purge_(tables|session_table|one_time_ticket_table)\(\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info SympaSession::purge_old_(tickets|sessions)\(\) SympaSession::purge_old_(tickets|sessions)\(\*\)
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info List::_include_users_file\(\) include [[:digit:]]+ new users from file [[:alnum:]/.-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: notice main::execute\(\) Running task /var/spool/sympa/task/[[:alnum:]@._-]+, line [[:digit:]]+ with vars \)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: notice main::next_cmd\(\) line [[:digit:]]+ of [[:alnum:]_]+ : next \([[:digit:]]+, (ACTION|INIT)\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: notice main::next_cmd\(\) --> new task [[:alnum:]_]+ \([^\)]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: notice main::purge_logs_table\(\) purge_logs_table\(\): logs purged$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: notice main::purge_tables\(\) [[:digit:]]+ rows removed in bulkspool_table$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: notice main::purge_session_table\(\) purge_session_table\(\): [[:digit:]]+ row removed in session_table$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: notice main::purge_one_time_ticket_table\(\) purge_one_time_ticket_table\(\): [[:digit:]]+ row removed in one_time_ticket_table$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: notice main::create\(\) creation of /var/spool/sympa/task/[[:alnum:]@._-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: notice main::create\(\) with model /usr/share/sympa/default/(global|list)_task_models/[[:alnum:]._-]+\.task$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: notice List::sync_include\(\) List:sync_include\([[:alnum:].-]+\): [[:digit:]]+ users updated$
+#bulk
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ bulk\[[0-9]+\]: notice Done sending message (<[^[:space:]]+>)? to list [^[:space:]]+ \(priority [[:digit:]]+\) in [[:digit:]]+ seconds since scheduled expedition date.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ bulk\[[0-9]+\]: notice bulk\.pl exited normally due to signal$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ bulk\[[0-9]+\]: info Workload increased: [[:digit:]]+ packets to process. Creating [[:digit:]]+ child bulks to increase sending rate.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ bulk\[[0-9]+\]: info Starting bulk child daemon, pid [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ bulk\[[0-9]+\]: info Bulk slave daemon started with pid [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ bulk\[[0-9]+\]: info Process [[:digit:]]+ didn't send any message since [[:digit:]]+ seconds, exiting.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ bulk\[[0-9]+\]: info Bulk::next\(\) Bulk packet is already locked
+#sympa
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info List::archive_msg\(\) Do not archive message with no-archive flag for list [[:alnum:].@-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info List::_include_users_file\(\) include [[:digit:]]+ new users from file [[:alnum:]/_.-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info List::send_msg\(\) No subscriber in list [[:alnum:].-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info List::send_msg_digest\(\) No subscriber for sending digest in list [[:alnum:].-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info Auth::create_one_time_ticket\(\) Auth::create_one_time_ticket\([[:alnum:]@.-]+,[[:alnum:].-]+,modindex/[[:alnum:].-]+,mail\) value = [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info Commands::distribute\(\) DISTRIBUTE [[:alnum:].-]+ [[:xdigit:]]{32} from [[:alnum:]@.-]+ accepted \([[:digit:]]+ seconds\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info Commands::distribute\(\) Message for [[:alnum:].-]+ from [[:alnum:]@.-]+ accepted \([[:digit:]]+ seconds, [[:digit:]]+ sessions, [[:digit:]]+ subscribers\), message-id=<[^>]+>#012, size=[[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::DoCommand\(\) No command found in message$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::DoMessage\(\) Processing message for [[:alnum:]_.+-]+ with priority [[:digit:]]+,( <[^>]+>#012)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::DoMessage\(\) Message for [[:alnum:].-]+ from [[:alnum:]@._+-]+ accepted \([[:digit:]]+ seconds, [[:digit:]]+ sessions, [[:digit:]]+ subscribers\), message-id=(<[^>]+>#012)?, size=[[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::DoMessage\(\) Message for [[:alnum:].-]+ from [[:alnum:]@._+-]+ rejected because too large \([[:digit:]]+ > [[:digit:]]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::DoMessage\(\) Key [[:xdigit:]]{32} for list [[:alnum:].-]+ from [[:alnum:]@.-]+ sent to editors, /var/spool/sympa/msg/[[:alnum:]@.-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::DoSendMessage\(\) Message for [[:alnum:]@.-]+ sent$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::DoSendMessage\(\) Processing web message for [[:alnum:]@.-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::SendDigest\(\) Digest of the list [[:alnum:].-]+ sent \([[:digit:]]+ seconds\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::SendDigest\(\) Sending digest to list [[:alnum:]@.-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice main::DoFile\(\) Processing /var/spool/sympa/msg/[[:alnum:]@.-]+ ; sender: [^;]+; message-id:( <[[:alnum:]@.=+-]+>#012)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice main::DoFile\(\) Ignoring message which would cause a loop, sent by [[:alnum:]@._+-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice List::send_msg\(\) No VERP subscribers left to distribute message from [[:alnum:]@.-]+ to list [[:alnum:].-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice List::distribute_msg\(\) Found List-Id: (([^<]+)<[[:alnum:].-]+>|[^[:space:]]+)?#012$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice List::get_editors_email\(\) Warning : no editor found for list [[:alnum:].-]+, getting owners
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice List::send_to_editor\(\) ticket : [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice tools::CleanSpool\(\) Deleting old (file|directory) [^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice Commands::parse\(\) Parsing:(( QUIET)? DISTRIBUTE [[:alnum:].-]+ [[:xdigit:]]{32})?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice Moving bad file [[:alnum:]@._-]+ to bad/$
+#bounced
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ bounced\[[0-9]+\]: info error: no address found in message from [[:alnum:]@.-]+ for list [[:alnum:].-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ bounced\[[0-9]+\]: notice main::update_subscriber_bounce_history\(\) Received bounce for email address [[:alnum:]@.-]+, list [[:alnum:].-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ bounced\[[0-9]+\]: notice main::update_subscriber_bounce_history\(\) Subscriber not found in list [[:alnum:].-]+ : [[:alnum:]@._-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ bounced\[[0-9]+\]: notice tools::save_to_bad\(\) Saving file /var/spool/sympa/bounce/[[:alnum:]@.-]+ to /var/spool/sympa/bounce/bad/[[:alnum:]@.-]+$

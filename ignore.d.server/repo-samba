@@ -1,3 +1,4 @@
+#smbd
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smbd\[[[:digit:]]+\]: pam_unix\(samba:session\): session (opened|closed) for user [^[:space:]]+( by \(uid=0\))?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smbd\[[[:digit:]]+\]: \[[[:digit:]/: ]+,[[:space:]]+0\] lib/util_sock\.c.+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smbd\[[[:digit:]]+\]: \[[[:digit:]/: ]+,[[:space:]]+0\] libsmb/nmblib\.c.+$
@@ -8,7 +9,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smbd\[[[:digit:]]+\]: \[[[:digit:]/: ]+,[[:space:]]+0\] rpc_server/srv_netlog_nt\.c.+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smbd\[[[:digit:]]+\]: \[[[:digit:]/: ]+,[[:space:]]+0\] libsmb/smb_signing\.c.+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smbd\[[[:digit:]]+\]: \[[[:digit:]/: ]+,[[:space:]]+0\] param/loadparm\.c.+$
-
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smbd\[[[:digit:]]+\]:[[:space:]]+getpeername failed. Error was Transport endpoint is not connected
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smbd\[[[:digit:]]+\]:[[:space:]]+Error writing [[:digit:]]+ bytes to client\. \-1. \(Transport endpoint is not connected\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smbd\[[[:digit:]]+\]:[[:space:]]+write_data: write failure in writing to client 0.0.0.0. Error (Connection reset by peer|Broken pipe)$
@@ -19,12 +19,12 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smbd\[[[:digit:]]+\]:[[:space:]]+srv_check_incoming_message: BAD SIG: seq 2 (wanted|got) SMB signature of$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smbd\[[[:digit:]]+\]:[[:space:]]+process_usershare_file: stat of [^[:space:]]+ failed. No such file or directory
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smbd\[[[:digit:]]+\]:[[:space:]]+[[:alnum:]_-]+ ([[:digit:]]+) couldn't find service [[:alnum:]_-]+$
-
+#nmbd
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nmbd\[[[:digit:]]+\]: \[[[:digit:]/: ]+,[[:space:]]+0\] nmbd/nmbd.c.+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nmbd\[[[:digit:]]+\]: \[[[:digit:]/: ]+,[[:space:]]+0\] nmbd/nmbd_workgroupdb.c.+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nmbd\[[[:digit:]]+\]: \[[[:digit:]/: ]+,[[:space:]]+0\] libsmb/nmblib\.c:834\(send_udp\)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nmbd\[[[:digit:]]+\]:[[:space:]]+Packe. send failed to [[:digit:]\.]+\(138\) ERRNO=Operation not permitted$
-
+#winbindd
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ winbindd\[[[:digit:]]+\]: \[[[:digit:]/: ]+,[[:space:]]+0\] winbindd/idmap\.c:[[:digit:]]+\([[:alnum:]_-]+\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ winbindd\[[[:digit:]]+\]: \[[[:digit:]/: ]+,[[:space:]]+0\] winbindd/idmap_tdb\.c:[[:digit:]]+\([[:alnum:]_-]+\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ winbindd\[[[:digit:]]+\]: \[[[:digit:]/: ]+,[[:space:]]+0\] winbindd/wihnbindd\.c:[[:digit:]]+\([[:alnum:]_-]+\)$

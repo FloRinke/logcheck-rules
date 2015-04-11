@@ -1,0 +1,6 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rsyncd\[[[:digit:]]+\]: connect from [[:alnum:]\._-]+ \([[:xdigit:]\.:]+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rsyncd\[[[:digit:]]+\]: module-list request from [[:alnum:]\._-]+ \([[:xdigit:]\.]+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rsyncd\[[[:digit:]]+\]: rsync on [[:alnum:]/_.-]+ from [[:alnum:]\._-]+ \([[:xdigit:]\.:]+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rsyncd\[[[:digit:]]+\]: name lookup failed for [[:xdigit:]\.:]+: Name or service not known$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rsync\[[[:digit:]]+\]: re-syncing .+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ xinetd\[[[:digit:]]+\]: EXIT: rsync status=0 pid=[[:digit:]]+ duration=[[:digit:]]+\(sec\)$

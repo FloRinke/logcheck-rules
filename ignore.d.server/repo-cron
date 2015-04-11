@@ -1,9 +1,12 @@
+#cron
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (CROND|cron)\[[[:digit:]]+\]: \(root\) CMD \(test -x /usr/sbin/run-crons && /usr/sbin/run-crons \)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (CROND|cron)\[[[:digit:]]+\]: \(root\) CMD \(rm -f /var/spool/cron/lastrun/cron\.(hourly|daily|weekly|monthly)\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (CROND|cron)\[[[:digit:]]+\]: \(root\) CMD \(\[ ! -x /etc/cron.hourly/0anacron \] && rm -f /var/spool/cron/lastrun/cron.(hourly|daily|weekly|monthly)\)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (CROND|cron)\[[[:digit:]]+\]: \(root\) CMD \(\[ ! -x /etc/cron.hourly/0anacron \] && \{ test -x /usr/sbin/run-crons && /usr/sbin/run-crons ; \}\)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (CROND|cron)\[[[:digit:]]+\]: \(root\) CMD \([[:space:]]*/usr/sbin/porticron -c /etc/porticron.conf\)$
-
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (CROND|cron)\[[[:digit:]]+\]: \(root\) CMD \(/usr/local/sbin/sync_distfiles\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (CROND|cron)\[[[:digit:]]+\]: \(root\) CMD \(/usr/local/sbin/sync_portage\)$
+#daily
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ run-crons\[[[:digit:]]+\]: \(root\) CMD \(/etc/cron\.daily/get_config\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ run-crons\[[[:digit:]]+\]: \(root\) CMD \(/etc/cron\.daily/logrotate\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ run-crons\[[[:digit:]]+\]: \(root\) CMD \(/etc/cron\.daily/makewhatis\)$
@@ -11,8 +14,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ run-crons\[[[:digit:]]+\]: \(root\) CMD \(/etc/cron\.daily/mlocate\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ run-crons\[[[:digit:]]+\]: \(root\) CMD \(/etc/cron\.daily/man-db\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ run-crons\[[[:digit:]]+\]: \(root\) CMD \(/etc/cron\.daily/prelink\)$
-
+#hourly
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ run-crons\[[[:digit:]]+\]: \(root\) CMD \(/etc/cron\.hourly/logcheck\.cron\)$
-
+#monthly
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ run-crons\[[[:digit:]]+\]: \(root\) CMD \(/etc/cron\.monthly/ntop-update-geoip-db\)$
-

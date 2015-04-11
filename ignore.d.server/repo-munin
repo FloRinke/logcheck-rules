@@ -1,4 +1,3 @@
-#gentoo
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cron\[[[:digit:]]+\]: \(munin\) CMD \(/var/lib/munin/munin-ssh-tunnel.sh > /dev/null 2>&1\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ logger: SSH tunnel [[:alnum:]\.-]+:4949 to munin@[[:alnum:].-]+ port [[:digit:]]+ NOT alive \.\.\. Restarting \.\.\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ munin-node[[[:digit:]]+\]: [[:digit:]/:-]{19} CONNECT TCP Peer: "\[[[:xdigit:]\.:]+\]:[[:digit:]]+" Local: "\[[[:xdigit:]\.:]+\]:[[:digit:]]+"

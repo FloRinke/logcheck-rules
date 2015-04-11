@@ -1,2 +1,3 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ avahi-daemon\[[[:digit:]]+\]: Invalid query packet\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ avahi-daemon\[[[:digit:]]+\]: last message repeated [[:digit:]]+ times$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ avahi-daemon\[[[:digit:]]+\]: Invalid response packet from host [[:xdigit:].:]+\.$

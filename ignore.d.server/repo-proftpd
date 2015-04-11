@@ -1,1 +1,2 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd: pam_unix\(sshd:session\): session (opened|closed) for user [._[:alnum:]-]+( by \(uid=[[:digit:]]+\))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd: [[:alnum:]]+ \([[:xdigit:]:\.]+\[[[:xdigit:]:\.]+\]\) - notice: user [[:alnum:]]+ aborting transfer: Data connection closed$
