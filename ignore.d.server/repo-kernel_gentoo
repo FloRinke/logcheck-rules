@@ -1,3 +1,3 @@
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? (\[sched_delayed\] )?4CE: hpet increased min_delta_ns to [[:digit:]]+ nsec$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? (\[sched_delayed\] )?4?CE: hpet increased min_delta_ns to [[:digit:]]+ nsec$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[[[:digit:]]+\.[[:digit:]]+\])? [[:alnum:]/_-]+ \([[:digit:]]+\) used greatest stack depth: [[:digit:]]+ bytes left$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: kernel: Peer [[:xdigit:]:/]+ unexpectedly shrunk window [[:digit:]:]+ \(repaired\)$
