@@ -1,5 +1,5 @@
 #TLS
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: TLS library problem: [[:digit:]]+:error:[[:xdigit:]]+:SSL routines:SSL2?3_[[:upper:]]+:[[:lower:] ]+:[[:alnum:]_-]+\.c:[[:digit:]]+:$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission)?/smtpd\[[[:digit:]]+\]: warning: TLS library problem: [[:digit:]]+:error:[[:xdigit:]]+:SSL routines:SSL2?3_[[:upper:]_]+:[[:alnum:] ]+:[[:alnum:]_-]+\.c:[[:digit:]]+:(SSL alert number \d+:)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: network_biopair_interop: error (reading|writing) [[:digit:]]+ bytes (from|to) the network: Connection reset by peer$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: ((Anonymous|Untrusted|Trusted|Verified) )?TLS connection established (to|from) [^[:space:]]+: (TLSv1(.2)?|SSLv[23]) with cipher [^[:space:]]+ \([/[:digit:]]+ bits\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps)?/smtpd\[[[:digit:]]+\]: SSL_accept error from [._[:alnum:]-]+\[[[:xdigit:].:]{3,39}\](: (-?[\d]+|lost connection|Connection timed out|Connection reset by peer))?$
@@ -8,7 +8,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps)?/smtpd\[[[:digit:]]+\]: lost connection after [[:upper:]]+( \([[:digit:]]+ bytes\))? from [._[:alnum:]-]+\[(unknown|[[:xdigit:].:]{3,39})\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps)?/smtpd\[[[:digit:]]+\]: timeout after [-[:upper:]]+( \([[:digit:]]+ bytes\))? from [^[:space:]]+$
 #behavior
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps)?/smtpd\[[[:digit:]]+\]: improper command pipelining after (EHLO|DATA|MAIL|QUIT) from [\d\w\.]+\[[\.:[:xdigit:]]+\]:( QUIT\\r\\n)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps)?/smtpd\[[[:digit:]]+\]: improper command pipelining after (EHLO|DATA|MAIL|QUIT) from [^\[]]+\[[\.:[:xdigit:]]+\]:( QUIT\\r\\n)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps)?/smtpd\[[[:digit:]]+\]: [[:upper:][:digit:]]+: reject: (MAIL|RCPT|VRFY) from [^[:space:]]+: [45][[:digit:]][[:digit:]]( [45](\.[[:digit:]]){2})? <[^[:space:]]*>: ((Sender|Recipient) address|Client host) rejected: .+;( from=<[^[:space:]]*>)?( to=<[^[:space:]]+>)? proto=E?SMTP( helo=<[^[:space:]]+>)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps)?/smtpd\[[[:digit:]]+\]: warning: hostname [[:alnum:]_\.-]+ does not resolve to address [[:xdigit:]\.:]+(: Name or service not known)?$
 #login

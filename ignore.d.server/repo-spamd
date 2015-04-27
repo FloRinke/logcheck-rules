@@ -1,5 +1,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: spamd: using default config for nobody: /var/lib/spamassassin/users/nobody/user_prefs$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: prefork: server reached --max-children setting, consider raising it$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: prefork: adjust: [[:digit:]]+ idle children less than [[:digit:]]+ minimum idle children. Increasing spamd children: [[:digit:]]+ started\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: prefork: adjust: [[:digit:]]+ idle children more than [[:digit:]]+ maximum idle children. Decreasing spamd children: [[:digit:]]+ killed\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? server hit by SIGHUP, restarting
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? child \[[[:digit:]]+\] killed successfully: interrupted, signal 2 \(0002\)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? server started on port 783/tcp \(running version [\.[:digit:][:space:]]+\)
