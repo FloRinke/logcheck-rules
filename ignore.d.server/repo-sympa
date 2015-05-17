@@ -23,6 +23,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\]( \[user [^[:space:]]+\])?( \[list [._[:alnum:]-]+\])? main::do_del\(\) do_del: ([[:alnum:]@.+-]+ not subscribed|subscriber [[:alnum:]@.+-]+ deleted from list [[:alnum:].+-]+)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\]( \[user [^[:space:]]+\])?( \[list [._[:alnum:]-]+\])? main::do_dump\(\) opening [[:alnum:]/.+-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\]( \[user [^[:space:]]+\])?( \[list [._[:alnum:]-]+\])? main::do_edit_list\(\) No parameter was edited by user$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\]( \[user [^[:space:]]+\])?( \[list [._[:alnum:]-]+\])? main::do_login\(\) do_login: user [[:alnum:]@._-]+ already logged in$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\]( \[user [^[:space:]]+\])?( \[list [._[:alnum:]-]+\])? main::do_resetbounce\(\) do_resetbounce: (bounces for [[:alnum:]@._+-]+ reset|failed deleting /var/lib/sympa/bounce/[^[:space:]]+)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\]( \[user [^[:space:]]+\])?( \[list [._[:alnum:]-]+\])? main::do_review\(\) do_review: no subscriber$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\]( \[user [^[:space:]]+\])?( \[list [._[:alnum:]-]+\])? main::do_send_me\(\) do_send_me message /var/lib/sympa/wwsarchive/[[:alnum:]@/._-]+ spooled for [[:alnum:]@._+-]+$
@@ -43,11 +44,13 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: notice Redirecting to https?://[[:alnum:]/._-]+$
 #archived
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ archived\[[0-9]+\]: notice Archiving [^[:space:]]+ for list [^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ archived\[[0-9]+\]: err tools::smime_sign_check\(\) Unable to check S/MIME signature : an error occurred decrypting or verifying the message$
 #task-manager
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info main::eval_bouncers\(\) eval_bouncers\([^\)]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info main::expire_bounce\(\) expire bounces for subscriber [^[:space:]]+ of list [^[:space:]]+ \(last distribution \d+ \w{3} \d{4}, last bounce \d+ \w{3} \d{4} \)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info main::process_bouncers\(\) Processing automatic actions on bouncing users$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info main::purge_(tables|session_table|one_time_ticket_table|orphan_bounces)\(\) task_manager::purge_(tables|session_table|one_time_ticket_table|orphan_bounces)\(\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info main::purge_(tables|session_table|one_time_ticket_table|orphan_bounces)\(\) purge_(tables|session_table|one_time_ticket_table|orphan_bounces)\(\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info main::purge_orphan_bounces\(\) removing orphan Bounce for user [[:alnum:]@._+-]+ in list [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info SympaSession::purge_old_(tickets|sessions)\(\) SympaSession::purge_old_(tickets|sessions)\(\*\)
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info List::_include_users_file\(\) include [[:digit:]]+ new users from file [[:alnum:]/.-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: notice main::create\(\) creation of /var/spool/sympa/task/[[:alnum:]@._-]+$
@@ -57,7 +60,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: notice main::next_cmd\(\) --> new task [[:alnum:]_]+ \([^\)]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: notice main::purge_logs_table\(\) purge_logs_table\(\): logs purged$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: notice main::purge_orphan_bounces\(\) No bouncing subscribers in list [^[:space:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: notice main::purge_orphan_bounces\(\) removing orphan Bounce for user [[:alnum:]@._+-]+ in list [^[:space:]]+
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: notice main::purge_tables\(\) [[:digit:]]+ rows removed in bulkspool_table$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: notice main::purge_session_table\(\) purge_session_table\(\): [[:digit:]]+ row removed in session_table$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: notice main::purge_one_time_ticket_table\(\) purge_one_time_ticket_table\(\): [[:digit:]]+ row removed in one_time_ticket_table$
@@ -90,7 +92,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::DoSendMessage\(\) Processing web message for [[:alnum:]@.-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::SendDigest\(\) Digest of the list [[:alnum:].-]+ sent \([[:digit:]]+ seconds\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::SendDigest\(\) Sending digest to list [[:alnum:]@.-]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice main::DoFile\(\) Processing /var/spool/sympa/msg/[[:alnum:]@.-]+ ; sender: [^;]+(#012)? ; message-id:( <[[:alnum:]@.=+-]+>#012)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice main::DoFile\(\) Processing /var/spool/sympa/msg/[[:alnum:]@.-]+ ; sender: [^;]+(#012)? ; message-id:( <[^[:space:]]+>#012)?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice main::DoFile\(\) Ignoring message which would cause a loop(, sent by [[:alnum:]@._+-]+)?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice main::DoMessage\(\) Found known Message-ID, ignoring message which would cause a loop$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice List::send_msg\(\) No VERP subscribers left to distribute message from [[:alnum:]@.-]+ to list [[:alnum:].-]+$
