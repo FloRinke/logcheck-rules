@@ -1,4 +1,4 @@
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Accepted (gssapi(-with-mic|-keyex)?|rsa|dsa|password|publickey|keyboard-interactive/pam|hostbased) for [^[:space:]]+ from [^[:space:]]+ port [[:digit:]]+( (ssh|ssh2))?(: (?:DSA|RSA|ED25519) [:[:xdigit:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Accepted (gssapi(-with-mic|-keyex)?|rsa|dsa|password|publickey|keyboard-interactive/pam|hostbased) for [^[:space:]]+ from [^[:space:]]+ port [[:digit:]]+( (ssh|ssh2))?(: (?:DSA|RSA|ED25519) ([:[:xdigit:]]+|SHA256:[^[:space:]]+))?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: SSH: Server;(Ltype|LType): (Version|Kex|Authname|Throughput);Remote: [[:xdigit:]:\.]+-[[:digit:]]+;(Protocol: 2\.0;Client: [-+\._ [:alnum:]]+|Enc: (aes128-(cbc|ctr)|aes256-ctr|chacha20-poly1305@openssh\.com);MAC: ((hmac-(md5|sha1|sha2-256)|umac-64)(-etm@openssh.com)?|\(null\));Comp: (none|zlib@openssh.com)( \[preauth\])?|Name: [[:alnum:]]+ \[preauth\]|IN: [[:digit:]]+;OUT: [[:digit:]]+;Duration: [[:digit:]\.]+;tPut_in: [[:digit:]\.]+;tPut_out: [[:digit:]\.]+)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: subsystem request for sftp by user [[:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Received disconnect from [:.[:xdigit:]]+: [[:digit:]]+:( .*)?( \[preauth\])?$
@@ -11,3 +11,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: fatal: no matching mac found: client [[:alnum:],\.@-]+ server [[:alnum:],\.@-]+ \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Bad protocol version identification '.+' from [[:xdigit:]:\.]+ port [[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: fatal: no hostkey alg \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnected from [[:xdigit:]:\.]+$
