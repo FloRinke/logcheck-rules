@@ -1,7 +1,7 @@
 #debian wheezy
 #common
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (archived|sympa)\[[0-9]+\]: err tools::smime_sign_check\(\) Unable to check S/MIME signature : one of the input files could not be read$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa err tools::valid_email\(\) Invalid email address '[^']'$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (sympa|wwsympa)\[[0-9]+\]: err tools::valid_email\(\) Invalid email address '[^']+'$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (sympa|wwsympa)\[[0-9]+\]: notice List::on_the_fly_sync_include\(\) Synchronizing list members\.\.\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (sympa|wwsympa)\[[0-9]+\]: notice List::remove_task\(\) Removing task file [[:alnum:]@._-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (sympa|wwsympa)\[[0-9]+\]: notice List::sync_include\(\) List:sync_include\([[:alnum:]._-]+\): [[:digit:]]+ users (updated|added)$
@@ -39,6 +39,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info admin::clone_list_as_empty\(\) Admin::clone_list_as_empty \([^\)]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info admin::install_aliases\(\) admin::install_aliases : Aliases installed successfully$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info admin::rename_list\(\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: notice main::do_change_email_request\(\) ticket : [[:digit:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: notice main::do_distribute\(\) Moderator approves message: [[:alnum:]._-]+ [[:xdigit:]]{32}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: notice main::do_login\(\) Authentication failed$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: notice Redirecting to https?://[[:alnum:]/._-]+$
@@ -49,7 +50,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info main::eval_bouncers\(\) eval_bouncers\([^\)]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info main::expire_bounce\(\) expire bounces for subscriber [^[:space:]]+ of list [^[:space:]]+ \(last distribution \d+ \w{3} \d{4}, last bounce \d+ \w{3} \d{4} \)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info main::process_bouncers\(\) Processing automatic actions on bouncing users$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info main::purge_(tables|session_table|one_time_ticket_table|orphan_bounces)\(\) purge_(tables|session_table|one_time_ticket_table|orphan_bounces)\(\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info main::purge_(tables|session_table|one_time_ticket_table|orphan_bounces)\(\) (task_manager::)?purge_(tables|session_table|one_time_ticket_table|orphan_bounces)\(\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info main::purge_orphan_bounces\(\) removing orphan Bounce for user [[:alnum:]@._+-]+ in list [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info SympaSession::purge_old_(tickets|sessions)\(\) SympaSession::purge_old_(tickets|sessions)\(\*\)
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info List::_include_users_file\(\) include [[:digit:]]+ new users from file [[:alnum:]/.-]+$
@@ -76,6 +77,8 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ bulk\[[0-9]+\]: info Process [[:digit:]]+ didn't send any message since [[:digit:]]+ seconds, exiting.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ bulk\[[0-9]+\]: info Bulk::next\(\) Bulk packet is already locked
 #sympa
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: err Message::_get_sender_email\(\) Invalid sender address "[^"]+"$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: err main::DoFile\(\) Unable to create Message object /var/spool/sympa/msg/[[:alnum:]@.-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info List::archive_msg\(\) Do not archive message with no-archive flag for list [[:alnum:].@-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info List::_include_users_file\(\) include [[:digit:]]+ new users from file [[:alnum:]/_.-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info List::send_msg\(\) No subscriber in list [[:alnum:].-]+$
@@ -100,7 +103,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice List::get_editors_email\(\) Warning : no editor found for list [[:alnum:].-]+, getting owners
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice List::send_to_editor\(\) ticket : [[:digit:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice tools::CleanSpool\(\) Deleting old (file|directory) [^[:space:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice Commands::parse\(\) Parsing:(( QUIET)? DISTRIBUTE [[:alnum:].-]+ [[:xdigit:]]{32})?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice Commands::parse\(\) Parsing:(( QUIET)? (DISTRIBUTE|INFO|SUBSCRIBE|subscribe) .*)?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice Moving bad file [[:alnum:]@._-]+ to bad/$
 #bounced
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ bounced\[[0-9]+\]: info error: no address found in message from [[:alnum:]@.-]+ for list [[:alnum:].-]+$

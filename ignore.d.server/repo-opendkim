@@ -3,5 +3,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: can't determine message sender; accepting$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: message has signatures from [[:alnum:]\.-]+, [[:alnum:]\.-]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: ADSP query: '[-_\.[:alnum:]]+' reply was unresolved CNAME$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: key retrieval failed \(s=[[:alnum:]\._-]+, d=[[:alnum:]\._-]+\): '[[:alnum:]\._-]+' record not found$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: key retrieval failed \(s=[[:alnum:]\._-]+, d=[[:alnum:]\._-]+\): '[[:alnum:]\._-]+' (record not found|query timed out)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: failed to parse Authentication-Results: header$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: can't parse From: header value '[^']*'$
