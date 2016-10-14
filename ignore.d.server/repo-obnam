@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (CROND|cron)\[[[:digit:]]+\]: \(root\) CMD \(obnam (backup|forget) (--quiet |--config[ =][/\-[:alpha:]\.]+.conf)+\)$
