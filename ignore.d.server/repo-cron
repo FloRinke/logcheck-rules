@@ -1,5 +1,5 @@
 #cron
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (CROND|cron)\[[[:digit:]]+\]: \(root\) CMD \(test -x /usr/sbin/run-crons && /usr/sbin/run-crons \)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (CROND|cron)\[[[:digit:]]+\]: \(root\) CMD \(test -x /usr/sbin/run-crons && /usr/sbin/run-crons ?\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (CROND|cron)\[[[:digit:]]+\]: \(root\) CMD \(rm -f /var/spool/cron/lastrun/cron\.(hourly|daily|weekly|monthly)\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (CROND|cron)\[[[:digit:]]+\]: \(root\) CMD \(\[ ! -x /etc/cron.hourly/0anacron \] && rm -f /var/spool/cron/lastrun/cron.(hourly|daily|weekly|monthly)\)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (CROND|cron)\[[[:digit:]]+\]: \(root\) CMD \(\[ ! -x /etc/cron.hourly/0anacron \] && \{ test -x /usr/sbin/run-crons && /usr/sbin/run-crons ; \}\)
