@@ -1,7 +1,1 @@
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kcheckpass\[[[:digit:]]+\]: USB error: Resource busy$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kcheckpass\[[[:digit:]]+\]: Challenge response failed: Device or resource busy$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kcheckpass\[[[:digit:]]+\]: Challenge response failed: Resource temporarily unavailable$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kcheckpass\[[[:digit:]]+\]: Authentication failure for [[:alnum:]._-]+ \(invoked by uid [[:digit:]]+\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kcheckpass\[[[:digit:]]+\]: Yubikey core error: no yubikey present$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kcheckpass\[[[:digit:]]+\]: Yubikey core error: expected only one YubiKey but several present$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: usb [[:digit:]\.-]+: usbfs: interface [[:digit:]]+ claimed by usbfs while 'kcheckpass' sets config #1$

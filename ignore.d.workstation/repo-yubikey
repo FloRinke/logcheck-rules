@@ -1,0 +1,17 @@
+#kcheckpass access failures
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kcheckpass\[[[:digit:]]+\]: USB error: Resource busy$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kcheckpass\[[[:digit:]]+\]: Challenge response failed: Device or resource busy$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kcheckpass\[[[:digit:]]+\]: Challenge response failed: Resource temporarily unavailable$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kcheckpass\[[[:digit:]]+\]: Authentication failure for [[:alnum:]._-]+ \(invoked by uid [[:digit:]]+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kcheckpass\[[[:digit:]]+\]: Yubikey core error: no yubikey present$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kcheckpass\[[[:digit:]]+\]: Yubikey core error: expected only one YubiKey but several present$
+#kernel messages
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: usb [[:digit:]\.-]+: usbfs: interface [[:digit:]]+ claimed by usbfs while 'kcheckpass' sets config #1$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[[:digit:]]+\.[[:digit:]]+\] hid-generic [[:xdigit:]:\.]{20} input,hidraw0: USB HID v1\.11 Keyboard \[Yubico Yubico Yubikey II\] on usb-[[:xdigit:]:\.-]+/input0
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? (hid-generic [.:[:xdigit:]]+: )?(input|hiddev[[:digit:]]+)(,hidraw[[:digit:]]+)?: USB HID v[.[:digit:]]+ (Joystick|Keyboard|Mouse|Device) \[[ [:alnum:][:punct:]]+\] on usb-[\:[:xdigit:].-]+(/input[[:digit:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? input: Yubico Yubikey NEO OTP\+U2F\+CCID as /devices/[[:alnum:]\.:/-]+/input/input[[:digit:]]+$
+#pcscd
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pcscd\[[[:digit:]]+\]: /var/tmp/portage/app-crypt/ccid-[.[:digit:]]+/work/ccid-1.4.18/src/ccid_usb.c:759:WriteUSB\(\) write failed \([:digit:]+/[:digit:]+\): -4 No such devicepcscd\[[[:digit:]]+\]: /var/tmp/portage/app-crypt/ccid-[.[:digit:]]+/work/ccid-1.4.18/src/ccid_usb.c:759:WriteUSB\(\) write failed \([:digit:]+/[:digit:]+\): -4 No such device$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pcscd\[[[:digit:]]+\]: /var/tmp/portage/app-crypt/ccid-[.[:digit:]]+/work/ccid-1.4.18/src/ifdhandler.c:130:CreateChannelByNameOrChannel\(\) failedpcscd\[[[:digit:]]+\]: /var/tmp/portage/app-crypt/ccid-[.[:digit:]]+/work/ccid-1.4.18/src/ifdhandler.c:130:CreateChannelByNameOrChannel\(\) failed$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pcscd\[[[:digit:]]+\]: /var/tmp/portage/sys-apps/(pcsc-lite-[.[:digit:]]+)(-r[:digit:])?/work/\1/src/readerfactory.c:1097:RFInitializeReader\(\) Open Port 0x[[:digit:]a-fA-F]+ Failed \(usb:1050/0116:libudev:[:digit:]:/dev/bus/usb/[:digit:]{3}/[:digit:]{3}\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pcscd\[[[:digit:]]+\]: /var/tmp/portage/sys-apps/(pcsc-lite-[.[:digit:]]+)(-r[:digit:])?/work/\1/src/readerfactory.c:372:RFAddReader\(\) Yubico Yubikey NEO OTP\+U2F\+CCID init failed\.$pcscd\[[[:digit:]]+\]: /var/tmp/portage/sys-apps/(pcsc-lite-[.[:digit:]]+)(-r[:digit:])?/work/\1/src/readerfactory.c:372:RFAddReader\(\) Yubico Yubikey NEO OTP\+U2F\+CCID init failed\.$
