@@ -6,3 +6,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: key retrieval failed \(s=[[:alnum:]\._-]+, d=[[:alnum:]\._-]+\): '[[:alnum:]\._-]+' (record not found|query timed out)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: failed to parse authentication-results: header$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: can't parse From: header value '[^']*'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: ignoring [[:digit:]]+ signatures?$
