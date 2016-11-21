@@ -1,2 +1,2 @@
-^\w{3} [ :0-9]{11} [._\d\w-]+ dspam\[[[:digit:]]+\]: innocent message from (?:[.[:digit:]]+|IPv6:[:[:xdigit:]]+)$
-^\w{3} [ :0-9]{11} [._\d\w-]+ dspam\[[[:digit:]]+\]: innocent message from (?:[.[:digit:]]+|IPv6:[:[:xdigit:]]+)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dspam\[[[:digit:]]+\]: spam detected from (?:[.[:digit:]]+|IPv6:[:[:xdigit:]]+)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dspam\[[[:digit:]]+\]: innocent message from (?:[.[:digit:]]+|IPv6:[:[:xdigit:]]+)$
