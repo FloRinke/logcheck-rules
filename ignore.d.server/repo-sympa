@@ -87,7 +87,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info Commands::distribute\(\) DISTRIBUTE [[:alnum:].-]+ [[:xdigit:]]{32} from [[:alnum:]@.-]+ accepted \([[:digit:]]+ seconds\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info Commands::distribute\(\) Message for [[:alnum:].-]+ from [[:alnum:]@.-]+ accepted \([[:digit:]]+ seconds, [[:digit:]]+ sessions, [[:digit:]]+ subscribers\), message-id=<[^>]+>#012, size=[[:digit:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::DoCommand\(\) No command found in message$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::DoMessage\(\) Processing message for [[:alnum:]_.+-]+ with priority [[:digit:]]+,( <[^>]+>#012)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::DoMessage\(\) Processing message for.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::DoMessage\(\) Message for [[:alnum:].-]+ from [[:alnum:]@._+-]+ accepted \([[:digit:]]+ seconds, [[:digit:]]+ sessions, [[:digit:]]+ subscribers\), message-id=(<[^>]+>#012)?, size=[[:digit:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::DoMessage\(\) sympa::DoMesage\(\): Message for [[:alnum:].-]+ from [[:alnum:]@._+-]+ rejected because too large \([[:digit:]]+ > [[:digit:]]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::DoMessage\(\) Key [[:xdigit:]]{32} for list [[:alnum:].-]+ from [[:alnum:]@.-]+ sent to editors, /var/spool/sympa/msg/[[:alnum:]@.-]+$
@@ -95,7 +95,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::DoSendMessage\(\) Processing web message for [[:alnum:]@.-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::SendDigest\(\) Digest of the list [[:alnum:].-]+ sent \([[:digit:]]+ seconds\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::SendDigest\(\) Sending digest to list [[:alnum:]@.-]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice main::DoFile\(\) Processing /var/spool/sympa/msg/[[:alnum:]@.-]+ ; sender: [^;]+(#012)? ; message-id:( <[^[:space:]]+>#012)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice main::DoFile\(\) Processing /var/spool/sympa/msg/.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice main::DoFile\(\) Ignoring message which would cause a loop(, sent by [[:alnum:]@._+-]+)?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice main::DoMessage\(\) Found known Message-ID, ignoring message which would cause a loop$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice List::send_msg\(\) No VERP subscribers left to distribute message from [[:alnum:]@.-]+ to list [[:alnum:].-]+$
