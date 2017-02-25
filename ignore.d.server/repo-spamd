@@ -1,10 +1,14 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: spamd: using default config for nobody: /var/lib/spamassassin/users/nobody/user_prefs$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: prefork: server reached --max-children setting, consider raising it$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: prefork: adjust: [[:digit:]]+ idle children less than [[:digit:]]+ minimum idle children. Increasing spamd children: [[:digit:]]+ started\.$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: prefork: adjust: [[:digit:]]+ idle children more than [[:digit:]]+ maximum idle children. Decreasing spamd children: [[:digit:]]+ killed\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: spamd: using default config for nobody: /var/lib/spamassassin/users/nobody/user_prefs$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: prefork: server reached --max-children setting, consider raising it$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: prefork: adjust: [[:digit:]]+ idle children less than [[:digit:]]+ minimum idle children. Increasing spamd children: [[:digit:]]+ started\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ spamd\[[0-9]+\]: prefork: adjust: [[:digit:]]+ idle children more than [[:digit:]]+ maximum idle children. Decreasing spamd children: [[:digit:]]+ killed\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? server hit by SIGHUP, restarting
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? child \[[[:digit:]]+\] killed successfully: interrupted, signal 2 \(0002\)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? server started on port 783/tcp \(running version [\.[:digit:][:space:]]+\)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ spamd.pid\[[[:digit:]]+\]:( spamd:)? restarting using '[-/\.=%[:alnum:][:space:]]+'
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ spamd.pid\[[[:digit:]]+\]:( spamd:)? restarting using '/usr/sbin/spamd( --(create-prefs|max-children [[:digit:]]+|helper-home-dir|virtual-config-dir=[/[:alpha:]]+%u|pidfile=[/[:alpha:]]+\.pid)| -(x|u [[:alpha:]]+|d))+'
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? handled cleanup of child pid \[[[:digit:]]+\] due to SIGCHLD(: interrupted, signal 2 \(0002\)|: exit 0)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]: prefork: child states: [[:upper:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? connection from [._[:alnum:]-]+ \[[.:[:xdigit:]]+\]:[[:digit:]]+ (at|to) port [[:digit:]]+(, fd [[:digit:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]: (spamd: )?result: [.YN] [ [:digit:]-]+ - ([._[:alnum:],]+ )?scantime=[[:digit:].]+,size=[[:digit:]]+,(user=[^,]+,uid=[[:digit:]]+,required_score=[[:digit:].]+,rhost=[._[:alnum:]-]+,raddr=[[:digit:].]+,rport=[/[:alnum:].-]+,)?mid=(<[^[:space:]]+>|\(unknown\))(rmid=(<[^[:space:]]+>|\(unknown\)),)?,(bayes=[.[:digit:]]+(e-[[:digit:]]+)?,)?autolearn=(ham|spam|no|disabled|unavailable)(,shortcircuit=(ham|spam|no))? *$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]: (spamd: )?result: [.YN] [ [:digit:]-]+ - ([._[:alnum:],]+ )?scantime=[[:digit:].]+,size=[[:digit:]]+,(user=[^,]+,uid=[[:digit:]]+,required_score=[[:digit:].]+,rhost=[._[:alnum:]-]+,raddr=[[:xdigit:].:]+,rport=[/[:alnum:].-]+,)?mid=(<[^[:space:]]+>|\(unknown\))(rmid=(<[^[:space:]]+>|\(unknown\)),)?,(bayes=[.[:digit:]]+(e-[[:digit:]]+)?,)?autolearn=(ham|spam|no|disabled|unavailable)( autolearn_force=(yes|no))?(,shortcircuit=(ham|spam|no))? *$
