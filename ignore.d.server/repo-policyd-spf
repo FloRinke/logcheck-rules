@@ -1,0 +1,2 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ policyd-spf\[[[:digit:]]+\]: None; identity=helo;.*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ policyd-spf\[[[:digit:]]+\]: Pass; identity=mailfrom;.*$
