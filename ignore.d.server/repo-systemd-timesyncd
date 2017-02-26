@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-timesyncd\[[:[:digit:]]+\]: [.[:alnum:]]+/[.[:alnum:]]+/[.[:alnum:]]+/[.[:alnum:]]+/[.[:alnum:]]+ [.[:alnum:]]+/(-|\+)[.[:alnum:]]+/[.[:alnum:]]+/[.[:alnum:]]+/(-|\+)[.[:alnum:]]+$
