@@ -1,0 +1,3 @@
+# Systemd-logind messages
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-logind\[[ :[:digit:]]+\]: New session [[ :[:digit:]]+ of user [._[:alnum:]-]+.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-logind\[[ :[:digit:]]+\]: Removed session [[ :[:digit:]]+.$
