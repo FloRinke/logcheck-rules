@@ -14,4 +14,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Bad protocol version identification '.+' from [[:xdigit:]:\.]+ port [[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: fatal: no hostkey alg \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnected from [[:xdigit:]:\.]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Accepted [.[:alnum:]]+ for [.[:alnum:]]+ from [.[:alnum:]]+ port [.[:alnum:]]+ [.[:alnum:]]+: [.[:alnum:]]+ [.[:alnum:]]+:[.[:alnum:]]+:[.[:alnum:]]+:[.[:alnum:]]+:[.[:alnum:]]+:[.[:alnum:]]+:[.[:alnum:]]+:[.[:alnum:]]+:[.[:alnum:]]+:[.[:alnum:]]+:[.[:alnum:]]+:[.[:alnum:]]+:[.[:alnum:]]+:[.[:alnum:]]+:[.[:alnum:]]+:[.[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Accepted [.[:alnum:]]+ for [.[:alnum:]]+ from [.[:alnum:]]+ port [.[:alnum:]]+ [.[:alnum:]]+: [.[:alnum:]]+ [[:xdigit:]:]*$
