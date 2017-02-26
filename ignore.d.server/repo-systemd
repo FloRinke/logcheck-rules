@@ -1,0 +1,9 @@
+# For the Session
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[ :[:digit:]]+\]: Start(ing|ed) Session [ :[:digit:]]+ of user [._[:alnum:]]+.$
+# PAM message
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd: [._[:alnum:]-]+\([._[:alnum:]-]+:[._[:alnum:]-]+\): session opened for user [._[:alnum:]-]+ by \([._[:alnum:]-]+=[._[:digit:]-]+\)$
+# For the User Manager message
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[ :[:digit:]]+\]: (Stopped|Start(ing|ed)) User Manager for UID [._[:alnum:]]+.$
+# For the slice messages
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[ :[:digit:]]+\]: (Starting|Stopping) user-[[ :[:digit:]]+.slice.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[ :[:digit:]]+\]: (Created|Removed) slice user-[[ :[:digit:]]+.slice.$
