@@ -1,1 +1,1 @@
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ policyd-spf\[[[:digit:]]+\]: (None|Pass); identity=[.[:alnum:]]+; client-ip=[.[:alnum:]]+; helo=[.[:alnum:]]+; envelope-from=.*; receiver=[.[:alnum:]]+@[.[:alnum:]]+-[.[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ policyd-spf\[[[:digit:]]+\]: (None|Pass|Softfail|Permerror); identity=[.[:alnum:]]+; client-ip=[.[:xdigit:]].*; helo=.*; envelope-from=.*; receiver=.*@[.[:alnum:]]+-[.[:alnum:]]+$
