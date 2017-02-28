@@ -100,11 +100,14 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice main::DoMessage\(\) Found known Message-ID, ignoring message which would cause a loop$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice List::send_msg\(\) No VERP subscribers left to distribute message from [[:alnum:]@.-]+ to list [[:alnum:].-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice List::distribute_msg\(\) Found List-Id: (([^<]+)<[[:alnum:].-]+>|[^[:space:]]+)?#012$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice List::distribute_msg\(\) Found List-Id: (([^<]+)<[[:alnum:].-]+>|[^[:space:]]+)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice List::get_editors_email\(\) Warning : no editor found for list [[:alnum:].-]+, getting owners
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice List::send_to_editor\(\) ticket : [[:digit:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice tools::CleanSpool\(\) Deleting old (file|directory) [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice Commands::parse\(\) Parsing:(( QUIET)? (DISTRIBUTE|INFO|SUBSCRIBE|subscribe) .*)?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice Moving bad file [[:alnum:]@._-]+ to bad/$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\]( \[user [^[:space:]]+\])?( \[list [._[:alnum:]-]+\])? main::(do_subscribe\(\)|do_subrequest\(\)|do_sigrequest\(\)|do_loginrequest\(\)) (do_subscribe\(\)|do_subrequest\(\)|do_sigrequest\(\)|do_subrequest\(,\)|do_loginrequest)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: err \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\]( \[user [^[:space:]]+\])?( \[list [._[:alnum:]-]+\])? main::(do_subscribe\(\)|do_subrequest\(\)|do_sigrequest\(\)|do_loginrequest\(\)|check_action_parameters\(\)) [._[:alnum:]]+ [._[:alnum:]]+ [._[:alnum:]]+ [._[:alnum:]]+$
 #bounced
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ bounced\[[0-9]+\]: info error: no address found in message from [[:alnum:]@.-]+ for list [[:alnum:].-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ bounced\[[0-9]+\]: notice main::update_subscriber_bounce_history\(\) Received bounce for email address [[:alnum:]@.-]+, list [[:alnum:].-]+$
