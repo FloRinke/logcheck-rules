@@ -11,7 +11,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: err \[robot [._[:alnum:]-]+\] \[client [[:xdigit:].:]+\] main::get_parameters\(\) get_parameters: syntax error for parameter email value '[^']*' not conform to regexp:[^[:space:]]+ ; dumped vars in /var/spool/sympa/tmp/sympa_dump\.[[:digit:].]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: err \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\]( \[user [^[:space:]]+\])? missing required parameters for action '[[:alnum:]_-]+'$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: err \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\] \[user [^[:space:]]+\] \[list [._[:alnum:]-]+\] main::do_modindex\(\) do_modindex: no message and no document$
-
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\] main::do_logout\(\) do_logout: logout performed$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\] main::do_login\(\) do_login: missing parameter passwd$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info \[robot [._[:alnum:]-]+\] \[session [[:xdigit:]]+\] \[client [[:xdigit:].:]+\] main::do_renewpasswd\(\) do_renewpasswd: incorrect email \\"[^\\]+\\"$
@@ -89,7 +88,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::DoCommand\(\) No command found in message$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::DoMessage\(\) Processing message for.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::DoMessage\(\) Message for [[:alnum:].-]+ from [[:alnum:]@._+-]+ accepted \([[:digit:]]+ seconds, [[:digit:]]+ sessions, [[:digit:]]+ subscribers\), message-id=(<[^>]+>#012)?, size=[[:digit:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::DoMessage\(\) sympa::DoMesage\(\): Message for [[:alnum:].-]+ from [[:alnum:]@._+-]+ rejected because too large \([[:digit:]]+ > [[:digit:]]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::DoMessage\(\) Message for [[:alnum:].-]+ from [[:alnum:]@._+-]+ rejected because too large \([[:digit:]]+ > [[:digit:]]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::DoMessage\(\) Key [[:xdigit:]]{32} for list [[:alnum:].-]+ from [[:alnum:]@._+-]+ sent to editors, /var/spool/sympa/msg/[[:alnum:]@._+-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::DoSendMessage\(\) Message for [[:alnum:]@._+-]+ sent$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: info main::DoSendMessage\(\) Processing web message for [[:alnum:]@._+-]+$
@@ -98,6 +97,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice main::DoFile\(\) Processing /var/spool/sympa/msg/.*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice main::DoFile\(\) Ignoring message which would cause a loop(, sent by [[:alnum:]@._+-]+)?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice main::DoMessage\(\) Found known Message-ID, ignoring message which would cause a loop$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice main::DoMessage\(\) Message for [[:alnum:].-]+ from [[:alnum:]@._+-]+ rejected\(\) because sender not allowed$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice List::send_msg\(\) No VERP subscribers left to distribute message from [[:alnum:]@._+-]+ to list [[:alnum:].-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice List::distribute_msg\(\) Found List-Id: (([^<]+)<[[:alnum:].-]+>|[^[:space:]]+)?#012$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: notice List::distribute_msg\(\) Found List-Id: (([^<]+)<[[:alnum:].-]+>|[^[:space:]]+)$
