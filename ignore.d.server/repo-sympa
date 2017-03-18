@@ -48,7 +48,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ archived\[[0-9]+\]: err tools::smime_sign_check\(\) Unable to check S/MIME signature : an error occurred decrypting or verifying the message$
 #task-manager
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info main::eval_bouncers\(\) eval_bouncers\([^\)]+\)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info main::expire_bounce\(\) expire bounces for subscriber [^[:space:]]+ of list [^[:space:]]+ \(last distribution \d+ \w{3} \d{4}, last bounce \d+ \w{3} \d{4} \)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info main::expire_bounce\(\) expire bounces for subscriber [^[:space:]]+ of list [^[:space:]]+ \(last distribution [[:digit:]]+ \w{3} [[:digit:]]{4}, last bounce [[:digit:]]+ \w{3} [[:digit:]]{4} \)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info main::process_bouncers\(\) Processing automatic actions on bouncing users$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info main::purge_(tables|session_table|one_time_ticket_table|orphan_bounces)\(\) (task_manager::)?purge_(tables|session_table|one_time_ticket_table|orphan_bounces)\(\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info main::purge_orphan_bounces\(\) removing orphan Bounce for user [[:alnum:]@._+-]+ in list [^[:space:]]+$

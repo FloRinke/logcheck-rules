@@ -1,8 +1,8 @@
 #TLS
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps)?/smtpd\[[[:digit:]]+\]: warning: TLS library problem: [[:digit:]]+:error:[[:xdigit:]]+:SSL routines:SSL2?3_[[:upper:]_]+:[[:alnum:] ]+:[[:alnum:]_-]+\.c:[[:digit:]]+:(SSL alert number \d+:)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps)?/smtpd\[[[:digit:]]+\]: warning: TLS library problem: [[:digit:]]+:error:[[:xdigit:]]+:SSL routines:SSL2?3_[[:upper:]_]+:[[:alnum:] ]+:[[:alnum:]_-]+\.c:[[:digit:]]+:(SSL alert number [[:digit:]]+:)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps)?/smtpd\[[[:digit:]]+\]: warning: network_biopair_interop: error (reading|writing) [[:digit:]]+ bytes (from|to) the network: Connection reset by peer$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps)?/smtpd?\[[[:digit:]]+\]: ((Anonymous|Untrusted|Trusted|Verified) )?TLS connection established (to|from) [^[:space:]]+: (TLSv1(.2)?|SSLv[23]) with cipher [^[:space:]]+ \([/[:digit:]]+ bits\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps)?/smtpd\[[[:digit:]]+\]: SSL_accept error from [._[:alnum:]-]+\[[[:xdigit:].:]{3,39}\](: (-?[\d]+|lost connection|Connection timed out|Connection reset by peer))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps)?/smtpd\[[[:digit:]]+\]: SSL_accept error from [._[:alnum:]-]+\[[[:xdigit:].:]{3,39}\](: (-?[[[:digit:]]]+|lost connection|Connection timed out|Connection reset by peer))?$
 #connection
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps)?/smtpd\[[[:digit:]]+\]: (dis)?connect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\]( ehlo=[[:digit:]]+ mail=[[:digit:]]+ rcpt=[[:digit:]]+ data=[[:digit:]]+ quit=[[:digit:]]+ commands=[[:digit:]]+)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps)?/smtpd\[[[:digit:]]+\]: lost connection after [[:upper:]]+( \([[:digit:]]+ bytes\))? from [._[:alnum:]-]+\[(unknown|[[:xdigit:].:]{3,39})\]$
@@ -14,7 +14,7 @@
 #login
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps)?/smtpd\[[[:digit:]]+\]: [[:alnum:]]+: client=[^[:space:]]+, sasl_method=[-[:alnum:]]+, sasl_username=[-_.@[:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps)?/smtpd\[[[:digit:]]+\]: warning: [-._[:alnum:]]+\[[.[:digit:]]+\]: SASL ((LOGIN|login)|(PLAIN|plain)|(DIGEST|CRAM)-MD5|APOP) authentication failed(:[ [:alnum:]]*)?$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps)?/smtpd\[[[:digit:]]+\]: SSL_accept error from [._[:alnum:]-]+\[[[:xdigit:].:]{3,39}\](: (-?[\d]+|lost connection|Connection timed out|Connection reset by peer))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps)?/smtpd\[[[:digit:]]+\]: SSL_accept error from [._[:alnum:]-]+\[[[:xdigit:].:]{3,39}\](: (-?[[[:digit:]]]+|lost connection|Connection timed out|Connection reset by peer))?$
 #milter
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:xdigit:]]+: milter-reject: END-OF-MESSAGE from [-._[:alnum:]]+\[([.[:digit:]]+|[:[:xdigit:]]+)\]: 5\.7\.1 Blocked by SpamAssassin; from=<[^[:space:]]*> to=<[^[:space:]]*> proto=E?SMTP helo=<[^[:space:]]+>$
 #policyd-weight
