@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/FloRinke/logcheck-rules.svg?style=svg)](https://circleci.com/gh/FloRinke/logcheck-rules)
 # logcheck-rules
 Collection of logcheck-rules that proved useful on systems I manage in order to avoid unnecessary email alerts.
 
@@ -10,4 +11,3 @@ Rules are sorted by daemon and (sometimes) originating distrubution, submodule o
 Some rules are derived from standard rule bundled with logcheck package and expanded for newer versions of software, added features etc. Others are created from scratch for the same usecase. Anyways, these rules are designed to be used alongside the logcheck-bundled rules and don't intend to be a complete standalone rulest.
 
 Additions and corrections are welcome. I was frustrated I couldn't find a database for up-to-date logcheck rules, so I looked for a useful way to manage my rules across several systems. If it helps other people, even better.
-
