@@ -53,7 +53,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info main::purge_(tables|session_table|one_time_ticket_table|orphan_bounces)\(\) (task_manager::)?purge_(tables|session_table|one_time_ticket_table|orphan_bounces)\(\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info main::purge_orphan_bounces\(\) removing orphan Bounce for user [[:alnum:]@._+-]+ in list [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info SympaSession::purge_old_(tickets|sessions)\(\) SympaSession::purge_old_(tickets|sessions)\(\*\)
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info List::_include_users_file\(\) include [[:digit:]]+ new users from file [[:alnum:]/.-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info List::_include_users_file\(\) include [[:digit:]]+ new users from file [[:alnum:]/_.-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: notice main::create\(\) creation of /var/spool/sympa/task/[[:alnum:]@._-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: notice main::create\(\) with model /usr/share/sympa/default/(global|list)_task_models/[[:alnum:]._-]+\.task$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: notice main::execute\(\) Running task /var/spool/sympa/task/[[:alnum:]@._-]+, line [[:digit:]]+ with vars \)$
