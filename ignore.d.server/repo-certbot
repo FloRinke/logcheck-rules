@@ -1,0 +1,2 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ certbot\[[[:digit:]]+\]: The following certs are not due for renewal yet:$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: /[-./[:alnum:]]+/fullchain.pem \(skipped\)$
