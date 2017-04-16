@@ -34,6 +34,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info WWSympa started$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info Auth::create_one_time_ticket\(\) Auth::create_one_time_ticket\([[:alnum:]@._+-]+,[[:alnum:].-]+,choosepasswd,[[:xdigit:].:]+\) value = [[:digit:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info Auth::get_one_time_ticket\(\) xxxx Auth::get_one_time_ticket\([[:digit:]]+\) : result : (success|closed)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info Auth::get_one_time_ticket\(\) Auth::get_one_time_ticket: ticket [[:digit:]]+ from [[:alnum:]@._+-]+ has been used before \([^\)]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info info List::_include_users_file\(\) include [[:digit:]]+ new users from file [[:alnum:]/_.-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info List::insert_delete_exclusion\(\) List::insert_delete_exclusion\("[[:alnum:]@._+-]+", "[[:alnum:].-]+", "[[:alnum:].-]+", "(insert|delete)", ""\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: info SympaSession::renew\(\) \[robot [._[:alnum:]-]+\] \[session [[:digit:]]{14}\] \[client [[:xdigit:].:]+\] \[user [[:alnum:]@._+-]+\] new session [[:digit:]]{14}$
