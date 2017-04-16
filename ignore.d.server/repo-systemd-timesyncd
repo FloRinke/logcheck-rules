@@ -1,1 +1,1 @@
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-timesyncd\[[:[:digit:]]+\]: [.[:alnum:]]+/[.[:alnum:]]+/[.[:alnum:]]+/[.[:alnum:]]+/[.[:alnum:]]+ [.[:alnum:]]+/(-|\+)[.[:alnum:]]+/[.[:alnum:]]+/[.[:alnum:]]+/(-|\+)[.[:alnum:]]+$
+\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-timesyncd\[[[:digit:]]+\]: interval/delta/delay/jitter/drift [.[:digit:]]+s/(-|\+)[.[:digit:]]+s/[.[:digit:]]+s/[.[:digit:]]+s/(\+|-)[.[:digit:]]+ppm(?: \(ignored\))?$
