@@ -71,6 +71,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: notice main::select_subs\(\) --> user [^[:space:]]+ has been selected$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: notice main::send_msg\(\) --> message sent to [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: notice main::send_msg\(\) line [[:digit:]]+ : send_msg \(@selection remind\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: notice List::notify_bouncers\(\) Notifying bouncing subsrciber of list [^[:space:]]+] : [[:alnum:]@._+-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: notice List::sync_include\(\) List:sync_include\([[:alnum:].-]+\): [[:digit:]]+ users updated$
 #bulk
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ bulk\[[0-9]+\]: notice Done sending message (<[^[:space:]]+>)? to list [^[:space:]]+ \(priority [[:digit:]]+\) in [[:digit:]]+ seconds since scheduled expedition date.$
