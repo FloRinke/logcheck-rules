@@ -8,7 +8,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps)?/smtpd\[[[:digit:]]+\]: lost connection after [[:upper:]]+( \([[:digit:]]+ bytes\))? from [._[:alnum:]-]+\[(unknown|[[:xdigit:].:]{3,39})\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps)?/smtpd\[[[:digit:]]+\]: timeout after [-[:upper:]]+( \([[:digit:]]+ bytes\))? from [^[:space:]]+$
 #behavior
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps)?/smtpd\[[[:digit:]]+\]: improper command pipelining after (EHLO|DATA|MAIL|QUIT) from [^\[]]+\[[\.:[:xdigit:]]+\]:( QUIT\\r\\n)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps)?/smtpd\[[[:digit:]]+\]: improper command pipelining after (HELO|EHLO|DATA|MAIL|QUIT) from [^\[]]+\[[\.:[:xdigit:]]+\]:( QUIT\\r\\n)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps)?/smtpd\[[[:digit:]]+\]: [[:upper:][:digit:]]+: reject: (MAIL|RCPT|VRFY) from [^[:space:]]+: [45][[:digit:]][[:digit:]]( [45](\.[[:digit:]]){2})? <[^[:space:]]*>: ((Sender|Recipient) address|Client host) rejected: .+;( from=<[^[:space:]]*>)?( to=<[^[:space:]]+>)? proto=E?SMTP( helo=<[^[:space:]]+>)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps)?/smtpd\[[[:digit:]]+\]: warning: hostname [[:alnum:]_\.-]+ does not resolve to address [[:xdigit:]\.:]+(: Name or service not known)?$
 #login
