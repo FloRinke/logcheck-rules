@@ -8,6 +8,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[[:digit:]]+\.[[:digit:]]+\] usb-storage 1-[[:digit:]]:1.0: USB Mass Storage device detected$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[[:digit:]]+\.[[:digit:]]+\] sd [[:digit:]]+:0:0:[[:digit:]]: \[sd[[:alpha:]]\] No Caching mode page found$
 #udiskd
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ udisksd\[[[:digit:]]+\]: Mounted /dev/sd[[:alpha:]](?:[[:digit:]])? at /run/media/[[:alnum:]]+/[[:alnum:]]+ on behalf of uid [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ udisksd\[[[:digit:]]+\]: Mounted /dev/sd[[:alpha:]]([[:digit:]])? at /run/media/[[:alnum:]]+/[[:alnum:]]+ on behalf of uid [[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ udisksd\[[[:digit:]]+\]: Cleaning up mount point /run/media/[[:alnum:]]+/[[:alnum:]]+ \(device [[[:digit:]]:]+ is not mounted\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ udisksd\[[[:digit:]]+\]: Unmounted /dev/[[:alpha:]](?:[[:digit:]])? on behalf of uid [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ udisksd\[[[:digit:]]+\]: Unmounted /dev/[[:alpha:]]([[:digit:]])? on behalf of uid [[:digit:]]+$
