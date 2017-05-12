@@ -1,4 +1,4 @@
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; accepted connection from [[:alnum:]._-]; client [[:xdigit:].:]+ \([[:alnum:]._-]+\)$$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; accepted connection from [[:alnum:]._-]+; client: [[:xdigit:].:]+ \([[:alnum:]._-]+\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; mlfi_data: queue id: <[[:xdigit:]]+>$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; mlfi_eom: tempfile=/tmp/[^,]+, size=[[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; spamdscan: (start|finish) scanning message on 127\.0\.0\.1$
