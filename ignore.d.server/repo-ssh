@@ -16,3 +16,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: fatal: no hostkey alg \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnected from [[:xdigit:]:\.]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Accepted [.[:alnum:]]+ for [.[:alnum:]]+ from [.[:alnum:]]+ port [.[:alnum:]]+ [.[:alnum:]]+: [.[:alnum:]]+ [[:xdigit:]:]*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Connection from [:.[:xdigit:]]+ port [[:digit:]]+ on [:.[:xdigit:]]+ port [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Set /proc/self/oom_score_adj to -?[[:digit:]]+
