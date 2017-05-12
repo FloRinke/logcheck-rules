@@ -1,1 +1,1 @@
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ snmpd\[[[:digit:]+]\]: error on subcontainer 'ia_addr' insert \(-1\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ snmpd\[[[:digit:]]+\]: error on subcontainer 'ia_addr' insert \(-1\)$
