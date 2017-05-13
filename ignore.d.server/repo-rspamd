@@ -27,3 +27,6 @@
 
 #rspamd_bayes
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:xdigit:]]{6}>; bayes; bayes_classify: ignore bayes probability [[:digit:].]+ since we have too few text tokens: [[:digit:]]+, at least [[:digit:]]+ is required$
+
+#rspamd_mime
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:xdigit:]]{6}>; task; rspamd_mime_text_to_utf8: converted from ISO_8859-1:1987 to UTF-8 inlen: [[:digit:]]+, outlen: [[:digit:]]+$
