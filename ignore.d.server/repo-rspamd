@@ -10,23 +10,24 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; spamdscan: scan, time: [[:digit:].]+, server: 127.0.0.1, metric: default: \[-?[[:digit:].]{5} \/ [[:digit:].]+\], symbols: (([[:upper:][:digit:]_]+)\(-?[[:digit:].]{4}\)\[[^\]]*\](, )?)*$
 
 #rspamd-map
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:xdigit:]]{6}>; map; http_map_finish: read map data from rspamd\.com \([[:digit:]]+ bytes compressed, [[:digit:]]+ uncompressed\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:xdigit:]]{6}>; map; rspamd_kv_list_fin: read hash of [[:digit:]]+ elements$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:xdigit:]]{6}>; map; rspamd_map_read_cached: read map data from rspamd\.com \(cached\) \([[:digit:]]+ bytes compressed, [[:digit:]]+ uncompressed\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; map; http_map_finish: read map data from rspamd\.com \([[:digit:]]+ bytes compressed, [[:digit:]]+ uncompressed\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; map; rspamd_kv_list_fin: read hash of [[:digit:]]+ elements$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; map; rspamd_map_read_cached: read map data from rspamd\.com \(cached\) \([[:digit:]]+ bytes compressed, [[:digit:]]+ uncompressed\)$
 
 #rspamd-task
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:xdigit:]]{6}>; task; accept_socket: accepted connection from 127.0.0.1 port [[:digit:]]+, task ptr: [[:xdigit:]]{16}$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:xdigit:]]{6}>; task; rspamd_protocol_http_reply: regexp statistics: [[:digit:]]+ pcre regexps scanned, [[:digit:]]+ regexps matched, [[:digit:]]+ regexps total, [[:digit:]]+ regexps cached, [[:digit:]]+B bytes scanned using pcre, [[:digit:].]+k bytes scanned total$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:xdigit:]]{6}>; task; rspamd_mime_part_get_cte: detected missing CTE for part as: 7bit$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; accept_socket: accepted connection from 127.0.0.1 port [[:digit:]]+, task ptr: [[:xdigit:]]{16}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; rspamd_protocol_http_reply: regexp statistics: [[:digit:]]+ pcre regexps scanned, [[:digit:]]+ regexps matched, [[:digit:]]+ regexps total, [[:digit:]]+ regexps cached, [[:digit:]]+B bytes scanned using pcre, [[:digit:].]+k bytes scanned total$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; rspamd_mime_part_get_cte: detected missing CTE for part as: 7bit$
 
 #rspamd_message_parse
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:xdigit:]]{6}>; task; rspamd_message_parse: loaded message; id: <[[:alnum:].+_-]+@[[:alnum:].-]+>; queue-id: <[[:xdigit:]]{10}>; size: [[:digit:]]+; checksum: <[[:xdigit:]]{32}>
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; rspamd_message_parse: loaded message; id: <[[:alnum:].+_-]+@[[:alnum:].-]+>; queue-id: <[[:xdigit:]]{10}>; size: [[:digit:]]+; checksum: <[[:xdigit:]]{32}>
 
 #rspamd_task_write_log
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:xdigit:]]{6}>; task; rspamd_task_write_log: id: <[[:alnum:]._+=-]+@[[:alnum:].-]+>, qid: <[[:xdigit:]]{10}>, ip: [[:xdigit:].:]+, from: <[[:alnum:]._+=-]+@[[:alnum:].-]+>, \(default: F \((no action|add header)\): \[-?[[:digit:].]+\/[[:digit:].]+\] \[(([[:upper:][:digit:]_]+)\(-?[[:digit:].]{4}\)\{[^\}]*\},?)*\]\), len: [[:digit:]]+, time: [[:digit:].]+ms real, [[:digit:].]+ms virtual, dns req: [[:digit:]]+, digest: <[[:xdigit:]]{32}>, rcpts: <[[:alnum:]._+-]+@[[:alnum:].-]+>, mime_rcpt: <[[:alnum:]._+-]+@[[:alnum:].-]+>
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; rspamd_task_write_log: id: <[[:alnum:]._+=-]+@[[:alnum:].-]+>, qid: <[[:xdigit:]]{10}>, ip: [[:xdigit:].:]+, from: <[[:alnum:]._+=-]+@[[:alnum:].-]+>, \(default: F \((no action|add header)\): \[-?[[:digit:].]+\/[[:digit:].]+\] \[(([[:upper:][:digit:]_]+)\(-?[[:digit:].]{4}\)\{[^\}]*\},?)*\]\), len: [[:digit:]]+, time: [[:digit:].]+ms real, [[:digit:].]+ms virtual, dns req: [[:digit:]]+, digest: <[[:xdigit:]]{32}>, rcpts: <[[:alnum:]._+-]+@[[:alnum:].-]+>, mime_rcpt: <[[:alnum:]._+-]+@[[:alnum:].-]+>
 
 #rspamd_bayes
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:xdigit:]]{6}>; bayes; bayes_classify: ignore bayes probability [[:digit:].]+ since we have too few text tokens: [[:digit:]]+, at least [[:digit:]]+ is required$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; bayes; bayes_classify: ignore bayes probability [[:digit:].]+ since we have too few text tokens: [[:digit:]]+, at least [[:digit:]]+ is required$
 
 #rspamd_mime
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:xdigit:]]{6}>; task; rspamd_mime_text_to_utf8: converted from ISO_8859-1:1987 to UTF-8 inlen: [[:digit:]]+, outlen: [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; rspamd_mime_text_to_utf8: converted from ISO_8859-1:1987 to UTF-8 inlen: [[:digit:]]+, outlen: [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; rspamd_mime_parse_message: cannot find content-type for a message, assume text/plain$
