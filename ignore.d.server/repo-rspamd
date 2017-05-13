@@ -1,10 +1,12 @@
 #rmilter
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; accepted connection from [[:alnum:]._-]+; client: [[:xdigit:].:]+ \(([[:alnum:]._-]+|[[:digit:].:])\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; accepted connection from [[:alnum:]._-]+; client: [[:xdigit:].:]+ \(([[:alnum:]._-]+|\[[[:xdigit:].:]+\])\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; mlfi_data: queue id: <[[:xdigit:]]+>$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; mlfi_eom: tempfile=/tmp/[^,]+, size=[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; mlfi_eom: add spam header to message according to spamd action$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; spamdscan: (start|finish) scanning message on 127\.0\.0\.1$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; clamscan: (start|finish) scanning message on /var/run/clamav/clamd.ctl$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; clamscan: scan [[:digit:].]+, /var/run/clamav/clamd.ctl, /tmp/msg.[^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; msg done: queue_id: <[[:xdigit:]]{10}>; message id: <[[:alnum:]._+=-]+@[[:alnum:].-]+>; ip: [[:xdigit:].:]+; from: <[[:alnum:]._+=-]+@[[:alnum:].-]+>; rcpt: <[[:alnum:]._+-]+@[[:alnum:].-]+> \([[:digit:]]+ total\); user: unauthorized; spam scan: (no spam|action: add header); virus scan: clean; dkim: not signed, ignored$
 
 #rspamd-map
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:xdigit:]]{6}>; map; http_map_finish: read map data from rspamd\.com \([[:digit:]]+ bytes compressed, [[:digit:]]+ uncompressed\)$
