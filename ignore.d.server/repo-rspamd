@@ -1,3 +1,4 @@
+#rmilter
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; accepted connection from [[:alnum:]._-]+; client: [[:xdigit:].:]+ \(([[:alnum:]._-]+|[[:digit:].:])\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; mlfi_data: queue id: <[[:xdigit:]]+>$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; mlfi_eom: tempfile=/tmp/[^,]+, size=[[:digit:]]+$
@@ -5,8 +6,16 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; clamscan: (start|finish) scanning message on /var/run/clamav/clamd.ctl$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; clamscan: scan [[:digit:].]+, /var/run/clamav/clamd.ctl, /tmp/msg.[^[:space:]]+$
 
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\)<[[:alnum:]]{6}>; map; http_map_finish: read map data from rspamd\.com \([[:digit:]]+ bytes compressed, [[:digit:]]+ uncompressed\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\)<[[:alnum:]]{6}>; map; rspamd_kv_list_fin: read hash of [[:digit:]]+ elements$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\)<[[:alnum:]]{6}>; map; rspamd_map_read_cached: read map data from rspamd\.com \(cached\) \([[:digit:]]+ bytes compressed, [[:digit:]]+ uncompressed\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\)<[[:alnum:]]{6}>; task; accept_socket: accepted connection from 127.0.0.1 port [[:digit:]]+, task ptr: [[:xdigit:]]{16}$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\)<[[:alnum:]]{6}>; rspamd_message_parse: loaded message; id: <[[:xdigit:]]+@[[:alnum:].-]+>; queue-id: <[[:xdigit:]]{10}>; size: [[:digit:]]+; checksum: <[[:xdigit:]]{32}>
+#rspamd-map
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; map; http_map_finish: read map data from rspamd\.com \([[:digit:]]+ bytes compressed, [[:digit:]]+ uncompressed\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; map; rspamd_kv_list_fin: read hash of [[:digit:]]+ elements$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; map; rspamd_map_read_cached: read map data from rspamd\.com \(cached\) \([[:digit:]]+ bytes compressed, [[:digit:]]+ uncompressed\)$
+
+#rspamd-task
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; accept_socket: accepted connection from 127.0.0.1 port [[:digit:]]+, task ptr: [[:xdigit:]]{16}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; rspamd_protocol_http_reply: regexp statistics: [[:digit:]]+ pcre regexps scanned, [[:digit:]]+ regexps matched, [[:digit:]]+ regexps total, [[:digit:]]+ regexps cached, [[:digit:]]+B bytes scanned using pcre, [[:digit:].]+k bytes scanned total$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; rspamd_mime_part_get_cte: detected missing CTE for part as: 7bit$
+
+#rspamd_message_parse
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; rspamd_message_parse: loaded message; id: <[[:xdigit:]._-]+@[[:alnum:].-]+>; queue-id: <[[:xdigit:]]{10}>; size: [[:digit:]]+; checksum: <[[:xdigit:]]{32}>
+
