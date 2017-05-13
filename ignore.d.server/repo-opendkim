@@ -12,4 +12,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: no signature data$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: DKIM verification successful$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: DKIM-Signature field added \(s=[[:alnum:]._-]+, d=[[:alnum:]._-]+\)
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: [[:alnum:].-]+ \[[[:xdigit:]:.]\] not internal$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: [[:alnum:].-]+ \[[[:xdigit:]:.]+\] not internal$

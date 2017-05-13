@@ -1,2 +1,2 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ bird6?: Netlink: File exists$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ bird6?: \[dn42\] ROA check failed for [[:xdigit:].:]/[[:digit:]]{1,2} ASN [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ bird6?: \[dn42\] ROA check failed for [[:xdigit:].:]+/[[:digit:]]{1,2} ASN [[:digit:]]+$
