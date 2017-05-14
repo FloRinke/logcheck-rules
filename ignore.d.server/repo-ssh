@@ -7,7 +7,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Postponed publickey for [[:alnum:]]+ from [:.[:xdigit:]]+ port [[:digit:]]+ ssh2 \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: invalid public DH value: <= 1 \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnecting: bad client public DH value \[preauth\]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnecting: Change of username or service not allowed: \([[:alnum:]]+,ssh-connection\) -> \([[:alnum:]]+,ssh-connection\) \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnecting: Change of username or service not allowed: \([[:alnum:]]+,ssh-connection\) -> \([[:alnum:]]+,ssh-connection?\)? \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: fatal: Read from socket failed: Connection reset by peer \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: fatal: Unable to negotiate a key exchange method \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: fatal: no matching cipher found: client [[:alnum:],\.@-]+ server [[:alnum:],\.@-]+ \[preauth\]$
