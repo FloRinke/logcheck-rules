@@ -7,6 +7,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; clamscan: (start|finish) scanning message on /var/run/clamav/clamd.ctl$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; clamscan: scan [[:digit:].]+, /var/run/clamav/clamd.ctl, /tmp/msg.[^[:space:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; msg done: queue_id: <[[:xdigit:]]{10}>; message id: <[[:alnum:]._+=-]+@[[:alnum:].-]+>; ip: [[:xdigit:].:]+; from: <[[:alnum:]._+=-]+@[[:alnum:].-]+>; rcpt: <[[:alnum:]._+-]+@[[:alnum:].-]+> \([[:digit:]]+ total\); user: unauthorized; spam scan: (no spam|action: add header); virus scan: clean; dkim: not signed, ignored$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; rate_check: ratelimit exceeded for key: <[[:alnum:]._+=-]+@[[:alnum:].-]+>, count: [[:digit:].]+, burst: [[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; spamdscan: scan, time: [[:digit:].]+, server: 127.0.0.1, metric: default: \[-?[[:digit:].]{5} \/ [[:digit:].]+\], symbols: (([[:upper:][:digit:]_]+)\(-?[[:digit:].]{4}\)\[[^\]]*\](, )?)*$
 
 #rspamd-map
@@ -18,6 +19,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; accept_socket: accepted connection from 127.0.0.1 port [[:digit:]]+, task ptr: [[:xdigit:]]{16}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; rspamd_protocol_http_reply: regexp statistics: [[:digit:]]+ pcre regexps scanned, [[:digit:]]+ regexps matched, [[:digit:]]+ regexps total, [[:digit:]]+ regexps cached, [[:digit:]]+B bytes scanned using pcre, [[:digit:].]+k bytes scanned total$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; rspamd_mime_part_get_cte: detected missing CTE for part as: 7bit$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; fuzzy_generate_commands: <[[:alnum:]._+=-]+@[[:alnum:].-]+>, part is shorter than [[:digit:]]+ bytes \([[:digit:]]+ bytes\), skip fuzzy check$
 
 #rspamd_message_parse
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; rspamd_message_parse: loaded message; id: <[[:alnum:].+_-]+@[[:alnum:].-]+>; queue-id: <[[:xdigit:]]{10}>; size: [[:digit:]]+; checksum: <[[:xdigit:]]{32}>
