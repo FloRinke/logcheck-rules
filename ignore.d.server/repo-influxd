@@ -1,8 +1,10 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ influxd\[[[:digit:]]+\]: \[I\] [[:digit:]TZ:-]+ retention policy shard deletion check commencing service=retention$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ influxd\[[[:digit:]]+\]: \[I\] [[:digit:]TZ:-]+ Snapshot for path [[:alnum:]/_.-]+ written in [[:digit:].]+ms engine=tsm1$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ influxd\[[[:digit:]]+\]: \[I\] [[:digit:]TZ:-]+ new shard group [[:digit:]]+ successfully precreated for database _internal, retention policy monitor service=metaclient$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ influxd\[[[:digit:]]+\]: \[I\] [[:digit:]TZ:-]+ deleted shard group [[:digit:]]+ from database _internal, retention policy monitor service=retention$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ influxd\[[[:digit:]]+\]: \[I\] [[:digit:]TZ:-]+ shard ID [[:digit:]]+ from database _internal, retention policy monitor, deleted service=retention
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ influxd\[[[:digit:]]+\]: \[I\] [[:digit:]TZ:-]+ beginning (level 1|level 2|full) compaction of group [[:digit:]]+, [[:digit:]]+ TSM files engine=tsm1
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ influxd\[[[:digit:]]+\]: \[I\] [[:digit:]TZ:-]+ compacting (level 1|level 2|full) group \(0\) [[:alnum:]/_.-]+.tsm \(#[[:digit:]]\) engine=tsm1$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ influxd\[[[:digit:]]+\]: \[I\] [[:digit:]TZ:-]+ compacted (level 1|level 2|full) group \(0\) into [[:alnum:]/_.-]+.tsm.tmp (#0) engine=tsm1
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ influxd\[[[:digit:]]+\]: \[I\] [[:digit:]TZ:-]+ compacted (level 1|level 2|full) group \(0\) into [[:alnum:]/_.-]+.tsm.tmp \(#0\) engine=tsm1
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ influxd\[[[:digit:]]+\]: \[I\] [[:digit:]TZ:-]+ compacted (level 1|level 2|full) [[:digit:]]+ files into [[:digit:]]+ files in [[:digit:].]+s engine=tsm1$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ influxd\[[[:digit:]]+\]: \[I\] [[:digit:]TZ:-]+ [[:alnum:]/_.-]+ database index loaded in [[:digit:].]+µs service=shard
