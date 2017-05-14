@@ -53,6 +53,7 @@
 #archived
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ archived\[[0-9]+\]: notice Archiving [^[:space:]]+ for list [^[:space:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ archived\[[0-9]+\]: err tools::smime_sign_check\(\) Unable to check S/MIME signature : an error occurred decrypting or verifying the message$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ archived\[[0-9]+\]: err tools::valid_email\(\) Invalid email address '[^[:space:]]'$
 #task-manager
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info main::eval_bouncers\(\) eval_bouncers\([^\)]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ task_manager\[[0-9]+\]: info main::expire_bounce\(\) expire bounces for subscriber [^[:space:]]+ of list [^[:space:]]+ \(last distribution [[:digit:]]+ \w{3} [[:digit:]]{4}, last bounce [[:digit:]]+ \w{3} [[:digit:]]{4} \)$
