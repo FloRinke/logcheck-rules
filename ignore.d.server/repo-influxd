@@ -6,5 +6,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ influxd\[[[:digit:]]+\]: \[I\] [[:digit:]TZ:-]+ beginning (level 1|level 2|full) compaction of group [[:digit:]]+, [[:digit:]]+ TSM files engine=tsm1
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ influxd\[[[:digit:]]+\]: \[I\] [[:digit:]TZ:-]+ compacting (level 1|level 2|full) group \(0\) [[:alnum:]/_.-]+.tsm \(#[[:digit:]]\) engine=tsm1$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ influxd\[[[:digit:]]+\]: \[I\] [[:digit:]TZ:-]+ compacted (level 1|level 2|full) group \(0\) into [[:alnum:]/_.-]+.tsm.tmp \(#0\) engine=tsm1
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ influxd\[[[:digit:]]+\]: \[I\] [[:digit:]TZ:-]+ compacted (level 1|level 2|full) [[:digit:]]+ files into [[:digit:]]+ files in [[:digit:].]+s engine=tsm1$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ influxd\[[[:digit:]]+\]: \[I\] [[:digit:]TZ:-]+ compacted (level 1|level 2|full) [[:digit:]]+ files into [[:digit:]]+ files in [[:digit:].]+m?s engine=tsm1$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ influxd\[[[:digit:]]+\]: \[I\] [[:digit:]TZ:-]+ [[:alnum:]/_.-]+ database index loaded in [[:digit:].]+µs service=shard

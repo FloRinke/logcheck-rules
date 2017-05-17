@@ -1,0 +1,9 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ knotd\[[[:digit:]]+\]: info: \[[[:alnum:].-]+\.\] DNSSEC, signing zone$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ knotd\[[[:digit:]]+\]: info: \[[[:alnum:].-]+\.\] DNSSEC, signing started$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ knotd\[[[:digit:]]+\]: info: \[[[:alnum:].-]+\.\] DNSSEC, successfully signed$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ knotd\[[[:digit:]]+\]: info: \[[[:alnum:].-]+\.\] DNSSEC, next signing at [[:digit:]-]{10}T[[:digit:]:]{8}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ knotd\[[[:digit:]]+\]: info: \[[[:alnum:].-]+\.\] DNSSEC, loaded key, tag [[:digit:]]+, algorithm [[:digit:]]{1,2}, KSK (yes|no), ZSK (yes|no), public (yes|no), active (yes|no)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ knotd\[[[:digit:]]+\]: info: \[[[:alnum:].-]+\.\] zone file updated, serial [[:digit:]]+ -> [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ knotd\[[[:digit:]]+\]: info: \[[[:alnum:].-]+\.\] notify, outgoing, [[:xdigit:].:]+@[[:digit:]]+: serial [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ knotd\[[[:digit:]]+\]: info: \[[[:alnum:].-]+\.\] IXFR, outgoing, [[:xdigit:].:]+@[[:digit:]]+: started, serial [[:digit:]]+ -> [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ knotd\[[[:digit:]]+\]: info: \[[[:alnum:].-]+\.\] IXFR, outgoing, [[:xdigit:].:]+@[[:digit:]]+: finished, [[:digit:].]+ seconds, [[:digit:]]+ messages, [[:digit:]]+ bytes

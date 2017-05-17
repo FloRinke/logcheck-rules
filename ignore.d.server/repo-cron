@@ -16,6 +16,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ run-crons\[[[:digit:]]+\]: \(root\) CMD \(/etc/cron\.daily/prelink\)$
 #hourly
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ run-crons\[[[:digit:]]+\]: \(root\) CMD \(/etc/cron\.hourly/logcheck\.cron\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ run-crons\[[[:digit:]]+\]: \(root\) CMD \(/etc/cron\.daily/borg-backup\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ run-crons\[[[:digit:]]+\]: \(root\) CMD \(/etc/cron\.hourly/borg-backup\)$
 #monthly
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ run-crons\[[[:digit:]]+\]: \(root\) CMD \(/etc/cron\.monthly/ntop-update-geoip-db\)$

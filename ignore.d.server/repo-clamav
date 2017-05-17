@@ -1,1 +1,3 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (daily|main|bytecode)\.c(l|v)d (is up to date|updated) \(version: [[:digit:]]+, sigs: [[:digit:]]+, f-level: [[:digit:]]+, builder: [[:alnum:]]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: Downloading bytecode-[[:digit:]]+\.cdiff \[100%\]
+
