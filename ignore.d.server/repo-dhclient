@@ -1,0 +1,4 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient\[[[:digit:]]+\]: DHCP(REQUEST|RELEASE) (of [.0-9]{7,15} )?on [[:alnum:].-]+ to [.0-9]{7,15} port 67 \(xid=0x[[:xdigit:]]{8}\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient\[[[:digit:]]+\]: message repeated [[:digit:]]+ times: \[.+\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient\[[[:digit:]]+\]: DHCP(NAK|ACK|OFFER) (of [.0-9]{7,15} )?from [.0-9]{7,15}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient\[[[:digit:]]+\]: bound(:| to [.0-9]{7,15} --) renewal in [0-9]+ seconds\.$
