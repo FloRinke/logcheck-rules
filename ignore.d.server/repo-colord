@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ colord\[[[:digit:]]+\]: \(colord:[[:digit:]]+\): Cd-WARNING \*\*: failed to get session \[pid [[:digit:]]+\]: No such device or address$
