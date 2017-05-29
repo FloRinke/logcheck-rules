@@ -1,3 +1,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rsyslogd-2007: action 'action 23' suspended, next retry is [[:alnum:] :]+ \[try http:\/\/www.rsyslog.com\/e\/2007 \]
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ liblogging-stdlog:  \[origin software="rsyslogd" swVersion="[[:digit:].]+" x-pid="[[:digit:]]+" x-info="http://www.rsyslog.com"] rsyslogd was HUPed$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rsyslogd:+ -- MARK --$
 
