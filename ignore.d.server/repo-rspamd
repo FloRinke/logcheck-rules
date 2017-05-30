@@ -14,7 +14,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; spamdscan: too large reply: [[:digit:]]+, skip options$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; cannot add signature for domain [[:alnum:].-]+: not found$
 
-
 #rspamd
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; bayes; bayes_classify: ignore bayes probability [[:digit:].]+ since we have too few text tokens: [[:digit:]]+, at least [[:digit:]]+ is required$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; csession; rspamd_controller_check_password: allow unauthorized connection from a trusted IP ::1
@@ -26,6 +25,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; fuzzy_generate_commands: <[[:alnum:]._+=-]+@[[:alnum:].-]+>, part (hash empty|is shorter than [[:digit:]]+ bytes \([[:digit:]]+ bytes\)), skip fuzzy check$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; fuzzy_insert_result: found fuzzy hash\(txt\) [[:xdigit:]]+ with weight: [[:digit:].]+, probability [[:digit:].]+, in list: FUZZY_DENIED:1$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; make_dns_request_task_common: <[^>]+> stop resolving on reaching [[:digit:]]+ requests$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; rspamd_stat_check_autolearn: <[^>]+>: autolearn ham for classifier 'bayes' as message's score is negative: -[[:digit:].]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; rspamd_controller_learn_fin_task: <::1> learned message as spam: [^[:space:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; rspamd_html_url_is_phished: extract of url '[^']+' failed: TLD part is not detected$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; rspamd_message_parse: loaded message; id: <[^>]+>; queue-id: <([[:xdigit:]]{10}|undef)>; size: [[:digit:]]+; checksum: <[[:xdigit:]]{32}>
