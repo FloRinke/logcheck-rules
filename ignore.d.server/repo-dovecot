@@ -9,9 +9,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: (Disconnected|Aborted login)(: Inactivity( during authentication)?|: Too many invalid commands)? (\((no auth attempts in [[:digit:]]+ secs|tried to use disallowed plaintext auth|disconnected before greeting, waited [[:digit:]]+ secs)?\):( user=<[-_.@[:alnum:]]*>,)?|\((auth failed, [[:digit:]]+ attempts( in [[:digit:]]+ secs)?|client didn't finish SASL auth, waited [[:digit:]]+ secs)\): user=<[^>]*>, method=PLAIN,|\(aborted authentication\): method=PLAIN,) rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, secured)?(, (TLS|SSL)( handshaking)?(: Disconnected)?)?(: SSL_(accept|read)\(\) syscall failed: Connection reset by peer|: SSL_(accept|read)\(\) failed: error:[[:xdigit:]]{8}:[^,]+)?(, session=<[[:alnum:]/+]+>)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (imap|IMAP)\([-_.@[:alnum:]]+\): Connection closed(: Connection reset by peer)?( in=[[:digit:]]+ out=[[:digit:]]+)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (imap|IMAP)\([-_.@[:alnum:]]+\): Connection closed(|: read\(size=[[:digit:]]+\) failed: Connecttion reset by peer) \(IDLE running for [[:digit:].]+ \+ waiting input for [[:digit:].]+ secs, ([[:digit:].]+ in locks, )?[[:digit:]]+ B in \+ [[:digit:]]+\+[[:digit:]]+ B out, state=wait-input\)( in=[[:digit:]]+ out=[[:digit:]]+)?$
-
-#May 29 11:44:40 maggie dovecot: imap(michael.essbach@casa-due-pur.de): Connection closed: read(size=1231) failed: Connection reset by peer (IDLE running for 0.001 + waiting input for 0.001 secs, 2 B in + 10+0 B out, state=wait-input)    in=34340 out=14365865
-
 #ssl
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: ssl-params: Generating SSL parameters$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: ssl-params: SSL parameters regeneration completed$

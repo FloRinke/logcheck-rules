@@ -1,3 +1,2 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpcd\[[[:digit:]]+\]: (eth[[:digit:]]|(en|sl|wl|ww)(o|s[[:digit:]]+(f[[:digit:]]+)?d([[:digit:]]+)?|(P[[:digit:]]+)?p[[:digit:]]+s[[:digit:]]+(f[[:digit:]]+)?(d[[:digit:]]+)?)): [[:xdigit:]:]+ router available$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpcd\[[[:digit:]]+\]: (eth[[:digit:]]|(en|sl|wl|ww)(o|s[[:digit:]]+(f[[:digit:]]+)?d([[:digit:]]+)?|(P[[:digit:]]+)?p[[:digit:]]+s[[:digit:]]+(f[[:digit:]]+)?(d[[:digit:]]+)?)): DHCPv6 REPLY: No Binding$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: (r|R)emoved (reverse|forward) map (on|for|from) [._[:alnum:]-]+(\.| to [.:[:xdigit:]]+)$

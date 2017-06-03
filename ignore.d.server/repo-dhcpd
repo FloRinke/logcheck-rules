@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: (r|R)emoved (reverse|forward) map (on|for|from) [._[:alnum:]-]+(\.| to [.:[:xdigit:]]+)$
