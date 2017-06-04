@@ -1,1 +1,1 @@
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: \/dev\/[^[:space:]]+( \[[^\]]+\])?( \[SAT\])?, SMART (Prefailure|Usage) Attribute: [[:digit:]]+ [_[:alnum:]]+ changed from [[:digit:]]+ to [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[^\]]+\])?( \[SAT\])?, SMART (Prefailure|Usage) Attribute: [[:digit:]]+ [_[:alnum:]]+ changed from [[:digit:]]+ to [[:digit:]]+$
