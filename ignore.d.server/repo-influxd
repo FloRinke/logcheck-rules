@@ -1,6 +1,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ influxd\[[[:digit:]]+\]: \[I\] [[:digit:]TZ:-]+ retention policy shard deletion check commencing service=retention$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ influxd\[[[:digit:]]+\]: \[I\] [[:digit:]TZ:-]+ Snapshot for path [[:alnum:]/_.-]+ written in [[:digit:].]+(m|µ)?s engine=tsm1$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ influxd\[[[:digit:]]+\]: \[I\] [[:digit:]TZ:-]+ new shard group [[:digit:]]+ successfully precreated for database _internal, retention policy monitor service=metaclient$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ influxd\[[[:digit:]]+\]: \[I\] [[:digit:]TZ:-]+ new shard group [[:digit:]]+ successfully precreated for database (_internal|collectd), retention policy (monitor|autogen) service=metaclient$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ influxd\[[[:digit:]]+\]: \[I\] [[:digit:]TZ:-]+ deleted shard group [[:digit:]]+ from database _internal, retention policy monitor service=retention$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ influxd\[[[:digit:]]+\]: \[I\] [[:digit:]TZ:-]+ shard ID [[:digit:]]+ from database _internal, retention policy monitor, deleted service=retention
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ influxd\[[[:digit:]]+\]: \[I\] [[:digit:]TZ:-]+ beginning (level (1|2|3)|full) compaction of group [[:digit:]]+, [[:digit:]]+ TSM files engine=tsm1
