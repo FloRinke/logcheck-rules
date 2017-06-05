@@ -17,12 +17,14 @@
 #rspamd
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; bayes; bayes_classify: ignore bayes probability [[:digit:].]+ since we have too few text tokens: [[:digit:]]+, at least [[:digit:]]+ is required$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; csession; rspamd_controller_check_password: allow unauthorized connection from a trusted IP ::1
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; map; http_map_error: connection with http server terminated incorrectly: ssl connect error: syscall fail: .*$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; map; http_map_finish: read map data from rspamd\.com \([[:digit:]]+ bytes compressed, [[:digit:]]+ uncompressed\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; map; http_map_finish: cannot load map [^[:space:]]+ from rspamd\.com: HTTP error [[:digit:]]{3}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; map; rspamd_kv_list_fin: read hash of [[:digit:]]+ elements$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; map; rspamd_map_read_cached: read map data from rspamd\.com \(cached\) \([[:digit:]]+ bytes compressed, [[:digit:]]+ uncompressed\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; surbl; process_dns_results: <[[:alnum:]@+._-]+> domain \[[[:alnum:]+.-]+\] is in surbl [[:alnum:]+.()-]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; accept_socket: accepted connection from 127.0.0.1 port [[:digit:]]+, task ptr: [[:xdigit:]]{16}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; dkim_module_key_handler: cannot get key for domain [^[:space:]]+: dns request to [^[:space:]]+ failed: requested record is not found$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; fuzzy_check_timer_callback: got IO timeout with server [^[:space:]]+, after [[:digit:]]+ retransmits
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; fuzzy_generate_commands: <[^>]+>, part (hash empty|is shorter than [[:digit:]]+ bytes \([^\)]+ bytes\)), skip fuzzy check$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; fuzzy_insert_result: found fuzzy hash\(txt\) [[:xdigit:]]+ with weight: [[:digit:].]+, probability [[:digit:].]+, in list: FUZZY_DENIED:1$
