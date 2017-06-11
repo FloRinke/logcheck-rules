@@ -1,30 +1,39 @@
 #rmilter
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; accepted connection from [[:alnum:]._-]+; client: [[:xdigit:].:]+ \(([[:alnum:]._-]+|\[[[:xdigit:].:]+\])\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; cannot add signature for domain [[:alnum:].-]+: not found$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; clamscan: (start|finish) scanning message on /var/run/clamav/clamd.ctl$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; clamscan: scan [[:digit:].]+, \/var\/run\/clamav\/clamd\.ctl, (found [^[:space:]]+, )?\/tmp\/msg.[^[:space:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; mlfi_data: queue id: <[[:xdigit:]]+>$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; mlfi_envfrom: client is authenticated as: [[:alnum:]@.-]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; mlfi_envfrom: turn off strict checks for authenticated sender: [[:alnum:]@.-]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; mlfi_eom: tempfile=/tmp/[^,]+, size=[[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; mlfi_eom: add spam header to message according to spamd action$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; spamdscan: (start|finish) scanning message on 127\.0\.0\.1$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; clamscan: (start|finish) scanning message on /var/run/clamav/clamd.ctl$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; clamscan: scan [[:digit:].]+, /var/run/clamav/clamd.ctl, /tmp/msg.[^[:space:]]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; msg done: queue_id: <[[:xdigit:]]*>; message id: <[^>]*>; ip: [[:xdigit:].:]+; from: <[[:alnum:]@._+=-]*>; rcpt: <[[:alnum:]@=._+-]*> \([[:digit:]]+ total\); user: (unauthorized|[[:alnum:]@._+=-]+); spam scan: (skipped, whitelisted|no spam|action: add header); virus scan: clean; dkim: not signed, ignored$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; mlfi_eom: tempfile=/tmp/[^,]+, size=[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; mlfi_eom: rejecting virus [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; msg done: queue_id: <[[:xdigit:]]*>; message id: <[^>]*>; ip: [[:xdigit:].:]+; from: <[[:alnum:]@._+=-]*>; rcpt: <[[:alnum:]@=._+-]*> \([[:digit:]]+ total\); user: (unauthorized|[[:alnum:]@._+=-]+); spam scan: (skipped, whitelisted|no spam|action: add header); virus scan: (clean|rejected, virus found); dkim: (not signed, ignored|skipped, clamav virus)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; rate_check: ratelimit exceeded for key: <[[:alnum:]._+=-]+@[[:alnum:].-]+>, count: [[:digit:].]+, burst: [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; spamdscan: (start|finish) scanning message on 127\.0\.0\.1$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; spamdscan: scan, time: [[:digit:].]+, server: 127.0.0.1, metric: default: \[-?[[:digit:].]+ \/ [[:digit:].]+\], symbols: (([[:upper:][:digit:]_]+)\(-?[[:digit:].]{4}\)\[[^]]*\](, )?)*$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; spamdscan: too large reply: [[:digit:]]+, skip options$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rmilter\[[[:digit:]]+\]: <[[:xdigit:]]+>; cannot add signature for domain [[:alnum:].-]+: not found$
 
 #rspamd
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) logger; file_log_function: Last message repeated [[:digit:]]+ times$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; bayes; bayes_classify: ignore bayes probability [[:digit:].]+ since we have too few text tokens: [[:digit:]]+, at least [[:digit:]]+ is required$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; csession; rspamd_controller_check_password: allow unauthorized connection from a trusted IP ::1
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; csession; rspamd_controller_check_password: allow unauthorized connection from a trusted IP ::1$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; lua; asn.lua:59: error querying dns: server fail$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; map; http_map_error: connection with http server terminated incorrectly: ssl connect error: syscall fail: .*$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; map; http_map_finish: read map data from rspamd\.com \([[:digit:]]+ bytes compressed, [[:digit:]]+ uncompressed\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; map; http_map_finish: cannot load map [^[:space:]]+ from rspamd\.com: HTTP error [[:digit:]]{3}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; map; rspamd_kv_list_fin: read hash of [[:digit:]]+ elements$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; map; rspamd_map_dns_callback: cannot resolve [^[:space:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; map; rspamd_map_read_cached: read map data from rspamd\.com \(cached\) \([[:digit:]]+ bytes compressed, [[:digit:]]+ uncompressed\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; monitored; rspamd_monitored_dns_cb: DNS reply returned 'no error' for [^[:space:]]+ while 'no records with this name' was expected$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; monitored; rspamd_monitored_propagate_error: invalid return on resolving [^[:space:]]+, disable object$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; monitored; rspamd_monitored_propagate_success: restoring [^[:space:]]+ after [[:digit:].]+ seconds of downtime, total downtime: [[:digit:].]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; surbl; process_dns_results: <[[:alnum:]@+._-]+> domain \[[[:alnum:]+.-]+\] is in surbl [[:alnum:]+.()-]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; surbl; surbl_test_url: disable surbl [^[:space:]]+ as it is reported to be offline$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; accept_socket: accepted connection from 127.0.0.1 port [[:digit:]]+, task ptr: [[:xdigit:]]{16}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; dkim_module_key_handler: cannot get key for domain [^[:space:]]+: dns request to [^[:space:]]+ failed: requested record is not found$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; fuzzy_check_io_callback: got error on IO with server [^[:space:]]+\([[:xdigit:]:.]+\), on read, 111, .*$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; fuzzy_check_timer_callback: got IO timeout with server [^[:space:]]+, after [[:digit:]]+ retransmits
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; fuzzy_generate_commands: <[^>]+>, part (hash empty|is shorter than [[:digit:]]+ bytes \([^\)]+ bytes\)), skip fuzzy check$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: \((normal|controller)\) <[[:alnum:]]{6}>; task; fuzzy_insert_result: found fuzzy hash\(txt\) [[:xdigit:]]+ with weight: [[:digit:].]+, probability [[:digit:].]+, in list: FUZZY_DENIED:1$
