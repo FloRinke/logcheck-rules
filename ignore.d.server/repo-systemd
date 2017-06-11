@@ -5,4 +5,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[ :[:digit:]]+\]: Startup finished in [ :[:digit:]]+ms.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd: pam_unix\([-:[:alnum:]]+\): session closed for user [-:[:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[ :[:digit:]]+\]: Received [[:alnum:]+]+ from PID [ :[:digit:]]+ \(kill\).$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[ :[:digit:]]+\]: apt-daily\.timer: Adding [[:digit:]]+h [[:digit:]]+min [[:digit:].]+s random time\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[ :[:digit:]]+\]: apt-daily\.timer: Adding ([[:digit:]]+h )?([[:digit:]]+min )?([[:digit:].]+s )?random time\.$
