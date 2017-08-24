@@ -5,5 +5,8 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ knotd\[[[:digit:]]+\]: info: \[[[:alnum:].-]+\.\] DNSSEC, loaded key, tag [[:digit:]]+, algorithm [[:digit:]]{1,2}, KSK (yes|no), ZSK (yes|no), public (yes|no), active (yes|no)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ knotd\[[[:digit:]]+\]: info: \[[[:alnum:].-]+\.\] zone file updated, serial [[:digit:]]+ -> [[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ knotd\[[[:digit:]]+\]: info: \[[[:alnum:].-]+\.\] notify, outgoing, [[:xdigit:].:]+@[[:digit:]]+: serial [[:digit:]]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ knotd\[[[:digit:]]+\]: info: \[[[:alnum:].-]+\.\] IXFR, outgoing, [[:xdigit:].:]+@[[:digit:]]+: started, serial [[:digit:]]+ -> [[:digit:]]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ knotd\[[[:digit:]]+\]: info: \[[[:alnum:].-]+\.\] IXFR, outgoing, [[:xdigit:].:]+@[[:digit:]]+: finished, [[:digit:].]+ seconds, [[:digit:]]+ messages, [[:digit:]]+ bytes
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ knotd\[[[:digit:]]+\]: info: \[[[:alnum:].-]+\.\] (A|I)XFR, outgoing, [[:xdigit:].:]+@[[:digit:]]+: started, serial [[:digit:]]+( -> [[:digit:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ knotd\[[[:digit:]]+\]: info: \[[[:alnum:].-]+\.\] (A|I)XFR, outgoing, [[:xdigit:].:]+@[[:digit:]]+: finished, [[:digit:].]+ seconds, [[:digit:]]+ messages, [[:digit:]]+ bytes
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ knotd\[[[:digit:]]+\]: info: \[[[:alnum:].-]+\.\] DDNS, processing [[:digit:]]+ updates$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ knotd\[[[:digit:]]+\]: info: \[[[:alnum:].-]+\.\] DDNS, update finished, serial [[:digit:]]+ -> [[:digit:]]+, [[:digit:].]+ seconds
+

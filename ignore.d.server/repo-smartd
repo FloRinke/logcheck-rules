@@ -1,0 +1,4 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+ (\[(SAT|areca_disk#[[:digit:]]{2}_enc#[[:digit:]]{2})\])?, SMART (Prefailure|Usage) Attribute: [[:digit:]]+ [_[:alnum:]]+ changed from [[:digit:]]+ to [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])? (\[(SAT|areca_disk#[[:digit:]]{2}_enc#[[:digit:]]{2})\])?, starting scheduled (Offline Immediate |(Long|Short) Self-)Test\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])? (\[(SAT|areca_disk#[[:digit:]]{2}_enc#[[:digit:]]{2})\])?, previous self-test completed without error$
+

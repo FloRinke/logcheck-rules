@@ -4,7 +4,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: message has signatures from [[:alnum:]\.-]+(, [[:alnum:]\.-]+)*$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: ADSP query: '[-_\.[:alnum:]]+' reply was unresolved CNAME$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: ADSP query: multiple DNS replies for.*$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: key retrieval failed \(s=[[:alnum:]\._-]+, d=[[:alnum:]\._-]+\): '[[:alnum:]\._-]+' (record not found|query timed out)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: key retrieval failed \(s=[[:alnum:]\._-]+, d=[[:alnum:]\._-]+\)(: '[[:alnum:]\._-]+' (record not found|query timed out))?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: failed to parse (A|a)uthentication-(R|r)esults: header( field)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: can't parse From: header value '[^']*'$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:xdigit:]]{10,11}: ignoring [[:digit:]]+ signatures?$

@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[.[:digit:]]+\] DCCP: Activated CCID [[:digit:]]+ \([ [:alnum:]-]+\)$

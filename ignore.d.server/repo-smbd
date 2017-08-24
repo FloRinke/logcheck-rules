@@ -1,2 +1,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smbd[[ :[:digit:]]+\]:[ [:alnum:]]+...done.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smbd[[ :[:digit:]]+\]:[ [:alnum:]]+\* Reloading [/.[:alnum:]]+ smbd$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smbd[[ :[:digit:]]+\]: \[[ :[:digit:]/.,]+\] [./[:alnum:]:]+\(process_usershare_file\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smbd[[ :[:digit:]]+\]:[ [:alnum:]_:/]+([.[:alnum:]]+) failed. Permission denied$

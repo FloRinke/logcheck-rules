@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nmbd[[ :[:digit:]]+\]: \[[ :[:digit:]/.,]+\] [./[:alnum:]:]+\(send_udp\)$
