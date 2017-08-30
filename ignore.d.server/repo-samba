@@ -1,5 +1,5 @@
 #smbd
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smbd\[[[:digit:]]+\]: pam_unix\(samba:session\): session (opened|closed) for user [^[:space:]]+( by \(uid=0\))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smbd\[[[:digit:]]+\]: pam_unix\(samba:session\): session (opened|closed) for user [ -\\\.[:alnum:]]+( by \(uid=0\))?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smbd\[[[:digit:]]+\]: \[[[:digit:]/: ]+,[[:space:]]+0\] lib/util_sock\.c.+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smbd\[[[:digit:]]+\]: \[[[:digit:]/: ]+,[[:space:]]+0\] libsmb/nmblib\.c.+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smbd\[[[:digit:]]+\]: \[[[:digit:]/: ]+,[[:space:]]+0\] smbd/nttrans\.c.+$
