@@ -1,5 +1,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd: [._[:alnum:]-]+\([._[:alnum:]-]+:[._[:alnum:]-]+\): session opened for user [._[:alnum:]-]+ by \([._[:alnum:]-]+=[._[:digit:]-]+\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[ :[:digit:]]+\]: (Created|Removed) slice user-[[ :[:digit:]]+.slice.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[ :[:digit:]]+\]: (Created|Removed) slice (User Slice of [._[:alnum:]-]+|user-[[ :[:digit:]]+.slice).$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[ :[:digit:]]+\]: (Start|Stopp|Reload)(ing|ed) .+\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[ :[:digit:]]+\]: Reached target (Paths|Timers|Sockets|Basic System|Default|Shutdown).$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[ :[:digit:]]+\]: Startup finished in [ :[:digit:]]+ms.$
