@@ -1,8 +1,8 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd: [._[:alnum:]-]+\([._[:alnum:]-]+:[._[:alnum:]-]+\): session opened for user [._[:alnum:]-]+ by \([._[:alnum:]-]+=[._[:digit:]-]+\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[ :[:digit:]]+\]: (Created|Removed) slice user-[[ :[:digit:]]+.slice.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[ :[:digit:]]+\]: (Created|Removed) slice (User Slice of [._[:alnum:]-]+|user-[[ :[:digit:]]+.slice).$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[ :[:digit:]]+\]: (Start|Stopp|Reload)(ing|ed) .+\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[ :[:digit:]]+\]: Reached target (Paths|Timers|Sockets|Basic System|Default|Shutdown).$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[ :[:digit:]]+\]: Startup finished in [ :[:digit:]]+ms.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd: pam_unix\([-:[:alnum:]]+\): session closed for user [-:[:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[ :[:digit:]]+\]: Received [[:alnum:]+]+ from PID [ :[:digit:]]+ \(kill\).$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[ :[:digit:]]+\]: apt-daily\.timer: Adding ([[:digit:]]+h )?([[:digit:]]+min )?([[:digit:].]+s )?random time\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[ :[:digit:]]+\]: [-_[:alnum:]]+\.timer: Adding ([[:digit:]]+h )?([[:digit:]]+min )?([[:digit:].]+s )?([[:digit:].]+ms )?random time\.$
