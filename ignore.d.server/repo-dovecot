@@ -16,3 +16,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: managesieve-login: Login: user=<[\._@[:alnum:]-]+>, method=[[:alnum:]-]+, rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+, (mpid=[[:digit:]]+, )?(TLS( handshake)?|secured), session=<.{11}/.{4}>$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (MANAGESIEVE|managesieve)\([\._@[:alnum:]-]+\): (Connection closed|Disconnected: Logged out)( bytes=[[:digit:]]+/[[:digit:]]+)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([\._@[:alnum:]-]+\): Logged out in=[[:digit:]]+ out=[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([\._@[:alnum:]-]+\): sieve: left message in mailbox '[^']+'$
