@@ -21,3 +21,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Connection from [:.[:xdigit:]]+ port [[:digit:]]+ on [:.[:xdigit:]]+ port [[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Set /proc/self/oom_score_adj to -?[[:digit:]]+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: pam_geoip\(sshd:account\): location [[:punct:][:space:][:alnum:]]+ allowed for user [-_.@[:alnum:]]+ from [.:[:xdigit:]]+ \(IPv(4|6)\)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Connection closed by [:.[:xdigit:]]+ port [[:digit:]]+ \[preauth\]$
