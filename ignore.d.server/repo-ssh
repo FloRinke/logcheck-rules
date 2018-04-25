@@ -14,7 +14,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: fatal: no matching mac found: client [[:alnum:],\.@-]+ server [[:alnum:],\.@-]+ \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: fatal: no hostkey alg \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: fatal: Write failed: Broken pipe \[preauth\]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Bad protocol version identification '.*' from [[:xdigit:]:\.]+ port [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: (Bad protocol version identification '.*'|Did not receive identification string|Invalid user [.[:alnum:]]+) from [[:xdigit:]:\.]+ port [[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: fatal: no hostkey alg \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnected from [[:xdigit:]:\.]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Accepted [.[:alnum:]]+ for [.[:alnum:]]+ from [.[:alnum:]]+ port [.[:alnum:]]+ [.[:alnum:]]+: [.[:alnum:]]+ [[:xdigit:]:]*$
