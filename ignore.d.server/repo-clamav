@@ -1,3 +1,14 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (daily|main|bytecode)\.c(l|v)d (is up to date|updated) \(version: [[:digit:]]+, sigs: [[:digit:]]+, f-level: [[:digit:]]+, builder: [[:alnum:]]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: Downloading bytecode-[[:digit:]]+\.cdiff \[100%\]
 
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: Loaded [[:digit:]]+ signatures\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: LOCAL: Unix socket file [\/.[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: LOCAL: Setting connection queue length to [[:digit:]]+$
+
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?Limits: [ [:alpha:]]+ limit set to [[:digit:]]+( bytes)?\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?[ [:alpha:]]+ (dis|en)abled\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?Self checking every [[:digit:]]+ seconds\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?SelfCheck: Database status OK\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?Reading databases from [\/.[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?Database correctly reloaded \([[:digit:]]+ signatures\)$
+
