@@ -1,0 +1,6 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ fetchmail?\[[0-9]+\]: terminated with signal [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ fetchmail?\[[0-9]+\]: starting fetchmail [.[:digit:]]+ daemon$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ fetchmail?\[[0-9]+\]: (Stopping|Starting) mail retriever agent: fetchmail\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ fetchmail?\[[0-9]+\]: [[:digit:]]+ Nachricht(|en) für [-_.@[:alnum:]]+ bei [-_.[:alnum:]]+(| ([[[:digit:]]]+ Bytes))\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ fetchmail?\[[0-9]+\]: Nachricht [-_.:@[:alnum:]]+ von [[:digit:]]+ wird gelesen \([[:digit:]]+ Bytes\) gelöscht
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ fetchmail?\[[0-9]+\]: Nachricht [-_.:@[:alnum:]]+:[[:digit:]]+ von [[:digit:]]+ wird gelesen (\([[:digit:]]+ Bytes im Nachrichten(kopf|körper)\) )+gelöscht

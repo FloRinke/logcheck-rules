@@ -1,0 +1,6 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ [[:alpha:]]+\[[0-9]+\]: Successful [[:alpha:]]+ for [_[:alnum:]-]+ by [_[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ [[:alpha:]]+\[[0-9]+\]: \(pam_[[:alnum:]]+\) session closed for user [_[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ [[:alpha:]]+\[[0-9]+\]: \(pam_[[:alnum:]]+\) session opened for user [_[:alnum:]-]+ by ([[:alnum:]-]+)?\(uid=[0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ [[:alpha:]]+(\[[0-9]+\])?: pam_[[:alnum:]]+\([[:alpha:]]+:session\): session closed for user [_[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ [[:alpha:]]+(\[[0-9]+\])?: pam_[[:alnum:]]+\([[:alpha:]]+:session\): session opened for user [_[:alnum:]-]+ by ([[:alnum:]-]+)?\(uid=[0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ [[:alpha:]]+(\[[0-9]+\])?: pam_[[:alpha:]]+\([[:alpha:]]+:session\): Cannot create session: Already running in a session$

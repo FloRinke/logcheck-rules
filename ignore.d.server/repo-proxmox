@@ -1,0 +1,52 @@
+^\[^\w{3} [ :[:digit:]]{11}\] \[error\] \[client [.0-9]+\] File does not exist: /usr/share/pve-manager/images/favicon.ico
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pmxcfs\[[0-9]+\]: \[dcdb\] notice: data verification successful
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pmxcfs\[[0-9]+\]: \[status\] notice: received log
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvedaemon\[[0-9]+\]: received interrupt
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy|spiceproxy)\[[0-9]+\]: starting [0-9]+ worker\(s\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy|spiceproxy)\[[0-9]+\]: worker ([0-9]+ )?(finished|started|exit)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvestatd\[[0-9]+\]: status update time
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ qm\[[0-9]+\]: <root@pam> update VM [0-9]+: -lock backup
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rrdcached\[[0-9]+\]: (flushing old values|removing old journal|rotating journals|started new journal)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: INFO: Backup job finished successfully$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: INFO: starting new backup job: vzdump--quiet 1 --compress lzo --mode snapshot --storage nas-backup --mailto [a-zA-Z0-9._-]+@[a-z0-9._-]+ --mailnotification failure --all 1$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvemailforward\[[0-9]+\]: forward mail to <.*>$
+^[[:alnum:]]{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ [\/\._[:alnum:]-]+\[[0-9]+\]: INFO: Starting Backup of VM [0-9]+ \(qemu\)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: ERROR: Backup of VM [0-9]+ failed - (empty device list|storage '.+' is disabled)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvestatd\[[0-9]+\]: WARNING: command '.+' failed: got timeout$
+^[[:alnum:]]{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ [\/\._[:alnum:]-]+\[[0-9]+\]: INFO: Finished Backup of VM [0-9]+ \([0-9]+:[0-9]+:[0-9]+\)
+^[[:alnum:]]{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ [\/\._[:alnum:]-]+\[[0-9]+\]: INFO: Starting Backup of VM [0-9]+ \(openvz\)$
+^\[[[:alnum:]]{3} [[:alnum:]]{3} [0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2} [0-9]{4}\] \[error\] \[client [0-9]+.[0-9]+.[0-9]+.[0-9]+\] File does not exist: /usr/share/pve-manager/images/favicon.ico
+^[[:alnum:]]{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ [\/\._[:alnum:]-]+\[[0-9]+\]: <root@pam> successful auth for user 'root@pam'
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ corosync\[[0-9]+\]:   \[TOTEM \] Retransmit List: [0-9a-f]+
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ pvedaemon\[[0-9]+\]: INFO: Backup job finished successfully
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ /USR/SBIN/CRON\[[0-9]+\]: \(CRON\) error \(grandchild #[0-9]+ failed with exit status [0-9]+\)
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ pvedaemon\[[0-9]+\]: start VM [0-9]+: UPID:[._[:alnum:]-]+:
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ (pve(daemon|update)|vzdump)\[[0-9]+\]: (<([^>]+){1}> )?starting [ [:alpha:]]+ UPID:[._[:alnum:]-]+:
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ (pve(daemon|update)|vzdump)\[[0-9]+\]: (<([^>]+){1}> )?end task UPID:.+: OK
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ pveupdate\[[0-9]+\]: update new package list: \/var\/lib\/pve-manager\/pkgupdates
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ kernel: CT: [0-9]+: stopped
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ pvedaemon\[[0-9]+\]: <[^>]+> successful auth for user '[^'@]+@pve'
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ download [^ ]+
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ update
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ finished: [0-9]+ OK
+^\w{3} [ :[:digit:]]{11} \[GNUPG:\] GOODSIG [0-1a-f]+ Proxmox Support Team <[^>]+>
+^\w{3} [ :[:digit:]]{11} \[GNUPG:\] SIG_ID [a-z0-1]+ [0-9]+-[0-9]+-[0-9]+ [0-9]+
+^\w{3} [ :[:digit:]]{11} \[GNUPG:\] VALIDSIG 
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+: Good signature from \"Proxmox Support Team <[^>]+>\"
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+: Signature made
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ valid: 
+^\w{3} [ :[:digit:]]{11} \[GNUPG:\] (GOODSIG|SIG_ID)
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+: Good signature from 
+^\w{3} [ :[:digit:]]{11} update sucessful
+^\[GNUPG:\] IMPORT_(OK|RES)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvefw-logger\[[0-9]+\]: (starting|stopping) pvefw logger$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvefw-logger\[[0-9]+\]: received terminate request \(signal\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy|spiceproxy)\[[0-9]+\]: send HUP to [0-9]+$ 
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy|spiceproxy)\[[0-9]+\]: received signal (TERM|HUP)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy|spiceproxy)\[[0-9]+\]: (stopping|(re)?starting|closing) server$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy|spiceproxy)\[[0-9]+\]: server (stopped|closing|shutdown \(restart\))$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pveproxy\[[0-9]+\]: Using '\/etc\/pve\/local\/pveproxy-ssl.pem' as certificate for the web interface\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pveproxy\[[0-9]+\]: Clearing outdated entries from certificate cache$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: INFO: starting new backup job: vzdump --mailnotification failure --quiet 1 --mailto [a-zA-Z.-]+@[a-zA-Z.-]+ --mode snapshot --compress lzo --storage [a-zA-Z.-]+ --all 1$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: INFO: starting new backup job: vzdump( --quiet 1| --compress lzo| --mode snapshot| --storage nas-backup| --mailto [a-zA-Z0-9._-]+@[a-z0-9._-]+| --mailnotification failure| --all 1)+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Stopp|Start)(ing|ed) (PVE API Proxy Server|Proxmox VE firewall logger|PVE SPICE Proxy Server)\.+$

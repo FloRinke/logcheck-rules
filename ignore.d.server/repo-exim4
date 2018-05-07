@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ exim4\[[[:digit:]]+\]: (Stopping MTA: exim4_listener\.|Starting MTA: exim4\.)$
