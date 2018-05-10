@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ corosync\[[0-9]+\]:( notice)?  \[TOTEM \] Retransmit List: [ [:xdigit:]]+$
