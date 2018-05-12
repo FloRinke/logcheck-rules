@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ radvd\[[0-9]+\]: (resuming normal operation|attempting to reread config file)$

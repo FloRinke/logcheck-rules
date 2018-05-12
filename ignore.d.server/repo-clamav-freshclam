@@ -1,0 +1,20 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?\w+\.c(l|v)d (is up to date|updated) \(version: [0-9]+, sigs: [0-9]+, f-level: [0-9]+, builder: \w+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?\w+\.((n|h)db|ign2|c(l|v)d) (is up to date|updated) \(version: custom database(, sigs: [0-9]+|)\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?Can't connect to port [0-9]+ of host [._[:alnum:]-]+ \(IP: [.:[:xdigit:]]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?(\*)?Can't query [._[:alnum:]-]+\.ping\.clamav\.net$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?Downloading .* \[(100%|\*)\]?
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?Received signal: wake up$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?ClamAV update process started at \w{3} \w{3} [ :0-9]{16}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?Database updated \([0-9]+ signatures\) from db.local.clamav.net( \(IP: [.:[:xdigit:]]+\))?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?Clamd successfully notified about the update\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?(WARNING: )?(\^)?getpatch: Can't download [[:alnum:]]+-[0-9]+.cdiff from [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?(WARNING: )?(\^)?getfile: Unknown response from [._[:alnum:]-]+ \(IP: [.:[:xdigit:]]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?Trying host [._[:alnum:]-]+ \([.:[:xdigit:]]+\)...$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?nonblock_connect: connect timing out \([0-9]+ secs\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?connect_error: getsockopt\(SO_ERROR\): fd=[0-9]+ error=[0-9]+: Connection refused$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?(WARNING: )?getfile: [[:alnum:]]+-[0-9]+.cdiff not found on [._[:alnum:]-]+ \(IP: [.:[:xdigit:]]+\)$
+
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (WARNING: )?Your ClamAV installation is OUTDATED!$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: DON'T PANIC! Read http://www.clamav.net/(support/faq|documents/upgrading-clamav)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (WARNING: )?Local version: [0-9.]+ Recommended version: [0-9.]+$
+

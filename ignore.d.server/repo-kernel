@@ -1,0 +1,2 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[\.0-9]+\] CIFS VFS: Server [-_.[:alnum:]]+ has not responded in [[:digit:]]+ seconds\. Reconnecting\.\.\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[\.0-9]+\] CIFS VFS: Send error in Flush = -[[:digit:]+]$

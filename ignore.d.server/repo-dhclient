@@ -1,4 +1,32 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient\[[[:digit:]]+\]: DHCP(REQUEST|RELEASE) (of [.0-9]{7,15} )?on [[:alnum:].-]+ to [.0-9]{7,15} port 67 \(xid=0x[[:xdigit:]]{8}\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient\[[[:digit:]]+\]: DHCP(REQUEST|RELEASE) (of [.0-9]{7,15} )?on [[:alnum:].-]+ to [.0-9]{7,15} port 67( \(xid=0x[[:xdigit:]]{8}\))?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient\[[[:digit:]]+\]: message repeated [[:digit:]]+ times: \[.+\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient\[[[:digit:]]+\]: DHCP(NAK|ACK|OFFER) (of [.0-9]{7,15} )?from [.0-9]{7,15}$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient\[[[:digit:]]+\]: bound(:| to [.0-9]{7,15} --) renewal in [0-9]+ seconds\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?\[[0-9]+\]: Internet (Software|Systems) Consortium DHCP Client [.[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?\[[0-9]+\]: Copyright [-0-9]+ Internet Systems Consortium\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?\[[0-9]+\]: All rights reserved\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?\[[0-9]+\]: For info, please visit http(://www\.isc\.org/(products/DHCP|sw/dhcp/)|s://www\.isc\.org/software/dhcp/)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?\[[0-9]+\]: There is already a pid file /var/run/dhclient\.[[:alnum:]]+\.pid with pid [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?\[[0-9]+\]: killed old client process, removed PID file$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?\[[0-9]+\]:$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?\[[0-9]+\]: Listening on [^[:space:].]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?\[[0-9]+\]: Sending on[[:space:]]+[^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?\[[0-9]+\]: DHCPDISCOVER on [[:alnum:].-]+ to [.0-9]{7,15} port 67 interval [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?\[[0-9]+\]: [[:lower:]]+[0-9]: unknown hardware address type [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?\[[0-9]+\]: Trying recorded lease [.0-9]{7,15}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?\[[0-9]+\]: No working leases in persistent database( - sleeping)?\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?\[[0-9]+\]: send_packet: Network is unreachable$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?\[[0-9]+\]: send_packet: please consult README file regarding broadcast address\.$
+# dhcp-client 2.0
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?\[[0-9]+\]: Copyright (199[5-9],? ){5}(The )?Internet Software Consortium\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?\[[0-9]+\]: Please contribute if you find this software useful\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?\[[0-9]+\]: For info, please visit http://www.isc.org/dhcp-contrib.html$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?\[[0-9]+\]: No DHCPOFFERS received\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient(-2.2.x)?\[[0-9]+\]: Sleeping\.$
+# 3.0
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient\[[0-9]+\]: parse_option_buffer: option [-[:alnum:]]+ \([[:digit:]]+\) larger than buffer\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient\[[0-9]+\]: PRC: Renewing lease on ([.[:alnum:]]+).\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient\[[0-9]+\]: XMT: Re(new|bind) on ([.[:alnum:]]+), interval [[:digit:]]+ms\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient\[[0-9]+\]: RCV: Reply message on ([.[:alnum:]]+) from [.:[:xdigit:]]+\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient\[[0-9]+\]: Packet received, but nothing done with it.$
+

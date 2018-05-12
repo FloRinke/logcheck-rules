@@ -1,0 +1,4 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: Socket Buffers: R=\[[[:digit:]]+\->[[:digit:]]+\] S=\[[[:digit:]]+\->[[:digit:]]+\]$
+
+
+
