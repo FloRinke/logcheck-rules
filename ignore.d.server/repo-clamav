@@ -5,10 +5,11 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: LOCAL: Unix socket file [\/.[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: LOCAL: Setting connection queue length to [[:digit:]]+$
 
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?Limits: [ [:alpha:]]+ limit set to [[:digit:]]+( bytes)?\.$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?[ [:alpha:]]+ (dis|en)abled\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?Limits: [ [:alnum:]]+ limit set to [[:digit:]]+( bytes)?\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?[ [:alnum:]]+ (dis|en)abled\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?Self checking every [[:digit:]]+ seconds\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?SelfCheck: Database status OK\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?SelfCheck: Database modification detected\. Forcing reload\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?Reading databases from [\/.[:alnum:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?Database correctly reloaded \([[:digit:]]+ signatures\)$
 
