@@ -1,6 +1,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(\[[[:digit:]]+\])?: ((a|A)dded new|(r|R)emoved) (reverse|forward) map (on|for|from) [._[:alnum:]-]+ to [.:[:xdigit:]]+$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd\[[[:digit:]]+\]: (Sending Reply to|Renew message from) [.:[:xdigit:]]+ port [[:digit:]]+(, transaction ID 0x[[:xdigit:]]+)?$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd\[[[:digit:]]+\]: Reply NA: address [.:[:xdigit:]]+ to client with duid [.:[:xdigit:]]+ iaid = [-[:digit:]]+ (static|valid for [[:digit:]]+ seconds)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd\[[[:digit:]]+\]: (Sending (Reply|Advertise) to|(Solicit|Confirm|Request|Rebind|Renew) message from) [.:[:xdigit:]]+ port [[:digit:]]+(, transaction ID 0x[[:xdigit:]]+)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd\[[[:digit:]]+\]: (Reply|Advertise) NA: address [.:[:xdigit:]]+ to client with duid [.:[:xdigit:]]+ iaid = [-[:digit:]]+ (static|valid for [[:digit:]]+ seconds)?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd\[[[:digit:]]+\]: Wrote [[:digit:]]+ NA, [[:digit:]]+ TA, [[:digit:]]+ PD leases to lease file\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd\[[[:digit:]]+\]: reuse_lease: lease age [[:digit:]]+ \(secs\) under [[:digit:]]+% threshold, reply with unaltered, existing lease for [.:[:xdigit:]]+$
-
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd\[[[:digit:]]+\]: Picking pool address [.:[:xdigit:]]+
