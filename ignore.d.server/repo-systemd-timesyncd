@@ -1,1 +1,2 @@
 \w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-timesyncd\[[[:digit:]]+\]: interval/delta/delay/jitter/drift [.[:digit:]]+s/(-|\+)[.[:digit:]]+s/[.[:digit:]]+s/[.[:digit:]]+s/(\+|-)[.[:digit:]]+ppm( \(ignored\))?$
+\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-timesyncd\[[[:digit:]]+\]: Synchronized to time server (\[)?[.:[:xdigit:]]+(\])?:[[:digit:]]+ \([-_.[:alnum:]]+\)\.$
