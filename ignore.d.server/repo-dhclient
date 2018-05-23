@@ -26,7 +26,8 @@
 # 3.0
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient\[[0-9]+\]: parse_option_buffer: option [-[:alnum:]]+ \([[:digit:]]+\) larger than buffer\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient\[[0-9]+\]: PRC: Renewing lease on ([.[:alnum:]]+).\.$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient\[[0-9]+\]: XMT: Re(new|bind) on ([.[:alnum:]]+), interval [[:digit:]]+ms\.$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient\[[0-9]+\]: RCV: Reply message on ([.[:alnum:]]+) from [.:[:xdigit:]]+\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient\[[0-9]+\]: XMT: [[:alnum:]]+ on ([.[:alnum:]]+), interval [[:digit:]]+ms\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient\[[0-9]+\]: RCV: [[:alnum:]]+ message on ([.[:alnum:]]+) from [.:[:xdigit:]]+\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient\[[0-9]+\]: Packet received, but nothing done with it.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient\[[0-9]+\]: message status code Success: \"All addresses still on link\.\"$
 
