@@ -41,7 +41,7 @@
 ^\[GNUPG:\] IMPORT_(OK|RES)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvefw-logger\[[0-9]+\]: (starting|stopping) pvefw logger$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvefw-logger\[[0-9]+\]: received terminate request \(signal\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy|spiceproxy)\[[0-9]+\]: send HUP to [0-9]+$ 
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy|spiceproxy)\[[[:digit:]]+\]: send HUP to[[:space:]][[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy|spiceproxy)\[[0-9]+\]: received signal (TERM|HUP)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy|spiceproxy)\[[0-9]+\]: (stopping|(re)?starting|closing) server$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy|spiceproxy)\[[0-9]+\]: server (stopped|closing|shutdown \(restart\))$
