@@ -1,8 +1,9 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sqlservr\[[0-9]+\]: #[- .:[:digit:]]+ (Backup|Server|spid[[:digit:]]+(s)?)[[:space:]]+[[:print:]]+This is an informational message( only)?(\.|;)[[:space:]]+(N|n)o user action is required\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sqlservr\[[0-9]+\]: #[- .:[:digit:]]+ (Backup|Server|spid[[:digit:]]+(s)?)[[:space:]]+Server is listening on [[:print:]]+\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sqlservr\[[0-9]+\]: #[- .:[:digit:]]+ (Backup|Server|spid[[:digit:]]+(s)?)[[:space:]]+Starting up database [\'[:alnum:]]+\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sqlservr\[[0-9]+\]: #[- .:[:digit:]]+ spid[[:digit:]]+(s)?[[:space:]]+Setting database option RECOVERY to (SIMPLE|FULL) for database [\'[:alnum:]]+\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sqlservr\[[0-9]+\]: #[- .:[:digit:]]+ (Backup|Server|spid[[:digit:]]+(s)?)[[:space:]]+The [ [:alpha:]]+endpoint is in disabled or stopped state\.$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sqlservr\[[0-9]+\]: #[- .:[:digit:]]+ (Backup|Server|spid[[:digit:]]+(s)?)[[:space:]]+BACKUP DATABASE [ [:alpha:]]+ successfully processed [[:digit:]]+ pages in [.[:digit:]]+ seconds \([.[:digit:]]+ MB\/sec\)\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sqlservr\[[0-9]+\]: #[- .:[:digit:]]+ (Backup|Server|spid[[:digit:]]+(s)?)[[:space:]]+BACKUP DATABASE ([ [:alpha:]]+)?successfully processed [[:digit:]]+ pages in [.[:digit:]]+ seconds \([.[:digit:]]+ MB\/sec\)\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sqlservr\[[0-9]+\]: #[- .:[:digit:]]+ (Backup|Server|spid[[:digit:]]+(s)?)[[:space:]]+Service Broker manager has (started|shut down)\.$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sqlservr\[[0-9]+\]: #[- .:[:digit:]]+ Server[[:space:]]+Successfully initialized the TLS configuration\. Allowed TLS protocol versions are \['[. [:digit:]]+'\]\. Allowed TLS ciphers are \['[-:![:alnum:]]+'\]\.
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sqlservr\[[0-9]+\]: (#)?[ .:[:digit:]-]+ Server[[:space:]]+Microsoft SQL Server [[:digit:]]+ \([[:alnum:]-]+\) \(KB[[:digit:]]+\) \- [.[:digit:]]+ \(X64\)$
