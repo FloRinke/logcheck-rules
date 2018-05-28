@@ -1,8 +1,12 @@
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ charon: [[:digit:]]+\[(NET|ENV|IKE)\] (received|sending) packet: from [.:[:xdigit:]]+\[[[:digit:]]+\] to [.:[:xdigit:]]+\[[[:digit:]]+\] \([[:digit:]]+ bytes\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(ENC)\] (generating|parsed) INFORMATIONAL_V1 (request|response) [[:digit:]]+ \[ HASH N\(DPD(_ACK)?\) \]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ charon: [[:digit:]]+\[(IKE)\] sending keep alive to [.:[:xdigit:]]+\[[[:digit:]]+\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(NET|ENV|IKE)\] (received|sending) packet: from [.:[:xdigit:]]+\[[[:digit:]]+\] to [.:[:xdigit:]]+\[[[:digit:]]+\] \([[:digit:]]+ bytes\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(ENC)\] (generating|parsed) [[:print:]]+ (request|response) [[:digit:]]+ \[ [ [:punct:][:alpha:]]+ \]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] sending keep alive to [.:[:xdigit:]]+\[[[:digit:]]+\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] sending (DPD request|DELETE for ESP CHILD_SA with SPI [[:xdigit:]]+)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\]( closing expired)? CHILD_SA [[:print:]]+\{[[:digit:]]+\}( established)? with SPIs [[:xdigit:]]+_i [[:xdigit:]]+_o and TS [.:[:digit:]]+\/[[:digit:]]+ \=\=\= [.:[:digit:]]+\/[[:digit:]]+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] (initiating Main Mode|reauthenticating) IKE_SA [[:print:]]+\[[[:digit:]]+\]( to [.:[:xdigit:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE|JOB)\] (DPD check timed out, enforcing DPD action|unable to reauthenticate IKE_SA, no CHILD_SA to recreate|)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] (maximum IKE_SA lifetime|scheduling reauthentication in) [[:digit:]]+s$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] IKE_SA [[:print:]]+\[[[:digit:]]+\] established between [.:[:xdigit:]]+\[[[:print:]]+\]\.\.\.[.:[:digit:]]+\[[[:print:]]+\]
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(KNL|JOB)\] (creating [[:alpha:]]+ job for )?CHILD_SA ESP\/0x[[:xdigit:]]+\/[.:[:xdigit:]]+( not found for delete)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(ENC)\] (generating|parsed) QUICK_MODE (request|response) [[:digit:]]+ \[ [ [:alpha:]]+\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(ENC|IKE)\] (local host is behind NAT, sending keep alives|remote host is behind NAT|received [[:print:]]+ vendor ID(: [:[:xdigit:]]+)?)$
