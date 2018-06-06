@@ -13,8 +13,10 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE|JOB)\] (DPD check timed out, enforcing DPD action|unable to reauthenticate IKE_SA, no CHILD_SA to recreate|)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] (maximum IKE_SA lifetime|scheduling reauthentication in) [[:digit:]]+s$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] received [[:digit:]]+s lifetime, configured [[:digit:]]+s$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] IKE_SA [[:print:]]+\[[[:digit:]]+\] established between [.:[:xdigit:]]+\[[[:print:]]+\]\.\.\.[.:[:digit:]]+\[[[:print:]]+\]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] (deleting )?IKE_SA [[:print:]]+\[[[:digit:]]+\] (established )?between [.:[:xdigit:]]+\[[[:print:]]+\]\.\.\.[.:[:digit:]]+\[[[:print:]]+\]
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(CFG)\] looking for pre-shared key peer configs matching [.:[:xdigit:]]+(\[[[:print:]]+\])?\.\.\.[.:[:digit:]]+\[[[:print:]]+\]
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(KNL|JOB)\] (creating [[:alpha:]]+ job for )?CHILD_SA ESP\/0x[[:xdigit:]]+\/[.:[:xdigit:]]+( not found for delete)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(ENC)\] (generating|parsed) QUICK_MODE (request|response) [[:digit:]]+ \[ [ [:alpha:]]+\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(ENC|IKE)\] (local host is behind NAT, sending keep alives|remote host is behind NAT|received [[:print:]]+ vendor ID(: [:[:xdigit:]]+)?)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] received DELETE for IKE_SA [[:print:]]+\[[[:digit:]]+\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] detected reauth of existing IKE_SA, adopting [[:digit:]]+ children and [[:digit:]]+ virtual IPs$
