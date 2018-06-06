@@ -5,7 +5,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (dovecot: )?lmtp\([[:digit:]]+\): Connect from (local|[.:[:xdigit:]]+)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (dovecot: )?lmtp\([[:digit:]]+\): Disconnect from (local|[.:[:xdigit:]]+): ((Client quit|Connection closed) \(in (reset|DATA finished)\)|Successful quit)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth-worker\([-_.[:alnum:]]+\): (pg|my)sql\([[:xdigit:]\.:]+\): Connected to database [[:alnum:]]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth(|-worker\([[:digit:]]+\)): (passwd-file|sql|login|plain)\(([-_.@[:alnum:]]+|\?)(|,[.:[:xdigit:]]+)(|,<[-\/+_[:alnum:]]+>)\): (unknown user|Password mismatch|Empty username|Username character disallowed by auth_username_chars: [0x[:digit:]]+ \(username: \(null\)\))$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth(|-worker\([[:digit:]]+\)): (passwd-file|sql|login|plain)\(([-_.@[:alnum:]]+|\?)(|,[.:[:xdigit:]]+)(,[[:print:]]+)\)?: (Cached NULL password access|unknown user|Password mismatch|Empty username|Username character disallowed by auth_username_chars: [0x[:digit:]]+ \(username: \(null\)\))$
 #fetch
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap|managesieve)-login: Login: user=<[-_.@[:alnum:]]+>, method=[[:alnum:]-]+, rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, mpid=[[:digit:]]+)?(, (TLS(: Disconnected)?( handshake)?|secured))?(, session=<[[:alnum:]/+]+)?>$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (imap|IMAP)\([-_.@[:alnum:]]+\): (Disconnected )?(:)?(Logged out|for inactivity|Disconnected|Disconnected in [[:upper:]]+|Too many invalid IMAP commands\.)?( in=[[:digit:]]+ out=[[:digit:]]+)?$
@@ -23,3 +23,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([\._@[:alnum:]-]+\): Logged out in=[[:digit:]]+ out=[[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([\._@[:alnum:]-]+\): sieve: left message in mailbox '[^']+'$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot:(| message repeated [[:digit:]]+ times: \[) imap\([-_.@[:alnum:]]+\): sieve: pipe action: piped message to program `[-\/+\._[:alnum:]]+'(|\])$
+# proxy
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap-login: proxy\([[:print:]]+\): disconnecting [.:[:xdigit:]]+ \(Disconnected by (server|client: EOF)\([[:digit:]]+s idle, in=[[:digit:]]+, out=[[:digit:]]+([[:digit:]+]+)?\)\): user=[[:print:]]+, method=[[:alpha:]]+, rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+, TLS(: Disconnected)?, session=[[:print:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap-login: proxy\([[:print:]]+\): started proxying to [[:print:]]+: user=[[:print:]]+, method=[[:alpha:]]+, rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+, TLS, session=[[:print:]]+$
