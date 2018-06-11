@@ -18,5 +18,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(KNL|JOB)\] (creating [[:alpha:]]+ job for )?CHILD_SA ESP\/0x[[:xdigit:]]+\/[.:[:xdigit:]]+( not found for delete)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(ENC)\] (generating|parsed) QUICK_MODE (request|response) [[:digit:]]+ \[ [ [:alpha:]]+\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(ENC|IKE)\] (local host is behind NAT, sending keep alives|remote host is behind NAT|received [[:print:]]+ vendor ID(: [:[:xdigit:]]+)?)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] received DELETE for IKE_SA [[:print:]]+\[[[:digit:]]+\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] (received|sending) DELETE for IKE_SA [[:print:]]+\[[[:digit:]]+\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] detected reauth of existing IKE_SA, adopting [[:digit:]]+ children and [[:digit:]]+ virtual IPs$
