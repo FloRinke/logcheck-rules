@@ -1,0 +1,6 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ unattended-upgrade: Enabled logging to syslog via daemon facility$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ unattended-upgrade: Initial blacklisted packages:
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ unattended-upgrade: Initial whitelisted packages:
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ unattended-upgrade: Starting unattended upgrades script
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ unattended-upgrade: Allowed origins are:
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ unattended-upgrade: No packages found that can be upgraded unattended and no pending auto-removals

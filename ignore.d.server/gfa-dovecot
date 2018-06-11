@@ -1,0 +1,7 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Warning: SSL: where=0xdigit:+, ret=-?1: before/accept initialization [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Warning: SSL( failed)?: where=0xdigit:+(, ret=)?-?1?: SSLv3 (read|write)( client| server| key)* (certificate|change cipher spec|done|exchange|finished|hello|session ticket)( verify)? A \[[.:a-f[:digit:]]+\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Warning: SSL: where=0xdigit:+, ret=-?1: SSLv3 flush data [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Warning: SSL: where=0xdigit:+, ret=-?1: SSL negotiation finished successfully [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Warning: SSL: where=0xdigit:+, ret=-?1: unknown state [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Warning: SSL alert: where=0xdigit:+, ret=256: warning close notify [^[:space:]]+$
+
