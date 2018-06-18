@@ -17,4 +17,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (WARNING: )?Your ClamAV installation is OUTDATED!$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: DON'T PANIC! Read http://www.clamav.net/(support/faq|documents/upgrading-clamav)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (WARNING: )?Local version: [0-9.]+ Recommended version: [0-9.]+$
-
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?Received signal: re-opening log file$
