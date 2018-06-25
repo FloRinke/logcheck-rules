@@ -1,1 +1,41 @@
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: hostname [^[:space:]]+ does not resolve to address [^[:space:]]+( Name or service not known)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025|/9876)?/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]_\.-]+[[:xdigit:]\.:]+ helo=[0-9] auth=[0-9]/[0-9] quit=[0-9] commands=[0-9]/[0-9]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025|/9876)?/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]_\.-]+[[:xdigit:]\.:]+ ehlo=[0-9] starttls=[0-9] mail=[1-9] rcpt=[0-9] data=[0-9] quit=[0-9] commands=[0-9]/[0-9]$
+
+
+### 10025 port instance
+#TLS
+#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025)?/smtpd\[[[:digit:]]+\]: warning: TLS library problem: ([[:digit:]]+:)?error:[[:xdigit:]]+:SSL routines:SSL2?3_[[:alnum:]_]+:[[:alnum:] ]+:[[:alnum:]_-]+\.c:[[:digit:]]+:(SSL alert number [[:digit:]]+:)?$
+#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025)?/smtpd\[[[:digit:]]+\]: warning: network_biopair_interop: error (reading|writing) [[:digit:]]+ bytes (from|to) the network: Connection reset by peer$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025)?/smtpd\[[[:digit:]]+\]: SSL_accept error from [._[:alnum:]-]+\[[[:xdigit:].:]{3,39}\](: (-?[[[:digit:]]]+|lost connection|Connection timed out|Connection reset by peer))?$
+#connection
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025|/9876)?/smtpd\[[[:digit:]]+\]: (dis)?connect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\]( ehlo=[[:digit:]]+ mail=[[:digit:]]+ rcpt=[[:digit:]]+ data=[[:digit:]]+ quit=[[:digit:]]+ commands=[[:digit:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025|/9876)?/smtpd\[[[:digit:]]+\]: lost connection after [[:alnum:]]+( \([[:digit:]]+ bytes\))? from [._[:alnum:]-]+\[(unknown|[[:xdigit:].:]{3,39})\]$
+#behavior
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: improper command pipelining after (HELO|EHLO|DATA|MAIL|QUIT) from [^]]+\[[.:[:xdigit:]]+\]:( QUIT\\r\\n)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025|/9876)?/smtpd\[[[:digit:]]+\]: warning: hostname [[:alnum:]_\.-]+ does not resolve to address [[:xdigit:]\.:]+(: Name or service not known|: Temporary failure in name resolution)?$
+#login
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025|/9876)?/smtpd\[[[:digit:]]+\]: warning: [-._[:alnum:]]+\[[.[:digit:]]+\]: SASL ((LOGIN|login)|(PLAIN|plain)|(DIGEST|CRAM)-MD5|APOP) authentication failed(:[ [:alnum:]]*)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|/10025|/9876)?\/smtpd\[[[:digit:]]+\]: SSL_accept error from [._[:alnum:]-]+\[[[:xdigit:].:]{3,39}\](: (-?[[:digit:]]+|lost connection|Connection timed out|Connection reset by peer))?$
+
+# long queue id
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025)?/smtpd\[[[:digit:]]+\]: Untrusted TLS connection established from [-._[:alnum:]]+\[[.[:digit:]]+\]: TLSv1\.2 with cipher [[:alnum:]-]+ \([0-9]+/[0-9]+ bits\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025|/9876)?/smtpd\[[[:digit:]]+\]: Anonymous TLS connection established from [-._[:alnum:]]+\[[.[:digit:]]+\]: TLSv1\.2 with cipher [[:alnum:]-]+ \([0-9]+/[0-9]+ bits\)$
+
+# Jun 25 10:08:24 mail postfix/smtpd[2561]: disconnect from unknown[103.4.66.205] commands=0/0
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] helo=[0-9] auth=[0-9]\/[0-9] quit=1 commands=[0-9]\/[0-9]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[1-9] auth=[0-9]\/[0-9] commands=[0-9]\/[0-9]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[1-9] starttls=1 mail=[0-9] rcpt=[1-9] data=[0-9] quit=1 commands=[0-9]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[1-9] starttls=1 mail=[0-9] rcpt=[1-9] data=[0-9]\/[0-9] quit=1 commands=[0-9]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[1-9] starttls=1 mail=[0-9] rcpt=[1-9] data=[0-9]\/[0-9] quit=1 commands=[0-9]\/[0-9]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[1-9] mail=[0-9] rcpt=[1-9] data=[0-9]\/[0-9] quit=1 commands=[0-9]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[1-9] mail=[0-9] rcpt=[1-9] data=[0-9]\/[0-9] quit=1 commands=[0-9]\/[0-9]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from localhost\[127.0.0.1\] helo=[1-9] mail=[1-9] rcpt=[1-9] data=[0-9] quit=1 commands=[0-9]$
+
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/[ls]mtp\[[[:digit:]]+\]: [[:alnum:]]+: to=<[^[:space:]]+>,( orig_to=<[^[:space:]]+>,)? relay=[^[:space:]]+,( conn_use=[[:digit:]]+,)? delay=[.[:digit:]]+, delays=[.[:digit:]]+/[.[:digit:]]+/[.[:digit:]]+/[.[:digit:]]+, dsn=[.[:digit:]]+, status=[.[:alnum:]]+ \([.[:digit:]]+ [.[:digit:]]+ <[+.[:alnum:]]+@[.[:alnum:]]+-[.[:alnum:]]+> [.[:alnum:]]+ Saved\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/[ls]mtp\[[[:digit:]]+\]: [[:alnum:]]+: to=<[^[:space:]]+>,( orig_to=<[^[:space:]]+>,)? relay=[^[:space:]]+,( conn_use=[[:digit:]]+,)? delay=[.[:digit:]]+, delays=[.[:digit:]]+/[.[:digit:]]+/[.[:digit:]]+/[.[:digit:]]+, dsn=[.[:digit:]]+, status=[.[:alnum:]]+ \([.[:digit:]]+ [.[:digit:]]+ <[+._[:alnum:]-]+@[._[:alnum:]-]+> [._[:alnum:]-]+/[._[:alnum:]-]+ Saved\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/[ls]mtp\[[[:digit:]]+\]: [[:alnum:]]+: to=<[^[:space:]]+>,( orig_to=<[^[:space:]]+>,)? relay=[^[:space:]]+,( conn_use=[[:digit:]]+,)? delay=[.[:digit:]]+, delays=[.[:digit:]]+/[.[:digit:]]+/[.[:digit:]]+/[.[:digit:]]+, dsn=[.[:digit:]]+, status=[.[:alnum:]]+ \([.[:digit:]]+ [.[:digit:]]+ <[+._[:alnum:]-]+@[._[:alnum:]-]+> .*Saved\)$
+
+# Jun 25 10:32:03 mail postfix/10025/smtpd[29692]: 41Dlpq2WZMzwHh: client=monitoreo.zumbi.com.ar[104.196.108.40]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025|/9876)?/smtpd\[[[:digit:]]+\]: [[:alnum:]]+: client=[._[:alnum:]-]+\[[[:xdigit:].:]{3,39}\]$
