@@ -1,0 +1,6 @@
+# Jun 24 06:25:15 static prosody[29819]: Reloading Prosody XMPP Server: prosody.
+# Jun 24 06:47:07 static prosody[1614]: Stopping Prosody XMPP Server: prosody.
+# Jun 24 06:47:07 static prosody[1621]: Starting Prosody XMPP Server: prosody.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ prosody\[[[:digit:]]+\]: Reloading Prosody XMPP Server: prosody\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ prosody\[[[:digit:]]+\]: Starting Prosody XMPP Server: prosody\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ prosody\[[[:digit:]]+\]: Stopping Prosody XMPP Server: prosody\.$
