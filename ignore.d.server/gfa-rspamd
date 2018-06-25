@@ -1,0 +1,2 @@
+# Jun 25 07:29:14 mail.zumbi.com.ar rspamd[6634]: <da6306>; radix; rspamd_radix_add_iplist: invalid IP address: localhost
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <[[:alnum:]]+>; radix; rspamd_radix_add_iplist: invalid IP address: localhost$
