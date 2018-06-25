@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pam_winbind\[[0-9]+\]: request failed: No such user, PAM error was [0-9]+, NT error was [_[:alpha:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pam_winbind\[[0-9]+\]: user '[._[:alnum:]-]+' granted access$

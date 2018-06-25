@@ -1,0 +1,4 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ gnu-imap4d\[[[:digit:]]+\]: Incoming connection opened$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ gnu-imap4d\[[[:digit:]]+\]: Connect from [.:[:xdigit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ gnu-imap4d\[[[:digit:]]+\]: Error reading from input file: Connection reset by peer$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ gnu-imap4d\[[[:digit:]]+\]: No socket to send to$

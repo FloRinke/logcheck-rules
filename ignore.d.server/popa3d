@@ -1,0 +1,4 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ popa3d\[[0-9]+\]: Session from [:0-9a-f.]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ popa3d\[[0-9]+\]: Authentication passed for [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ popa3d\[[0-9]+\]: [0-9]+ messages? \([0-9]+ bytes\) loaded$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ popa3d\[[0-9]+\]: [0-9]+ \([0-9]+\) deleted, [0-9]+ \([0-9]+\) left$

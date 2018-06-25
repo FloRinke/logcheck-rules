@@ -1,0 +1,3 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ krb5kdc\[[0-9]+\]: (AS|TGS)_REQ \([0-9]+ etypes \{[[:digit:] ]+\}\) [.:[:xdigit:]]+: ISSUE: authtime [[:digit:]]+, etypes \{rep=[[:digit:]]+ tkt=[[:digit:]]+ ses=[[:digit:]]+\}, [._@/[:alnum:]-]+ for [._@/[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ krb5kdc\[[0-9]+\]: (AS|TGS)_REQ \([0-9]+ etypes \{[[:digit:] ]+\}\) [.:[:xdigit:]]+: NEEDED_PREAUTH: [._@/[:alnum:]-]+ for [._@/[:alnum:]-]+, Additional pre-authentication required$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ krb5kdc\[[0-9]+\]: DISPATCH: repeated \(retransmitted\?\) request from [.:[:xdigit:]]+, resending previous response$

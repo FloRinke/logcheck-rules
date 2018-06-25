@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix-policyd: connection from: [._[:alnum:]-]+ port: [[:digit:]]+ slots: [[:digit:]]+ of [[:digit:]]+ used$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix-policyd: rcpt=[[:digit:]]+, type=passthrough, host=[._[:alnum:]-]+ \([._[:alnum:]-]+\), from=[^[:space:]]+, to=[^[:space:]]+, size=[/[:digit:]]+$

@@ -1,0 +1,6 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imapd\[[0-9]+\]: port 143 service init from [^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imapd\[[0-9]+\]: command stream end of file, while reading line user=[^[:space:]]+ host=[^[:space:]]+ \[[.0-9]+\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imapd\[[0-9]+\]: Connection reset by peer, while reading line user [^[:space:]]+ host=[^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imapd\[[0-9]+\]: Transport endpoint is not connected, while writing text user=[^[:space:]]+ host=[^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imapd\[[0-9]+\]: No route to host, while reading line user=[^[:space:]]+ host=[^[:space:]]+ \[[.0-9]+\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imapd\[[0-9]+\]: Moved [0-9]+ bytes of new mail to [^[:space:]]+ from [^[:space:]]+ host= localhost \[127.0.0.1\]$

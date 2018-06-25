@@ -1,0 +1,4 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (/usr/bin/)?crontab\[[0-9]+\]: \([[:alnum:]-]+\) LIST \([[:alnum:]-]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (/usr/bin/)?crontab\[[0-9]+\]: \([[:alnum:]-]+\) REPLACE \([[:alnum:]-]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (/usr/bin/)?crontab\[[0-9]+\]: \([[:alnum:]-]+\) (BEGIN|END) EDIT \([[:alnum:]-]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ CRON\[[0-9]+\]: nss_ldap: reconnect(ing|ed) to LDAP server(\.\.\.| after [0-9]+ attempt\(s\))$

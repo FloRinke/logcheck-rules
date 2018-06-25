@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wu-ftpd(\[[0-9]+\])?: PAM-listfile: Refused user [._[:alnum:]-]+ for service wu-ftpd$

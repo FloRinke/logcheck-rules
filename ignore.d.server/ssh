@@ -1,0 +1,48 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Accepted (gssapi(-with-mic|-keyex)?|rsa|dsa|password|publickey|keyboard-interactive/pam|hostbased) for [^[:space:]]+ from [^[:space:]]+ port [[:digit:]]+( (ssh|ssh2))?(: (RSA|ECDSA|ED25519) (SHA256:[0-9a-zA-Z\+/=]{43}|(MD5:)?([[:xdigit:]]{2}:){15}[[:xdigit:]]{2}))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Address [._[:alnum:]-]+ maps to [._[:alnum:]-]+, but this does not map back to the address - POSSIBLE BREAK-?IN ATTEMPT!$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Authorized to [^[:space:]]+, krb5 principal [^[:space:]]+ \(krb5_kuserok\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Bad protocol version identification '[^[:space:]]*' from ([:.[:xdigit:]]+|UNKNOWN) port [[:digit:]]{1,5}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Did not receive identification string from ([:[:xdigit:].]+|UNKNOWN)+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnecting: Bad packet length [[:digit:]]+\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnecting: Corrupted MAC on input\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnecting: Too many authentication failures for [^[:space:]]* \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Failed (keyboard-interactive/pam|password|none) for (i(llegal|nvalid) user )?[^[:space:]]* from ([:.[:xdigit:]]+|UNKNOWN|[-_.[:alnum:]]+) port [[:digit:]]{1,5} ssh2?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: I(llegal|nvalid) user [^[:space:]]* from ([:.[:xdigit:]]+|UNKNOWN)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: input_userauth_request: invalid user [^[:space:]]* \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Nasty PTR record "[:[:xdigit:].]+" is set up for [:[:xdigit:].]+, ignoring$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: PAM pam_putenv: delete non-existent entry; [[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Postponed keyboard-interactive(/pam)? for (invalid user )?[^[:space:]]+ from [^[:space:]]+ port [[:digit:]]+( (ssh|ssh2)( \[preauth\])?)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Received disconnect from [:.[:xdigit:]]+: [12]: Timeout, server not responding\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Received disconnect from [:.[:xdigit:]]+(: | port [[:digit:]]+:)11: (disconnected by user|Closed due to user request\.)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Received disconnect from [:[:xdigit:].]+: [[:digit:]]+: .{0,256} \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Received disconnect from [:[:xdigit:].]+: [[:digit:]]+: Client disconnect$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Received disconnect from [:[:xdigit:].]+: [[:digit:]]+: Disconnect requested by Windows SSH Client\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnected from [:[:xdigit:].]+ port [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Connection closed by [:.[:xdigit:]]+ \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Server listening on [:[:xdigit:].]+ port [[:digit:]]+\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: User [-_.[:alnum:]]+ from [-_.[:alnum:]]+ not allowed because (listed in Deny|not listed in Allow)Users$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: User [-_.[:alnum:]]+ from [-_.[:alnum:]]+ not allowed because none of user's groups are listed in AllowGroups$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: \(pam_[[:alnum:]]+\) session opened for user [^[:space:]]+( by ([[:alnum:]-]+)?\(uid=[[:digit:]]+\))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: \(pam_unix\) auth could not identify password for \[[-_.[:alnum:]]*\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: \(pam_unix\) check pass; user unknown$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: \(pam_unix\) bad username \[[^]]+\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: Could not get shadow information for NOUSER$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: PAM: Authentication failure for( illegal user)? [^[:space:]]+ from ([:.[:xdigit:]]+|UNKNOWN|[-_.[:alnum:]]+)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: PAM: User not known to the underlying authentication module for i(llegal|nvalid) user [^[:space:]]+ from ([:.[:xdigit:]]+|UNKNOWN|[-_.[:alnum:]]+)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: ssh_msg_send: write$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: fatal: Timeout before authentication for [:[:alnum:].]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: fatal: Write failed: (Connection (timed out|reset by peer)|Broken pipe)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: fatal: recv_rexec_state: ssh_msg_recv failed$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: nss_ldap: reconnect(ing|ed) to LDAP server(\.\.\.| after [[:digit:]]+ attempt\(s\))$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: pam_[[:alnum:]]+\(sshd?:session\): session closed for user [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: pam_[[:alnum:]]+\(sshd?:session\): session opened for user [^[:space:]]+( by ([[:alnum:]-]+)?\(uid=[[:digit:]]+\))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: pam_unix\(sshd?:[[:alnum:]]+\): check pass; user unknown$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: pam_unix\(sshd?:auth\): auth could not identify password for \[[-_.[:alnum:]]*\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: (\(pam_unix\)|pam_unix\(sshd?:auth\):|PAM [[:digit:]]+ more) authentication failures?; logname= uid=0 euid=0 tty=ssh ruser= rhost=[^[:space:]]+([[:space:]]+user=[^[:space:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: refused connect from [:[:alnum:]._-]+ \([:[:alnum:].]+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: reverse mapping checking getaddrinfo for [._[:alnum:]-]+ (\[[:.[:xdigit:]]+\] )?failed - POSSIBLE BREAK-?IN ATTEMPT!$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: scanned from [:[:xdigit:].]+ with SSH-[.[:digit:]]+-SSH_Version_Mapper\.  Don't panic\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: subsystem request for sftp( by user [-_.[:alnum:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: syslogin_perform_logout: logout\(\) returned an error$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: warning: /etc/hosts\.(allow|deny), line [[:digit:]]+: can't verify hostname: getaddrinfo\([._[:alnum:]-]+, AF_INET\) failed$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: warning: /etc/hosts\.(allow|deny), line [[:digit:]]+: host name/(name|address) mismatch: [._[:alnum:]-]+ != [._[:alnum:]-]+$

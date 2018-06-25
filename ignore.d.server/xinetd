@@ -1,0 +1,7 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ xinetd\[[0-9]+\]: START: [[:alpha:]]+ pid=[0-9]+ from=[0-9a-f.:]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ xinetd\[[0-9]+\]: USERID: [[:alpha:]]+ UNIX : [[:alpha:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ xinetd\[[0-9]+\]: EXIT: [[:alpha:]]+ pid=[0-9]+ duration=[0-9]+\(sec\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ xinetd\[[0-9]+\]: Reading included configuration file: [-._/[:alnum:]]+ \[file=[-._/[:alnum:]]+\] \[line=[[:digit:]]+\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ xinetd\[[0-9]+\]: removing (chargen|(day)?time|echo|discard)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ xinetd\[[0-9]+\]: xinetd Version [.[:digit:]]+ started with libwrap loadavg options compiled in\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ xinetd\[[0-9]+\]: Started working: [[:digit:]]+ available services?$

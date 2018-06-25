@@ -1,0 +1,6 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ watchdog\[[0-9]+\]: int=[[:digit:]]+s realtime=(yes|no) sync=(yes|no) soft=(yes|no) mla=[[:digit:]]+ mem=[[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ watchdog\[[0-9]+\]: ping: no machine to check$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ watchdog\[[0-9]+\]: file: no file to check$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ watchdog\[[0-9]+\]: pidfile: no server process to check$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ watchdog\[[0-9]+\]: interface: no interface to check$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ watchdog\[[0-9]+\]: test=none\([[:digit:]]+\) repair=none alive=none heartbeat=none temp=none to=root no_act=(yes|no)$

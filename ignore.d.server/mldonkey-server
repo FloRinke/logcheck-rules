@@ -1,0 +1,74 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Set niceness of the process: [[:digit:]]{1,2}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Set uid/gid of the process \([[:digit:]]{1,5}, [[:digit:]]{1,5}\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Set umask of the process: [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Chdir to (home|chdir) dir: [-_./[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Fork the process$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Reset the group leader$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Fork a second time the process$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Close standard IO$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Process is running in the background$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Writing PID \([[:digit:]]+\) to pidfile: /var/run/mldonkey/mlnet\.pid$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Launching MLnet process$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Launching MLnet std(err|out) logger$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: (Terminate|Respawn) process$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: (Process stopped PID|Stopping processes PID) \( ([[:digit:]]+ )+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Waiting termination of process [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Process [[:digit:]]+ terminated
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: MLDonkey server end$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mldonkey_server: Removing pidfile: /var/run/mldonkey/mlnet\.pid$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: The core therefore is unable to get eDonkey serverlists and loading$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: \.torrent files via dllink from websites is also impossible.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: If you are using MLDonkey in a chroot environment you should$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: consider reading this article to get DNS support back:$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: http://mldonkey\.sourceforge\.net/Chroot$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error:$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: Warning: unknown mime-type for "temp/[^[:space:]]+" -- using "application/\*"$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: Error: no "view" mailcap rules found for type "application/\*"$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: Error: no such file ".+"$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cUd\] converting [[:digit:]]+ users to new format$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cCO\] Options correctly saved$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[dMain\] Check http://www\.mldonkey\.net/ for updates$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[dMain\] enabling networks:$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[dMain\] ---- enabling [[:alnum:]]+ ----$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[EDK\] loading sources completed$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[dMain\] using port [[:digit:]]{1,5} \(client_port (TC|UD)P\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[dMain\] using port [[:digit:]]{1,5} \((http|telnet|gui)_port\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} disabled networks: [ [:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[dMain\] To command: telnet [.[:digit:]]{7,15} [[:digit:]]{1,5}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[dMain\] Or with browser: http://[.[:digit:]]{7,15}:[[:digit:]]{1,5}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[dMain\] For a GUI check out http://sancho-gui\.sourceforge\.net$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[dMain\] Connect to IP [.[:digit:]]{7,15}, port [[:digit:]]{1,5}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[dMain\] If you connect from a remote machine adjust allowed_ips$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[dMain\] mldonkey is now running as user [[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[dMain\] mldonkey is now running as uid [[:digit:]]{1,5}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cCO\] Options correctly saved$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[dMain\] Core started$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cO\] Starting MLDonkey [.[:digit:]]+ \.\.\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cO\] Logging in \./mlnet\.log$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cO\] Language [[:upper:]]+, locale [-_.[:alnum:]]+, ulimit for open files [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cO\] MLDonkey is working in \.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cO\] loaded language resource file$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} Loading language resource /[-/_.[:alnum:]]+/mlnet_strings\.[-_.[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[DNS\] Resolving \[[-_.[:alnum:]]+\] \.\.\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cWeb\] saving guarding\.p2p \(http://www\.bluetack\.co\.uk/config/level1\.gz\)
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cWeb\] saving server\.met \(http://www\.gruk\.org/server\.met\.gz\)
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cWeb\] saving contact\.dat \(http://download\.overnet\.org/contact\.dat\)
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cWeb\] saving geoip\.dat \(http://www\.maxmind\.com/download/geoip/database/GeoIP\.dat\.gz\)
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cWeb\] Failure\("Unknown kind \[nodes\.gzip\]"\) while loading http://update\.kceasy\.com/update/fasttrack/nodes\.gzip$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[EDK\] There are no ED2K-servers in your servers\.ini\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[EDK\] Please import servers from a server\.met file\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[EDK\] Let MLDonkey use a file configured in web_infos$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[EDK\] or enter this link into MLDonkey:$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[EDK\] ed2k://\|serverlist\|http://www\.gruk\.org/server\.met\.gz\|/$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[Overnet\] Overnet module is disabled, ignoring\.\.\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cO\] server\.met loaded from http://www\.gruk\.org/server\.met\.gz, [[:digit:]]+ servers found, [[:digit:]]+ new ones inserted
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} COPY /tmp/arch_[[:alnum:]]+\.tmp TO web_infos/GeoIP\.dat$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[GeoIP\] database loaded$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[IPblock\] loading web_infos/level1\.gz$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[IPblock\] [[:digit:]]+ ranges loaded - optimized to [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cSe\] Disconnected server [- _.[:alnum:]]+ \([.[:digit:]]{7,15}:[[:digit:]]{1,5}\), IP is now blocked$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[dMain\] Received SIGTERM, stopping MLDonkey\.\.\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cCO\] Sources correctly saved$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[cCO\] Options backup as \.tar\.gz correctly saved$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: [/[:digit:]]{10} [:[:digit:]]{8} \[dMain\] Core stopped$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mlnet_error: verifySignature: BER decode error$

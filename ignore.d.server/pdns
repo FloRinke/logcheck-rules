@@ -1,0 +1,53 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: (No|[[:digit:]]+) master domains? needs? notifications$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: (UD|TC)P server bound to [.[:digit:]]{7,15}:[[:digit:]]{2,5}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: (UD|TC)Pv6 server bound to \[[:.[:xdigit:]]+\]:[[:digit:]]{2,5}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: AXFR done for '[-_.[:alnum:]]+', zone committed$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: AXFR of domain '[-_.[:alnum:]]+' denied to [.[:digit:]]{7,15}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: AXFR of domain '[-_.[:alnum:]]+' initiated by [.[:digit:]]{7,15}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: AXFR of domain '[-_.[:alnum:]]+' to [.[:digit:]]{7,15} finished$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: AXFR started for '[-_.[:alnum:]]+', transaction started$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: About to create [[:digit:]]+ backend threads for UDP$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: All slave domains are fresh$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Created new slave zone '[-_.[:alnum:]]+' from supermaster [.[:digit:]]{7,15}, queued axfr$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Creating backend connection for TCP$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: DNS Proxy launched, local port [[:digit:]]{1,5}, remote [.[:digit:]]{7,15}:[[:digit:]]{2,5}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Domain [-_.[:alnum:]]+ is fresh$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Domain [-_.[:alnum:]]+ is stale, master serial [[:digit:]]+, our serial [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Error resolving SOA or NS for '' at [.[:digit:]]{7,15}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Error sending reply with sendto \(socket=[[:digit:]]\): Invalid argument$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Ignoring packet: question too short from [.[:digit:]]{7,15}, [[:digit:]]+>=[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Ignoring packet: question too short from [.[:digit:]]{7,15}, offset [[:digit:]]+>=[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Ignoring packet: too short from [.[:digit:]]{7,15}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Listening on controlsocket in '/var/run/pdns\.controlsocket'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Master/slave communicator launching$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Not authoritative for '[^']*', sending servfail to [.[:digit:]]{7,15}( \(recursion was desired\))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Notification request for domain '[-_.[:alnum:]]+' received from operator$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: On retrieving question of packet from [[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}, encountered error: Label claims to be longer than packet$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: PowerDNS comes with ABSOLUTELY NO WARRANTY\. This is free software, and you are welcome to redistribute it according to the terms of the GPL version 2\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Queued notification of domain '[-_.[:alnum:]]+' to [.[:digit:]]{7,15}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received NOTIFY for ([-_.[:alnum:]]+)? from [.[:digit:]]{7,15} for which we are not authoritative$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received NOTIFY for [-_.[:alnum:]]+ from [.[:digit:]]{7,15} which is not a master$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received NOTIFY for [-_.[:alnum:]]+ from (master )?[.[:digit:]]{7,15}, we are up to date: [[:digit:]]+<=[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received a malformed qdomain from [.[:digit:]]{7,15}, '.+': (dropping|sending servfail)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received an overly large question from [.[:digit:]]{7,15}, dropping$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received an unknown opcode [[:digit:]]+ from [.[:digit:]]{7,15} for( [-_.[:alnum:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received packet from recursor backend with id [[:digit:]] which is a duplicate$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received spurious notify answer for '[-_.[:alnum:]]+' from [.[:digit:]]{7,15}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received unsuccesful notification report for '[-_.[:alnum:]]+' from [.[:digit:]]{7,15}, rcode: [25]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Received valid NOTIFY for [-_.[:alnum:]]+ (\(id=[[:digit:]]+\) )?from master [.[:digit:]]{7,15}: [[:digit:]]+ > [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Recursive query for remote [.[:digit:]]{7,15} with internal id [[:digit:]]+ was not answered by backend within timeout, reusing id$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Removed from notification list: '[-_.[:alnum:]]+' to [.[:digit:]]{7,15}( \(was acknowledged\))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Set effective (user|group) id to [[:digit:]]{1,5}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: TCP nameserver had error, cycling backend:Trying to read data from remote TCP client [.[:digit:]]{7,15}: Connection reset by peer$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: TCP server is without backend connections, launching$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: This is a guarded instance of pdns$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: This is module gpgsqlbackend\.so reporting$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: This is module gsqlite reporting$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Unable to determine SOA serial for ([-_.[:alnum:]]+)? at potential supermaster [.[:digit:]]{7,15}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: [[:digit:]]+ domains? for which we are master needs? notifications$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: [[:digit:]]+ slave domains? needs? checking$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: gpgsql Connection succesful$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: gsqlite3?: connection to '[-._/[:alnum:]]+' success?ful$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns\[[[:digit:]]+\]: Initiating transfer of '[-_.[:alnum:]]+' from remote '[.[:digit:]]{7,15}'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns_recursor\[[[:digit:]]+\]: Refreshed ([[:digit:]]+|\.) records$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pdns_recursor\[[[:digit:]]+\]: Unable to parse packet from remote( UDP)? server [.[:digit:]]{7,15}: (Wrong size for A record \(0\)|Error parsing packet of [[:digit:]]+ bytes \(rd=0\), out of bounds: vector::_M_range_check|packet smalll?er than DNS header)$

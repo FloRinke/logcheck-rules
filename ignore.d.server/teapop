@@ -1,0 +1,5 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ teapop\[[[:digit:]]+\]: [-_.@[:alnum:]]+ \[[.[:digit:]]{7,15}\] R[[:digit:]]+\([[:digit:]]+\) D[[:digit:]]+\([[:digit:]]+\) L[[:digit:]]+\([[:digit:]]+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ teapop\[[[:digit:]]+\]: connect from [.[:digit:]]{7,15} \([.[:digit:]]{7,15}\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ teapop\[[[:digit:]]+\]: Successful login for [-_.@[:alnum:]]+ \[[.[:digit:]]{7,15}\] from [^[:space:]]+ \[[.[:digit:]]{7,15}\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ teapop\[[[:digit:]]+\]: can't do reverse dns on client (error = 0)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ teapop\[[[:digit:]]+\]: Caught SIGPIPE \(signal = [[:digit:]]+\) - Lost connection$

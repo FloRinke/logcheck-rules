@@ -1,0 +1,3 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ Login.app: \(\w+\) session opened for user [-[:alnum:]_]+ by \(uid=[0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cardmgr\[[0-9]+\]: no sockets found!$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ Xprt_64: Xprint server pid=[0-9]+ done, exitcode=0\.$

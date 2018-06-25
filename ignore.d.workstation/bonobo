@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ bonobo-activation-server \([[:alnum:]-]+\): iid OAFIID:BrokenNoType:[0-9]+ has a NULL type$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ bonobo-activation-server \([[:alnum:]-]+\): invalid character '.' in iid 'OAFIID:[^[:space:]]+OAFIID_ContainsBadChars'$

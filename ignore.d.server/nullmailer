@@ -1,0 +1,7 @@
+nullmailer\[[0-9]+\]: Rescanning queue\.
+nullmailer\[[0-9]+\]: Trigger pulled\.
+nullmailer\[[0-9]+\]: Starting delivery, [0-9]+ message\(s\) in queue\.
+nullmailer\[[0-9]+\]: Starting delivery: protocol: [a-z]+ host: .+ file: [0-9\.]+
+nullmailer\[[0-9]+\]: Sent file\.
+nullmailer\[[0-9]+\]: Delivery complete, 0 message\(s\) remain\.
+nullmailer\[[0-9]+\]: smtp: Succeeded:

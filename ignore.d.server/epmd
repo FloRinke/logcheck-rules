@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ epmd: epmd: epmd running - daemon = 1$

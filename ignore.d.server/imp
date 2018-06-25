@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ IMP\[[0-9]+\]: Login .* to localhost:143 as .*$

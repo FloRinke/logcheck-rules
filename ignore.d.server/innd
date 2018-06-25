@@ -1,0 +1,65 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (expire|expireover|ctlinnd|nnrpd)\[[0-9]+\]: Reading config from /etc/news/inn\.conf$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (rnews|innd|batcher): Reading config from /etc/news/inn\.conf$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ batcher\[[0-9]+\]: batcher [[:alnum:]]+ stats batches [0-9]+ articles [0-9]+ bytes [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ batcher\[[0-9]+\]: batcher [[:alnum:]]+ times user [.0-9]+ system [.0-9]+ elapsed [.0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cnfsstat\[[0-9]+\]: Class (ARCHIV|SPOOL) for groups matching \"[^[:space:]]+\" Buffer (ARCH|SPOOL)[0-9]+, len: [0-9]+  Mbytes, used: [0-9]+\.[0-9]+ Mbytes \([0-9 ]+\.[0-9]%\) [ 0-9]+ cycles$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: ME HISstats [0-9]+ hitpos [0-9]+ hitneg [0-9]+ missed [0-9]+ dne$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: ME time [0-9]+ hishave [0-9]+\([0-9]+\) hiswrite [0-9]+\([0-9]+\) hissync [0-9]+\([0-9]+\) idle [0-9]+\([0-9]+\) artclean [0-9]+\([0-9]+\) artwrite [0-9]+\([0-9]+\) artcncl [0-9]+\([0-9]+\) hishave/artcncl [0-9]+\([0-9]+\) his(grep|write)/artcncl [0-9]+\([0-9]+\) artlog/artcncl [0-9]+\([0-9]+\) his(write|grep)/artcncl [0-9]+\([0-9]+\) sitesend [0-9]+\([0-9]+\) overv [0-9]+\([0-9]+\) perl [0-9]+\([0-9]+\) nntpread [0-9]+\([0-9]+\) artparse [0-9]+\([0-9]+\)( artlog/artparse [0-9]+\([0-9]+\))? artlog [0-9]+\([0-9]+\) datamove [0-9]+\([0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: SERVER (servermode|flushlogs) (running|paused)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: SERVER paused (Expiring process [0-9]+|Flushing log and syslog files)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: SERVER running$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [-[:alnum:].]+:[0-9]+ (closed|checkpoint) seconds [0-9]+ accepted [0-9]+ refused [0-9]+ rejected [0-9]+ duplicate [0-9]+ accepted size [0-9]+ duplicate size [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [._[:alnum:]-]+ closed$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [._[:alnum:]-]+ connected [0-9]+ streaming allowed$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [._[:alnum:]-]+ flush$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [._[:alnum:]-]+ opened [^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [._[:alnum:]-]+:[0-9]+ NCmode \"mode stream\" received$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [._[:alnum:]-]+:[0-9]+ inactive [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [._[:alnum:]-]+:[0-9]+ readclose$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [[:alpha:]]:?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [[:alpha:]]:/var/log/news/expire\.lowmark$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [[:alpha:]]:Expiring process [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [[:alpha:]]:Flushing log and syslog files$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: [[:alpha:]]:[-[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: localhost connected [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innd: rejecting\[perl\] <[[:alnum:][:punct:]]+@[.[:alnum:]-]+> [0-9]+ [[:alnum:] ]+( \([._[:alnum:]-]+\))?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: ME articles (active|total) [0-9]+ bytes [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: ME time [0-9]+ idle [0-9]+\([0-9]+\) blstats [0-9]+\([0-9]+\) stsfile [0-9]+\([0-9]+\) newart [0-9]+\([0-9]+\) readart [0-9]+\([0-9]+\) prepart [0-9]+\([0-9]+\) read [0-9]+\([0-9]+\) write [0-9]+\([0-9]+\) cb [0-9]+\([0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: [._[:alnum:]-]+ (final|checkpoint) seconds [0-9]+ spooled [0-9]+ on_close [0-9]+ sleeping [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: [._[:alnum:]-]+ hostChkCxns - maxConnections was [0-9]+ now [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: [._[:alnum:]-]+ remote MODE STREAM$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: [._[:alnum:]-]+ spooling no active connections$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: [._[:alnum:]-]+(:[0-9]+)? (final|global|checkpoint) seconds [0-9]+ offered [0-9]+ accepted [0-9]+ refused [0-9]+ rejected [0-9]+ (missing [0-9]+ )?accsize [0-9]+ rejsize [0-9]+( spooled [0-9]+ (on_close [0-9]+ )?unspooled [0-9]+)?( deferred [0-9]+/[0-9.]+ requeued [0-9]+ queue [0-9.]+/[0-9\:\,]+)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: [._[:alnum:]-]+:[0-9]+ connected$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ innfeed\[[0-9]+\]: [._[:alnum:]-]+:[0-9]+ cxnsleep connect: Connection refused$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: Auth strategy '[[:alnum:]]+' does not match client\.  Removing\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: Reading access from /etc/news/readers\.conf$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: SERVER perl filtering enabled$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ (no_)?match_user [<>_[:alnum:]-]+(@[._[:alnum:]-]+)? [<>,_,\*,\![:alnum:][:punct:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ Tracking Disabled \(unknown\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ \([.0-9]+\) connect$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ \(unknown\) posttrack ok [[:graph:]]+<[[:graph:]]+@[._[:alnum:]-]+>$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ artstats get [0-9]+ time [0-9]+ size [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ auth authenticator successful, user [[:alnum:][:punct:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ auth starting authenticator [[:alnum:][:space:][:punct:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ exit articles [0-9]+ groups [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ group [.[:alnum:]+-]+ [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ no_(read|post) [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ no_access_realm$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ post ok <[[:graph:]]+@[._[:alnum:]-]+>$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ res <[_[:alnum:]-]+>(@[._[:alnum:]-]+)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ time [0-9]+ (hisgrep [0-9]+\([0-9]+\) )?idle [0-9]+\([0-9]+\) (readart [0-9]+\([0-9]+\) )?nntpwrite [0-9]+\([0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ timeout$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ times user [.0-9]+ system [.0-9]+ idle [.0-9]+ elapsed [.0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [._[:alnum:]-]+ user [[:alnum:][:punct:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: [^[:space:]]+ posts received [0-9]+ rejected [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nnrpd\[[0-9]+\]: \? reverse lookup for [0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3} failed: Unknown host -- using IP address for access$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rnews: offered <[^[:space:]]+> [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rnews: rejected [0-9]+ No colon-space in "("|x-no-archive:yes)" header$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rnews: rejected [0-9]+ Too old -- "[0-9]+ \w{3} [0-9]{4} [0-9:]{8} ([[:upper:]]+|(\+|-)[0-9]{4})"$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rnews: rejected [0-9]+ Too old -- "\w{3}, [0-9 ]+ \w{3} [0-9]{4} [0-9:]{8} (\+|-)[0-9]{4}"$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rnews: rejected [0-9]+ Unwanted (newsgroup|distribution) "[._,[:alnum:]-]+"$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ send-uucp\[[0-9]+\]: Flushing [^[:space:]]+ for site [^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ send-uucp\[[0-9]+\]: batched articles for [^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ send-uucp\[[0-9]+\]: checking site [^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ send-uucp\[[0-9]+\]: no articles for [^[:space:]]+$

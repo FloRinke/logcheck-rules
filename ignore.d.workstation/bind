@@ -1,0 +1,3 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: client [.:[:xdigit:]]+#[[:digit:]]+: view (localhost|any|slave): query: [-._[:alnum:]]+ IN (CNAME|A6|AAAA|A|MX|PTR|TXT|NS|SOA|SSHFP) [-+](E?)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (client [.:[:xdigit:]]+#[[:digit:]]+: )?(view [._[:alnum:]-]+: )?received notify for zone '[._[:alnum:]-]+'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (client [.:[:xdigit:]]+#[[:digit:]]+: )?notify question section contains no SOA$

@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ udev\[[0-9]+\]: (creating|removing) device node '/dev(/[[:alnum:]]+)+'$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ udev\[[0-9]+\]: configured rule in '[\./:[:alnum:]-]+\[[0-9]+\]' applied, (added symlink )?'[[:alnum:]]+'( becomes '([[:alpha:]]+/)?%k')?$

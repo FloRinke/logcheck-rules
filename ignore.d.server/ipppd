@@ -1,0 +1,17 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ipppd\[[0-9]+\]: Local number: [0-9]+, Remote number: [0-9]+, Type: outgoing$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ipppd\[[0-9]+\]: PHASE_WAIT -> PHASE_ESTABLISHED, ifunit: .*, linkunit: .*, fd:$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ipppd\[[0-9]+\]: Remote message: .*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ipppd\[[0-9]+\]: MPPP negotiation, He: .* We: .*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ipppd\[[0-9]+\]: CCP enabled! Trying CCP\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ipppd\[[0-9]+\]: CCP:$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ipppd\[[0-9]+\]: LCP terminated by peer$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ipppd\[[0-9]+\]: local  IP address$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ipppd\[[0-9]+\]: remote IP address$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ipppd\[[0-9]+\]: ccp_resetci!$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ipppd\[[0-9]+\]: Modem hangup$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ipppd\[[0-9]+\]: Connection terminated\.i$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ipppd\[[0-9]+\]: taking down PHASE_DEAD link .*, linkunit:$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ipppd\[[0-9]+\]: closing fd [0-9]+ from unit$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ipppd\[[0-9]+\]: link .* closed , linkunit:$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ipppd\[[0-9]+\]: reinit_unit:$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ipppd\[[0-9]+\]: Connect\[[0-9]+\]: /dev/(ippp.|isdn.), fd: [0-9]+$

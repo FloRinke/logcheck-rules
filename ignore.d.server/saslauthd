@@ -1,0 +1,10 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ saslauthd+\[[[:digit:]]+\]: DIGEST-MD5 client step [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ saslauthd+\[[[:digit:]]+\]: Domain/Realm not available\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ saslauthd: pam_unix\([[:alnum:]]+:[[:alnum:]]+\): authentication failure; logname= uid=0 euid=0 tty= ruser= rhost=[-_.:[:alnum:]]+  user=[-_.[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ saslauthd\[[[:digit:]]+\]: DEBUG: auth_pam: pam_authenticate failed: Authentication failure$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ saslauthd\[[[:digit:]]+\]: DEBUG: auth_pam: pam_authenticate failed: User not known to the underlying authentication module$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ saslauthd\[[[:digit:]]+\]: \(pam_unix\) authentication failure; logname= uid=0 euid=0 tty= ruser= rhost= [[:space:]]*user=[-._[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ saslauthd\[[[:digit:]]+\]: \(pam_unix\) check pass; user unknown$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ saslauthd\[[[:digit:]]+\]: do_auth[[:space:]]*: auth failure: \[user=[._[:alnum:]-]+\] \[service=smtp\] \[realm=[._[:alnum:]-]+\] \[mech=pam\] \[reason=PAM auth error\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ saslauthd\[[[:digit:]]+\]: do_request[[:space:]]*: NULL password received$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ saslauthd\[[[:digit:]]+\]: pam_unix\([[:alnum:]]+:[[:alnum:]]+\): check pass; user unknown$

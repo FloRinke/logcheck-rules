@@ -1,0 +1,4 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wdm: \(pam_[[:alnum:]]+\) session opened for user [[:alnum:]-]+ by \(uid=[0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wdm: \(pam_[[:alnum:]]+\) session closed for user [[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wdm: :0\[[0-9]+\]: pam_[[:alnum:]]+\(wdm:session\): session opened for user [[:alnum:]-]+ by \(uid=[0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wdm: :0\[[0-9]+\]: pam_[[:alnum:]]+\(wdm:session\): session closed for user [[:alnum:]-]+$

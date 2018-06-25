@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ grinch\[[0-9]+\]: host allowed \((cached, )?(checked|no connection|avoiding deadlock)\): [._[:alnum:]-]+$

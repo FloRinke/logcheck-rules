@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nntpcache-(client|update|nocem)\[[0-9]+\]: clean shutdown$

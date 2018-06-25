@@ -1,0 +1,6 @@
+^[[:alpha:]]{3} [ :[:digit:]]{11} [._[:alnum:]\-]+ systemd\[[0-9]+\]: (Started|Reached|Stopped) target [ +[:alnum:]]+\.$
+^[[:alpha:]]{3} [ :[:digit:]]{11} [._[:alnum:]\-]+ systemd\[[0-9]+\]: (Starting|Stopping) [ +[:alnum:]/]+\.(\.\.)?$
+^[[:alpha:]]{3} [ :[:digit:]]{11} [._[:alnum:]\-]+ systemd\[[0-9]+\]: (Start|Stopp)ed [ +[:alnum:]/]+\.$
+^[[:alpha:]]{3} [ :[:digit:]]{11} [._[:alnum:]\-]+ systemd\[[0-9]+\]: Reloading\.$
+^[[:alpha:]]{3} [ :[:digit:]]{11} [._[:alnum:]\-]+ systemd\[[0-9]+\]: Time has been changed$
+^[[:alpha:]]{3} [ :[:digit:]]{11} [._[:alnum:]\-]+ systemd\[[0-9]+\]: [-_[:alnum:]]+.timer: Adding ([0-9]+h )?([0-9]{1,2}min )?[0-9]{1,2}\.[0-9]{6}s random time\.$

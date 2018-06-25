@@ -1,0 +1,11 @@
+^[-0-9]{10} [0-9:]{8} (Start|End) queue run: pid=[0-9]+$
+^[-0-9]{10} [0-9:]{8} [-[:alnum:]]+ Completed$
+^[-0-9]{10} [0-9:]{8} [-[:alnum:]]+ [=-]> [_[:alnum:]-]+ <?[@._[:alnum:]-]+>? R=local_user T=mail_spool$
+^[-0-9]{10} [0-9:]{8} [-[:alnum:]]+ [=-]> [@._[:alnum:]-]+ <?[@._[:alnum:]-]+>? R=dnslookup T=remote_smtp H=[._[:alnum:]-]+ \[[.0-9]{7,15}\]$
+^[-0-9]{10} [0-9:]{8} [-[:alnum:]]+ [=-]> [@._[:alnum:]-]+ R=dnslookup T=remote_smtp H=[._[:alnum:]-]+ \[[.0-9]{7,15}\]( X=TLS-1.0:RSA_AES_256_CBC_SHA1?:32)?$
+^[-0-9]{10} [0-9:]{8} [-[:alnum:]]+ <= [@._[:alnum:]-]+ U=[_[:alnum:]-]+ P=local S=[0-9]+( id=[^[:space:]]+)?$
+^[-0-9]{10} [0-9:]{8} [-[:alnum:]]+ <= [@._[:alnum:]-]+ H=[._[:alnum:]-]+ \[[.0-9]{7,15}\]( U=[_[:alnum:]-]+)? P=esmtp S=[0-9]+ id=[^[:space:]]+$
+^[-0-9]{10} [0-9:]{8} [-[:alnum:]]+ <= <> R=[_[:alnum:]-]+ U=[_[:alnum:]-]+ P=local S=[0-9]+$
+^[-0-9]{10} [0-9:]{8} [-[:alnum:]]+ <= <> H=[._[:alnum:]-]+ \[[.0-9]{7,15}\] P=esmtp S=[0-9]+ id=[^[:space:]]+$
+^[-0-9]{10} [0-9:]{8} SMTP command timeout on connection from [._[:alnum:]-]+ \[[.0-9]{7,15}\]$
+^[-0-9]{10} [0-9:]{8} [-[:alnum:]]+ == [@._[:alnum:]-]+ <?[@._[:alnum:]-]+>? R=dnslookup T=remote_smtp defer \(-53\): retry time not reached for any host$

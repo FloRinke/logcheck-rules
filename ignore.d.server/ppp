@@ -1,0 +1,18 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: CSLIP: code copyright$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: PPP: version$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: PPP generic driver version [0-9.]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: PPP line discipline registered$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: PPP (BSD|Deflate) Compression module registered$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: registered device ppp[0-9]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pppd\[[[:digit:]]{1,5}\]: Couldn't increase M[RT]U to [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pppd\[[[:digit:]]{1,5}\]: Hangup \(SIGHUP\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pppd\[[[:digit:]]{1,5}\]: Modem hangup$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pppd\[[[:digit:]]{1,5}\]: Connect time [.[:digit:]]+ minutes\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pppd\[[[:digit:]]{1,5}\]: Sent [[:digit:]]+ bytes, received [[:digit:]]+ bytes\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pppd\[[[:digit:]]{1,5}\]: PPP session is [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pppd\[[[:digit:]]{1,5}\]: Using interface ppp[[:digit:]]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pppd\[[[:digit:]]{1,5}\]: Cannot determine ethernet address for proxy ARP$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pppd\[[[:digit:]]{1,5}\]: write: Bad file descriptor \([[:digit:]]+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pppd\[[[:digit:]]{1,5}\]: (IP|L)CP terminated by peer$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pppd\[[[:digit:]]{1,5}\]: Connect: ppp[[:digit:]]+ <--> [-_/.[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pppd\[[[:digit:]]{1,5}\]: (IP|L)CP terminated by peer$

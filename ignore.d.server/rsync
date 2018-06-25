@@ -1,0 +1,12 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsync(d?)\[[0-9]+\]: connect from [^[:space:]]+ \([0-9.]{7,15}\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsyncd\[[0-9]+\]: rsync (to|on) [[:alnum:]/._-]+ from [@._[:alnum:]-]+ \([0-9.]{7,15}\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsyncd\[[0-9]+\]: (wrote|sent) [0-9,]+ bytes  (read|received) [0-9,]+ bytes  total size [0-9,]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsyncd\[[0-9]+\]: rsync error: some files could not be transferred \(code 23\) at main.c\([0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsyncd\[[0-9]+\]: unknown module 'pub' tried from [._[:alnum:]-]+ \([0-9.]{7,15}\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsyncd\[[0-9]+\]: rsync error: received SIGUSR1 or SIGINT \(code 20\) at rsync.c\([0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsyncd\[[0-9]+\]: rsync error: error in rsync protocol data stream \(code 12\) at io.c\([0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsyncd\[[0-9]+\]: rsync: read error: Connection reset by peer \(104\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsyncd\[[0-9]+\]: (building|receiving) file list$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsyncd\[[0-9]+\]: [^[:space:]]+/$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsyncd\[[0-9]+\]: [^[:space:]]+ -> [^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsyncd\[[0-9]+\]: module-list request from [._[:alnum:]-]+ \([0-9.]{7,15}\)$

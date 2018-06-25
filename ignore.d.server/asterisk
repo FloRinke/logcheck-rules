@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ asterisk\[[[:digit:]]{2,5}\]: rc_avpair_new: unknown attribute [[:digit:]]+$

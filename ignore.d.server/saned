@@ -1,0 +1,8 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ saned\[[0-9]+\]: saned \(AF-indep\+IPv6\) from sane-backends [.[:digit:]]+ ready$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ saned\[[0-9]+\]: check_host: access by remote host: [.:[:xdigit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ saned\[[0-9]+\]: init: access granted to [-._[:alnum:]]+@[.:[:xdigit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ saned\[[0-9]+\]: process_request: bad status [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ saned\[[0-9]+\]: invalid read: exp=[[:digit:]]+ act=[[:digit:]]+ ReadMfpdtfBlock scan/sane/mfpdtf\.c [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ saned\[[0-9]+\]: unable to send DeviceClose: Broken pipe: prnt/hpijs/hplip_api\.c [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ saned\[[0-9]+\]: invalid message: : prnt/hpijs/hplip_api\.c [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ saned\[[0-9]+\]: quit: exiting$

@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dspam\[[0-9]+\]: spam detected from [.0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dspam\[[0-9]+\]: innocent message from [.0-9]+$

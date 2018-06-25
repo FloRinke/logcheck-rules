@@ -1,0 +1,8 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ acpid: action exited with status 0$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ acpid: [[:digit:]]+ client rule[s]{0,1} loaded$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ acpid: received event "[[:lower:]_/]+ [[:upper:][:digit:]]+ [[:xdigit:]]{8} [[:xdigit:]]{8}"$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ acpid: completed event "[[:lower:]_/]+ [[:upper:][:digit:]]+ [[:xdigit:]]{8} [[:xdigit:]]{8}"$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ acpid: client connected from [[:digit:]]+\[[[:digit:]]+:[[:digit:]]+\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ acpid: notifying client [[:digit:]]+\[[[:digit:]]+:[[:digit:]]+\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ acpid: executing action "/etc/acpi/(actions/){0,1}[[:alnum:]_]+\.sh( [[:lower:]_/]+( [[:upper:][:digit:]]+ [[:xdigit:]]{8} [[:xdigit:]]{8}){0,1}){0,1}"$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ acpid: client( [[:digit:]]+\[[[:digit:]]+:[[:digit:]]+\])? has disconnected$

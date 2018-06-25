@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cvsd\[[0-9]+\]: connection from [0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3} [0-9]{1,5}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cvsd\[[0-9]+\]: cvs command exited with exit-status [0-9]+$

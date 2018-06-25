@@ -1,0 +1,10 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ maradns\.[-_[:alnum:]]+: [[:space:]]*Log: Root directory changed$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ maradns\.[-_[:alnum:]]+: [[:space:]]*Log: Binding to address [:.[:xdigit:],]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ maradns\.[-_[:alnum:]]+: [[:space:]]*Log: Socket opened on UDP port 53$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ maradns\.[-_[:alnum:]]+: [[:space:]]*Log: Root privileges dropped$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ maradns\.[-_[:alnum:]]+: [[:space:]]*Log: All RRs have been loaded$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ maradns\.[-_[:alnum:]]+: Processing zone [-._[:alnum:]]+\. right now\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ maradns\.[-_[:alnum:]]+: Filename: .+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ maradns\.[-_[:alnum:]]+: /usr/sbin/maradns already running\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ maradns\.[-_[:alnum:]]+: Adding root nameserver resolvconf_nameservers for zone \.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ maradns\.[-_[:alnum:]]+: MaraDNS proudly serves you [[:digit:]]+ DNS records$

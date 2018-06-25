@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ddclient\[[[:digit:]]+\]: SUCCESS:  updating [._[:alnum:]-]+: good: IP address set to [:[:xdigit:].]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ddclient\[[[:digit:]]+\]: WARNING:  forcing update of [._[:alnum:]-]+ from [:[:xdigit:].]+ to [:[:xdigit:].]+; [[:digit:]]+ days since last update on \w{3} \w{3} [ :0-9]{16}\.$

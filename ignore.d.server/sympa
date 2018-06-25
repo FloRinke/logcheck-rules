@@ -1,0 +1,39 @@
+
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: Parsing: REJECT [._[:alnum:]-]+ [0-9a-f]{32}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: REJECT [._[:alnum:]-]+ [^[:space:]]+ from [0-9a-f]{32} accepted \([0-9]+ seconds\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: Ignoring message which would cause a loop, sent by [^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: Moving bad file sympa\.[0-9]+\.[0-9]+ to bad/$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: Deleting old file /var/spool/sympa/msg/bad/sympa\.[0-9]+\.[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: Processing message for [._[:alnum:]-]+ with priority [0-9]+, <[^[:space:]]+>$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: Message for [._[:alnum:]-]+ from [^[:space:]]+ accepted \([0-9]+ seconds, [0-9]+ sessions\), size=[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: Key [0-9a-f]{32} for list [._[:alnum:]-]+ from [^[:space:]]+ sent to editors, /var/spool/sympa/msg/[^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: Processing web message for [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: Message for [._[:alnum:]-]+ sent$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: Warning : no editor defined for [._[:alnum:]-]+, contacting owners$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: Sending digest to list [^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: No subscriber for sending digest in list [^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sympa\[[0-9]+\]: Digest of the list [^[:space:]]+ sent \([0-9]+ seconds\)$
+
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ archived\[[0-9]+\]: Archiving [^[:space:]]+ for list [^[:space:]]+$
+
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: WWSympa started$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: \[robot [._[:alnum:]-]+\] \[client [0-9.]{7,15}\] \[user [^[:space:]]+] do_home$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: \[robot [._[:alnum:]-]+\] \[client [0-9.]{7,15}\] \[user [^[:space:]]+] do_lists\([^[:space:]]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: \[robot [._[:alnum:]-]+\] \[client [0-9.]{7,15}\] \[user [^[:space:]]+] do_logout\([^[:space:]]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: \[robot [._[:alnum:]-]+\] \[client [0-9.]{7,15}\] \[alt [^[:space:]]+] do_logout: logout performed$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: \[robot [._[:alnum:]-]+\] \[client [0-9.]{7,15}\] \[alt [^[:space:]]+] do_home$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: \[robot [._[:alnum:]-]+\] \[client [0-9.]{7,15}\] do_lists\([^[:space:]]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: \[robot [._[:alnum:]-]+\] \[client [0-9.]{7,15}\] \[user [^[:space:]]+] \[list [._[:alnum:]-]+\] do_admin$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: \[robot [._[:alnum:]-]+\] \[client [0-9.]{7,15}\] \[user [^[:space:]]+] \[list [._[:alnum:]-]+\] do_info$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: \[robot [._[:alnum:]-]+\] \[client [0-9.]{7,15}\] \[user [^[:space:]]+] \[list [._[:alnum:]-]+\] d_access_control$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: \[robot [._[:alnum:]-]+\] \[client [0-9.]{7,15}\] \[user [^[:space:]]+] \[list [._[:alnum:]-]+\] do_edit_list\(\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: \[robot [._[:alnum:]-]+\] \[client [0-9.]{7,15}\] \[user [^[:space:]]+] \[list [._[:alnum:]-]+\] do_edit_list_request\(\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: \[robot [._[:alnum:]-]+\] \[client [0-9.]{7,15}\] \[user [^[:space:]]+] \[list [._[:alnum:]-]+\] do_edit_list_request\(destription\)$
+
+
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: \[robot [._[:alnum:]-]+\] \[client [0-9.]{7,15}\] \[list [._[:alnum:]-]+\] do_info$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: \[robot [._[:alnum:]-]+\] \[client [0-9.]{7,15}\] \[list [._[:alnum:]-]+\] d_access_control$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: \[robot [._[:alnum:]-]+\] \[client [0-9.]{7,15}\] \[list [._[:alnum:]-]+\] do_subrequest\(\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: \[robot [._[:alnum:]-]+\] \[client [0-9.]{7,15}\] \[list [._[:alnum:]-]+\] do_subrequest\([^[:space:]]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: \[robot [._[:alnum:]-]+\] \[client [0-9.]{7,15}\] \[list [._[:alnum:]-]+\] do_sendpasswd\([^[:space:]]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ wwsympa\[[0-9]+\]: \[robot [._[:alnum:]-]+\] \[client [0-9.]{7,15}\] \[list [._[:alnum:]-]+\] do_login\([^[:space:]]+\)$

@@ -1,0 +1,5 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cpufreqd: pmu_init[[:space:]]+: /proc/pmu/info: No such file or directory$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cpufreqd: apm_init[[:space:]]+: /proc/apm: No such file or directory$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cpufreqd: sensors_post_conf[[:space:]]+: no sensors\.conf found, sensors disabled!$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cpufreqd: plugins_post_conf[[:space:]]+: Unable to configure plugin [-_.[:alnum:]]+, removing$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cpufreqd: nforce2_post_conf[[:space:]]+: Unconfigured, exiting\.$

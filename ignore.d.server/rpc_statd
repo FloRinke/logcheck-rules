@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rpc.statd\[[0-9]+\]: authenticated mount request from [._[:alnum:]-]+:[0-9]+ for /[/[:alnum:]]+ \(/[/[:alnum:]]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rpc.statd\[[0-9]+\]: Received erroneous SM_UNMON request from [._[:alnum:]-]+ for [0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$

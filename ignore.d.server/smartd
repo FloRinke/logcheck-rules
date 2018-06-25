@@ -1,0 +1,26 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Configuration file /etc/smartd.conf parsed\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?( \[SAT\])?, SMART (Prefailure|Usage) Attribute: [[:digit:]]+ [_[:alnum:]]+ changed from [[:digit:]]+( \[Raw [[:digit:]]+\])? to [[:digit:]]+( \[Raw [[:digit:]]+\])?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?( \[SAT\])?, SMART Prefailure Attribute: [[:digit:]]+ [_[:alnum:]]+ changed from [[:digit:]]+ to [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?( \[SAT\])?, Temperature changed (-|\+)?[1-3]+ Celsius to ([0-4]?[[:digit:]]|5[0-4]) Celsius since last report$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?( \[SAT\])?, Temperature changed [-+][[:digit:]]+ Celsius to [[:digit:]]+ Celsius \(Min/Max [[:digit:]]+!?/[[:digit:]]+!?\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?( \[SAT\])?, did test of type L in current hour, skipping test of type S$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?( \[SAT\])?, enabled SMART Attribute Autosave\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?( \[SAT\])?, enabled SMART Automatic Offline Testing\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?( \[SAT\])?, found in smartd database\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?( \[SAT\])?, initial Temperature is [[:digit:]]+ Celsius$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?( \[SAT\])?, is SMART capable\. Adding to "monitor" list\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?( \[SAT\])?, opened$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?( \[SAT\])?, starting scheduled (Offline Immediate |(Long|Short) Self-)Test\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?( \[SAT\])?, previous self-test completed without error$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?( \[SAT\])?, self-test in progress, [1-9]0% remaining$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?( \[SAT\])?, old test of type (S|L) not run at (Sun|Mon|Tue|Wed|Thu|Fri|Sat) \w{3} [ :[:digit:]]{11} [0-9]{4} [A-Z]+, starting now.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Home page is http://smartmontools\.sourceforge\.net/$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Monitoring [[:digit:]]+ ATA and [[:digit:]]+ SCSI devices
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Opened configuration file /etc/smartd\.conf$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Sending warning via [^[:space:]]+ to [^[:space:]]+ \.\.\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Warning via [^[:space:]]+ to [^[:space:]]+: successful$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: file /var/run/smartd\.pid written containing PID [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: smartd has fork\(\)ed into background mode\. New PID=[[:digit:]]+\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: smartd version [.[:digit:]]+ (\[[-_[:alnum:]]+\] )?Copyright \(C\) 2002-[[:digit:]]+ Bruce Allen$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]:[[:space:]]*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?( \[SAT\])?, state (read from|written to) /var/lib/smartmontools/smartd\.[-_[:alnum:]]+\.ata\.state$

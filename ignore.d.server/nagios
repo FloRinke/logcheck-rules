@@ -1,0 +1,23 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: Auto-save of retention data completed successfully\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: Caught SIGHUP, restarting\.\.\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: EXTERNAL COMMAND: (ADD_SVC_COMMENT|ACKNOWLEDGE_SVC_PROBLEM);[._[:alnum:]-]+;[[:alnum:]]+;[[:digit:]]+;([[:alnum:]]+;)?.*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: EXTERNAL COMMAND: (ENABLE|DISABLE)_(HOST_|HOST_SVC_|SVC_)?NOTIFICATIONS;[._[:alnum:]-]+(;[^;]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;[._[:alnum:]-]+;[^;]+;[[:digit:]]+;.*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: EXTERNAL COMMAND: SCHEDULE_HOST_DOWNTIME;[._[:alnum:]-]+;[[:digit:];]+;[[:alnum:]]+;.*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: CURRENT HOST STATE: [._[:alnum:]-]+;UP;(SOFT|HARD);[[:digit:]];.*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: CURRENT SERVICE STATE: [._[:alnum:]-]+;[^;]+;(WARNING|OK);(SOFT|HARD);[[:digit:]];.*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: HOST ALERT: [._[:alnum:]-]+;(DOWN|UP|UNREACHABLE);(SOFT|HARD);.*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: HOST DOWNTIME ALERT: [._[:alnum:]-]+;(STARTED|STOPPED);.*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: HOST EVENT HANDLER: [._[:alnum:]-]+;(UP|DOWN);(SOFT|HARD);[[:digit:]]+;.*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: HOST NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;(DOWN|UP|UNREACHABLE);.*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: HOST FLAPPING ALERT: [._[:alnum:]-]+;(STARTED|STOPPED); Host appears to have (started|stopped) flapping \([[:digit:].]+% change (<|>=?) [.[:digit:]]+% threshold\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: LOG ROTATION: (DAILY|WEEKLY|MONTHLY)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: LOG VERSION: 2\.[[:digit:]]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: Nagios (1|2)\.[[:digit:]] starting\.\.\. \(PID=[[:digit:]]+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: SERVICE ALERT: [._[:alnum:]-]+;[^;]+;(CRITICAL|WARNING|OK|UNKNOWN);(SOFT|HARD);.*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: SERVICE ALERT: [[:alnum:]]+;PING;(WARNING|OK).*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: SERVICE FLAPPING ALERT: [._[:alnum:]-]+;[._[:alnum:]-]+;(STARTED|STOPPED); Service appears to have (started|stopped) flapping \([[:digit:].]+% change (<|>=?) [.[:digit:]]+% threshold\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: SERVICE NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;[^;]+;(ACKNOWLEDGEMENT \()?(CRITICAL|WARNING|OK|UNKNOWN)(\))?;.*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: SERVICE NOTIFICATION: [._[:alnum:]-]+;[._[:alnum:]-]+;[^;]+;CRITICAL;.*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: Warning: Host '[[:alnum:]]+' has no services associated with it\!$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nagios(2|3)?: Warning: The results of service '[ [:alnum:][:punct:]]+' on host '[._[:alnum:]-]+' are stale by [[:digit:]]+ seconds \(threshold=[[:digit:]]+ seconds\).  I'm forcing an immediate check of the service\.$

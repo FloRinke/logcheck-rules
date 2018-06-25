@@ -1,0 +1,8 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dund\[[[:digit:]]+\]: Accept failed\. Interrupted system call\([[:digit:]]+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dund\[[[:digit:]]+\]: Service record unregistration failed\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ hcid\[[[:digit:]]{1,5}\]: (Unr|R)egister path:/org/bluez[-/_.[:alnum:]]*( fallback:[[:digit:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (hci|sdp|hid|pan|dun)d\[[[:digit:]]{1,5}\]: Bluetooth (HCI|SDP|HID|PAN|DUN) daemon( version [.[:digit:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ hcid\[[[:digit:]]{1,5}\]: Device hci[[:digit:]]+ has been (remov|a(dd|ctivat))ed$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ hcid\[[[:digit:]]{1,5}\]: HCI dev [[:digit:]]+ (registered|already up)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ hcid\[[[:digit:]]{1,5}\]: Starting security manager [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pand\[[[:digit:]]{1,5}\]: New connection from [:[:xdigit:]]+( bnep[[:digit:]]+)?$

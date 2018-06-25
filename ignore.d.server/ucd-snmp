@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ucd-snmp\[[0-9]+\]: Connection from [.0-9]+$

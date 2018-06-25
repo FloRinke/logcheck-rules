@@ -1,0 +1,3 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ schroot\[[[:digit:]]+\]: (\(pam_unix\)|pam_unix\(schroot:session\):) session opened for user [-_.[:alnum:]]+ by ([-_.[:alnum:]]+)?\(uid=[[:digit:]]+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ schroot\[[[:digit:]]+\]: \[[-._[:alnum:]]+ chroot\] \([-_.[:alnum:]]+->[-_.[:alnum:]]+\) Running login shell: '[-._/[:alnum:]]+'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ schroot\[[[:digit:]]+\]: \[[-._[:alnum:]]+ chroot\] \([-_.[:alnum:]]+->[-_.[:alnum:]]+\) Running command: ".+"$

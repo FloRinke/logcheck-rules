@@ -1,0 +1,77 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: 	http://[-._[:alnum:]]+(:[[:digit:]]+)?[-._/:@[:alnum:]]*
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]:   Finished\.  Wrote [[:digit:]]+ entries\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]:   Took [.[:digit:]]+ seconds \([ .[:digit:]]+ entries/sec\)\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: +Completed Validation Procedure$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: +Took [[:digit:].]+ seconds \( [[:digit:].]+ objects/sec\)\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: +Validated [[:digit:]]+ Entries$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: +[[:digit:]]+ Duplicate URLs purged\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: +[[:digit:]]+ Entries scanned$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: +[[:digit:]]+ Invalid entries\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: +[[:digit:]]+ Objects (loaded|expired|cancelled)\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: +[[:digit:]]+ Swapfile clashes avoided\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: +[[:digit:]]+ With invalid flags\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: +[[:digit:]]+ entries written so far\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: +store_swap_size = [[:digit:]]+k$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Accepting HTTP connections at [[:digit:].]+, port [[:digit:]]+, FD [[:digit:]]+\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Accepting ICP messages at [[:digit:].]+, port [[:digit:]]+, FD [[:digit:]]+\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Accepting transparently proxied HTTP connections at [:.[:xdigit:]]+, port [[:digit:]]{1,5}, FD [[:digit:]]+\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Adding domain [-._[:alnum:]]+ from /etc/resolv\.conf$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Adding nameserver [[:digit:].]+ from /etc/resolv.conf$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Beginning Validation Procedure$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: CACHEMGR: <unknown>@127.0.0.1 requesting 'counters'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: CACHEMGR: <unknown>@127.0.0.1 requesting 'storedir'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Cache dir '[/[:alnum:]]+' size remains unchanged at [[:digit:]]+ KB$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Closing unlinkd pipe on FD [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Current Directory is [/._[:alnum:]-]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: DNS Socket created at [[:digit:].]+, port [[:digit:]]+, FD [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Done reading [/._[:alnum:]-]+ swaplog \([[:digit:]]+ entries\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Extension method '(MERGE|MKACTIVITY|CHECKOUT)' added, enum=[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: FD [[:digit:]]+ Closing HTTP connection$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: FD [[:digit:]]+ Closing ICP connection$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Finished rebuilding storage from disk\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: HTCP Disabled\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Loaded Icons\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Local cache digest enabled; rebuild/rewrite every [[:digit:]]+/[[:digit:]]+ sec$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Max Mem  size: [[:digit:]]+ KB$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Max Swap size: [[:digit:]]+ KB$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Process ID [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Ready to serve requests\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Rebuilding storage in [/._[:alnum:]-]+ \(CLEAN\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Referer logging is disabled\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Set Current Directory to /var/spool/squid$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Squid Parent: child process [[:digit:]]+ exited with status 0$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Squid Parent: child process [[:digit:]]+ started$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Store rebuilding is [[:space:]]*[.[:digit:]]+% complete$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Swap maxSize [[:digit:]]+ KB, estimated [[:digit:]]+ objects$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Target number of buckets: [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Unlinkd pipe opened on FD [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: User-Agent logging is disabled\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Using Least Load store dir selection$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Using [[:digit:]]+ Store buckets$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Using epoll for the IO loop$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: WARNING: Closing client [.[:digit:]]{7,15} connection due to lifetime timeout$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: WARNING: found whitespace in HTTP header name \{Cache Control: no-cache\}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: WCCP Disabled\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Waiting [[:digit:]]+ seconds for active connections to finish$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: With [[:digit:]]+ file descriptors available$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: [[:space:]]*Took [.[:digit:]]+ seconds \([[:digit:].]+ objects/sec\)\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: aioSync: done$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: aioSync: flushing pending I/O operations$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: clientReadRequest: FD [[:digit:]]+ (\([.[:digit:]]{7,15}:[[:digit:]]{1,5}\) )?Invalid Request$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: ctx: exit level  0$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: fqdncacheParse: No PTR record for '[.[:digit:]]{7,15}'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: helperOpenServers: Starting [[:digit:]]+ '[-._[:alnum:]]+' processes$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: httpReadReply: Excess data from "GET .*"$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: ipcacheParse: No Address records in response to '[-._[:alnum:]]+'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: logfileRotate: /var/log/squid/access\.log$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: logfileRotate: /var/log/squid/store\.log$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: parseHttpRequest: Requestheader contains NULL characters$
+# next rule without $ at the end because of #350206 and locale mismatches with non-latin1 or non-ascii characters.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: parseHttpRequest: Unsupported method 
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: storeDirWriteCleanLogs: Starting\.\.\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: storeLateRelease: released [[:digit:]]+ objects$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: storeLocateVary: Not our vary marker object, [[:xdigit:]]+ = '[^']+', '[^']+'/'[^']+'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: urlParse: Illegal character in hostname '.*'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: urlParse: URL too large \([[:digit:]]+ bytes\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Preparing for shutdown after [[:digit:]]+ requests$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: sslReadServer: FD [[:digit:]]+: read failure: \([[:digit:]]+\) Connection reset by peer$

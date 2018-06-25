@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ upsd\[[0-9]+\]: Connection from [.[:digit:]]{7,15}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ upsd\[[0-9]+\]: Client on [.[:digit:]]{7,15} logged out$

@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ .+\[[0-9]+\]: \[horde\] Login success for [@._[:alnum:]-]+ \[[.0-9]{7,15}\] to Horde \[on line [0-9]+ of ".+"\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ .+\[[0-9]+\]: \[horde\] User [@._[:alnum:]-]+ \[[.0-9]{7,15}\] logged out of Horde \[on line [0-9]+ of ".+"\]$

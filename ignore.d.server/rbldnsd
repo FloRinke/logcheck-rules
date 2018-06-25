@@ -1,0 +1,5 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rbldnsd\[[0-9]+\]: listening on [0-9.]{7,15}/[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rbldnsd\[[0-9]+\]: ip4set:[._[:alnum:]-]+: [0-9]{8} [0-9]+: [[:alnum:]/=]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rbldnsd\[[0-9]+\]: zones reloaded, time [\./[:alnum:]]+ sec, mem arena=[0-9]+ free=[0-9]+ mmap=[0-9]+ \w{1,2}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rbldnsd\[[0-9]+\]: stats for [0-9]+secs zone [._[:alnum:]-]+: tot=[0-9]+ ok=[0-9]+ nxd=[0-9]+ err=[0-9]+ in=[0-9]+ out=[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rbldnsd\[[0-9]+\]: stats for [0-9]+sec: tot=[0-9]+ ok=[0-9]+ nxd=[0-9]+ err=[0-9]+ in=[0-9]+ out=[0-9]+$

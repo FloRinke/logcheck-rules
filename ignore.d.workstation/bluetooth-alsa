@@ -1,0 +1,9 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ headsetd\[[[:digit:]]{1,5}\]: Bluetooth headset daemon version [.[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ headsetd\[[[:digit:]]{1,5}\]: Changing state: (Idle|Paging|Connecting|Ready|Opening|Streaming|Zombie(Appl)?|Connected)-->(Idle|Paging|Connecting|Ready|Opening|Streaming|Zombie(Appl)?|Connected)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ headsetd\[[[:digit:]]{1,5}\]: Configuration phase ended: target bdaddr is [:[:xdigit:]]+, timeout is -?[[:digit:]]+ ms$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ headsetd\[[[:digit:]]{1,5}\]: SCO channel opened handle=0x[[:xdigit:]]+ mtu=[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ headsetd\[[[:digit:]]{1,5}\]: Appli closed socket$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ headsetd\[[[:digit:]]{1,5}\]: Nobody uses SCO channel anymore, closing it\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ headsetd\[[[:digit:]]{1,5}\]: Headset disconnected as (SCO|RFCOMM) socket died$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ headsetd\[[[:digit:]]{1,5}\]: exiting cleanly$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ headsetd\[[[:digit:]]{1,5}\]: unable to connect L2CAP socket to headset: Device or resource busy$

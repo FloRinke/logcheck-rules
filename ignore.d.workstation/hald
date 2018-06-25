@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hald\[[0-9]+\]: Timed out waiting for hotplug event [0-9]+\. Rebasing to [0-9]+$

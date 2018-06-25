@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ gnome-screensaver-dialog: gkr-pam: unlocked (login|'login') keyring$

@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ francine: \(pam_unix\) session (opened|closed) for user [a-z]+( by LOGIN\(uid=0\))?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ francine: pam_unix\(francine:session\): session (opened|closed) for user [a-z]+( by LOGIN\(uid=0\))?$

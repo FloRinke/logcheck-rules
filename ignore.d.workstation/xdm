@@ -1,0 +1,5 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+[[:space:]]+: \(pam_[[:alnum:]]+\) session opened for user [[:alnum:]-]+ by \(uid=[0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+[[:space:]]+: \(pam_[[:alnum:]]+\) session closed for user [[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ xdm(: :0)?\[[0-9]+\]: pam_[[:alnum:]]+\(xdm:session\): session opened for user [[:alnum:]-]+ by ([[:alnum:]-]+)?\(uid=[0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ xdm(: :0)?\[[0-9]+\]: pam_[[:alnum:]]+\(xdm:session\): session closed for user [[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ xdm(: :0)?\[[0-9]+\]: pam_krb5\(xdm:auth\): user [[:alnum:]-]+ authenticated as [[:alnum:]-]+@[.A-Z]+$

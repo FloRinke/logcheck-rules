@@ -1,0 +1,6 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ in.qpopper\[[0-9]+\]: connect from [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ in.qpopper\[[0-9]+\]: \(v[.[:digit:]]+\) POP login by user \"[@._[:alnum:]-]+\" at \([._[:alnum:]-]+\) [.[:digit:]]+ \[pop_log.c:244\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ in.qpopper\[[0-9]+\]: \[drac\]: login by [@._[:alnum:]-]+ from host [._[:alnum:]-]+ \([.[:digit:]]+\) \[drac.c:[0-9]+\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ in.qpopper\[[0-9]+\]: [@._[:alnum:]-]+ at [._[:alnum:]-]+ \([.[:digit:]]+\): -ERR Message [[:digit:]]+ does not exist. \[pop_send.c:289\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ in.qpopper\[[0-9]+\]: ([@._[:alnum:]-]+|\(null\)) at [._[:alnum:]-]+ \([.[:digit:]]+\): -ERR Unknown command: \"[[:alnum:]]+\". \[pop_get_command.c:152\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ in.qpopper\[[0-9]+\]: \(v[.[:digit:]]+\) Unable to get canonical name of client [.[:digit:]]+: Name or service not known \(-2\) \[pop_init.c:1196\]$

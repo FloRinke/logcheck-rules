@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ scponly\[[0-9]+\]: running: (/(usr/)?bin/(ls|chmod|chown|chgrp|mkdir|rmdir|scp|ln|mv|rm|groups|pwd|echo|passwd)|cd|/usr/lib/sftp-server).* \(username: [._[:alnum:]-]+\([0-9]+\), IP/port: [.:[:alnum:]]+ [0-9]+ 22\)$

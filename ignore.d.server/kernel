@@ -1,0 +1,81 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ([[:lower:]]+):( (\1[[:digit:]]+|[<>]))+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? 3w-9xxx: scsi[[:digit:]]: AEN: INFO \(0x[[:xdigit:]]+:0x[[:xdigit:]]+\): Battery capacity test (started|completed):([[:digit:]]+ hours)?\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? 3w-9xxx: scsi[[:digit:]]: AEN: INFO \(0x[[:xdigit:]]+:0x[[:xdigit:]]+\): Battery charging (started|completed):\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? 3w-9xxx: scsi[[:digit:]]: AEN: INFO \(0x[[:xdigit:]]+:0x[[:xdigit:]]+\): Verify (started|paused|completed):unit=[[:digit:]]+\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? 3w-9xxx: scsi[[:digit:]]: Firmware [[:alnum:].]+ [.[:digit:]]+, BIOS [[:alnum:]]+ [.[:digit:]]+, Ports: [[:digit:]]+\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? 3w-[9x]xxx: scsi[[:digit:]]: Found a 3ware( 9000)? Storage Controller at 0x[[:xdigit:]]+, IRQ: [[:digit:]]+\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? 3ware( 9000)? Storage Controller device driver for Linux v[.[:digit:]-]+\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ACPI: PCI Interrupt [[:alnum:]:.]+\[[AB]\] (-> Link \[LNK[AB]\] )?-> GSI [[:digit:]]+ \(level, low\) -> IRQ [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ACPI: PCI interrupt for device [[:alnum:]:.]+ disabled$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ADDRCONF\(NETDEV_CHANGE\): [[:alnum:]]+: link becomes ready$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? BANDWIDTH_IN:IN=[[:alnum:]]+ OUT= MAC=[:[:xdigit:]]+ SRC=[.[:digit:]]{7,15} DST=[.[:digit:]]{7,15} LEN=[[:digit:]]+ TOS=0x[[:xdigit:]]+ PREC=0x[[:xdigit:]]+ TTL=[[:digit:]]+ ID=[[:digit:]]+ (DF )?PROTO=TCP SPT=[[:digit:]]+ DPT=[[:digit:]]+ WINDOW=[[:digit:]]+ RES=0x[[:xdigit:]]+ ACK (PSH )?URGP=[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? BANDWIDTH_OUT:IN= OUT=[[:alnum:]]+ SRC=[.[:digit:]]{7,15} DST=[.[:digit:]]{7,15} LEN=[[:digit:]]+ TOS=0x[[:xdigit:]]+ PREC=0x[[:xdigit:]]+ TTL=[[:digit:]]+ ID=[[:digit:]]+ (DF )?PROTO=TCP SPT=[[:digit:]]+ DPT=[[:digit:]]+ WINDOW=[[:digit:]]+ RES=0x[[:xdigit:]]+ ACK PSH URGP=[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? BIOS EDD facility v[.[:digit:]]+ [[:digit:]]+-\w{3}-[[:digit:]]+, [[:digit:]]+ devices found$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? Bluetooth: HIDP \(Human Interface Emulation\) ver [.[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? Bridge firewalling registered$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? Copyright \(C\) 20[[:digit:]]+( ?- ?[[:digit:]]+)? MontaVista Software - IPMI Powerdown via sys_reboot\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? Device not ready\. Make sure there is a disc in the drive\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? EXT3-fs \([[:alnum:]-]+\): using internal journal$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? EXT3 FS on [^[:space:]]+, internal journal$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? EXT3-fs: mounted filesystem with (ordered|writeback) data mode\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? EXT[34]-fs \([[:alnum:]-]+\): mounted filesystem with (writeback|ordered) data mode(. Opts: \(null\))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? Ending clean XFS mount for filesystem: [[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? IPMI System Interface driver\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? IPMI Watchdog: driver initialized$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? IPv6 over IPv4 tunneling driver$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? Intel machine check (architecture supported|reporting enabled on CPU#[[:digit:]])\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? NET: Registered protocol family [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? PCI: Setting latency timer of device [[:alnum:]:.]+ to [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? SCSI device [[:alnum:]]+: drive cache: write (through|back)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? SCSI subsystem initialized$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? (TCP: )?(Treason uncloaked! )?Peer [:.[:xdigit:]]+:[[:digit:]]{1,5}/[[:digit:]]{1,5} (shrinks|unexpectedly shrunk) window [[:digit:]]+:[[:digit:]]+\.? (Repaired\.|\(repaired\))$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? XFS mounting filesystem [[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [[:alnum:][:space:]]+: probe of [:.[:xdigit:]]+ failed with error [-[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [[:alnum:]]+: link up\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [[:alnum:]]+: no IPv6 routers present$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [[:alnum:]]+: port [[:digit:]]+\([[:alnum:].]+\) entering disabled state$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [[:alnum:]]+: register 'cdc_ether' at usb-[-.:[:xdigit:]]+, CDC Ethernet Device, [:[:xdigit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [[:alnum:]]+: unregister 'cdc_ether' usb-[-.:[:xdigit:]]+, CDC Ethernet Device[[:space:]]*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [[:lower:]]+: cache flushes supported$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [[:lower:]]+: test WP failed, assume Write Enabled$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [[:lower:]]+: unknown partition table$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [[:space:]]+[rt]x-checksum:[[:space:]]+(en|dis)abled$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [[:space:]]+autonegotiation:[[:space:]]+(yes|no)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [[:space:]]+duplex mode:[[:space:]]+(full|half)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [[:space:]]+flowctrl:[[:space:]]+a?symmetric$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [[:space:]]+irq moderation:[[:space:]]+(en|dis)abled$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [[:space:]]+scatter-gather:[[:space:]]+(en|dis)abled$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [[:space:]]+speed:[[:space:]]+100?0?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? \[drm:mga_do_agp_dma_bootstrap\] \*ERROR\* Unable to acquire AGP: [-[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? apm: BIOS version [.[:digit:]]+ Flags [x[:digit:]]+ \(Driver version [.[:alnum:]]+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? apm: overridden by ACPI\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ata[[:digit:]]+: EH complete$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? capilib_new_ncci: kcapi: appl [[:digit:]]+ ncci 0x[12]0[12]0[12] up$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? device-mapper: [-.[:alnum:]]+ \([-[:digit:]]{10}\) initialised: dm-devel@redhat\.com$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? eth[[:digit:]]+: Media Link (Off|On [[:digit:]]+mbps (full|half)-duplex)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? icmpv6_send: no reply to icmp error$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ipmi device interface$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ipmi message handler version [.[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? kcapi: appl [[:digit:]]+ ncci 0x[12]0[12]0[12] down$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? kjournald starting\.  Commit interval [[:digit:]]+ seconds$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? libata version [.[:digit:]]+ loaded\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ll header: [:[:xdigit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? lp[[:digit:]]+ out of paper$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? lp[[:digit:]]+: ECP mode$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? martian source 255\.255\.255\.255 from [.[:digit:]]{7,15} on dev [[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? scsi [:[:digit:]]+ (Direct-Access[[:space:]]+)?[[:alnum:][:space:][:punct:]]+PQ: [[:digit:]]+ ANSI: [[:digit:]]+( CCS)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? scsi[[:digit:]] : 3ware( 9000)? Storage Controller$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? (scsi|sd|sr) [:[:digit:]]+ Attached scsi generic sg[[:digit:]]+ type [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? skge [[:alnum:]]+: Link is up at 100?0? Mbps, (full|half) duplex, flow control tx and rx$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? st: Version [[:digit:]]+, fixed bufsize [[:digit:]]+, s/g segs [[:digit:]]+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? tun: Universal TUN/TAP device driver, [.[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? tun: \(C\) 1999-2[[:digit:]]+ Max Krasnyansky <maxk@qualcomm.com>$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usbcore: registered new interface driver [-_[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usbmon: debugfs is not available$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? PnPBIOS: (get_stat_res|escd_info|isapnp_config): function not supported on this system$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ modprobe: FATAL: Error inserting apm \([^[:space:]]+\): No such device$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? UDP: bad checksum\. From [.[:digit:]]+:[[:digit:]]+ to [.[:digit:]]+:[[:digit:]]+ ulen [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? UDP: short packet: From [.[:digit:]]+:[[:digit:]]+ [[:digit:]]+/[[:digit:]]+ to [.[:digit:]]+:[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: imklog [.[:digit:]]+, log source = /proc/kmsg started\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: Kernel logging \(proc\) stopped\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? kvm: emulating exchange as write$

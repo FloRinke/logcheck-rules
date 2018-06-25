@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ proftpd\[[0-9]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) Maximum login attempts \([[:digit:]]+\) exceeded$

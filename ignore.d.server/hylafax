@@ -1,0 +1,19 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxGetty\[[0-9]+\]: ANSWER: Can not lock modem device$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxGetty\[[0-9]+\]: ANSWER: FAX CONNECTION  DEVICE '[^[:space:]]+'$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxGetty\[[0-9]+\]: LOCKWAIT$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxGetty\[[0-9]+\]: MODEM .*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxGetty\[[0-9]+\]: RECV FAX \([0-9]+\): from.+, page [0-9]+ in [0-9:]+, INF, [0-9.]+ line/mm, [12]-D M.+, [0-9]+ bit/s$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxGetty\[[0-9]+\]: RECV FAX \([0-9]+\): recvq/fax[0-9]+.tif from .+ route to .+, [0-9]+ pages in [0-9:]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxGetty\[[0-9]+\]: RECV FAX: bin/faxrcvd "recvq/fax[0-9]+.tif" "[^[:space:]]+" "[0-9]+" "" "" ""$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: FIFO RECV \"Sclient/[[:digit:]]+:[[:digit:]]+\"$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: JOB [0-9]+ \(failed dest \+[[:digit:]]+ pri [0-9]+ tts [:0-9]{4,5} killtime [:0-9]{7,8}\): (DEAD|DELETE|SEND DONE: [:0-9]{4,5})$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: JOB [[:digit:]]+ \((ready|active) dest [[:digit:]\+]+ pri [[:digit:]]+ tts [[:digit:]]+:[[:digit:]]+ killtime [[:digit:]]+:[[:digit:]]+:[[:digit:]]+\): (READY|PROCESS|ACTIVE|PREPARE START)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: MODEM .*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: NOTIFY exit status: 0 \([[:digit:]]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: NOTIFY: bin/notify \"doneq/q[[:digit:]]+\" \"done\" \"[[:digit:]]+:[[:digit:]]{2}\"$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: NOTIFY: bin/notify \"doneq/q[[:digit:]]+\" \"failed\" \"[:0-9]{4,5}\"$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: STATE CHANGE: RUNNING -> LOCKWAIT \(timeout [[:digit:]]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxQueuer\[[0-9]+\]: SUBMIT JOB [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxSend\[[0-9]+\]: SEND FAX: JOB [[:digit:]]+ DEST [ [:digit:]()-]+ COMMID \w+ DEVICE '[/[:alnum:]]+'$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ FaxSend\[[0-9]+\]: SEND FAX: JOB [[:digit:]]+ SENT in [[:digit:]]+:[[:digit:]]{2}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ HylaFAX\[[0-9]+\]: Filesystem has SysV-style file creation semantics\.$

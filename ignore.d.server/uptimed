@@ -1,0 +1,3 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ uptimed: moving up to position [0-9]+: [0-9]+ day[s ], [:0-9]{8}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ uptimed: milestone: [0-9]+ day[s ], [:0-9]{8} \([[:alnum:] ]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ uptimed: new uptime record: .*$

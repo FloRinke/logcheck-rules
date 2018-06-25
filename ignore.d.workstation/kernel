@@ -1,0 +1,167 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? cdrom: This disc doesn't have any tracks I recognize!$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? cdrom: open failed\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? hd[[:lower:]]+: (ATAPI reset complete|drive not ready for command)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? hd[[:lower:]]+: ATAPI [[:digit:]]+X DVD-ROM CD-R/RW drive, [[:digit:]]+kB Cache$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? Uniform CD-ROM driver Revision: [[:digit:]]\.[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? spurious 8259A interrupt: IRQ7\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? icmpv6: msg of unknown type$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? i2c_adapter i2c-0: sendbytes: error - bailout\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? msp34xx: I/O error #1 \((read|write) 0x[[:digit:]a-fA-F]+/0x[[:digit:]a-fA-F]+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? eth[[:digit:]]: New link status: AP (In|Out of) Range \([[:digit:]]+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? eth[[:digit:]]: New link status: (Disconnected|Connected) \([[:digit:]]+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? REJECT input_ext IN=[[:alnum:]]+ OUT= MAC=.*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [[:alnum:]]+: eth[[:digit:]]: Link is down\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ISO 9660 Extensions: Microsoft Joliet Level [0-3]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ISO 9660 Extensions: [_[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ISOFS: changing to secondary root$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? agpgart: Found an AGP [[:digit:].]+ compliant device at [[:digit:]:.]+\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? agpgart-[-[:alnum:]]+ [[:xdigit:]:.]+: AGP [.[:digit:]]+ bridge$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? agpgart(-[-[:alnum:]]+ [[:xdigit:]:.]+)?: [pP]utting AGP V[[:digit:]] device (at [[:digit:]:.]+ )?into [[:digit:]]x mode$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? pci [[:xdigit:]:.]+: putting AGP V[[:digit:]] device into [[:digit:]]x mode$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? hub [[:digit:]]+-[[:digit:]]+:[[:digit:]]+\.[[:digit:]]+: (USB hub found|[[:digit:]]+ ports detected)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? hub [[:digit:]]+-[[:digit:]]+:[[:digit:]]+\.[[:digit:]]+: over-current change on port [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? hub [[:digit:]]+-[[:digit:]]+:[[:digit:]]+\.[[:digit:]]+: port [[:digit:]]+ disabled by hub \(EMI\?\), re-enabling\.\.\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb [[:digit:]]+-[.[:digit:]]+: configuration #[[:digit:]] chosen from [[:digit:]]+ choices?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb [[:digit:]]+-[.[:digit:]]+: (new|reset) (low|full|high)[ -]speed USB device (number [[:digit:]]+ using [_[:alnum:]-]+|using ([_[:alnum:]-]+ and )?address [[:digit:]]+)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb [[:digit:]]+-[.[:digit:]]+: New USB device found, idVendor=[[:xdigit:]]+, idProduct=[[:xdigit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb [[:digit:]]+-[.[:digit:]]+: New USB device strings: Mfr=[[:digit:]]+, Product=[[:digit:]]+, SerialNumber=[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb [[:digit:]]+-[.[:digit:]]+: (Product|Manufacturer|SerialNumber): .*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? hub\.c: new USB device [.:[:digit:]-]+, assigned address [[:digit:]]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb [[:digit:]]-[.[:digit:]]+: USB disconnect, (device number|address) [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb.c: USB disconnect on device [.:[:digit:]-]+ address [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb.c: USB device [[:digit:]]+ \(vend/prod [x/[[:digit:]]+\) is not claimed by any active driver\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? USB Mass Storage device found at [[:digit:]]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb-storage [[:digit:]]+-[[:digit:]]+:[[:digit:]]+\.[[:digit:]]+: Quirks match for vid [[:xdigit:]]+ pid [[:xdigit:]]+: [[:xdigit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb-storage: (device found at [[:digit:]]|waiting for device to settle before scanning|device scan complete)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? Initializing USB Mass Storage driver\.\.\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? USB Mass Storage support registered\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? WARNING: USB Mass Storage data integrity not assured$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? drivers/usb/serial/usb-serial\.c: USB Serial Driver core( [.[:alnum:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? drivers/usb/serial/usb-serial\.c: USB Serial support registered for [_[:alnum:][:space:]-]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? drivers/usb/class/usblp.c: usblp[[:digit:]]: removed$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? drivers/usb/class/usblp.c: usblp[[:digit:]]: USB Bidirectional printer dev [[:digit:]] if [[:digit:]] alt [[:digit:]] proto [[:digit:]] vid [[:alnum:]]+ pid [[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? drivers/usb/serial/ipaq.c: USB PocketPC PDA driver v[.[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ipaq [-[:digit:].:]+ PocketPC PDA converter detected$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ipaq [-[:digit:].:]+ device disconnected$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ usb.agent\[[[:digit:]]+\]:[[:space:]]+[_[:alnum:]-]+: (loaded successfully|already loaded)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ usb.agent\[[[:digit:]]+\]: Keeping default configuration with [\./:[:alnum:]-]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ieee1394: Node changed: [-:[:digit:]]+ -> [-:[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ieee1394: Node (suspended|resumed): ID:BUS\[[-:[:digit:]]+\]  GUID\[[[:digit:]a-f]+\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ieee1394: The root node is not cycle master capable; selecting a new root node and resetting\.\.\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ieee1394: Error parsing configrom for node [-:[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ieee1394: sbp2: Logged into SBP-2 device$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ieee1394: Node [:[:digit:]\-]+ Max speed \[S[[:digit:]]+\] - Max payload \[[[:digit:]]+\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? scsi[[:digit:]]+ : SCSI emulation for (IEEE-1394 SBP-2 Devices|USB Mass Storage devices)$
+^[[:alpha:]]{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? scsi[[:digit:]]+ : usb-storage [0-9]-[0-9](\.[0-9])?:1\.0$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? Attached scsi removable disk sd[a-z]( at scsi[[:digit:]], channel [[:digit:]], id [[:digit:]], lun [[:digit:]])?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [[:digit:]:]+ Attached scsi (removable )?disk sd[a-z]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+: \[sd[a-z]\] Attached SCSI (removable )?disk$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? SCSI device sd[a-z]: [[:digit:]]+ 512-byte hdwr sectors \([[:digit:]]+ MB\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+: \[sd[a-z]\] [[:digit:]]+ [[:digit:]]+-byte (hardware sectors|logical blocks):? \([.[:digit:]]+ [MG]B(/[.[:digit:]]+ [MG]iB)?\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+: \[sd[a-z]\] [[:digit:]]+-byte physical blocks$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+: \[sd[a-z]\] Write Protect is (off|on)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+: \[sd[a-z]\] Mode Sense: [[:xdigit:]]+ [[:xdigit:]]+ [[:xdigit:]]+ [[:xdigit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+: \[sd[a-z]\] No Caching mode page (present|found)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+: \[sd[a-z]\] Assuming drive cache: write through$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd [:[:digit:]]+: \[sd[a-z]\] Spinning up disk\.\.\.\.ready$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [[:space:]]*sd[a-z]:( sd[a-z][[:digit:]]+)*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sr[[:digit:]]+: [^[:space:]]+ drive(: [ \/[:alnum:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? +Type: +[^[:space:]]+ +ANSI SCSI revision: [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? (sr [:[:digit:]]+: )?Attached scsi CD-ROM sr[[:digit:]]+( at scsi[[:digit:]], channel [[:digit:]], id [[:digit:]], lun [[:digit:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ scsi.agent\[[[:digit:]]+\]: (disk|cdrom) at [\./:[:alnum:]-]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ scsi.agent\[[[:digit:]]+\]:[[:space:]]+ sd_mod: loaded successfully \(for disk\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])?  /dev/scsi/host[[:digit:]]/bus[[:digit:]]/target[[:digit:]]/lun[[:digit:]]: p[[:digit:]]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? keyboard: Too many NACKs -- noisy kbd cable\?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? keyboard.c: can't emulate rawmode for keycode [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ide-floppy driver [[:alnum:].]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ide: Assuming [[:digit:]]+MHz system bus speed for PIO modes; override with idebus=xx$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? Uniform Multi-Platform E-IDE driver Revision: [.[:alnum:]-]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ohci_hcd [.[:digit:]\:]+: wakeup$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usbcore: registered new driver [_[:lower:]-]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb.c: registered new driver [_[:lower:]-]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? (drivers/usb/input/hid-core.c|usbhid): ctrl urb status [-[:digit:]]+ received$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? (drivers/usb/input/hid-core.c|usbhid): v[\:[:digit:].]+USB HID core driver$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? drivers/usb/class/cdc-acm.c: v[\:[:digit:].]+USB Abstract Control Model driver for USB modems and ISDN adapters$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ input.agent\[[[:digit:]]+\]:[[:space:]]+((mouse|ts|ev|joy)dev|evbug): (already loaded|loaded successfully|blacklisted)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? (generic-usb [.:[:xdigit:]]+: )?input(,hidraw[[:digit:]]+)?: USB HID v[.[:digit:]]+ (Joystick|Keyboard|Mouse|Device) \[[ [:alnum:][:punct:]]+\] on usb-[\:[:xdigit:].-]+(/input[[:digit:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? input: [-._/:[:alnum:][:space:]]+ as [-.:/[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? input: AT Translated Set 2 keyboard on isa[[:digit:]]+/serio[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? pl2303 [-:[:digit:].]+ PL-2303 converter detected$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb [-:[:digit:]]+ [-[:alnum:][:space:]]+ converter now attached to ttyUSB[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [-[:alnum:]]+ ttyUSB[[:digit:]]: [-[:alnum:][:space:]]+ converter now disconnected from ttyUSB[[:digit:]]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? cdc_acm [-:[:digit:].]+ ttyACM[[:digit:]]: USB ACM device$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? drivers/usb/serial/pl2303.c: Prolific PL2303 USB to serial adaptor driver v[.[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? Bluetooth: HCI USB driver ver [.[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? drivers\/usb\/class\/audio\.c: v[.[:digit:]]+:USB Audio Class driver$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usbaudio: assuming that a stereo channel connected directly to a mixer is missing in search \(got .*\?\)\. Should be fine\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usbaudio: constructing mixer for Terminal [[:digit:]]+ type 0x[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usbaudio: device [[:digit:]] audiocontrol interface [[:digit:]] has [[:digit:]] input and [[:digit:]] output AudioStreaming interfaces$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usbaudio: device [[:digit:]]+ interface [[:digit:]]+ altsetting [[:digit:]]+: format 0x[[:digit:]]+ sratelo [[:digit:]]+ sratehi [[:digit:]]+ attributes 0x[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb_audio_parsecontrol: usb_audio_state at [[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usbaudio: (registered|unregister) (dsp|mixer) [,[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usbaudio: valid (in|out)put sample rate [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usbaudio: warning: found [[:digit:]] of [[:digit:]] logical channels\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb [[:digit:]]-[[:digit:]]: configuration #[[:digit:]]+ chosen from [[:digit:]]+ choices?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd[a-z]: Write Protect is off$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd[a-z]: assuming (Write Enabled|drive cache: write through)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sd[a-z]: Mode Sense: [[:alnum:]]{2} [[:alnum:]]{2} [[:alnum:]]{2} [[:alnum:]]{2}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? nfs warning: mount version (older|newer) than kernel$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? Device not ready. Make sure there is a disc in the drive.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? intel8x0_measure_ac97_clock: measured [[:digit:]]+ usecs$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? intel8x0: clocking to [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? \[drm\] Initialized card for PCI DMA\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? \[drm\] Setting GART location based on new memory map$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? \[drm\] Loading R[23]00 Microcode$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? \[drm\] writeback test succeeded in [[:digit:]]+ usecs$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? \[drm\] (DAC-6|LVDS-8): set mode (640x480|800x600|1024x768|1152x864|1280x1024|1440x900)? [0-9a-f]{1,2}$
+# this stuff is from pmounts autodetection
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? UDF-fs: No (VRS|partition) found( \([[:digit:]]+\))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? UDF-fs: Partition marked readonly; forcing readonly mount$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? UDF-fs INFO UDF: Mounting volume '[_[:alnum:]]+', timestamp [/[:digit:]]+ [:[:digit:]]+ \([[:xdigit:]]+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? Unable to identify CD-ROM format\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? FAT(-fs \([[:alnum:]]+\))?: Did not find valid FSINFO signature\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])?      Found signature1 0x[[:xdigit:]]+ signature2 0x[[:xdigit:]]+ \(sector = [[:digit:]]+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? FAT(-fs \([[:alnum:]]+\))?: bogus number of reserved sectors$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? FAT(-fs \([[:alnum:]]+\))?: utf8 is not a recommended IO charset for FAT filesystems, filesystem will be case sensitive!$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? VFS: Can't find a valid FAT filesystem on dev [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? VFS: Can't find ext[234] filesystem on dev [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? NTFS driver [.[:digit:]]+ \[Flags: R/W MODULE\]\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? NTFS-fs error \(device [^[:space:]]+\): read_ntfs_boot_sector\(\): Primary boot sector is invalid\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? NTFS-fs error \(device [^[:space:]]+\): read_ntfs_boot_sector\(\): Mount option [^[:space:]]+ not used\. Aborting without trying to recover\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? NTFS-fs error \(device [^[:space:]]+\): ntfs_fill_super\(\): Not an NTFS volume\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? hfs: unable to find HFS\+ superblock$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? hfs: can't find a HFS filesystem on dev [^[:space:]]+\.$
+# connection of usb devices
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb [-.[:digit:]]+: not running at top speed; connect to a high speed hub$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb-storage: device found at [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [[:space:]]*Vendor: [-_. [:alnum:]]+Model: [-_. [:alnum:]]+Rev: [-_. [:alnum:]]+$
+# for sun machines
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? sunmouse: Successfully adjusted to [[:digit:]]+ baud\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? btaudio: driver version [[:digit:].]+ loaded \[digital\+analog\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? eth[[:digit:]]: tx interrupt but no status$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? CSLIP: code copyright 1989 Regents of the University of California$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? atkbd\.c: Keyboard on isa0060/serio0 reports too many keys pressed\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? atkbd\.c: Unknown key released \(translated set [[:digit:]]+, code 0x[[:xdigit:]]+ on isa0060/serio0\)\.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? atkbd\.c: Use 'setkeycodes [[:xdigit:]]+ <keycode>' to make it known\.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? swsusp: Need to copy [[:digit:]]+ pages$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? swsusp: Restoring Highmem$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? ACPI: PCI Interrupt [[:alnum:]:.]+\[[[:upper:]]\] -> GSI [[:digit:]]+ \(level, low\) -> IRQ [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? PM: Writing back config space on device [[:alnum:]:.]+ at offset [[:digit:]] \(was [[:digit:]]+, writing [[:digit:]]+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? loop: loaded \(max [[:digit:]]+ devices\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? oprofile: using NMI interrupt\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? bttv(: )?[[:digit:]]+: PLL: 28636363 => 35468950 \.\. ok$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? bttv(: )?[[:digit:]]+: PLL can sleep, using XTAL \(28636363\)\.?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb[[:digit:]]+: register 'zaurus' at usb-[[:digit:]:.-]+, (Sharp Zaurus SL-5x00|Sharp Zaurus, PXA-2xx based|Olympus R1000|pseudo-MDLM =\(BLAN\) device), [[:digit:]a-f:]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb[[:digit:]]+: unregister 'zaurus' usb-[[:digit:]:.-]+, (Sharp Zaurus SL-5x00|Sharp Zaurus, PXA-2xx based|Olympus R1000|pseudo-MDLM =\(BLAN\) device)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? thinkpad_acpi: EC reports that Thermal Table has changed$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? wlan[0-9]: (authenticate(d| with AP ([0-9a-f]{2}:){5}[0-9a-f]{2})|associate(d| with AP ([0-9a-f]{2}:){5}[0-9a-f]{2}))$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? wlan[0-9]: (beacon received|waiting for beacon from ([0-9a-f]{2}:){5}[0-9a-f]{2})$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? wlan[0-9]: ((direct probe to|a(uthentic|ssoci)ate with) (AP )?([0-9a-f]{2}:){5}[0-9a-f]{2} \(try [1-3]\)|direct probe responded)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? wlan[0-9]: RX (Rea|A)ssocResp from ([0-9a-f]{2}:){5}[0-9a-f]{2} \(capab=0x[[:xdigit:]]+ status=0 aid=[0-9]+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? No probe response from AP ([0-9a-f]{2}:){5}[0-9a-f]{2} after 500ms, disconnecting\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? mmc[0-9]: (new SD card at address [[:xdigit:]]{4}|card [[:xdigit:]]{4} removed)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? mmcblk[0-9]: mmc[0-9]:[[:xdigit:]]{4} [[:alnum:]]+ [.[:digit:]]+ [MG]iB$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])?  mmcblk[0-9]:( p[0-9])+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? cfg80211: Calling CRDA (to update world regulatory domain|for country: [A-Z][A-Z])$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? Monitor-Mwait will be used to enter C-[123] state$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? [ ._[:alnum:]-]+: [ ._[:alnum:]-]+ sensor detected$

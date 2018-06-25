@@ -1,0 +1,5 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nacctd: config:$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nacctd: no old dumpfile \(/var/log/net-acct/dump\) exists$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nacctd: net accounting daemon forked$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nacctd: net accounting daemon terminating$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nacctd: net accounting daemon started$

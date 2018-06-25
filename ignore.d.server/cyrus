@@ -1,0 +1,6 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (cyrus/)?notifyd\[[0-9]+\]: do_notify using method '(null|log|zephyr)'$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cyrus/imapd\[[0-9]+\]: SQUAT failed( to open index file)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cyrus/imapd\[[0-9]+\]: SQUAT returned [0-9]+ messages$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cyrus/lmtpd\[[0-9]+\]: DBERROR db3: [12] lockers$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cyrus/notifyd\[[0-9]+\]: MAIL, , [^[:space:]]+, [^[:space:]]+,  \"[ [:alnum:][:punct:]]+\"$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cyrus/squatter\[[0-9]+\]: (skipping|indexing) mailbox [[:alpha:]^\.]+\.\.\.$

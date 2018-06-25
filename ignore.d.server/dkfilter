@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dkfilter.in\[[0-9]+\]: DomainKeys verification - (pass|neutral)( \(no signature; (no policy for [._[:alnum:]-]+|domain testing)\))?; (from|sender)=<[^[:space:]]+>(, message-id=<[^[:space:]]+>)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dkfilter.out\[[0-9]+\]: DomainKeys signing - (signed|skipped \(wrong sender domain\)); (from|sender)=<[^[:space:]]+>, message-id=<[^[:space:]]+>$

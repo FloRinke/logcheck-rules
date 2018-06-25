@@ -1,0 +1,5 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ikiwiki: rebuilding wiki\.\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ikiwiki: (scann|render)ing [-_./[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ikiwiki: updating hyperestraier search index$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ikiwiki: done
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ikiwiki: \[[^]]+\] "do" parameter missing$

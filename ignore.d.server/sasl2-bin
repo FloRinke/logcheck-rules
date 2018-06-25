@@ -1,0 +1,2 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ saslpasswd2: error deleting entry from sasldb: DB_NOTFOUND: No matching key/data pair found$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ saslpasswd2: setpass failed for [-._[:alnum:]]+: user not found$

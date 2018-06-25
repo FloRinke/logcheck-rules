@@ -1,0 +1,26 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (dovecot: )?(imap|pop3)-login: Disconnected \[[.:[:xdigit:]]+\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (dovecot: )?deliver\([-_.@[:alnum:]]+\): msgid=<?.*>?( \((added by [^[:space:]]+|sfid-[_[:xdigit:]]+)\)?)?[[:space:]]*: (saved mail to [-_.[:alnum:]]+|(forwarded|discarded duplicate forward) to <[^[:space:]]+>)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (dovecot: )?deliver\([-_.@[:alnum:]]+\): sieve: msgid=<?.*>?( \(((added by )?[^[:space:]]+|sfid-[_[:xdigit:]]+)\)?)?[[:space:]]*: (stored mail into mailbox '.*'|marked message to be discarded if not explicitly delivered \(discard action\)|(forwarded to|sent vacation response to|discarding vacation response for message implicitly delivered to|not sending vacation response to system address|discarding vacation response to mailinglist recipient|discarded vacation reply to|discarding vacation response to (auto-submitted|precedence=(bulk|Bulk|list)) message from|discarded duplicate (vacation response|forward) to) <[^[:space:]]*>)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot-auth: \(pam_unix\) authentication failure; logname= uid=0 euid=0 tty=dovecot ruser=([-_.@[:alnum:]]+)? rhost=([.:[:xdigit:]]+)?(  user=[-_.@[:alnum:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot-auth: \(pam_unix\) check pass; user unknown$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot-auth: pam_unix\(dovecot:[[:alnum:]]+\): authentication failure; logname= uid=0 euid=0 tty=dovecot ruser=([-_.@[:alnum:]]+)? rhost=([.:[:xdigit:]]+)?(  user=[-_.@[:alnum:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot-auth: pam_unix\(dovecot:[[:alnum:]]+\): check pass; user unknown$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot-auth: pam_ldap: error trying to bind as user \".*\" \(Invalid credentials\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (imap|pop3)-login: Login: [.[:alnum:]@-]+ \[[.:[:xdigit:]]+\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Aborted login( \([[:digit:]]+ authentication attempts\))?: (user=<[-_.@[:alnum:]]+>, method=[[:alnum:]-]+, )?rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, (TLS( handshake)?|secured))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: (Disconnected|Aborted login)(: Inactivity)? (\(no auth attempts\):|\(auth failed, [[:digit:]]+ attempts\): user=<[-_.@[:alnum:]]+>, method=PLAIN,|\(aborted authentication\): method=PLAIN,) rip=[.[:digit:]]+, lip=[.[:digit:]]+, (TLS|SSL)(( handshaking)?(: Disconnected)?|: SSL_read\(\) syscall failed: Connection reset by peer)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Disconnected: ((Too many invalid commands|Inactivity): )?(user=<[-_.@[:alnum:]]+>, )?(method=[[:alnum:]-]+, )?rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, (TLS( handshake)?|secured))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Disconnected: Logged out$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Login: user=<[-_.@[:alnum:]]+>, method=[[:alnum:]-]+, rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+(, (TLS( handshake)?|secured))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: IMAP\([-_.@[:alnum:]]+\): Connection closed(: Connection reset by peer)?( bytes=[[:digit:]]+/[[:digit:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: IMAP\([-_.@[:alnum:]]+\): Disconnected(: Logged out| for inactivity|: Disconnected| in [[:upper:]]+|: Too many invalid IMAP commands\.)?( bytes=[[:digit:]]+/[[:digit:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: IMAP\([-_.@[:alnum:]]+\): Fixed index file /[-._/[:alnum:]&]+/dovecot\.index: first_(recent|unseen)_uid_lowwater [[:digit:]]+ -> [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: POP3\([-_.@[:alnum:]]+\): Disconnected(: Logged out| for inactivity|: Disconnected)? top=[[:digit:]]+/[[:digit:]]+, retr=[[:digit:]]+/[[:digit:]]+, del=[[:digit:]]+/[[:digit:]]+, size=[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth-worker\([-_.[:alnum:]]+\): (pg|my)sql: Connected to [-_.[:alnum:]]+ \([-_.[:alnum:]]+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth\(-_.[[:alnum:]]+\): (pg|my)sql: Connected to [-_.[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth\([[:alnum:]]+\): client in: AUTH [[:digit:]]+[[:space:]]+[[:alnum:]-]+[[:space:]]+service=IMAP[[:space:]]+(secured )?lip=[.:[:xdigit:]]+[[:space:]]+rip=[.:[:xdigit:]]+[[:space:]]+resp=<hidden>$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth\([[:alnum:]]+\): client in: CONT<hidden>
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth\([[:alnum:]]+\): client out: CONT[[:space:]]+[[:digit:]]+[[:space:]]+[[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: ssl-build-param: SSL parameters regeneration completed$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: managesieve-login: Login: user=<[._[:alnum:]-]+>, method=[[:alnum:]-]+, rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+, (TLS( handshake)?|secured)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: MANAGESIEVE\([._[:alnum:]-]+\): (Connection closed|Disconnected: Logged out)( bytes=[[:digit:]]+/[[:digit:]]+)?$

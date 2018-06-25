@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ uservd\[[0-9]+\]: call connected$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ uservd/check\[[0-9]+\]: uservd\[[0-9]+\] is running$

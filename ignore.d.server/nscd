@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nscd: nss_ldap: reconnect(ing|ed) to LDAP server(\.\.\.| after [0-9]+ attempt\(s\))$

@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rpc\.mountd: authenticated (un|)mount request from [._[:alnum:]-]+:[0-9]+ for (/[._[:alnum:]-]*)+ \((/[._[:alnum:]-]*)+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mountd\[[0-9]+\]: authenticated (un|)mount request from [._[:alnum:]-]+:[0-9]+ for (/[._[:alnum:]-]*)+ \((/[._[:alnum:]-]*)+\)$

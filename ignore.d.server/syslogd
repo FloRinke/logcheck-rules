@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ syslogd [.0-9]{5}#[0-9]+: restart \(remote reception\)\.$

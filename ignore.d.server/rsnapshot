@@ -1,0 +1,3 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsnapshot\[[0-9]+\]: /usr/bin/rsnapshot( -c [^ ]*)? (hourly|semidaily|daily|weekly|monthly): completed successfully$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsnapshot\[[0-9]+\]: WARNING: /usr/bin/rsnapshot: (hourly|semidaily|daily|weekly|monthly): completed, but with some warnings$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsnapshot\[[0-9]+\]: WARNING: Some files and/or directories in root@[._[:alnum:]:/-]+ vanished during rsync operation$

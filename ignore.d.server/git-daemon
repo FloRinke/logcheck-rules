@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ git-daemon\[[[:digit:]]{2,5}\]: '[-_./[:alnum:]]+' does not appear to be a git repository$

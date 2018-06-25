@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ [[:alnum:]-]+(\[[0-9]+\])?: pam_krb5\([[:alnum:]]+:auth\): user [[:alnum:]-]+ authenticated as [[:alnum:]-]+@[.A-Z]+$

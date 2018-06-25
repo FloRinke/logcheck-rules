@@ -1,0 +1,4 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Reconfiguring Squid Cache \(version [.[:alnum:]]+\)\.\.\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Squid Cache \(Version [[:digit:].]+(STABLE)*[[:digit:]]+\): Exiting normally\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: Starting Squid Cache version [[:digit:].]+(STABLE)*[[:digit:]]+ for [[:alnum:]-]+\.\.\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ squid\[[[:digit:]]+\]: squidaio_queue_request: WARNING - Queue congestion$

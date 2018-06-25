@@ -1,0 +1,28 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/resolver\[[0-9]+\]: \[[._[:alnum:]-]+\] resolved to \[?[0-9.]{7,15}:[0-9]+\]? \([0-9]+ seconds to live\)$
+
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/s2s\[[0-9]+\]: \[[0-9]+\] \[[0-9.]{7,15}, port=[0-9]+\] (dis)?connect$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/s2s\[[0-9]+\]: \[[0-9]+\] \[[0-9.]{7,15}, port=[0-9]+\] (incoming|outgoing) connection$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/s2s\[[0-9]+\]: (incoming|outgoing) route '[._[:alnum:]-]+/[._[:alnum:]-]+' is now (in)?valid; (source|destination)=[0-9.]{7,15}, port [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/s2s\[[0-9]+\]: \[[0-9]+\] \[[0-9.]{7,15}, port=[0-9]+\] error: Stream error \(\(null\)\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/s2s\[[0-9]+\]: \[[0-9]+\] \[[0-9.]{7,15}, port=[0-9]+\] write error: Connection refused \(111\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/s2s\[[0-9]+\]: \[[0-9]+\] \[[0-9.]{7,15}, port=[0-9]+\] write error: Connection timed out \(110\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/s2s\[[0-9]+\]: \[[0-9]+\] \[[0-9.]{7,15}, port=[0-9]+\] write error: No route to host \(113\)$
+
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/s2s\[[0-9]+\]: \[[0-9]+\] \[[0-9.]{7,15}, port=[0-9]+\] incoming stream online \(id [a-z0-9]{40}\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/s2s\[[0-9]+\]: \[[0-9]+\] \[[0-9.]{7,15}, port=[0-9]+\] (sending|received) dialback auth request for route '[._[:alnum:]-]+/[._[:alnum:]-]+'$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/s2s\[[0-9]+\]: \[[0-9]+\] \[[0-9.]{7,15}, port=[0-9]+\] (incoming|outgoing) route '[._[:alnum:]-]+/[._[:alnum:]-]+' is now valid(, SSL negotiated)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/s2s\[[0-9]+\]: \[[0-9]+\] \[[0-9.]{7,15}, port=[0-9]+\] checking dialback verification from [._[:alnum:]-]+: sending valid$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/s2s\[[0-9]+\]: \[[0-9]+\] \[[0-9.]{7,15}, port=[0-9]+\] no dialback started$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/s2s\[[0-9]+\]: \[[0-9]+\] \[[0-9.]{7,15}, port=[0-9]+\] closing connection$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/s2s\[[0-9]+\]: \[[0-9]+\] \[[0-9.]{7,15}, port=[0-9]+\] dns lookup for [._[:alnum:]-]+ timed out$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/s2s\[[0-9]+\]: connection to [._[:alnum:]-]+ timed out$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/s2s\[[0-9]+\]: \[[0-9]+\] \[[0-9.]{7,15}, port=[0-9]+\] error: XML parse error \((syntax error|junk after document element)\)$
+
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/sm\[[0-9]+\]: session (replaced|ended|started): jid=[._[:alnum:]-]+@[._[:alnum:]-]+/[._[:alnum:]-]+$
+
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/c2s\[[0-9]+\]: \[[0-9]+\] \[[0-9.]{7,15}, port=[0-9]+\] (dis)?connect$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/c2s\[[0-9]+\]: \[[0-9]+\] \[[0-9.]{7,15}, port=[0-9]+\] error: XML parse error \(syntax error\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/c2s\[[0-9]+\]: \[[0-9]+\] requesting session: jid=[._[:alnum:]-]+@[._[:alnum:]-]+/[._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/c2s\[[0-9]+\]: \[[0-9]+\] auth succeeded: username=[._[:alnum:]-]+, resource=[._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/c2s\[[0-9]+\]: \[[0-9]+\] SASL authentication succeeded: mechanism=DIGEST-MD5; authzid=[._[:alnum:]-]+@[._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ jabberd/c2s\[[0-9]+\]: \[[0-9]+\] bound: jid=[._[:alnum:]-]+@[._[:alnum:]-]+/[._[:alnum:]-]+$

@@ -1,0 +1,5 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: netconsole: (local|remote) port [[:digit:]]{2,5}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: netconsole: interface [[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: netconsole: (local|remote) IP [.[:digit:]]{7,15}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: netconsole: remote ethernet address [:[:xdigit:]]{17}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: netconsole: network logging started$

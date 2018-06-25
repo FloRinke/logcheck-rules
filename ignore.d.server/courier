@@ -1,0 +1,20 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ((imap|pop3)(login|d-ssl)|couriertcpd): (LOGOUT|TIMEOUT|DISCONNECTED), ip=\[[.:[:alnum:]]+\](, port=\[[[:digit:]]+\])?, headers=[[:digit:]]+, body=[[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ((imap|pop3)(login|d-ssl)|couriertcpd): (LOGOUT|TIMEOUT|DISCONNECTED), user=[-_.@[:alnum:]]+, ip=\[[.:[:alnum:]]+\](, port=\[[[:digit:]]+\])?, headers=[[:digit:]]+, body=[[:digit:]]+(, rcvd=[[:digit:]]+, sent=[[:digit:]]+)?(, time=[[:digit:]]+)?(, starttls=[01])?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ((imap|pop3)(login|d-ssl)|couriertcpd): (LOGOUT|TIMEOUT|DISCONNECTED), user=[-_.@[:alnum:]]+, ip=\[[.:[:alnum:]]+\](, port=\[[[:digit:]]+\])?, top=[[:digit:]]+, retr=[[:digit:]]+(, time=[[:digit:]]+)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ((imap|pop3)(login|d-ssl)|couriertcpd): Connection, ip=\[[.:[:alnum:]]+\](, port=\[[[:digit:]]+\])$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ((imap|pop3)(login|d-ssl)|couriertcpd): LOGIN, user=[-_.@[:alnum:]]+, ip=\[[.:[:alnum:]]+\](, port=\[[[:digit:]]+\])?(, protocol=IMAP)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ((imap|pop3)(login|d-ssl)|couriertcpd): Unexpected SSL connection shutdown\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ((imap|pop3)(login|d-ssl)|couriertcpd): authdaemon: ACCEPT, username [@._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ((imap|pop3)(login|d-ssl)|couriertcpd): authdaemon: starting client module$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ((imap|pop3)(login|d-ssl)|couriertcpd): couriertls: read: Connection (reset by peer|timed out)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ authdaemond.plain: nss_ldap: reconnect(ing|ed) to LDAP server(\.\.\.| after [[:digit:]]+ attempt\(s\))$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ courierpop3login: (LOGOUT|TIMEOUT|DISCONNECTED), user=[-_.@[:alnum:]]+, ip=\[[.:[:alnum:]]+\](, port=\[[[:digit:]]+\])?, top=[[:digit:]]+, retr=[[:digit:]]+, time=[[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ courierpop3login: LOGOUT, ip=\[[.:[:alnum:]]+\](, port=\[[[:digit:]]+\])?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ couriertcpd: (LOGOUT|TIMEOUT|DISCONNECTED), user=[-_.@[:alnum:]]+, ip=\[[.:[:alnum:]]+\](, port=\[[[:digit:]]+\])?, headers=[[:digit:]]+, body=[[:digit:]]+, rcvd=[[:digit:]]+, sent=[[:digit:]]+, time=[[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ couriertcpd: Connection, ip=\[[.:[:alnum:]]+\](, port=\[[[:digit:]]+\])?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ couriertcpd: Disconnected, ip=\[[.:[:alnum:]]+\](, port=\[[[:digit:]]+\])?, time=[[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ couriertcpd: LOGIN, user=[._[:alnum:]-]+, ip=\[[.:[:alnum:]]+\], port=\[[[:digit:]]+\], protocol=(POP|IMAP)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ couriertcpd: LOGIN: ip=\[[.:[:alnum:]]+\](, port=\[[[:digit:]]+\])?, command=(CAPABILITY|AUTHENTICATE|LOGIN)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ couriertcpd: LOGIN: ip=\[[.:[:alnum:]]+\](, port=\[[[:digit:]]+\])?, username=[._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imap(login|d-ssl): LOGOUT, ip=\[[.:[:alnum:]]+\](, port=\[[[:digit:]]+\])?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imap(login|d-ssl): LOGOUT, user=[-_.@[:alnum:]]+, ip=\[[.:[:alnum:]]+\](, port=\[[[:digit:]]+\])?, headers=[[:digit:]]+, body=[[:digit:]]+$

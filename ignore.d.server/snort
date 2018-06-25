@@ -1,0 +1,35 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort:[[:space:]]*.?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort: (\`|\\+)-.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort:     alert_fragments: (INACTIVE|ACTIVE)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort:     alert_incomplete: (INACTIVE|ACTIVE)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort:     alert_large_fragments: (INACTIVE|ACTIVE)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort:     alert_multiple_requests: (INACTIVE|ACTIVE)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort:     Detect Protocols: [[:alpha:]].*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort:     Detect Scan Type: [[:alpha:]].*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort: Final Flow Statistics$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort: \| gen-id=[0-9] +sig-id=[0-9]+ +type=(Threshold|Both) +tracking=(dst|src) count=[0-9]+ +seconds=[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort: | Hash Method:     [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort: Initializing daemon mode$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort: Log directory = /var/log/snort$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort: | Memcap:          [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort:     Memcap \(in bytes\): [0-9]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort: | none$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort:     Number of Nodes:   [0-9]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort: | Overhead Bytes: [0-9]+\(%[0-9]\.[0-9]\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort: PID path stat checked out ok, PID path set to /var/run/$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort:     Ports: [0-9].*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort: Portscan Detection Config:
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort:     Ports to decode RPC on: [0-9].*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort:     Ports to decode telnet on: [0-9].*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort: | Rows  :          [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort: rpc_decode arguments:$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort: Rule application order: ->pass->activation->dynamic->alert->log$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort:     Sensitivity Level: (Low|High)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort: Snort exiting$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort: Snort initialization completed successfully \(pid=[0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort: | Stats Interval:  [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort: telnet_decode arguments:$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort: \+-*\[(thresholding-config|thresholding-global|threasholding-local|suppressi on|Flow Config)\]-*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort: Writing PID "[0-9]+" to file "/var/run//snort_eth[0-9]+\.pid"$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort: X-Link2State Config:$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ snort: Warning: flowbits key .* is set but not ever checked\.$

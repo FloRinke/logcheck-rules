@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ in\.telnetd\[[[:digit:]]+\]: connect from [._[:alnum:]-]+ \([:[:xdigit:].]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ telnetd\[[[:digit:]]+\]: ttloop: peer died: EOF$

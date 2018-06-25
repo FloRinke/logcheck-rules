@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ policyd: connection from: [._[:alnum:]-]+ \(port [[:digit:]]+\), fd: [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ policyd: rcpt=[[:digit:]]+, throttle=(new|update|clear), host=[._[:alnum:]-]+, from=[^[:space:]]+, to=[^[:space:]]+, size=[/[:digit:]]+, quota=[/[:digit:]]+, count=[/[:digit:]]+\([[:digit:]]+\)(, sasl_username=[._[:alnum:]-]+)?$

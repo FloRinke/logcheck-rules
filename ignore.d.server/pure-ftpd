@@ -1,0 +1,11 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pure-ftpd: \([?.[:alnum:]-]+@[._[:alnum:]-]+\) \[INFO\] New connection from [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pure-ftpd: \([?.[:alnum:]-]+@[._[:alnum:]-]+\) \[INFO\] [._[:alnum:]-]+ is now logged in$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pure-ftpd: \([._[:alnum:]-]+@[._[:alnum:]-]+\) \[INFO\] Can't change directory to .+: (No such file or|Not a) directory$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pure-ftpd: \([._[:alnum:]-]+@[._[:alnum:]-]+\) \[INFO\] Timeout - try typing a little faster next time$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pure-ftpd: \([._[:alnum:]-]+@[._[:alnum:]-]+\) \[INFO\] Timeout \(no new data for [0-9]+ seconds\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pure-ftpd: \([._[:alnum:]-]+@[._[:alnum:]-]+\) \[INFO\] Logout\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pure-ftpd: \([._[:alnum:]-]+@[._[:alnum:]-]+\) \[NOTICE\] .+ (up|down)loaded  \([0-9]+ bytes, [0-9]+.[0-9]+KB/sec\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pure-ftpd: \([._[:alnum:]-]+@[._[:alnum:]-]+\) \[NOTICE\] File successfully renamed or moved: \[.+\]->\[.+\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pure-ftpd: \([._[:alnum:]-]+@[._[:alnum:]-]+\) \[NOTICE\] Deleted .+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pure-ftpd: \([.[:alnum:]-]+@[._[:alnum:]-]+\) \[INFO\] Timeout$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pure-ftpd: PAM-listfile: Refused user [._[:alnum:]-]+ for service pure-ftpd$

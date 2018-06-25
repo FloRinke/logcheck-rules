@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sa-exim\[[0-9]+\]: Removed 0 of 0 greylist tuplets in [012] seconds$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sa-exim\[[0-9]+\]: Removed 0 of 0 greylist directories in [012] seconds$

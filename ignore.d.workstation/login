@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ login\[[0-9]+\]: '[[:alnum:]-]+' logged in  on '/dev/tty[0-9]'$

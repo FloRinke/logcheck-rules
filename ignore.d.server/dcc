@@ -1,0 +1,4 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dccifd\[[0-9]+\]: [.0-9]+ rejected messages to [0-9]+ targets and discarded messages to [0-9]+ targets among [0-9]+ total since [/0-9]{8} [:0-9]{8}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dccproc\[[0-9]+\]: DCC servers ([-._[:alnum:]]+ )+\.\.\. at ([:.[:xdigit:]]+ )+
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dccproc\[[0-9]+\]: continue not asking DCC [[:digit:]]+ seconds after failure$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dccproc\[[0-9]+\]: no answer from [._[:alnum:]-]+ \([.0-9]{7,15},[0-9]+\) after [0-9]+ ms$

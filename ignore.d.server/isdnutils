@@ -1,0 +1,13 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: isdn_tty: call from .* -> .* ignored$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: isdn_net: Incoming call without CPN, assuming '0'$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: isdn_tty: Incoming call without CPN, assuming '0'$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: isdn_net: Incoming call without OAD, assuming '0'$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: isdn_tty: Incoming call without OAD, assuming '0'$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: (ippp.|isdn.): dialing$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: (ippp.|isdn.): Chargesum is$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: isdn_net: chargetime of (ippp.|isdn.) now$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: isdn_net: (ippp.|isdn.) connected$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: isdn_net: local hangup (ippp.|isdn.)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: (ippp.|isdn.): remote hangup$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ippp_ccp:$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: ippp, open, slot: .*, minor: .*, state:$

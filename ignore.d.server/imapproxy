@@ -1,0 +1,4 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ in.imapproxyd\[[0-9]+\]: LOGOUT: '"[_[:alnum:]-]+(@[-_.[:alnum:]]+)?"' from server sd \[[0-9]+\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ in.imapproxyd\[[0-9]+\]: LOGIN: '"[_[:alnum:]-]+(@[-_.[:alnum:]]+)?"' \([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}:[0-9]+\) on (existing|new) sd \[[0-9]+\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ in.imapproxyd\[[0-9]+\]: Expiring server sd \[[0-9]+\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ in.imapproxyd\[[0-9]+\]: Raw_Proxy\(\): Failed to read line from client on socket [[:digit:]]+$

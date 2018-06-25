@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ polypaudio\[[0-9]+\]: module-alsa-sink.c: using [0-9]+ fragments of size [0-9]+ bytes.$

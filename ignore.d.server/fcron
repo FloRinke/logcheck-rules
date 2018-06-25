@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ fcron\[[0-9]+\]: Job run-parts --report /etc/cron.(dai|week|month)ly (started for user systab \(pid [0-9]+\)|completed( \(mailing output\))?)$

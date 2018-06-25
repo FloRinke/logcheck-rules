@@ -1,0 +1,6 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ hcid\[[[:digit:]]{1,5}\]: Bluetooth HCI daemon
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ hcid\[[[:digit:]]{1,5}\]: (Unr|R)egister path:/org/bluez[-/_.[:alnum:]]*( fallback:[[:digit:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ hcid\[[[:digit:]]{1,5}\]: HCI dev [[:digit:]]+ (registered|already up)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ hcid\[[[:digit:]]{1,5}\]: Device [[:alnum:]]+ has been a(dd|ctivat)ed$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ hcid\[[[:digit:]]{1,5}\]: Starting security manager [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sdpd\[[[:digit:]]{1,5}\]: Bluetooth SDP daemon$

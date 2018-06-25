@@ -1,0 +1,14 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pumpd\[[0-9]+\]: PUMP: sending discover$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pumpd\[[0-9]+\]: got dhcp offer$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pumpd\[[0-9]+\]: PUMP: sending second discover$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pumpd\[[0-9]+\]: PUMP: got (an offer|lease)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pumpd\[[0-9]+\]: intf: (bootServer|ip|next server|netmask|broadcast|network|dnsServers\[[0-9]+\]|gateways\[[0-9]+\]): [0-9.]{7,15}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pumpd\[[0-9]+\]: intf: (set|reqLease|numGateways|numDns): [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pumpd\[[0-9]+\]: intf: device: eth[0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pumpd\[[0-9]+\]: intf: domain: [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pumpd\[[0-9]+\]: breq: (opcode|hw|hwlength|hopcount|secs): [0-9]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pumpd\[[0-9]+\]: breq: (hwaddr|servername|bootfile):$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pumpd\[[0-9]+\]: bresp: (opcode|hw|hwlength|hopcount|secs): [0-9]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pumpd\[[0-9]+\]: bresp: (hwaddr|servername|bootfile):$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pumpd\[[0-9]+\]: configured interface eth[0-9]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pumpd\[[0-9]+\]: renewed lease for interface eth[0-9]$

@@ -1,0 +1,2 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mtp-probe: checking bus [[:digit:]]+, device [[:digit:]]+: "/sys/devices/[.:/[:alnum:]-]+"$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mtp-probe: bus: [[:digit:]]+, device: [[:digit:]]+ was not an MTP device$

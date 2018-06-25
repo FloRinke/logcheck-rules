@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ spamc\[[0-9]+\]:( spamd:)? skipped message, greater than max message size \([[:digit:]]+ bytes\)$

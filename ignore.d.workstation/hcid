@@ -1,0 +1,3 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hcid\[[0-9]+\]: HCI dev [0-9]+ (registered|up|down|unregistered)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hcid\[[0-9]+\]: (Stoping|Starting) security manager [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hcid\[[0-9]+\]: link_key_request \([[:alpha:]]+=[:[:alnum:]]+, [[:alpha:]]+=[:[:alnum:]]+\)$

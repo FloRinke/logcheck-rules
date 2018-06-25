@@ -1,0 +1,3 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ gdm\[[0-9]+\]: [[:alnum:]]+: \(pam_securetty\) access denied: tty ':0' is not secure !$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ gdm\[[0-9]+\]: [[:alnum:]]+: pam_securetty\(gdm:[[:alnum:]]+\): access denied: tty ':0' is not secure !$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ gdm\[[0-9]+\]: gdm_slave_xioerror_handler: Fatal X error - Restarting :[0-9]$

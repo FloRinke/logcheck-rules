@@ -1,0 +1,23 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd: PAM-listfile: Refused user [._[:alnum:]-]+ for service proftpd$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd: \(pam_unix\) authentication failure; logname= uid=0 euid=0 tty= ruser= rhost=[-_.:[:alnum:]]+  user=[-_.[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd: \(pam_unix\) session (opened|closed) for user [._[:alnum:]-]+( by \(uid=[[:digit:]]+\))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd: pam_unix\(proftpd:[[:alnum:]]+\): authentication failure; logname= uid=0 euid=0 tty= ruser=[-_.[:alnum:]]* rhost=[-_.:[:alnum:]]+  user=[-_.[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd: pam_unix\(proftpd:session\): session (opened|closed) for user [._[:alnum:]-]+( by \(uid=[[:digit:]]+\))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) (USER [._[:alnum:]-]+|ANON (anonymous|ftp)): Limit access denies login\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) USER [-._[:alnum:]]+ \(Login failed\): (Limit access denies login|Incorrect password\.)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) (USER [._[:alnum:]-]+|ANON (anonymous|ftp)): Login successful\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) FTP ((login|session) timed out|no transfer timeout), disconnected$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) FTP session (opened|closed)\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) Maximum login attempts \([[:digit:]]+\) exceeded$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) USER [-_.@[:alnum:]]+: no such user found from [.:_[:alnum:]-]+ \[[.:[:xdigit:]]+\] to [.:[:xdigit:]]+:[[:digit:]]{2,5}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) mod_delay/[[:digit:].]+: delaying for [[:digit:]]+ usecs$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) no such user '[-_.@[:alnum:]]+'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) notice: user [-_.[:alnum:]]+: aborting transfer: Data connection closed\.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]+\]:? [._[:alnum:]-]+( \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\))?(:| -) Preparing to chroot to directory '[-/._[:alnum:]]+'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]+\]:? [._[:alnum:]-]+( \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\))?(:| -) error setting IPV6_V6ONLY: Protocol not available$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) Connection from [._[:alnum:]-]+ \[[.:[:xdigit:]]+\] denied\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) PAM\([-_.[:alnum:]]+\): Authentication failure\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) SECURITY VIOLATION: root login attempted\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) Passive data transfer failed, possibly due to network issues$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) Check your PassivePorts and MasqueradeAddress settings,$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ proftpd\[[[:digit:]]+\]:? [._[:alnum:]-]+ \([:._[:alnum:]-]+\[[.:[:xdigit:]]+\]\)(:| -) and any router, NAT, and firewall rules in the network path\.$

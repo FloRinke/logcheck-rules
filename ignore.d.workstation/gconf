@@ -1,0 +1,7 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (gconfd )?\([._[:alnum:]-]+-[0-9]+\): starting \(version [.[:alnum:]]+\), pid [0-9]+ user '[[:alnum:]-]+'$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (gconfd )?\([._[:alnum:]-]+-[0-9]+\): Received signal 15, shutting down cleanly$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (gconfd )?\([._[:alnum:]-]+-[0-9]+\): Exiting$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (gconfd )?\([._[:alnum:]-]+-[0-9]+\): Resolved address [^[:space:]]+ to a read-only configuration source at position [^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (gconfd )?\([._[:alnum:]-]+-[0-9]+\): Resolved address [^[:space:]]+ to a writable configuration source at position [^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (gconfd )?\([._[:alnum:]-]+-[0-9]+\): GConf server is not in use, shutting down\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (gconfd )?\([._[:alnum:]-]+-[0-9]+\): SIGHUP received, reloading all databases$

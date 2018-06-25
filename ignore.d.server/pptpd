@@ -1,0 +1,12 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pptpd\[[0-9]+\]: CTRL: Client [.0-9]{5,17} control connection (started|finished)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pptpd\[[0-9]+\]: CTRL: Starting call \(launching pppd, opening GRE\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pptpd\[[0-9]+\]: CTRL: Ignored a SET LINK INFO packet with real ACCMs!$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pptpd\[[0-9]+\]: CTRL: Reaping child PPP\[[0-9]+\]$
+# typical errors on network disconnection
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pptpd\[[0-9]+\]: CTRL: PTY read or GRE write failed \(pty,gre\)=\([0-9]+,[0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pptpd\[[0-9]+\]: CTRL: CTRL read failed$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pptpd\[[0-9]+\]: CTRL: EOF or bad error reading ctrl packet length\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pptpd\[[0-9]+\]: CTRL: couldn't read packet header \(exit\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pptpd\[[0-9]+\]: GRE: read\(fd=[0-9]+,buffer=[0-9a-f]+,len=[0-9]+\) from PTY failed: status = -1 error = Input/output error, usually caused by unexpected termination of pppd, check option syntax and pppd logs$
+# client bug
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pptpd\[[0-9]+\]: GRE: Discarding duplicate packet$

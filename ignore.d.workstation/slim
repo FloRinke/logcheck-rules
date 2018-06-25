@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ slim: pam_unix\(slim:session\): session opened for user [[:alnum:]-]+ by ([[:alnum:]-]+)?\(uid=[0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ slim: pam_unix\(slim:session\): session closed for user [[:alnum:]-]+$

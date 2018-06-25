@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ procmail\[[[:digit:]]{2,5}\]: Error while writing to "[-_./[:alnum:]]+"$

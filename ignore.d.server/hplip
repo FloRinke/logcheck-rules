@@ -1,0 +1,8 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hpiod: [.[:digit:]]+ accepting connections at [[:digit:]]{1,5}\.\.\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hpiod: channel cleanup ci=[[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hpiod: device cleanup uri=hp:/[-?=/_.[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hpiod: timeout JetDirectChannel::ReadData: Success hp:/[-?=/_.[:alnum:]]+ io/hpiod/jetdirect\.cpp [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hpiod: service busy uri:hp:/[-?=/_.[:alnum:]]+ Device::ChannelOpen: HP-SCAN io/hpiod/device\.cpp [[:digit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hpiod: device active clientcnt=[[:digit:]]+ channelcnt=[[:digit:]]+ uri=hp:/[-?=/_.[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hpiod: unable to read JetDirectDevice::DeviceID$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ python: hpssd\[[[:digit:]]+\]: warning: [IU]nrecognized URI: [-._/:[:alnum:]]+$

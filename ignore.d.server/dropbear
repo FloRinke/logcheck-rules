@@ -1,0 +1,4 @@
+^[[:alpha:]]{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dropbear\[[[:digit:]]+\]: Child connection from [.:[:xdigit:]]+:[[:digit:]]+$
+^[[:alpha:]]{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dropbear\[[[:digit:]]+\]: pubkey auth succeeded for '[[:alnum:]-]+' with key md5 ([[:xdigit:]]{2}:){15}[[:xdigit:]]{2} from [.:[:xdigit:]]+:[[:digit:]]+$
+^[[:alpha:]]{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dropbear\[[[:digit:]]+\]: password auth succeeded for '[[:alnum:]-]+' from [.:[:xdigit:]]+:[[:digit:]]+$
+^[[:alpha:]]{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dropbear\[[[:digit:]]+\]: exit after auth \([[:alnum:]-]+\): Exited normally$
