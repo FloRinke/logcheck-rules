@@ -22,5 +22,5 @@
 #Feb 19 17:05:36 gw1 sshd[21017]: Received disconnect from 84.200.93.71 port 45442:11: Normal Shutdown, Thank you for playing [preauth]
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Received disconnect from [:.[:xdigit:]]+ port [[:digit:]]+:11: Normal Shutdown, Thank you for playing \[preauth\]$
 
-#Jun 22 14:48:38 static sshd[16087]: Unable to negotiate with 193.106.31.26 port 53303: no matching cipher found. Their offer: aes256-cbc,rijndael-cbc@lysator.liu.se,aes192-cbc,aes128-cbc,arcfour128,arcfour,3des-cbc,none [preauth]
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Unable to negotiate with [[:xdigit:].]+ port [[:digit:]]+: no matching cipher found\. Their offer: [[:alnum:],@.-]+ \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Unable to negotiate with [[:xdigit:].:]+ port [[:digit:]]+: no matching cipher found\. Their offer: [[:alnum:],@.-]+ \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Unable to negotiate with [[:xdigit:].:]+ port [[:digit:]]+: no matching key exchange method found\. Their offer: [[:alnum:],@.-]+ \[preauth\]$

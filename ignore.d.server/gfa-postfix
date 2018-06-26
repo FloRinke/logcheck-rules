@@ -21,13 +21,30 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025)?/smtpd\[[[:digit:]]+\]: Untrusted TLS connection established from [-._[:alnum:]]+\[[.[:digit:]]+\]: TLSv1\.2 with cipher [[:alnum:]-]+ \([0-9]+/[0-9]+ bits\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025|/9876)?/smtpd\[[[:digit:]]+\]: Anonymous TLS connection established from [-._[:alnum:]]+\[[.[:digit:]]+\]: TLSv1\.2 with cipher [[:alnum:]-]+ \([0-9]+/[0-9]+ bits\)$
 
-# Jun 25 10:08:24 mail postfix/smtpd[2561]: disconnect from unknown[103.4.66.205] commands=0/0
+
+# all kind of disconnections
+#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] helo=[0-9] mail=[0-9] rcpt=[0-9] data=[0-9]\/[0-9] quit=[0-9] commands=[0-9]\/[0-9]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] helo=[0-9] quit=[0-9] commands=[0-9]$
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] commands=0/0$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[0-9] quit=[0-9]$
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] helo=[0-9] mail=[0-9] commands=[0-9]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] helo=[0-9] mail=[0-9] rcpt=[0-9] rset=[0-9] quit=[0-9] commands=[0-9]$
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] helo=[0-9] ehlo=[0-9] starttls=[0-9] mail=[0-9] rcpt=[0-9] data=[0-9] quit=[0-9] commands=[0-9]$
 
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] helo=[0-9] auth=[0-9]\/[0-9] quit=1 commands=[0-9]\/[0-9]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[0-9] auth=[0-9]\/[0-9] quit=1 commands=[0-9]\/[0-9]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[1-9] auth=[0-9]\/[0-9] commands=[0-9]\/[0-9]$
+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[1-9] starttls=1 mail=[0-9] rcpt=[1-9] data=[0-9] quit=1 commands=[0-9]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[1-9] starttls=1 mail=[0-9] rcpt=[1-9] data=[0-9]\/[0-9] quit=1 commands=[0-9]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[1-9] starttls=1 mail=[0-9] rcpt=[1-9] data=[0-9]\/[0-9] quit=1 commands=[0-9]\/[0-9]$
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[1-9] starttls=1 auth=[0-9]\/[0-9] quit=1 commands=[0-9]\/[0-9]$
+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[1-9] mail=[0-9] rcpt=[1-9] data=[0-9]\/[0-9] quit=1 commands=[0-9]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[1-9] mail=[0-9] rcpt=[1-9] data=[0-9]\/[0-9] quit=1 commands=[0-9]\/[0-9]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from localhost\[127.0.0.1\] helo=[1-9] mail=[1-9] rcpt=[1-9] data=[0-9] quit=1 commands=[0-9]$
@@ -39,3 +56,15 @@
 
 # Jun 25 10:32:03 mail postfix/10025/smtpd[29692]: 41Dlpq2WZMzwHh: client=monitoreo.zumbi.com.ar[104.196.108.40]
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025|/9876)?/smtpd\[[[:digit:]]+\]: [[:alnum:]]+: client=[._[:alnum:]-]+\[[[:xdigit:].:]{3,39}\]$
+
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\/cleanup\[[[:digit:]]+\]: [[:alnum:]]+: milter-reject: END-OF-MESSAGE from [-._[:alnum:]]+\[([.[:digit:]]+|[[:xdigit:]:]+)\]: 5\.7\.1 Spam message rejected; from=<[^[:space:]]*> to=<[^[:space:]]*> proto=E?SMTP helo=<[^[:space:]]+>$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\/cleanup\[[[:digit:]]+\]: [[:alnum:]]+: milter-reject: END-OF-MESSAGE from [-._[:alnum:]]+\[([.[:digit:]]+|[[:xdigit:]:]+)\]: 4\.7\.1 Try again later; from=<[^[:space:]]*> to=<[^[:space:]]*> proto=E?SMTP helo=<[^[:space:]]+>$
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/bounce\[[[:digit:]]+\]: [[:alnum:]]+: sender (delay|non-delivery|delivery status) notification: [[:alnum:]]+$
+
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(error|n?qmgr|cleanup)\[[[:digit:]]+\]: [[:alnum:]]+: to=<[^[:space:]]+>,( orig_to=<[^[:space:]]+>,)? relay=none,( conn_use=[[:digit:]]+,)? delay=[[:digit:].]+,( delays=[[:digit:]./]+,)?( dsn=[45]\.[[:digit:]]\.[[:digit:]],)? status=bounced \(Spam message rejected\)$
+
+# greylisting
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: [[:alnum:]]+: to=<[^[:space:]]+>,( orig_to=<[^[:space:]]+>,) relay=[^[:space:]]+, delay=[[:digit:]]+, status=deferred \(host [^[:space:]]+ said: [45][[:digit:]]{2} <[^[:space:]]*>: Recipient address rejected: Greylisted for [[:digit:]]+ (seconds|minutes)( \(see http://isg.ee.ethz.ch/tools/postgrey/help/[.[:alnum:]-]+.html\))? \(in reply to (HELO|EHLO|MAIL FROM|RCPT TO|DATA|end of DATA) command\)\)$
