@@ -1,3 +1,0 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ isdnlog: | line.* : free$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ isdnlog: | line.* : outgoing$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ isdnlog: .* outgoing .* -> .*$

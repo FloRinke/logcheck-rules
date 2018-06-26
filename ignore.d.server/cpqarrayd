@@ -1,2 +1,0 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cpqarrayd: Application terminated by signal\.$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cpqarrayd: Logging Enabled\.\.\.$
