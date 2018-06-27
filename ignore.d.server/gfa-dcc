@@ -1,0 +1,6 @@
+# Jun 27 00:00:00 mail dccifd[22222]: 1.3.163 detected 0 spam, ignored for 0, rejected for 44, and discarded for 0 targets among 0 total messages for 907 targets since 06/26/18 00:00:00
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dccifd\[[0-9]+\]: [[:digit:]\.]+ detected [0-9]+ spam, ignored for [0-9]+, rejected for [0-9]+, and discarded for [0-9]+ targets among [0-9]+ total messages for [0-9]+ targets since [0-9]{2}\/[0-9]{2}\/[0-9]{2} 00:00:00$
+
+# Jul 17 16:21:21 mail dccifd[878]: no DCC answer from dcc1.dcc-servers.net (2001:470:1f05:10ed::26,6277) after 6095 ms
+
+# Jul 17 16:21:21 mail dccifd[878]: write(MTA socket,65): Broken pipe
