@@ -1,3 +1,6 @@
 # Jun 19 15:26:14 static clamd[696]: LibClamAV Error: yyerror(): /var/lib/clamav/antidebug_antivm.yar line 497 undefined identifier "pe"
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: LibClamAV Error: yyerror\(\): /var/lib/clamav/antidebug_antivm.yar line [[:digit:]]+ undefined identifier \"pe\"$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: LibClamAV Error: cli_loadyara: failed to parse rules file /var/lib/clamav/antidebug_antivm.yar, error count [[:digit:]]$
+
+#Jun 26 03:47:46 static clamd[696]: instream(192.168.139.250@56180): Sanesecurity.Malware.27291.RtfHeur.UNOFFICIAL(1c609f499956a8e181b4c4828b3ac433:107437) FOUND
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: instream\([[:xdigit:]+\.@]+\): [[:alnum:]\._-]+\([[:xdigit:]:]+\) FOUND$
