@@ -4,9 +4,12 @@
 
 ### 10025 port instance
 #TLS
-#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025)?/smtpd\[[[:digit:]]+\]: warning: TLS library problem: ([[:digit:]]+:)?error:[[:xdigit:]]+:SSL routines:SSL2?3_[[:alnum:]_]+:[[:alnum:] ]+:[[:alnum:]_-]+\.c:[[:digit:]]+:(SSL alert number [[:digit:]]+:)?$
-#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025)?/smtpd\[[[:digit:]]+\]: warning: network_biopair_interop: error (reading|writing) [[:digit:]]+ bytes (from|to) the network: Connection reset by peer$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025)?/smtpd\[[[:digit:]]+\]: warning: TLS library problem: ([[:digit:]]+:)?error:[[:xdigit:]]+:SSL routines:SSL2?3_[[:alnum:]_]+:[[:alnum:] ]+:[[:alnum:]_-]+\.c:[[:digit:]]+:(SSL alert number [[:digit:]]+:)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025)?/smtpd\[[[:digit:]]+\]: warning: TLS library problem: ([[:digit:]]+:)?error:[[:xdigit:]]+:SSL routines:ssl2?3_[[:alnum:]_]+:[[:alnum:] ]+:[[:alnum:]_-]+\.c:[[:digit:]]+:(SSL alert number [[:digit:]]+:)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025)?/smtpd\[[[:digit:]]+\]: warning: network_biopair_interop: error (reading|writing) [[:digit:]]+ bytes (from|to) the network: Connection reset by peer$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025)?/smtpd\[[[:digit:]]+\]: SSL_accept error from [._[:alnum:]-]+\[[[:xdigit:].:]{3,39}\](: (-?[[[:digit:]]]+|lost connection|Connection timed out|Connection reset by peer))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: warning: TLS library problem: error:[[:xdigit:]]+:SSL routines:ssl3_get_record:wrong version number:\.\.\/ssl\/record\/ssl3_record\.c:210:$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025)?\/smtpd\[[[:digit:]]+\]: warning: TLS library problem: error:[[:xdigit:]]+:SSL routines:tls_process_client_hello:version too low:\.\.\/ssl\/statem\/statem_srvr\.c:[0-9]+:$
 #connection
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025|/9876)?/smtpd\[[[:digit:]]+\]: (dis)?connect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\]( ehlo=[[:digit:]]+ mail=[[:digit:]]+ rcpt=[[:digit:]]+ data=[[:digit:]]+ quit=[[:digit:]]+ commands=[[:digit:]]+)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025|/9876)?/smtpd\[[[:digit:]]+\]: lost connection after [[:alnum:]]+( \([[:digit:]]+ bytes\))? from [._[:alnum:]-]+\[(unknown|[[:xdigit:].:]{3,39})\]$
@@ -24,6 +27,20 @@
 
 # all kind of disconnections
 #^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] 
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[0-9] mail=[0-9] rcpt=[0-9]\/[0-9] quit=[0-9] commands=[0-9]\/[0-9]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] helo=[0-9] mail=[0-9] rcpt=[0-9] data=[0-9]\/[0-9] commands=[0-9]\/[0-9]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[0-9] starttls=[0-9] mail=[0-9] rcpt=[0-9] data=[0-9] commands=[0-9]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[0-9] mail=[0-9] rcpt=[0-9]\/[0-9] rset=[0-9] quit=[0-9] commands=[0-9]\/[0-9]$
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\]  helo=[0-9] mail=[0-9] rcpt=[0-9] data=[0-9]/[0-9] commands=[0-9]/[0-9]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] unknown=[0-9]/[0-9] commands=[0-9]/[0-9]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[0-9] starttls=[0-9] mail=[0-9] rcpt=[0-9] data=[0-9]/[0-9] rset=[0-9] commands=[0-9]/[0-9]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] helo=[0-9] mail=[0-9] rcpt=[0-9]/[0-9] quit=[0-9] commands=[0-9]\/[0-9]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[0-9] auth=[0-9]\/[0-9] rset=[0-9] quit=[0-9] commands=[0-9]\/[0-9]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[0-9] starttls=[0-9] auth=[0-9] mail=[0-9] rcpt=[0-9] data=[0-9] quit=[0-9] commands=[0-9]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[0-9] commands=[0-9]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] quit=[0-9] commands=[0-9]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] helo=[0-9] mail=[0-9] rcpt=[0-9] data=[0-9]\/[0-9] quit=[0-9] commands=[0-9]\/[0-9]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] helo=[0-9] quit=[0-9] commands=[0-9]$
 
@@ -68,3 +85,17 @@
 
 # greylisting
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: [[:alnum:]]+: to=<[^[:space:]]+>,( orig_to=<[^[:space:]]+>,) relay=[^[:space:]]+, delay=[[:digit:]]+, status=deferred \(host [^[:space:]]+ said: [45][[:digit:]]{2} <[^[:space:]]*>: Recipient address rejected: Greylisted for [[:digit:]]+ (seconds|minutes)( \(see http://isg.ee.ethz.ch/tools/postgrey/help/[.[:alnum:]-]+.html\))? \(in reply to (HELO|EHLO|MAIL FROM|RCPT TO|DATA|end of DATA) command\)\)$
+
+# Jul 16 20:19:48 mail postfix/smtp[13407]: 41TvsD6fDzz137F: host muffat.debian.org[209.87.16.33] said: 451 Greylisted, see http://postgrey.schweikert.ch/help/debian.org.html (in reply to RCPT TO command)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\/smtp\[[[:digit:]]+\]: [[:alnum:]]+: host [[:alnum:]\.]+\[[[:xdigit:]\.:]+\] said: 451 Greylisted, see http:\/\/postgrey\.schweikert\.ch\/help\/[[:alnum:]\.]+\.html \(in reply to RCPT TO command\)$
+# Jul 18 18:35:56 mail postfix/smtp[20511]: 41W5SR1swlz1398: host mail.systemli.org[198.167.223.214] said: 450 4.2.0 <compl4xx@systemli.org>: Recipient address rejected: Greylisted for 60 seconds, see http://postgrey.schweikert.ch/help/systemli.org.html (in reply to RCPT TO command)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\/smtp\[[[:digit:]]+\]: [[:alnum:]]+: host [[:alnum:]\.]+\[[[:xdigit:]\.:]+\] said: 450 4\.2\.0 Greylisted, see http:\/\/postgrey\.schweikert\.ch\/help\/[[:alnum:]\.]+\.html \(in reply to RCPT TO command\)$
+# Jul 26 14:39:36 mail postfix/smtp[22925]: 41bvr10FSYz106v: host bendel.debian.org[82.195.75.100] said: 450 4.2.0 <debconf-discuss@lists.debian.org>: Recipient address rejected: Greylisted, see http://postgrey.schweikert.ch/help/lists.debian.org.html (in reply to RCPT TO command)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\/smtp\[[[:digit:]]+\]: [[:alnum:]]+: host [[:alnum:]\.]+\[[[:xdigit:]\.:]+\] said: 450 4\.2\.0 <[+._[:alnum:]-]+@[._[:alnum:]-]+>: Recipient address rejected: Greylisted, see http:\/\/postgrey\.schweikert\.ch\/help\/[[:alnum:]\.]+ \(in reply to RCPT TO command\)$
+
+# misc
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: warning: non-SMTP command from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\]: GET / HTTP/1.1$
+
+# Jul 19 15:32:14 instance-1 postfix/smtpd[27252]: improper command pipelining after AUTH from pppoe-static.178.124.188.173.telecom.mogilev.by[178.124.188.173]: QUIT\r\n
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: improper command pipelining after AUTH from [[:alnum:]\.-]+\[[[:xdigit:]:\.]+\]: QUIT\\r\\n$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: improper command pipelining after AUTH from [[:alnum:]\.-]+\[[[:xdigit:]:\.]+\]: QUIT\\r\\nQUIT\\r\\n$$
