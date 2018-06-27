@@ -1,5 +1,9 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Invalid user [^[:space:]]+ from [._[:alnum:]-]+ port [[:digit:]]+$
+# Jul 26 06:33:37 static sshd[13081]: Invalid user () {  from 63.146.93.130 port 17864
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Invalid user [[:alnum:] \{]+ from [._[:alnum:]-]+ port [[:digit:]]+$
 
+# Jul 26 06:33:37 static sshd[13081]: input_userauth_request: invalid user () {  [preauth]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: input_userauth_request: invalid user [^[:space:]]+ \[preauth\]$
 
 #Updates for old messages
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Connection reset by [:.[:xdigit:]]+ port [[:digit:]]+ \[preauth\]$
@@ -24,3 +28,38 @@
 
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Unable to negotiate with [[:xdigit:].:]+ port [[:digit:]]+: no matching cipher found\. Their offer: [[:alnum:],@.-]+ \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Unable to negotiate with [[:xdigit:].:]+ port [[:digit:]]+: no matching key exchange method found\. Their offer: [[:alnum:],@.-]+ \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Unable to negotiate with [[:xdigit:].:]+ port [[:digit:]]+: no matching host key type found\. Their offer: [[:alnum:],@.-]+ \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Unable to negotiate with [[:xdigit:].:]+ port [[:digit:]]+: no matching MAC found\. Their offer: [[:alnum:],@.-]+ \[preauth\]$
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Timeout, client not responding\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnecting: Too many authentication failures \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: maximum authentication attempts exceeded for root from [[:xdigit:].:]+ port [[:digit:]]+ ssh2 \[preauth\]$
+
+
+# Jul 19 00:32:00 gw sshd[30234]: error: maximum authentication attempts exceeded for invalid user  from 193.105.134.97 port 5728 ssh2 [preauth]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: maximum authentication attempts exceeded for invalid user [[:alnum:] ]+ from [[:xdigit:]\.]+ port [[:digit:]]+ ssh2 \[preauth\]$
+
+# Jul 11 14:26:43 tor-exit1-1480471271410-512mb-sgp1-01 sshd[15721]: error: kex protocol error: type 30 seq 1 [preauth]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: kex protocol error: type 30 seq 1 \[preauth\]$
+
+# Jul 17 02:12:16 static sshd[26934]: padding error: need 148 block 8 mod 4 [preauth]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: padding error: need [0-9]+ block [0-9] mod [0-9] \[preauth\]$
+# Jul 17 02:12:16 static sshd[26934]: ssh_dispatch_run_fatal: Connection from 128.232.21.75 port 42622: message authentication code incorrect [preauth]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: ssh_dispatch_run_fatal: Connection from [[:xdigit:]\.:]+ port [0-9]+: message authentication code incorrect \[preauth\]$
+
+# Jul 18 20:56:13 gw sshd[22866]: Disconnecting: Change of username or service not allowed: (administrator,ssh-connection) -> (Administrator,ssh-conn [preauth]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnecting: Change of username or service not allowed: \([[:alnum:],!-]+\) -> \([[:alnum:],!-]+ \[preauth\]$
+
+# Jul 18 23:23:04 gw sshd[19007]: Disconnecting: Change of username or service not allowed: (zabbix,ssh-connection) -> (,ssh-connection) [preauth]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnecting: Change of username or service not allowed: \([[:alnum:],!-]+\) -> \([[:alnum:],!-]+\) \[preauth\]$
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: bind: Address already in use$
+
+# Jul 26 18:22:55 instance-2 sshd[29138]: error: channel_setup_fwd_listener_tcpip: cannot listen to port: 14891
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: channel_setup_fwd_listener_tcpip: cannot listen to port: [0-9]+$
+
+# Jul 24 00:00:48 tor-exit1-1480471271410-512mb-sgp1-01 systemd[1]: user@0.service: Killing process 11274 (kill) with signal SIGKILL.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[1\]: user@0\.service: Killing process [0-9]+ \(kill\) with signal SIGKILL\.$
+
+# Jul 24 14:54:12 tor-exit1-1480471271410-512mb-sgp1-01 sshd[25615]: PAM service(sshd) ignoring max retries; 5 > 3
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: PAM service\(sshd\) ignoring max retries; 5 > 3$
