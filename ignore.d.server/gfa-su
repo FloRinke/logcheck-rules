@@ -1,2 +1,0 @@
-# Jun 25 17:07:44 gw su[26112]: pam_systemd(su:session): Cannot create session: Already running in a session
-^\w{3} [ :[:digit:]]{11} [[:alnum:]._-]+ su\[[[:digit:]]+\]: pam_systemd\(su:session\): Cannot create session: Already running in a session$
