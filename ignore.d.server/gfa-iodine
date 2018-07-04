@@ -1,0 +1,11 @@
+# Jul  4 01:41:44 instance-2 iodined: accepted version for user #0 from 127.0.0.1
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ iodined: accepted version for user #[0-9]+ from 127\.0\.0\.1$
+
+# Jul  4 01:41:44 instance-2 iodined: accepted password from user #0, given IP 192.168.94.10
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ iodined: accepted password from user \#[0-9], given IP 192\.168\.94\.10$
+
+# Jul  7 05:35:10 instance-2 iodined: rejected login request from user #0 from 127.0.0.1, bad password
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ iodined: rejected login request from user \#0 from 127\.0\.0\.1, bad password$
+
+# Jul 18 23:43:23 instance-2 iodined: dropped login request from user #0 from unexpected source 127.0.0.1
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ iodined: dropped login request from user \#0 from unexpected source 127\.0\.0\.1$
