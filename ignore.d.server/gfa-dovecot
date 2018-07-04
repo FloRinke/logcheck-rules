@@ -4,4 +4,51 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Warning: SSL: where=0xdigit:+, ret=-?1: SSL negotiation finished successfully [^[:space:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Warning: SSL: where=0xdigit:+, ret=-?1: unknown state [^[:space:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Warning: SSL alert: where=0xdigit:+, ret=256: warning close notify [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth: Warning: auth client 0 disconnected with 1 pending requests: Connection reset by peer$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth: Warning: auth client 0 disconnected with 1 pending requests: EOF$
+
+
+# Jul  7 12:41:47 mail dovecot: imap-login: Maximum number of connections from user+IP exceeded (mail_max_userip_connections=10): user=<gfa@zumbi.com.ar>, method=PLAIN, rip=181.167.101.87,lip=172.104.98.54, TLS, session=<hhZ9GmhwGJW1p2VX>
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap-login: Maximum number of connections from user\+IP exceeded \(mail_max_userip_connections=[0-9]+\): user=<[[:alnum:]@\._-]+>, method=PLAIN, rip=[[:xdigit:]\.]+, lip=[[:xdigit:]\.]+, TLS, session=<[[:alnum:]\/\+_-]+>$
+
+# Jul 11 14:05:00 mail dovecot: imap(gfa@zumbi.com.ar): Connection closed: read(size=7713) failed: Connection reset by peer in=479 out=122809
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([[:alnum:]\.@_-]+\): Connection closed: read\(size=[0-9]+\) failed: Connection reset by peer in=[0-9]+ out=[0-9]+$
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([[:alnum:]\.@_-]+\): Disconnected for inactivity in reading our output in=[0-9]+ out=[0-9]+$
+
+#Jul 22 12:16:51 mail dovecot: master: Warning: Killed with signal 15 (by pid=4373 uid=0 code=kill)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: master: Warning: Killed with signal 15 \(by pid=[0-9]+ uid=0 code=kill\)$
+
+#Jul 22 12:16:51 mail dovecot: anvil: Warning: Killed with signal 15 (by pid=1 uid=0 code=kill)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: anvil: Warning: Killed with signal 15 \(by pid=[0-9]+ uid=0 code=kill\)$
+
+#Jul 22 12:16:51 mail dovecot: imap-login: Error: read(anvil) failed: EOF
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap-login: Error: read\(anvil\) failed: EOF$
+
+#Jul 22 12:16:51 mail dovecot: config: Warning: Killed with signal 15 (by pid=1 uid=0 code=kill)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: config: Warning: Killed with signal 15 \(by pid=[0-9]+ uid=0 code=kill\)$
+
+#Jul 22 12:16:51 mail dovecot: imap-login: Error: read(anvil) failed: EOF
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap-login: Error: read\(anvil\) failed: EOF$
+
+#Jul 22 12:16:51 mail dovecot: log: Warning: Killed with signal 15 (by pid=1 uid=0 code=kill)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: log: Warning: Killed with signal 15 \(by pid=[0-9]+ uid=0 code=kill\)$
+
+#Jul 22 12:16:51 mail systemd[1]: dovecot.service: PID file /var/run/dovecot/master.pid not readable (yet?) after start: No such file or directory
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[1\]: dovecot.service: PID file \/var\/run\/dovecot\/master\.pid not readable \(yet\?\) after start: No such file or directory$
+
+#Jul 22 12:16:51 mail dovecot: master: Dovecot v2.2.27 (c0f36b0) starting up for imap, lmtp, sieve (core dumps disabled)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: master: Dovecot v[[:digit:]\.]+ \([[:xdigit:]]+\) starting up for imap, lmtp, sieve \(core dumps disabled\)
+
+#Jul 22 13:12:23 mail dovecot: auth: Error: read(anvil-auth-penalty) failed: EOF
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth: Error: read\(anvil-auth-penalty\) failed: EOF$
+
+#Jul 22 13:12:23 mail dovecot: auth: Error: net_connect_unix(anvil-auth-penalty) failed: Permission denied
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth: Error: net_connect_unix\(anvil-auth-penalty\) failed: Permission denied$
+
+#Jul 22 13:12:23 mail dovecot: auth: Warning: Killed with signal 15 (by pid=1 uid=0 code=kill)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth: Warning: Killed with signal 15 \(by pid=[0-9]+ uid=0 code=kill\)$
+
+# Jul 23 23:55:37 mail dovecot: imap(gfa@zumbi.com.ar): Connection closed (UID FETCH,UID FETCH running for 0.002 + waiting nothing for 60.335 secs, 62 B in + 10955+8192 B out, state=wait-sync) in=4638 out=2349944
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([[:alnum:]\.@_-]+\): Connection closed \(UID FETCH,UID FETCH running for [[:digit:]\.]+ \+ waiting nothing for [[:digit:]\.]+ secs, [0-9]+ B in \+ [[:digit:]\+]+ B out, state=wait-sync\) in=[0-9]+ out=[0-9]+$
 
