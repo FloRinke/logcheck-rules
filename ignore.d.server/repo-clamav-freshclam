@@ -12,9 +12,12 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?Trying host [._[:alnum:]-]+ \([.:[:xdigit:]]+\)...$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?nonblock_connect: connect timing out \([0-9]+ secs\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?connect_error: getsockopt\(SO_ERROR\): fd=[0-9]+ error=[0-9]+: Connection refused$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?(WARNING: )?getfile: [[:alnum:]]+-[0-9]+.cdiff not found on [._[:alnum:]-]+ \(IP: [.:[:xdigit:]]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?(WARNING: )?(\^)?getfile: [[:alnum:]]+-[0-9]+.cdiff not found on [._[:alnum:]-]+ \(IP: [.:[:xdigit:]]+\)$
 
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (WARNING: )?Your ClamAV installation is OUTDATED!$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: DON'T PANIC! Read http://www.clamav.net/(support/faq|documents/upgrading-clamav)$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (WARNING: )?Local version: [0-9.]+ Recommended version: [0-9.]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?(WARNING: )?(\^)?Your ClamAV installation is OUTDATED!$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?DON'T PANIC\! Read http(s)?:\/\/www\.clamav\.net\/(support\/faq|documents\/upgrading\-clamav)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?(WARNING: )?(\^)?Local version: [0-9.]+ Recommended version: [0-9.]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?Received signal: re-opening log file$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?(\^)?Incremental update failed, trying to download \w+\.c(l|v)d$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?(\^)?Mirror [.:[:xdigit:]]+ is not synchronized\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (\w{3} \w{3} [ :0-9]{16} \-> )?(\^)?Trying again in [[:digit:]]+ secs\.\.\.$
