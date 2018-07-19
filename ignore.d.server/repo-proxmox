@@ -8,7 +8,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ qm\[[0-9]+\]: <root@pam> update VM [0-9]+: -lock backup
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rrdcached\[[0-9]+\]: (flushing old values|removing old journal|rotating journals|started new journal)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: INFO: Backup job finished successfully$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: INFO: starting new backup job: vzdump\( \-\-[[:alnum:]]+ [._-@[:alnum:]]+\)+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvemailforward\[[0-9]+\]: forward mail to <.*>$
 ^[[:alnum:]]{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ [\/\._[:alnum:]-]+\[[0-9]+\]: INFO: Starting Backup of VM [0-9]+ \(qemu\)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: ERROR: Backup of VM [0-9]+ failed - (empty device list|storage '.+' is disabled)$
