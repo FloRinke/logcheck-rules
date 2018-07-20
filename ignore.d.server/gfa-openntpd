@@ -1,0 +1,9 @@
+# Jul 17 10:13:34 gw ntpd[3928]: peer 118.140.184.99 now valid
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: peer [[:xdigit:]\.:]+ now valid$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: peer [[:xdigit:]\.:]+ now invalid$
+
+# Jul 17 16:30:04 gw ntpd[3928]: adjusting clock frequency by 0.765673 to 30.850283ppm
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: adjusting clock frequency by [[:digit:]\.-]+ to [[:digit:]\.]+ppm$
+
+# Jul 17 14:25:34 gw ntpd[3928]: reply from 203.95.213.129: not synced (alarm), next query 3172s
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: reply from [[:xdigit:]\.:]+: not synced \(alarm\), next query [0-9]+s$
