@@ -1,10 +1,8 @@
 # Jun 25 07:29:14 mail.zumbi.com.ar rspamd[6634]: <da6306>; radix; rspamd_radix_add_iplist: invalid IP address: localhost
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <[[:alnum:]]+>; radix; rspamd_radix_add_iplist: invalid IP address: localhost$
 
-
 #Jun 26 09:05:16 mail rspamd[2256]: <46384e>; proxy; rspamd_redis_timeout: connection to redis server 192.168.139.67 timed out
 #^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <[[:alnum:]]+>; proxy; rspamd_redis_timeout: connection to redis server [.:[:digit:]]+ timed out$
-
 
 #Jun 26 09:05:16 mail rspamd[2256]: <46384e>; proxy; rspamd_stat_classifiers_process: skip statistics as HAM class is missing
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <[[:alnum:]]+>; proxy; rspamd_stat_classifiers_process: skip statistics as HAM class is missing$
@@ -12,13 +10,11 @@
 # Jun 26 10:42:15 mail rspamd[2256]: <68f800>; proxy; fuzzy_check_timer_callback: got IO timeout with server fuzzy.rspamd.com(88.99.142.95), after 1 retransmits
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <[[:alnum:]]+>; proxy; fuzzy_check_timer_callback: got IO timeout with server fuzzy\.rspamd\.com\([[:xdigit:]\.:]+\), after 1 retransmits$
 
-
 # Jun 30 02:06:26 mail rspamd[2256]: <692faf>; lua; asn.lua:65: error querying dns: query timed out
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <[[:alnum:]]+>; lua; asn\.lua:[0-9]+: error querying dns: query timed out$
 
 # Jun 29 19:27:19 mail rspamd[2256]: <fc195c>; proxy; rspamd_task_process: learn error: <undef> contains less tokens than required for bayes classifier: 10 < 11
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <[[:alnum:]]+>; proxy; rspamd_task_process: learn error: <[._[:alnum:]@_\.-]+> contains less tokens than required for bayes classifier: [0-9]+ < [0-9]+$
-
 
 # Jun 29 18:36:26 mail rspamd[2256]: <b98561>; proxy; rspamd_task_process: learn error: <CAC8jRerjZeDsG4GEugZ6HJ_9NXXcrOUo36Bfn-ZUp8Vn_AT1Qg@mail.gmail.com> has been already learned as spam, ignore it
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <[[:alnum:]]+>; proxy; rspamd_task_process: learn error: <[._[:alnum:]@_\.-]+> has been already learned as (ham|spam), ignore it$
