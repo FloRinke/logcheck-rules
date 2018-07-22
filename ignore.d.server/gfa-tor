@@ -29,23 +29,23 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Configured hibernation\. This interval began at [[:digit:]-]+ 00:00:00; the scheduled wake-up time was [[:digit:]-]+ 00:00:00; we expect to exhaust our quota for this interval around [[:digit:]-]+ 00:00:00; the next interval begins at [[:digit:]-]+ 00:00:00 \(all times local\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Interrupt: we have stopped accepting new connections, and will shut down in 30 seconds\. Interrupt again to exit now\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Clean shutdown finished\. Exiting\.$
-#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: \w{3} [[:digit:]]+ [[:digit:]:\.]+ \[notice\] Tor [[:digit:]\.]+ \(git-[[:xdigit:]]+\) running on Linux with Libevent [[:xdigit:]\.]+-stable, OpenSSL [[:xdigit:]\.]+ and Zlib 1\.2\.8\.$
-#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: \w{3} [[:digit:]]+ [[:digit:]:\.]+ \[notice\] Tor can\'t help you if you use it wrong\! Learn how to be safe at https:\/\/www\.torproject\.org\/download\/download\#warning$
-#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: \w{3} [[:digit:]]+ [[:digit:]:\.]+ \[notice\] Read configuration file \"\/usr\/share\/tor\/tor-service-defaults-torrc\"\.$
-#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: \w{3} [[:digit:]]+ [[:digit:]:\.]+ \[notice\] Read configuration file \"\/etc\/tor\/torrc\"\.$
-#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: \w{3} [[:digit:]]+ [[:digit:]:\.]+ \[warn\] You have set AccountingMax to use hibernation\. You have also chosen a low DirPort or OrPort\.This combination can make Tor stop working when it tries to re-attach the port after a period of hibernation\. Please choose a different port or turn off hibernation unless you know this combination will work on your platform\.$
-#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: \w{3} [[:digit:]]+ [[:digit:]:\.]+ \[notice\] Based on detected system memory, MaxMemInQueues is set to [0-9]+ MB\. You can override this by setting MaxMemInQueues by hand\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: \w{3} [[:digit:]]+ [[:digit:]:\.]+ \[notice\] Tor [[:digit:]\.]+ \(git-[[:xdigit:]]+\) running on Linux with Libevent [[:xdigit:]\.]+-stable, OpenSSL [[:xdigit:]\.]+ and Zlib 1\.2\.8\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: \w{3} [[:digit:]]+ [[:digit:]:\.]+ \[notice\] Tor can\'t help you if you use it wrong\! Learn how to be safe at https:\/\/www\.torproject\.org\/download\/download\#warning$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: \w{3} [[:digit:]]+ [[:digit:]:\.]+ \[notice\] Read configuration file \"\/usr\/share\/tor\/tor-service-defaults-torrc\"\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: \w{3} [[:digit:]]+ [[:digit:]:\.]+ \[notice\] Read configuration file \"\/etc\/tor\/torrc\"\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: \w{3} [[:digit:]]+ [[:digit:]:\.]+ \[warn\] You have set AccountingMax to use hibernation\. You have also chosen a low DirPort or OrPort\.This combination can make Tor stop working when it tries to re-attach the port after a period of hibernation\. Please choose a different port or turn off hibernation unless you know this combination will work on your platform\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: \w{3} [[:digit:]]+ [[:digit:]:\.]+ \[notice\] Based on detected system memory, MaxMemInQueues is set to [0-9]+ MB\. You can override this by setting MaxMemInQueues by hand\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Configuration was valid$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: \w{3} [[:digit:]]+ [[:digit:]:\.]+ \[notice\] Opening Control listener on 127.0.0.1:[[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: \w{3} [[:digit:]]+ [[:digit:]:\.]+ \[notice\] Opening OR listener on [[:digit:]]+:[[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Opening OR listener on \[[[:xdigit:]]+\]:[[:digit:]]+$
-#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Jul 01 00:01:31.520 [notice] Opening Directory listener on [[:digit:]]+:[[:digit:]]+$
-#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Jul 01 00:01:31.521 [notice] Opening Directory listener on \[[[:xdigit:]]+\]:[[:digit:]]+$
-#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Not advertising DirPort \(Reason: AccountingMax enabled\)$
-#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Your Tor server\'s identity key fingerprint is \'[[:alnum:]+] [[:xdigit:]]+\'$
-#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Parsing GEOIP IPv4 file \/usr\\/share\/tor\/geoip\.$
-#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Parsing GEOIP IPv6 file \/usr\/share\/tor\/geoip6\.$
-#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Configured to measure statistics\. Look for the \*-stats files that will first be written to the data directory in 24 hours from now\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Jul 01 00:01:31.520 [notice] Opening Directory listener on [[:digit:]]+:[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Jul 01 00:01:31.521 [notice] Opening Directory listener on \[[[:xdigit:]]+\]:[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Not advertising DirPort \(Reason: AccountingMax enabled\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Your Tor server\'s identity key fingerprint is \'[[:alnum:]+] [[:xdigit:]]+\'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Parsing GEOIP IPv4 file \/usr\\/share\/tor\/geoip\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Parsing GEOIP IPv6 file \/usr\/share\/tor\/geoip6\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Configured to measure statistics\. Look for the \*-stats files that will first be written to the data directory in 24 hours from now\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Bootstrapped 0%: Starting$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Bootstrapped 80%: Connecting to the Tor network$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Signaled readiness to systemd$
