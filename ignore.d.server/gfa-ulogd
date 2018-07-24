@@ -1,0 +1,5 @@
+#Jul 23 01:25:03 gw ulogd[401]: signal received, calling pluginstances
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ulogd\[[0-9]+\]: signal received, calling pluginstances$
+
+#Jul 23 01:25:03 gw ulogd[401]: syslogemu: reopening logfile
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ulogd\[[0-9]+\]: syslogemu: reopening logfile$
