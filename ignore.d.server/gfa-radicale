@@ -1,4 +1,5 @@
 # Jun 24 06:25:16 static radicale[29839]: Stopping Radicale CalDAV server: radicale.
-# Jun 24 06:25:16 static radicale[29846]: Starting Radicale CalDAV server : radicale.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ radicale\[[[:digit:]]+\]: Stopping Radicale CalDAV server: radicale\.$
+
+# Jun 24 06:25:16 static radicale[29846]: Starting Radicale CalDAV server : radicale.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ radicale\[[[:digit:]]+\]: Starting Radicale CalDAV server : radicale\.$

@@ -6,7 +6,6 @@
 # Jul 17 09:11:33 gw hostapd: wlp1s0: WPA rekeying GTK
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd: [[:alnum:]]+: WPA rekeying GTK$
 
-
 # Jul 18 05:01:33 gw hostapd[3973]: wlp1s0: WPA GMK rekeyd
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd\[[0-9]+\]: [[:alnum:]]+: WPA GMK rekeyd$
 

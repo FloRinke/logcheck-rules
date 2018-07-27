@@ -5,7 +5,6 @@
 # Jul 26 06:33:37 static sshd[13081]: input_userauth_request: invalid user () {  [preauth]
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: input_userauth_request: invalid user [^[:space:]]+ \[preauth\]$
 
-#Updates for old messages
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Connection reset by [:.[:xdigit:]]+ port [[:digit:]]+ \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Did not receive identification string from ([:[:xdigit:].]+|UNKNOWN)+ port [[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnected from [:[:xdigit:].]+ port [[:digit:]]+ \[preauth\]$
@@ -13,7 +12,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Received disconnect from [:.[:xdigit:]]+(: | port [[:digit:]]+:)11:  \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Received disconnect from [:.[:xdigit:]]+(: | port [[:digit:]]+:)11: (disconnected by user|Closed due to user request\.) \[preauth\]$
 
-#New messages
 #Feb 20 03:32:33 gw1 sshd[7271]: Received disconnect from 60.248.248.148 port 57727:11: Bye Bye [preauth]
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Received disconnect from [:.[:xdigit:]]+ port [[:digit:]]+:11: Bye Bye \[preauth\]$
 
@@ -26,6 +24,7 @@
 #Feb 19 17:05:36 gw1 sshd[21017]: Received disconnect from 84.200.93.71 port 45442:11: Normal Shutdown, Thank you for playing [preauth]
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Received disconnect from [:.[:xdigit:]]+ port [[:digit:]]+:11: Normal Shutdown, Thank you for playing \[preauth\]$
 
+# failure to negotiate
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Unable to negotiate with [[:xdigit:].:]+ port [[:digit:]]+: no matching cipher found\. Their offer: [[:alnum:],@.-]+ \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Unable to negotiate with [[:xdigit:].:]+ port [[:digit:]]+: no matching key exchange method found\. Their offer: [[:alnum:],@.-]+ \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Unable to negotiate with [[:xdigit:].:]+ port [[:digit:]]+: no matching host key type found\. Their offer: [[:alnum:],@.-]+ \[preauth\]$
@@ -44,6 +43,7 @@
 
 # Jul 17 02:12:16 static sshd[26934]: padding error: need 148 block 8 mod 4 [preauth]
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: padding error: need [0-9]+ block [0-9] mod [0-9] \[preauth\]$
+
 # Jul 17 02:12:16 static sshd[26934]: ssh_dispatch_run_fatal: Connection from 128.232.21.75 port 42622: message authentication code incorrect [preauth]
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: ssh_dispatch_run_fatal: Connection from [[:xdigit:]\.:]+ port [0-9]+: message authentication code incorrect \[preauth\]$
 

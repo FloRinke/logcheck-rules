@@ -1,16 +1,22 @@
-#Jun 26 11:27:42 instance-1 smokeping[1400]: Starting syslog logging                                                                                                                                                                                            
-#Jun 26 11:27:42 instance-1 smokeping: Note: logging to syslog as local0/debug.                                                                                                                                                                                 
-#Jun 26 11:27:42 instance-1 smokeping: Daemonizing /usr/sbin/smokeping ...                                                                                                                                                                                      
-#Jun 26 11:27:42 instance-1 smokeping[2256]: Smokeping version 2.006011 successfully launched.                                                                                                                                                                  
-#Jun 26 11:27:42 instance-1 smokeping[2256]: Not entering multiprocess mode for just a single probe.                                                                                                                                                            
-#Jun 26 11:27:42 instance-1 smokeping[2256]: FPing: probing 28 targets with step 300 s and offset 77 s.                                                                                                                                                         
-#Jun 26 11:27:42 instance-1 smokeping[1370]: Starting latency logger daemon: smokeping.                      
 #^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smokeping\[[[:digit:]]+\]:
 
+#Jun 26 11:27:42 instance-1 smokeping[1400]: Starting syslog logging
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smokeping\[[[:digit:]]+\]: Starting syslog logging$
+
+#Jun 26 11:27:42 instance-1 smokeping: Note: logging to syslog as local0/debug.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smokeping\[[[:digit:]]+\]: Note: logging to syslog as local0/debug\.$
+
+#Jun 26 11:27:42 instance-1 smokeping: Daemonizing /usr/sbin/smokeping ...
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smokeping\[[[:digit:]]+\]: Daemonizing \/usr\/sbin\/smokeping \.\.\.$
+
+#Jun 26 11:27:42 instance-1 smokeping[2256]: Smokeping version 2.006011 successfully launched.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smokeping\[[[:digit:]]+\]: Smokeping version [[:digit:].]+ successfully launched.$
+
+#Jun 26 11:27:42 instance-1 smokeping[2256]: Not entering multiprocess mode for just a single probe.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smokeping\[[[:digit:]]+\]: Not entering multiprocess mode for just a single probe\. $
+
+#Jun 26 11:27:42 instance-1 smokeping[2256]: FPing: probing 28 targets with step 300 s and offset 77 s.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smokeping\[[[:digit:]]+\]: FPing: probing [0-9]+ targets with step [0-9]+ s and offset [0-9]+ s\.$
+
+#Jun 26 11:27:42 instance-1 smokeping[1370]: Starting latency logger daemon: smokeping.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smokeping\[[[:digit:]]+\]: Starting latency logger daemon: smokeping\.$

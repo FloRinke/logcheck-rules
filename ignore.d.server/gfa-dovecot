@@ -7,7 +7,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth: Warning: auth client 0 disconnected with 1 pending requests: Connection reset by peer$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth: Warning: auth client 0 disconnected with 1 pending requests: EOF$
 
-
 # Jul  7 12:41:47 mail dovecot: imap-login: Maximum number of connections from user+IP exceeded (mail_max_userip_connections=10): user=<gfa@zumbi.com.ar>, method=PLAIN, rip=181.167.101.87,lip=172.104.98.54, TLS, session=<hhZ9GmhwGJW1p2VX>
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap-login: Maximum number of connections from user\+IP exceeded \(mail_max_userip_connections=[0-9]+\): user=<[[:alnum:]@\._-]+>, method=PLAIN, rip=[[:xdigit:]\.]+, lip=[[:xdigit:]\.]+, TLS, session=<[[:alnum:]\/\+_-]+>$
 
@@ -51,4 +50,3 @@
 
 # Jul 23 23:55:37 mail dovecot: imap(gfa@zumbi.com.ar): Connection closed (UID FETCH,UID FETCH running for 0.002 + waiting nothing for 60.335 secs, 62 B in + 10955+8192 B out, state=wait-sync) in=4638 out=2349944
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([[:alnum:]\.@_-]+\): Connection closed \(UID FETCH,UID FETCH running for [[:digit:]\.]+ \+ waiting nothing for [[:digit:]\.]+ secs, [0-9]+ B in \+ [[:digit:]\+]+ B out, state=wait-sync\) in=[0-9]+ out=[0-9]+$
-

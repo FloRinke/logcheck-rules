@@ -3,10 +3,8 @@
 # Jul  4 01:35:41 instance-2 dnsmasq[706]: Maximum number of concurrent DNS queries reached (max: 150)
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq\[[0-9]+\]: Maximum number of concurrent DNS queries reached \(max: [0-9]+\)$
 
-
 # Jul 17 10:07:33 gw dnsmasq-dhcp[25289]: DHCPINFORMATION-REQUEST(br-lan) 00:02:00:00:ab:11:ba:88:26:5e:16:9f:e5:ff
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq-dhcp\[[0-9]+\]: DHCPINFORMATION-REQUEST\([[:alnum:]-]+\) [[:xdigit:]:]+$
-
 
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq-dhcp\[[0-9]+\]: read /etc/ethers - [0-9]+ addresses$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq-dhcp\[[0-9]+\]: SLAAC-CONFIRM\([[:alnum:]-]+\) [[:xdigit:]:]+ [[:alnum:]]+$

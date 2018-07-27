@@ -1,7 +1,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025|/9876)?/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]_\.-]+[[:xdigit:]\.:]+ helo=[0-9] auth=[0-9]/[0-9] quit=[0-9] commands=[0-9]/[0-9]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025|/9876)?/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]_\.-]+[[:xdigit:]\.:]+ ehlo=[0-9] starttls=[0-9] mail=[1-9] rcpt=[0-9] data=[0-9] quit=[0-9] commands=[0-9]/[0-9]$
 
-
 ### 10025 port instance
 #TLS
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025)?/smtpd\[[[:digit:]]+\]: warning: TLS library problem: ([[:digit:]]+:)?error:[[:xdigit:]]+:SSL routines:SSL2?3_[[:alnum:]_]+:[[:alnum:] ]+:[[:alnum:]_-]+\.c:[[:digit:]]+:(SSL alert number [[:digit:]]+:)?$
@@ -24,10 +23,8 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025)?/smtpd\[[[:digit:]]+\]: Untrusted TLS connection established from [-._[:alnum:]]+\[[.[:digit:]]+\]: TLSv1\.2 with cipher [[:alnum:]-]+ \([0-9]+/[0-9]+ bits\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025|/9876)?/smtpd\[[[:digit:]]+\]: Anonymous TLS connection established from [-._[:alnum:]]+\[[.[:digit:]]+\]: TLSv1\.2 with cipher [[:alnum:]-]+ \([0-9]+/[0-9]+ bits\)$
 
-
 # all kind of disconnections
 #^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\]
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] 
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[0-9] mail=[0-9] rcpt=[0-9]\/[0-9] quit=[0-9] commands=[0-9]\/[0-9]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] helo=[0-9] mail=[0-9] rcpt=[0-9] data=[0-9]\/[0-9] commands=[0-9]\/[0-9]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[0-9] starttls=[0-9] mail=[0-9] rcpt=[0-9] data=[0-9] commands=[0-9]$

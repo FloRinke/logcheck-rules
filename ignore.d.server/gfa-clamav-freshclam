@@ -1,4 +1,4 @@
-+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (bytecode|daily|main)\.c(l|v)d (is up to date|updated) \(version: [0-9]+, sigs: [0-9]+, f-level: [0-9]+, builder: \w+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (bytecode|daily|main)\.c(l|v)d (is up to date|updated) \(version: [0-9]+, sigs: [0-9]+, f-level: [0-9]+, builder: \w+\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ freshclam\[[[:digit:]]+\]: getfile: [^[:space:]]+ not found on remote server \(IP: [.:[:digit:]a-f]+\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ freshclam\[[[:digit:]]+\]: getfile: Error while reading database from [^[:space:]]+ \(IP: [^[:space:]]+ Operation now in progress$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ freshclam\[[[:digit:]]+\]: getfile: Unknown response from remote server \(IP: [.:[:digit:]a-f]+\)$

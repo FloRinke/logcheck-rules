@@ -20,12 +20,10 @@
 # Jun 26 18:16:11 tor-exit1-1480471271410-512mb-sgp1-01 Tor[7615]: Since startup, we have initiated 0 v1 connections, 0 v2 connections, 0 v3 connections, and 1935 v4 connections; and received 0 v1 connections, 2 v2 connections, 102 v3 connections, and 50567 v4 connections.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Since startup, we have initiated [0-9]+ v1 connections, [0-9]+ v2 connections, [0-9]+ v3 connections, and [0-9]+ v4 connections; and received [0-9]+ v1 connections, [0-9]+ v2 connections, [0-9]+ v3 connections, and [0-9]+ v4 connections\.$
 
-
 # DoS
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: DoS mitigation since startup: [0-9]+ circuits rejected\, [0-9]+ marked addresses\. [0-9]+ connections closed\. [0-9]+ single hop clients refused\.$
 
 # startup
-#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]:
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Configured hibernation\. This interval began at [[:digit:]-]+ 00:00:00; the scheduled wake-up time was [[:digit:]-]+ 00:00:00; we expect to exhaust our quota for this interval around [[:digit:]-]+ 00:00:00; the next interval begins at [[:digit:]-]+ 00:00:00 \(all times local\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Interrupt: we have stopped accepting new connections, and will shut down in 30 seconds\. Interrupt again to exit now\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Clean shutdown finished\. Exiting\.$
@@ -57,7 +55,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Bootstrapped 100%: Done$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Self-testing indicates your DirPort is reachable from the outside\. Excellent\. Publishing server descriptor\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Performing bandwidth self-test\.\.\.done\.$
-
 
 # Jul  3 22:00:20 tor-exit1-1480471271410-512mb-sgp1-01 Tor[3353]: It looks like I should try to generate and sign a new medium-term signing key, because the one I have is going to expire soon. To do that, I'm going to have to try to load the permanent master identity key.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: It looks like I should try to generate and sign a new medium-term signing key, because the one I have is going to expire soon\. To do that, I'm going to have to try to load the permanent master identity key\.$
