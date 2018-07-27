@@ -46,6 +46,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy|spiceproxy)\[[0-9]+\]: server (stopped|closing|shutdown \(restart\))$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pveproxy\[[0-9]+\]: Using '\/etc\/pve\/local\/pveproxy-ssl.pem' as certificate for the web interface\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pveproxy\[[0-9]+\]: Clearing outdated entries from certificate cache$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: INFO: starting new backup job: vzdump --mailnotification failure --quiet 1 --mailto [a-zA-Z.-]+@[a-zA-Z.-]+ --mode snapshot --compress lzo --storage [a-zA-Z.-]+ --all 1$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: INFO: starting new backup job: vzdump( --quiet 1| --compress lzo| --mode snapshot| --storage nas-backup| --mailto [a-zA-Z0-9._-]+@[a-z0-9._-]+| --mailnotification failure| --all 1)+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: INFO: starting new backup job: vzdump (\-\-[[:print:]]+)?+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Stopp|Start)(ing|ed) (PVE API Proxy Server|Proxmox VE firewall logger|PVE SPICE Proxy Server)\.+$
