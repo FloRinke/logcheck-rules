@@ -25,42 +25,9 @@
 
 # all kind of disconnections
 #^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\]
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[0-9] mail=[0-9] rcpt=[0-9]\/[0-9] quit=[0-9] commands=[0-9]\/[0-9]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] helo=[0-9] mail=[0-9] rcpt=[0-9] data=[0-9]\/[0-9] commands=[0-9]\/[0-9]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[0-9] starttls=[0-9] mail=[0-9] rcpt=[0-9] data=[0-9] commands=[0-9]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[0-9] mail=[0-9] rcpt=[0-9]\/[0-9] rset=[0-9] quit=[0-9] commands=[0-9]\/[0-9]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\](( helo| ehlo)=[0-9])?( auth=[0-9](\/[0-9])?)?( starttls=[0-9](\/[0-9])?)?( mail=[0-9](\/[0-9])?)?( rcpt=[0-9](\/[0-9])?)?( data=[0-9](\/[0-9])?)?( rset=[0-9](\/[0-9])?)?( quit=[0-9](\/[0-9])?)? (commands=[0-9](\/[0-9])?)?
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] commands=[0-9](\/[0-9])?$
 
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\]  helo=[0-9] mail=[0-9] rcpt=[0-9] data=[0-9]/[0-9] commands=[0-9]/[0-9]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] unknown=[0-9]/[0-9] commands=[0-9]/[0-9]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[0-9] starttls=[0-9] mail=[0-9] rcpt=[0-9] data=[0-9]/[0-9] rset=[0-9] commands=[0-9]/[0-9]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] helo=[0-9] mail=[0-9] rcpt=[0-9]/[0-9] quit=[0-9] commands=[0-9]\/[0-9]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[0-9] auth=[0-9]\/[0-9] rset=[0-9] quit=[0-9] commands=[0-9]\/[0-9]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[0-9] starttls=[0-9] auth=[0-9] mail=[0-9] rcpt=[0-9] data=[0-9] quit=[0-9] commands=[0-9]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[0-9] commands=[0-9]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] quit=[0-9] commands=[0-9]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] helo=[0-9] mail=[0-9] rcpt=[0-9] data=[0-9]\/[0-9] quit=[0-9] commands=[0-9]\/[0-9]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] helo=[0-9] quit=[0-9] commands=[0-9]$
-
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] commands=0/0$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[0-9] quit=[0-9]$
-
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] helo=[0-9] mail=[0-9] commands=[0-9]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] helo=[0-9] mail=[0-9] rcpt=[0-9] rset=[0-9] quit=[0-9] commands=[0-9]$
-
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] helo=[0-9] ehlo=[0-9] starttls=[0-9] mail=[0-9] rcpt=[0-9] data=[0-9] quit=[0-9] commands=[0-9]$
-
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] helo=[0-9] auth=[0-9]\/[0-9] quit=1 commands=[0-9]\/[0-9]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[0-9] auth=[0-9]\/[0-9] quit=1 commands=[0-9]\/[0-9]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[1-9] auth=[0-9]\/[0-9] commands=[0-9]\/[0-9]$
-
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[1-9] starttls=1 mail=[0-9] rcpt=[1-9] data=[0-9] quit=1 commands=[0-9]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[1-9] starttls=1 mail=[0-9] rcpt=[1-9] data=[0-9]\/[0-9] quit=1 commands=[0-9]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[1-9] starttls=1 mail=[0-9] rcpt=[1-9] data=[0-9]\/[0-9] quit=1 commands=[0-9]\/[0-9]$
-
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[1-9] starttls=1 auth=[0-9]\/[0-9] quit=1 commands=[0-9]\/[0-9]$
-
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[1-9] mail=[0-9] rcpt=[1-9] data=[0-9]\/[0-9] quit=1 commands=[0-9]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] ehlo=[1-9] mail=[0-9] rcpt=[1-9] data=[0-9]\/[0-9] quit=1 commands=[0-9]\/[0-9]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: disconnect from localhost\[127.0.0.1\] helo=[1-9] mail=[1-9] rcpt=[1-9] data=[0-9] quit=1 commands=[0-9]$
 
 
