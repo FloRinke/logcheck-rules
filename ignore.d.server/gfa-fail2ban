@@ -1,0 +1,8 @@
+# Jul 27 23:45:48 mail fail2ban-client[1361]: 2018-07-27 23:45:48,312 fail2ban.server         [1366]: INFO    Starting Fail2ban v0.9.6
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ fail2ban-client\[[[:digit:]]+\]: [0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2},[0-9]{3} fail2ban.server         \[[0-9]+\]: INFO    Starting Fail2ban v[[:digit:]\.]+$
+
+# Jul 27 23:45:48 mail fail2ban-client[1361]: 2018-07-27 23:45:48,313 fail2ban.server         [1366]: INFO    Starting in daemon mode
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ fail2ban-client\[[[:digit:]]+\]: [0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2},[0-9]{3} fail2ban.server         \[[0-9]+\]: INFO    Starting in daemon mode$
+
+# Jul 27 23:45:47 mail fail2ban-client[1183]: Shutdown successful
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ fail2ban-client\[[[:digit:]]+\]: Shutdown successful$
