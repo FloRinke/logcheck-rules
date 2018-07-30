@@ -1,0 +1,5 @@
+# Jul 23 06:14:36 lists auth: pam_unix(dovecot:auth): authentication failure; logname= uid=0 euid=0 tty=dovecot ruser=py-autocrypt@lists.codespeak.net rhost=91.134.137.214
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ auth: pam_unix\(dovecot:auth\): authentication failure; logname= uid=0 euid=0 tty=dovecot ruser=[[:alnum:]@\._-]+ rhost=[[:xdigit:]\.:]+$
+
+# Jul 26 12:37:34 lists auth: pam_unix(dovecot:auth): check pass; user unknown
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ auth: pam_unix\(dovecot:auth\): check pass; user unknown$
