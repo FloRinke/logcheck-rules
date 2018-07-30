@@ -5,6 +5,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ iodined: accepted password from user \#0, given IP 192\.168\.94\.10$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ iodined: accepted password from user \#0, given IP 192\.168\.94\.18$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ iodined: accepted password from user \#0, given IP 192\.168\.94\.9$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ iodined: accepted password from user \#1, given IP 192\.168\.94\.11$
 
 # Jul  7 05:35:10 instance-2 iodined: rejected login request from user #0 from 127.0.0.1, bad password
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ iodined: rejected login request from user \#0 from 127\.0\.0\.1, bad password$
