@@ -1,0 +1,2 @@
+# Jul 24 00:00:48 tor-exit1-1480471271410-512mb-sgp1-01 systemd[1]: user@0.service: Killing process 11274 (kill) with signal SIGKILL.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[1\]: user@[0-9]+\.service: Killing process [0-9]+ \(kill\) with signal SIGKILL\.$
