@@ -1,0 +1,18 @@
+# Jul 28 18:46:04 lists mailman3-core[1019]: Jul 28 18:46:04 2018 (1938) Running detector: <class 'flufl.bounce._detectors.dsn.DSN'>
+# Jul 28 18:46:04 lists mailman3-core[1019]: Jul 28 18:46:04 2018 (1938) Running detector: <class 'flufl.bounce._detectors.postfix.Postfix'>
+# Jul 28 18:46:04 lists mailman3-core[1019]: Jul 28 18:46:04 2018 (1938) Running detector: <class 'flufl.bounce._detectors.llnl.LLNL'>
+# Jul 28 18:46:04 lists mailman3-core[1019]: Jul 28 18:46:04 2018 (1938) Running detector: <class 'flufl.bounce._detectors.qmail.Qmail'>
+# Jul 28 18:46:04 lists mailman3-core[1019]: Jul 28 18:46:04 2018 (1938) Running detector: <class 'flufl.bounce._detectors.sina.Sina'>
+# Jul 28 18:46:04 lists mailman3-core[1019]: Jul 28 18:46:04 2018 (1938) Running detector: <class 'flufl.bounce._detectors.netscape.Netscape'>
+# Jul 28 18:46:04 lists mailman3-core[1019]: Jul 28 18:46:04 2018 (1938) Running detector: <class 'flufl.bounce._detectors.simplewarning.SimpleWarning'>
+# Jul 28 18:46:04 lists mailman3-core[1019]: Jul 28 18:46:04 2018 (1938) Running detector: <class 'flufl.bounce._detectors.exchange.Exchange'>
+# Jul 28 18:46:04 lists mailman3-core[1019]: Jul 28 18:46:04 2018 (1938) Running detector: <class 'flufl.bounce._detectors.aol.AOL'>
+# Jul 28 18:46:04 lists mailman3-core[1019]: Jul 28 18:46:04 2018 (1938) Running detector: <class 'flufl.bounce._detectors.yale.Yale'>
+# Jul 28 18:46:04 lists mailman3-core[1019]: Jul 28 18:46:04 2018 (1938) Running detector: <class 'flufl.bounce._detectors.smtp32.SMTP32'>
+# Jul 28 18:46:04 lists mailman3-core[1019]: Jul 28 18:46:04 2018 (1938) Running detector: <class 'flufl.bounce._detectors.caiwireless.Caiwireless'>
+# Jul 28 18:46:04 lists mailman3-core[1019]: Jul 28 18:46:04 2018 (1938) Running detector: <class 'flufl.bounce._detectors.yahoo.Yahoo'>
+# Jul 28 18:46:04 lists mailman3-core[1019]: Jul 28 18:46:04 2018 (1938) Running detector: <class 'flufl.bounce._detectors.microsoft.Microsoft'>
+# Jul 28 18:46:04 lists mailman3-core[1019]: Jul 28 18:46:04 2018 (1938) Running detector: <class 'flufl.bounce._detectors.simplematch.SimpleMatch'>
+# Jul 28 18:46:04 lists mailman3-core[1019]: Jul 28 18:46:04 2018 (1938) Running detector: <class 'flufl.bounce._detectors.groupwise.GroupWise'>
+# Jul 28 18:46:04 lists mailman3-core[1019]: Jul 28 18:46:04 2018 (1938) Running detector: <class 'flufl.bounce._detectors.exim.Exim'>
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mailman3-core\[[0-9]+\]: \w{3} [ :0-9]{11} [0-9]{4} \([0-9]+\) Running detector: <class '[[:alnum:]\._]+'>$
