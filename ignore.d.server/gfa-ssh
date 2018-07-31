@@ -36,7 +36,7 @@
 
 
 # Jul 19 00:32:00 gw sshd[30234]: error: maximum authentication attempts exceeded for invalid user  from 193.105.134.97 port 5728 ssh2 [preauth]
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: maximum authentication attempts exceeded for invalid user [[:alnum:] ]+ from [[:xdigit:]\.]+ port [[:digit:]]+ ssh2 \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: maximum authentication attempts exceeded for invalid user [[:alnum:]\]+ from [[:xdigit:]\.]+ port [[:digit:]]+ ssh2 \[preauth\]$
 
 # Jul 11 14:26:43 tor-exit1-1480471271410-512mb-sgp1-01 sshd[15721]: error: kex protocol error: type 30 seq 1 [preauth]
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: kex protocol error: type 30 seq 1 \[preauth\]$
@@ -48,10 +48,10 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: ssh_dispatch_run_fatal: Connection from [[:xdigit:]\.:]+ port [0-9]+: message authentication code incorrect \[preauth\]$
 
 # Jul 18 20:56:13 gw sshd[22866]: Disconnecting: Change of username or service not allowed: (administrator,ssh-connection) -> (Administrator,ssh-conn [preauth]
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnecting: Change of username or service not allowed: \([[:alnum:],!-]+\) -> \([[:alnum:],!-]+ \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnecting: Change of username or service not allowed: \([[:alnum:],!;-]+\) -> \([[:alnum:],!;-]+ \[preauth\]$
 
 # Jul 18 23:23:04 gw sshd[19007]: Disconnecting: Change of username or service not allowed: (zabbix,ssh-connection) -> (,ssh-connection) [preauth]
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnecting: Change of username or service not allowed: \([[:alnum:],!-]+\) -> \([[:alnum:],!-]+\) \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnecting: Change of username or service not allowed: \([[:alnum:],!;-]+\) -> \([[:alnum:],!;-]+\) \[preauth\]$
 
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: bind: Address already in use$
 
