@@ -9,3 +9,12 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ freshclam\[[[:digit:]]+\]: WARNING: Local version: [^[:space:]]+ Recommended version: [^[:space:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ freshclam\[[[:digit:]]+\]: DON'T PANIC! Read http://www.clamav.net/documents/upgrading-clamav$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ freshclam\[[[:digit:]]+\]: Received signal: re-opening log file$
+
+# Aug  2 19:16:40 static freshclam[2119]: Thu Aug  2 19:16:40 2018 -> ^Your ClamAV installation is OUTDATED!
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ freshclam\[[[:digit:]]+\]: \w{3} \w{3} [[:digit:]+: ]{16} -> \^Your ClamAV installation is OUTDATED!$
+
+# Aug  2 19:16:40 static freshclam[2119]: Thu Aug  2 19:16:40 2018 -> ^Local version: 0.100.0 Recommended version: 0.100.1
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ freshclam\[[[:digit:]]+\]: \w{3} \w{3} [[:digit:]+: ]{16} -> \^Local version: [[:digit:]\.]+ Recommended version: [[:digit:]\.]+$
+
+# Aug  2 19:16:40 static freshclam[2119]: Thu Aug  2 19:16:40 2018 -> DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ freshclam\[[[:digit:]]+\]: \w{3} \w{3} [[:digit:]+: ]{16} -> DON'T PANIC! Read https:\/\/www\.clamav\.net\/documents\/upgrading-clamav
