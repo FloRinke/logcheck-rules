@@ -5,3 +5,25 @@
 
 #Jun 26 03:47:46 static clamd[696]: instream(192.168.139.250@56180): Sanesecurity.Malware.27291.RtfHeur.UNOFFICIAL(1c609f499956a8e181b4c4828b3ac433:107437) FOUND
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: instream\([[:xdigit:]+\.@]+\): [[:alnum:]\._-]+\([[:xdigit:]:]+\) FOUND$
+
+# Aug  3 05:46:18 static clamd[3857]: Fri Aug  3 05:46:18 2018 -> instream(192.168.139.250@58054): Porcupine.Junk.36046.UNOFFICIAL(9d315d8a82ee80b6e4d25160037518b9:877366) FOUND
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: \w{3} \w{3} [[:digit:]+: ]{16} instream\([[:xdigit:]+\.@]+\): [[:alnum:]\._-]+\([[:xdigit:]:]+\) FOUND$
+
+# Aug  3 01:19:40 static clamd[738]: LibClamAV Warning: cli_loadyara: failed to parse or load 7 yara rules from file /var/lib/clamav/antidebug_antivm.yar, successfully loaded 92 rules.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: LibClamAV Warning: cli_loadyara: failed to parse or load [0-9]+ yara rules from file \/var\/lib\/clamav\/[[:alnum:]_\.]+, successfully loaded [0-9]+ rules\.$
+
+# Aug  4 07:02:37 static clamd[3857]: Sat Aug  4 07:02:37 2018 -> --- Stopped at Sat Aug  4 07:02:37 2018
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ clamd\[[[:digit:]]+\]: \w{3} \w{3} [[:digit:]+: ]{16} -> --- Stopped at \w{3} \w{3} [[:digit:]+: ]{16}$
+
+# Aug  4 07:02:37 static clamd[3857]: Sat Aug  4 07:02:37 2018 -> Socket file removed.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ clamd\[[[:digit:]]+\]: \w{3} \w{3} [[:digit:]+: ]{16} -> Socket file removed\.$
+
+# Aug  4 07:02:37 static mkdir[12664]: /bin/mkdir: cannot create directory ‘/run/clamav’: File exists
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mkdir\[[[:digit:]]+\]: \/bin\/mkdir: cannot create directory ‘\/run\/clamav’: File exists$
+
+# Aug  4 07:02:56 static clamd[12668]: Sat Aug  4 07:02:56 2018 -> Limits: MaxRecHWP3 limit set to 16.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ clamd\[[[:digit:]]+\]: \w{3} \w{3} [[:digit:]+: ]{16} -> Limits: MaxRecHWP3 limit set to [0-9]+\.$
+
+# Aug  4 07:02:56 static clamd[12668]: Sat Aug  4 07:02:56 2018 -> OLE2 support enabled.
+# Aug  4 07:02:56 static clamd[12668]: Sat Aug  4 07:02:56 2018 -> HWP3 support enabled.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ clamd\[[[:digit:]]+\]: \w{3} \w{3} [[:digit:]+: ]{16} -> (HWP3|OLE2) support enabled\.$
