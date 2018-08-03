@@ -17,13 +17,13 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <[[:alnum:]]+>; proxy; rspamd_task_process: learn error: <[._[:alnum:]@_\.-]+> contains less tokens than required for bayes classifier: [0-9]+ < [0-9]+$
 
 # Jun 29 18:36:26 mail rspamd[2256]: <b98561>; proxy; rspamd_task_process: learn error: <CAC8jRerjZeDsG4GEugZ6HJ_9NXXcrOUo36Bfn-ZUp8Vn_AT1Qg@mail.gmail.com> has been already learned as spam, ignore it
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <[[:alnum:]]+>; proxy; rspamd_task_process: learn error: <[._[:alnum:]@_\.-]+> has been already learned as (ham|spam), ignore it$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <[[:alnum:]]+>; proxy; rspamd_task_process: learn error: <[._[:alnum:]@_\._=+-]+> has been already learned as (ham|spam), ignore it$
 
 # Jul  2 07:06:02 mail rspamd[2502]: <36e484>; lua; once_received.lua:50: error looking up 9.126.221.115.in-addr.arpa: query timed out
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <[[:alnum:]]+>; lua; once_received\.lua:50: error looking up [[:alnum:]\.-]+: query timed out$
 
 # Jul  7 00:41:08 mail rspamd[5399]: <144328>; csession; rspamd_task_process: learn error: <353cec92c872268978653bd90010edbc@eformaciononline.com> is skipped for bayes classifier: already in class spam; probability 100.00%
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <[[:alnum:]]+>; csession; rspamd_task_process: learn error:  <[[:alnum:]@\.]+> is skipped for bayes classifier: already in class spam; probability [[:digit:]\.]+%$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <[[:alnum:]]+>; csession; rspamd_task_process: learn error: <[[:alnum:]@\.]+> is skipped for bayes classifier: already in class spam; probability [[:digit:]\.]+%$
 
 # Jul  7 12:20:37 mail rspamd[5398]: <ed0672>; lua; once_received.lua:50: error looking up 107.6.57.41.in-addr.arpa: server fail
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <[[:alnum:]]+>; lua; once_received\.lua:50: error looking up [[:alnum:]\.-]+: server fail$
