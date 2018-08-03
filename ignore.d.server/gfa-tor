@@ -12,7 +12,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Heartbeat: Tor's uptime is( [0-9]+ day(s)?)? [[:digit:]:]+ hours, with [[:digit:]]+ circuits open\. I've sent [[:digit:]\.]+ [GM]B and received [[:digit:]\.]+ [GM]B\.$
 
 #Jun 26 18:16:11 tor-exit1-1480471271410-512mb-sgp1-01 Tor[7615]: Heartbeat: Accounting enabled. Sent: 517.64 GB, Received: 590.86 GB, Used: 1108.50 GB / 2000.00 GB, Rule: sum. The current accounting interval ends on 2018-07-01 00:00:00, in 4 days 5:43 hours.
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Heartbeat: Accounting enabled\. Sent: [[:digit:].]+ GB, Received: [[:digit:].]+ GB, Used: [[:digit:].]+ GB \/ [[:digit:].]+ GB, Rule: sum\. The current accounting interval ends on [[:digit:].-]+ 00:00:00, in ([0-9]+ days )?[[:digit:]:]+ hours\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Heartbeat: Accounting enabled\. Sent: [[:digit:].]+ GB, Received: [[:digit:].]+ GB, Used: [[:digit:].]+ GB \/ [[:digit:].]+ GB, Rule: (sum|out)\. The current accounting interval ends on [[:digit:].-]+ 00:00:00, in ([0-9]+ days )?[[:digit:]:]+ hours\.$
 
 # Jun 26 18:16:11 tor-exit1-1480471271410-512mb-sgp1-01 Tor[7615]: Circuit handshake stats since last time: 376/376 TAP, 5822/5822 NTor.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Circuit handshake stats since last time: [0-9]+\/[0-9]+ TAP, [0-9]+\/[0-9]+ NTor\.$
