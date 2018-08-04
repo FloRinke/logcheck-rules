@@ -4,3 +4,9 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ unattended-upgrade: Starting unattended upgrades script
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ unattended-upgrade: Allowed origins are:
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ unattended-upgrade: No packages found that can be upgraded unattended and no pending auto-removals
+
+# Aug  4 06:37:57 static unattended-upgrade: Writing dpkg log to '/var/log/unattended-upgrades/unattended-upgrades-dpkg.log'
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ unattended-upgrade: Writting dpkg log to \'\/var\/log\/unattended-upgrades\/unattended-upgrades-dpkg\.log\'$
+
+# Aug  4 06:37:59 static unattended-upgrade: All upgrades installed
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ unattended-upgrade: All upgrades installed$
