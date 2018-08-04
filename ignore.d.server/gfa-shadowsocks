@@ -8,3 +8,6 @@
 
 # Jul 17 22:28:39 gw ss-server[3979]:  2018-07-17 22:28:39 ERROR: getpeername: Transport endpoint is not connected
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ss-server\[[0-9]+\]:  [0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2} ERROR: getpeername: Transport endpoint is not connected$
+
+# Aug  4 09:47:45 gw ss-server[3979]:  2018-08-04 09:47:45 ERROR: block all requests from 106.75.92.187
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ss-server\[[0-9]+\]:  [0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2} ERROR: block all requests from [[:xdigit:]:\.]+$
