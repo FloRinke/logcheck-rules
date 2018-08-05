@@ -5,6 +5,8 @@
 #TLS
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025)?/smtpd\[[[:digit:]]+\]: warning: TLS library problem: ([[:digit:]]+:)?error:[[:xdigit:]]+:SSL routines:SSL2?3_[[:alnum:]_]+:[[:alnum:] ]+:[[:alnum:]_-]+\.c:[[:digit:]]+:(SSL alert number [[:digit:]]+:)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025)?/smtpd\[[[:digit:]]+\]: warning: TLS library problem: ([[:digit:]]+:)?error:[[:xdigit:]]+:SSL routines:ssl2?3_[[:alnum:]_]+:[[:alnum:] ]+:[[:alnum:]_-]+\.c:[[:digit:]]+:(SSL alert number [[:digit:]]+:)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025)?/smtpd\[[[:digit:]]+\]: warning: TLS library problem: ([[:digit:]]+:)?error:[[:xdigit:]]+:SSL routines:ssl3_read_bytes:unexpected record:\.\.\/ssl\/record\/rec_layer_s3\.c:[0-9]+:$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025)?/smtpd\[[[:digit:]]+\]: warning: TLS library problem: ([[:digit:]]+:)?error:[[:xdigit:]]+:SSL routines:tls_process_client_hello:unknown protocol:\.\.\/ssl\/statem\/statem_srvr\.c:[0-9]+:$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025)?/smtpd\[[[:digit:]]+\]: warning: network_biopair_interop: error (reading|writing) [[:digit:]]+ bytes (from|to) the network: Connection reset by peer$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025)?/smtpd\[[[:digit:]]+\]: SSL_accept error from [._[:alnum:]-]+\[[[:xdigit:].:]{3,39}\](: (-?[[[:digit:]]]+|lost connection|Connection timed out|Connection reset by peer))?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: warning: TLS library problem: error:[[:xdigit:]]+:SSL routines:ssl3_get_record:wrong version number:\.\.\/ssl\/record\/ssl3_record\.c:210:$
@@ -12,6 +14,7 @@
 #connection
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025|/9876)?/smtpd\[[[:digit:]]+\]: (dis)?connect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\]( ehlo=[[:digit:]]+ mail=[[:digit:]]+ rcpt=[[:digit:]]+ data=[[:digit:]]+ quit=[[:digit:]]+ commands=[[:digit:]]+)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025|/9876)?/smtpd\[[[:digit:]]+\]: lost connection after [[:alnum:]]+( \([[:digit:]]+ bytes\))? from [._[:alnum:]-]+\[(unknown|[[:xdigit:].:]{3,39})\]$
+
 #behavior
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: improper command pipelining after (HELO|EHLO|DATA|MAIL|QUIT) from [^]]+\[[.:[:xdigit:]]+\]:( QUIT\\r\\n)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025|/9876)?/smtpd\[[[:digit:]]+\]: warning: hostname [[:alnum:]_\.-]+ does not resolve to address [[:xdigit:]\.:]+(: Name or service not known|: Temporary failure in name resolution)?$
@@ -58,7 +61,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\/smtp\[[[:digit:]]+\]: [[:alnum:]]+: host [[:alnum:]\.]+\[[[:xdigit:]\.:]+\] said: 450 4\.2\.0 <[+._[:alnum:]-]+@[._[:alnum:]-]+>: Recipient address rejected: Greylisted, see http:\/\/postgrey\.schweikert\.ch\/help\/[[:alnum:]\.]+ \(in reply to RCPT TO command\)$
 
 # misc
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: warning: non-SMTP command from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\]: GET / HTTP/1.1$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: warning: non-SMTP command from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\]: GET ([[:alnum:]\/]+)? HTTP/1.1$
 
 # Jul 19 15:32:14 instance-1 postfix/smtpd[27252]: improper command pipelining after AUTH from pppoe-static.178.124.188.173.telecom.mogilev.by[178.124.188.173]: QUIT\r\n
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: improper command pipelining after AUTH from [[:alnum:]\.-]+\[[[:xdigit:]:\.]+\]: QUIT\\r\\n$
