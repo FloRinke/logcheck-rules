@@ -8,7 +8,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <[[:alnum:]]+>; proxy; rspamd_stat_classifiers_process: skip statistics as HAM class is missing$
 
 # Jun 26 10:42:15 mail rspamd[2256]: <68f800>; proxy; fuzzy_check_timer_callback: got IO timeout with server fuzzy.rspamd.com(88.99.142.95), after 1 retransmits
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <[[:alnum:]]+>; proxy; fuzzy_check_timer_callback: got IO timeout with server fuzzy\.rspamd\.com\([[:xdigit:]\.:]+\), after 1 retransmits$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <[[:alnum:]]+>; proxy; fuzzy_check_timer_callback: got IO timeout with server fuzzy(1)?\.rspamd\.com\([[:xdigit:]\.:]+\), after 1 retransmits$
 
 # Jun 30 02:06:26 mail rspamd[2256]: <692faf>; lua; asn.lua:65: error querying dns: query timed out
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <[[:alnum:]]+>; lua; asn\.lua:[0-9]+: error querying dns: query timed out$
@@ -36,3 +36,8 @@
 
 # Jul 24 09:30:57 mail rspamd[3776]: <>; rdns; rdns_make_request_full: got empty name to resolve
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <>; rdns; rdns_make_request_full: got empty name to resolve$
+
+# Aug  5 01:58:35 mail rspamd[491]: <60dd4f>; main; wait_for_workers: terminate worker rspamd_proxy(496) with SIGKILL
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <[[:alnum:]]+>; main; wait_for_workers: terminate worker rspamd_proxy\([0-9]+\) with SIGKILL$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <[[:alnum:]]+>; main; wait_for_workers: terminate worker hs_helper\([0-9]+\) with SIGKILL$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <[[:alnum:]]+>; main; wait_for_workers: terminate worker controller\([0-9]+\) with SIGKILL$
