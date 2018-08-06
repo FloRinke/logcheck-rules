@@ -7,3 +7,6 @@
 
 # Jul 17 14:25:34 gw ntpd[3928]: reply from 203.95.213.129: not synced (alarm), next query 3172s
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: reply from [[:xdigit:]\.:]+: not synced \(alarm\), next query [0-9]+s$
+
+# Aug  6 09:08:25 gw ntpd[3928]: reply from 37.218.240.198: negative delay -0.001506s, next query 3272s
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: reply from [[:xdigit:]\.:]+ negative delay -[[:digit:]\.]+s, next query [0-9]+s$
