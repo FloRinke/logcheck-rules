@@ -1,44 +1,39 @@
 # Jul 17 09:11:33 gw hostapd[3973]: wlp1s0: WPA rekeying GTK
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd\[[0-9]+\]: [[:alnum:]]+: WPA rekeying GTK$
-
-# Jul 17 09:11:33 gw hostapd: wlp1s0: WPA rekeying GTK
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd: [[:alnum:]]+: WPA rekeying GTK$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: WPA rekeying GTK$
 
 # Jul 18 05:01:33 gw hostapd[3973]: wlp1s0: WPA GMK rekeyd
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd\[[0-9]+\]: [[:alnum:]]+: WPA GMK rekeyd$
-
-# Jul 18 05:01:33 gw hostapd: wlp1s0: WPA GMK rekeyd
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd: [[:alnum:]]+: WPA GMK rekeyd$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: WPA GMK rekeyd$
 
 # Jul 28 22:11:35 gw hostapd[3973]: wlp1s0: STA 14:ab:c5:71:1d:d0 WPA: sending 1/2 msg of Group Key Handshake
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd\[[0-9]+\]: [[:alnum:]]+: STA [[:xdigit:]:]{17} WPA: sending 1\/2 msg of Group Key Handshake$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]{17} WPA: sending 1\/2 msg of Group Key Handshake$
 
 # Jul 28 22:11:35 gw hostapd[3973]: wlp1s0: STA 14:ab:c5:71:1d:d0 WPA: received EAPOL-Key frame (2/2 Group)
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd\[[0-9]+\]: [[:alnum:]]+: STA [[:xdigit:]:]{17} WPA: received EAPOL-Key frame \(2\/2 Group\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]{17} WPA: received EAPOL-Key frame \(2\/2 Group\)$
 
 #Jul 28 22:11:35 gw hostapd[3973]: wlp1s0: STA 14:ab:c5:71:1d:d0 WPA: group key handshake completed (RSN)
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd\[[0-9]+\]: [[:alnum:]]+: STA [[:xdigit:]:]{17} WPA: group key handshake completed \(RSN\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]{17} WPA: group key handshake completed \(RSN\)$
 
 #Jul 28 22:57:06 gw hostapd[3973]: wlp1s0: AP-STA-DISCONNECTED 14:ab:c5:71:1d:d0
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd\[[0-9]+\]: [[:alnum:]]+: AP-STA-DISCONNECTED [[:xdigit:]:]{17}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: AP-STA-DISCONNECTED [[:xdigit:]:]{17}$
 
 #Jul 28 22:57:06 gw hostapd[3973]: wlp1s0: STA 14:ab:c5:71:1d:d0 WPA: event 3 notification
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd\[[0-9]+\]: [[:alnum:]]+: STA [[:xdigit:]:]{17} WPA: event 3 notification$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]{17} WPA: event 3 notification$
 
 #Jul 28 22:57:06 gw hostapd[3973]: wlp1s0: STA 14:ab:c5:71:1d:d0 IEEE 802.1X: unauthorizing port
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd\[[0-9]+\]: [[:alnum:]]+: STA [[:xdigit:]:]{17} IEEE 802\.1X: unauthorizing port$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]{17} IEEE 802\.1X: unauthorizing port$
 
 #Jul 28 22:57:06 gw hostapd[3973]: wlp1s0: STA 14:ab:c5:71:1d:d0 IEEE 802.11: deauthenticated
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd\[[0-9]+\]: [[:alnum:]]+: STA [[:xdigit:]:]{17} IEEE 802\.1X: deauthenticated$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]{17} IEEE 802\.1X: deauthenticated$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]{17} IEEE 802\.11: deauthenticated$
 
 #Jul 28 22:57:06 gw hostapd[3973]: wlp1s0: STA 14:ab:c5:71:1d:d0 MLME: MLME-DEAUTHENTICATE.indication(14:ab:c5:71:1d:d0, 3)
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd\[[0-9]+\]: [[:alnum:]]+: STA [[:xdigit:]:]{17} MLME: MLME-DEAUTHENTICATE\.indication\([[:xdigit:]:]{20}, [0-9]\)
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]{17} MLME: MLME-DEAUTHENTICATE\.indication\([[:xdigit:]:]{17}, [0-9]\)
 
 #Jul 28 22:57:06 gw hostapd[3973]: wlp1s0: STA 14:ab:c5:71:1d:d0 MLME: MLME-DELETEKEYS.request(14:ab:c5:71:1d:d0)
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd\[[0-9]+\]: [[:alnum:]]+: STA [[:xdigit:]:]{17} MLME: MLME-DELETEKEYS\.request\([[:xdigit:]:]{20}\)
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]{17} MLME: MLME-DELETEKEYS\.request\([[:xdigit:]:]{17}\)
 
 # Jul 29 01:41:05 gw hostapd[3973]: wlp1s0: STA a4:8c:c5:87:47:5d IEEE 802.11: authentication OK (open system)
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd\[[0-9]+\]: [[:alnum:]]+: STA [[:xdigit:]:]+ IEEE 802\.11: authentication OK \(open system\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]+ IEEE 802\.11: authentication OK \(open system\)$
 
 # Jul 29 01:41:05 gw hostapd[3973]: wlp1s0: STA a4:8c:c5:87:47:5d MLME: MLME-AUTHENTICATE.indication(a4:8c:c5:87:47:5d, OPEN_SYSTEM)
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd\[[0-9]+\]: [[:alnum:]]+: STA [[:xdigit:]:]+ MLME: MLME-AUTHENTICATE\.indication\([[:xdigit:]:]{17}, OPEN_SYSTEM\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]+ MLME: MLME-AUTHENTICATE\.indication\([[:xdigit:]:]{17}, OPEN_SYSTEM\)$
