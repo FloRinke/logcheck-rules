@@ -18,3 +18,6 @@
 
 # Aug  2 19:16:40 static freshclam[2119]: Thu Aug  2 19:16:40 2018 -> DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ freshclam\[[[:digit:]]+\]: \w{3} \w{3} [[:digit:]+: ]{16} -> DON'T PANIC! Read https:\/\/www\.clamav\.net\/documents\/upgrading-clamav
+
+# Aug  5 06:25:18 static freshclam[682]: Sun Aug  5 06:25:18 2018 -> Received signal: re-opening log file
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ freshclam\[[[:digit:]]+\]: \w{3} \w{3} [[:digit:]+: ]{16} -> Received signal: re-opening log file$
