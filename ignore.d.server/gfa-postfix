@@ -9,8 +9,9 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025)?/smtpd\[[[:digit:]]+\]: warning: TLS library problem: ([[:digit:]]+:)?error:[[:xdigit:]]+:SSL routines:tls_process_client_hello:unknown protocol:\.\.\/ssl\/statem\/statem_srvr\.c:[0-9]+:$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025)?/smtpd\[[[:digit:]]+\]: warning: network_biopair_interop: error (reading|writing) [[:digit:]]+ bytes (from|to) the network: Connection reset by peer$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025)?/smtpd\[[[:digit:]]+\]: SSL_accept error from [._[:alnum:]-]+\[[[:xdigit:].:]{3,39}\](: (-?[[[:digit:]]]+|lost connection|Connection timed out|Connection reset by peer))?$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: warning: TLS library problem: error:[[:xdigit:]]+:SSL routines:ssl3_get_record:wrong version number:\.\.\/ssl\/record\/ssl3_record\.c:210:$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: warning: TLS library problem: error:[[:xdigit:]]+:SSL routines:ssl3_get_record:wrong version number:\.\.\/ssl\/record\/ssl3_record\.c:[0-9]+:$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025)?\/smtpd\[[[:digit:]]+\]: warning: TLS library problem: error:[[:xdigit:]]+:SSL routines:tls_process_client_hello:version too low:\.\.\/ssl\/statem\/statem_srvr\.c:[0-9]+:$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025)?\/smtpd\[[[:digit:]]+\]: warning: TLS library problem: error:[[:xdigit:]]+:SSL routines:tls_post_process_client_hello:no shared cipher:\.\.\/ssl\/statem\/statem_srvr\.c:[0-9]+:$
 #connection
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025|/9876)?/smtpd\[[[:digit:]]+\]: (dis)?connect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\]( ehlo=[[:digit:]]+ mail=[[:digit:]]+ rcpt=[[:digit:]]+ data=[[:digit:]]+ quit=[[:digit:]]+ commands=[[:digit:]]+)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/10025|/9876)?/smtpd\[[[:digit:]]+\]: lost connection after [[:alnum:]]+( \([[:digit:]]+ bytes\))? from [._[:alnum:]-]+\[(unknown|[[:xdigit:].:]{3,39})\]$
@@ -66,3 +67,6 @@
 # Jul 19 15:32:14 instance-1 postfix/smtpd[27252]: improper command pipelining after AUTH from pppoe-static.178.124.188.173.telecom.mogilev.by[178.124.188.173]: QUIT\r\n
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: improper command pipelining after AUTH from [[:alnum:]\.-]+\[[[:xdigit:]:\.]+\]: QUIT\\r\\n$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/10025|\/9876)?\/smtpd\[[[:digit:]]+\]: improper command pipelining after AUTH from [[:alnum:]\.-]+\[[[:xdigit:]:\.]+\]: QUIT\\r\\nQUIT\\r\\n$$
+
+# Aug  8 06:15:20 mail postfix/smtp[19414]: 41lh200d5Sz13VF: lost connection with gmail-smtp-in.l.google.com[74.125.204.27] while performing the EHLO handshake
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: [[:alnum:]]+: lost connection with [[:alnum:]\.-]+\[[[:xdigit:]:\.]+\] while performing the EHLO handshake$
