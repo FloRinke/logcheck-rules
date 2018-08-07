@@ -4,6 +4,7 @@
 
 # Jul 26 06:33:37 static sshd[13081]: input_userauth_request: invalid user () {  [preauth]
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: input_userauth_request: invalid user [^[:space:]]+ \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: input_userauth_request: invalid user \(\) { \[preauth\]$
 
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Connection reset by [:.[:xdigit:]]+ port [[:digit:]]+ \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Did not receive identification string from ([:[:xdigit:].]+|UNKNOWN)+ port [[:digit:]]+$
@@ -37,6 +38,7 @@
 
 # Jul 19 00:32:00 gw sshd[30234]: error: maximum authentication attempts exceeded for invalid user  from 193.105.134.97 port 5728 ssh2 [preauth]
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: maximum authentication attempts exceeded for invalid user [[:alnum:]\]+ from [[:xdigit:]\.]+ port [[:digit:]]+ ssh2 \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: maximum authentication attempts exceeded for invalid user  from [[:xdigit:]\.]+ port [[:digit:]]+ ssh2 \[preauth\]$
 
 # Jul 11 14:26:43 tor-exit1-1480471271410-512mb-sgp1-01 sshd[15721]: error: kex protocol error: type 30 seq 1 [preauth]
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: kex protocol error: type 30 seq 1 \[preauth\]$
@@ -46,6 +48,10 @@
 
 # Jul 17 02:12:16 static sshd[26934]: ssh_dispatch_run_fatal: Connection from 128.232.21.75 port 42622: message authentication code incorrect [preauth]
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: ssh_dispatch_run_fatal: Connection from [[:xdigit:]\.:]+ port [0-9]+: message authentication code incorrect \[preauth\]$
+
+# Aug  6 16:39:27 tor-exit1-1480471271410-512mb-sgp1-01 sshd[14806]: ssh_dispatch_run_fatal: Connection from 87.118.116.241 port 26888: Broken pipe [preauth]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: ssh_dispatch_run_fatal: Connection from [[:xdigit:]\.:]+ port [0-9]+: Broken pipe \[preauth\]$
+
 
 # Jul 18 20:56:13 gw sshd[22866]: Disconnecting: Change of username or service not allowed: (administrator,ssh-connection) -> (Administrator,ssh-conn [preauth]
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnecting: Change of username or service not allowed: \([[:alnum:],!;-]+\) -> \([[:alnum:],!;-]+ \[preauth\]$
@@ -61,3 +67,7 @@
 # Jul 24 14:54:12 tor-exit1-1480471271410-512mb-sgp1-01 sshd[25615]: PAM service(sshd) ignoring max retries; 5 > 3
 # ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: PAM service\(sshd\) ignoring max retries; [0-9] > [0-9]$
 # 2018-07-30 I've disabled password auth in ssh, this is no longer required
+
+# Aug  7 09:38:36 instance-2 sshd[22887]: Protocol major versions differ for 45.77.147.1 port 39674: SSH-2.0-OpenSSH_7.4p1 Debian-10+deb9u3 vs. SSH-1.5-NmapNSE_1.0
+# Aug  7 09:39:32 instance-2 sshd[22889]: Protocol major versions differ for 149.28.18.233 port 47642: SSH-2.0-OpenSSH_7.4p1 Debian-10+deb9u3 vs. SSH-1.5-Nmap-SSH1-Hostkey
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Protocol major versions differ for [[:xdigit:]\.]+ port [[:digit:]]+: SSH-2\.0-OpenSSH_[[:alnum:]\._+ -]+ vs\. SSH-[[:alnum:]\._+ -]+$
