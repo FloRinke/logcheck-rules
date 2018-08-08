@@ -1,0 +1,17 @@
+# Aug  8 00:03:34 instance-1 autossh[2344]: ssh: connect to host casa.motok.com.ar port 22: Network is unreachable
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ autossh\[[[:digit:]]+\]: ssh: connect to host [[:alnum:]\.]+ port [0-9]+: Network is unreachable$
+
+# Aug  8 00:03:34 instance-1 autossh[2344]: ssh exited with error status 255; restarting ssh
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ autossh\[[[:digit:]]+\]: ssh exited with error status 255; restarting ssh$
+
+# Aug  8 00:03:34 instance-1 autossh[2344]: starting ssh (count 108)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ autossh\[[[:digit:]]+\]: starting ssh \(count [0-9]+\)$
+
+# Aug  8 00:03:34 instance-1 autossh[2344]: ssh child pid is 12385
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ autossh\[[[:digit:]]+\]: ssh child pid is [0-9]+$
+
+# Aug  8 08:08:47 instance-1 autossh[2908]: packet_write_wait: Connection to 35.225.189.73 port 22: Broken pipe
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ autossh\[[[:digit:]]+\]: packet_write_wait: Connection to [[:xdigit:]\.:]+ port [0-9]+: Broken pipe$
+
+# Aug  8 06:08:39 instance-1 autossh[2907]: port set to 0, monitoring disabled
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ autossh\[[[:digit:]]+\]: port set to 0, monitoring disabled$
