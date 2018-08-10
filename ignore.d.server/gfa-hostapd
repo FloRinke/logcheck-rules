@@ -60,13 +60,13 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]{17} WPA: EAPOL-Key timeout$
 
 # Aug  7 09:01:38 gw hostapd[3973]: wlp1s0: STA a4:8c:c5:87:47:5d IEEE 802.1X: did not Ack EAPOL-Key frame (broadcast index=45)
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]{17} IEEE 802\.1X: did not Ack EAPOL-Key frame \(broadcast index=45\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]{17} IEEE 802\.1X: did not Ack EAPOL-Key frame \(broadcast index=[0-9]+\)$
 
 # Aug  7 09:01:41 gw hostapd[3973]: wlp1s0: STA a4:8c:c5:87:47:5d WPA: WPA_PTK: sm->Disconnect
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]{17} WPA: WPA_PTK: sm->Disconnect$
 
 # Aug  7 09:01:41 gw hostapd[3973]: WPA: wpa_sm_step() called recursively
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: WPA: wpa_sm_step() called recursively$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: WPA: wpa_sm_step\(\) called recursively$
 
 # Aug  7 09:01:46 gw hostapd: wlp1s0: STA a4:8c:c5:87:47:5d IEEE 802.11: deauthenticated due to local deauth request
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]{17} IEEE 802\.11: deauthenticated due to local deauth request$
