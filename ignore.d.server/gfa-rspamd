@@ -17,7 +17,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <[[:alnum:]]+>; proxy; rspamd_task_process: learn error: <[._[:alnum:]@_\.-]+> contains less tokens than required for bayes classifier: [0-9]+ < [0-9]+$
 
 # Jun 29 18:36:26 mail rspamd[2256]: <b98561>; proxy; rspamd_task_process: learn error: <CAC8jRerjZeDsG4GEugZ6HJ_9NXXcrOUo36Bfn-ZUp8Vn_AT1Qg@mail.gmail.com> has been already learned as spam, ignore it
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <[[:alnum:]]+>; proxy; rspamd_task_process: learn error: <[._[:alnum:]@_\._=+-]+> has been already learned as (ham|spam), ignore it$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <[[:alnum:]]+>; proxy; rspamd_task_process: learn error: <[._[:alnum:]@_\._=+$-]+> has been already learned as (ham|spam), ignore it$
 
 # Jul  2 07:06:02 mail rspamd[2502]: <36e484>; lua; once_received.lua:50: error looking up 9.126.221.115.in-addr.arpa: query timed out
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: <[[:alnum:]]+>; lua; once_received\.lua:50: error looking up [[:alnum:]\.-]+: query timed out$
