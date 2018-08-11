@@ -71,3 +71,6 @@
 # Aug  7 09:38:36 instance-2 sshd[22887]: Protocol major versions differ for 45.77.147.1 port 39674: SSH-2.0-OpenSSH_7.4p1 Debian-10+deb9u3 vs. SSH-1.5-NmapNSE_1.0
 # Aug  7 09:39:32 instance-2 sshd[22889]: Protocol major versions differ for 149.28.18.233 port 47642: SSH-2.0-OpenSSH_7.4p1 Debian-10+deb9u3 vs. SSH-1.5-Nmap-SSH1-Hostkey
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Protocol major versions differ for [[:xdigit:]\.]+ port [[:digit:]]+: SSH-2\.0-OpenSSH_[[:alnum:]\._+ -]+ vs\. SSH-[[:alnum:]\._+ -]+$
+
+# Aug 10 14:24:07 lists sshd[9231]: userauth_pubkey: key type ssh-dss not in PubkeyAcceptedKeyTypes [preauth]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: userauth_pubkey: key type ssh-dss not in PubkeyAcceptedKeyTypes \[preauth\]$
