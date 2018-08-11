@@ -53,3 +53,6 @@
 
 # Jul 27 21:17:37 mail dovecot: imap(gfa@zumbi.com.ar): Disconnected in APPEND (1 msgs, 6 secs, 161623/1981063 bytes) in=385734 out=134207
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([[:alnum:]\.@_-]+\): Disconnected in APPEND \([0-9]+ msgs, [0-9]+ secs, [0-9]+\/[0-9]+ bytes\) in=[0-9]+ out=[0-9]+$
+
+# Aug 10 15:19:53 lists dovecot: master: Warning: SIGHUP received - reloading configuration
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: master: Warning: SIGHUP received - reloading configuration$
