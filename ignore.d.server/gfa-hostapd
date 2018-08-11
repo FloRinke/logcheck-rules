@@ -85,3 +85,6 @@
 
 # Aug  7 20:50:46 gw hostapd[3973]: wlp1s0: STA a4:8c:c5:87:47:5d IEEE 802.11: deauthenticated due to inactivity (timer DEAUTH/REMOVE)
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]{17} IEEE 802\.11: deauthenticated due to inactivity \(timer DEAUTH\/REMOVE\)$
+
+# Aug 11 07:38:49 gw hostapd[4089]: wlp1s0: STA a4:8c:c5:87:47:5d WPA: received EAPOL-Key 2/2 Group with unexpected replay counter
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]{17} WPA: received EAPOL-Key [0-9]\/[0-9] Group with unexpected replay counter$
