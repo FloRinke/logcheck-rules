@@ -56,3 +56,7 @@
 
 # Aug 10 15:19:53 lists dovecot: master: Warning: SIGHUP received - reloading configuration
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: master: Warning: SIGHUP received - reloading configuration$
+
+# Aug 11 17:55:03 mail dovecot: imap-login: Login: user=<emilse@motok.com.ar>, method=PLAIN, rip=181.9.154.24, lip=172.104.98.54, mpid=31756, TLS: SSL_read() syscall failed: Connection reset by peer, session=<AkxBjyxzUiy1CZoY>
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([[:alnum:]\.@_-]+\): imap-login: Login: user=<[[:alnum:]\.@_-]+>, method=PLAIN, rip=[[:xdigit:]\.:]+, lip=[[:alnum:]\.:]+, mpid=[0-9]+, TLS: SSL_read\(\) syscal failed: Connection reset by peer, session=<[[:alnum:]]+>$
+
