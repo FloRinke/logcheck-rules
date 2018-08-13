@@ -74,3 +74,6 @@
 
 # Aug 10 14:24:07 lists sshd[9231]: userauth_pubkey: key type ssh-dss not in PubkeyAcceptedKeyTypes [preauth]
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: userauth_pubkey: key type ssh-dss not in PubkeyAcceptedKeyTypes \[preauth\]$
+
+#Aug 12 19:30:09 gw sshd[5872]: pam_systemd(sshd:session): Failed to release session: Interrupted system call
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: pam_systemd\(sshd:session\): Failed to release session: Interrupted system call$
