@@ -71,4 +71,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: [[:alnum:]]+: lost connection with [[:alnum:]\.-]+\[[[:xdigit:]:\.]+\] while performing the EHLO handshake$
 
 # Aug 13 02:42:14 lists postfix/smtps/smtpd[20900]: NOQUEUE: reject: RCPT from unknown[217.61.97.192]: 454 4.7.1 <test@gmail.com>: Relay access denied; from=<test@codespeak.net> to=<test@gmail.com> proto=SMTP helo=<rofio2018.domain>
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/[0-9]+)?\/smtpd\[[[:digit:]]+\]:
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/[0-9]+)?\/smtpd\[[[:digit:]]+\]: NOQUEUE: reject: RCPT from [[:alnum:]_\.-]+\[[[:xdigit:]:\.]+\]: 454 4\.7\.1 <[[:alnum:]\.@_-]+>: Relay access denied; from=<[[:alnum:]\.@_-]+> to <[[:alnum:]\.@_-]+> proto=SMTP helo=<[[:alnum:]\._-]+>$
