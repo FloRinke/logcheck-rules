@@ -66,7 +66,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]{17} WPA: WPA_PTK: sm->Disconnect$
 
 # Aug  7 09:01:41 gw hostapd[3973]: WPA: wpa_sm_step() called recursively
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: WPA: wpa_sm_step\(\) called recursively$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: WPA: wpa_sm_step\(\) called recursively$
 
 # Aug  7 09:01:46 gw hostapd: wlp1s0: STA a4:8c:c5:87:47:5d IEEE 802.11: deauthenticated due to local deauth request
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]{17} IEEE 802\.11: deauthenticated due to local deauth request$
@@ -91,3 +91,9 @@
 
 # Aug 11 20:26:43 gw hostapd[4089]: wlp1s0: STA 14:ab:c5:71:1d:d0 IEEE 802.11: Drop repeated authentication frame seq_ctrl=0x370
 # ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]{17} IEEE 802.11: Drop repeated authentication frame seq_ctrl=[[:xdigit:]]+$
+
+# Aug 13 20:21:40 gw hostapd[4089]: wlp1s0: STA a4:8c:c5:87:47:5d WPA: invalid MIC in msg 2/4 of 4-Way Handshake
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: WPA: invalid MIC in msg [1-4]\/[1-4] of 4-Way Handshake
+
+# Aug 13 20:21:44 gw hostapd: wlp1s0: STA a4:8c:c5:87:47:5d WPA: PTKSTART: Retry limit 4 reached
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA: [[:xdigit:]:]{17} WPA: PTKSTART: Retry limit 4 reached$
