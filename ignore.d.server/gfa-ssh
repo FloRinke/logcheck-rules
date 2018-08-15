@@ -77,3 +77,6 @@
 
 #Aug 12 19:30:09 gw sshd[5872]: pam_systemd(sshd:session): Failed to release session: Interrupted system call
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: pam_systemd\(sshd:session\): Failed to release session: Interrupted system call$
+
+# Aug 14 18:57:11 exit2-sg sshd[29398]: dispatch_protocol_error: type 90 seq 5 [preauth]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: dispatch_protocol_error: type [0-9]+ seq [0-9] \[preauth\]$
