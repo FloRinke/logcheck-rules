@@ -15,3 +15,6 @@
 
 # Aug  8 06:08:39 instance-1 autossh[2907]: port set to 0, monitoring disabled
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ autossh\[[[:digit:]]+\]: port set to 0, monitoring disabled$
+
+# Aug 16 02:00:20 instance-1 autossh[26665]: ssh: connect to host 35.225.189.73 port 22: Connection refused
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ autossh\[[[:digit:]]+\]: ssh: connecto to host [[:xdigit:]\.:]+ port [0-9]+: Connection refused$
