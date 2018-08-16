@@ -59,3 +59,9 @@
 
 # Jul  3 22:00:20 tor-exit1-1480471271410-512mb-sgp1-01 Tor[3353]: It looks like I should try to generate and sign a new medium-term signing key, because the one I have is going to expire soon. To do that, I'm going to have to try to load the permanent master identity key.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: It looks like I should try to generate and sign a new medium-term signing key, because the one I have is going to expire soon\. To do that, I'm going to have to try to load the permanent master identity key\.$
+
+# Aug 15 11:09:56 tor-exit1-1480471271410-512mb-sgp1-01 Tor[6429]: Bandwidth soft limit reached; commencing hibernation. No new connections will be accepted
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Bandwidth soft limit reached; commencing hibernation\. No new connections will be accepted$
+
+# Aug 15 23:01:52 tor-exit1-1480471271410-512mb-sgp1-01 Tor[6429]: Heartbeat: Tor's uptime is 2 days 17:59 hours, with 12 circuits open. I've sent 187.73 GB and received 220.95 GB. We are currently hibernating.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Heartbeat: Tor's uptime is [0-9]+ days [[:digit:]:]+ hours, with [0-9]+ circuits open\. I've sent [[:digit:]\.]+ [M|G]B and received [[:digit:]\.]+ [M|G]B\. We are currently hibernating\.$
