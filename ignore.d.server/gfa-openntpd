@@ -10,3 +10,6 @@
 
 # Aug  6 09:08:25 gw ntpd[3928]: reply from 37.218.240.198: negative delay -0.001506s, next query 3272s
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: reply from [[:xdigit:]\.:]+ negative delay -[[:digit:]\.]+s, next query [0-9]+s$
+
+# Aug 16 02:26:03 gw ntpd[4048]: recvmsg 223.255.185.2: Connection refused
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: recvmsg [[:xdigit:]:\.]+: Connection refused$
