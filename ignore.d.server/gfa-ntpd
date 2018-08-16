@@ -6,5 +6,8 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: Listen and drop on [0-9] [[:alnum:]]+ [[:xdigit:]\.:]+:123$
 
 # Aug  8 06:08:12 instance-1 ntpd[1952]: Listen normally on 2 lo 127.0.0.1:123
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: Listen normally on [0-9] [[:alnum:]]+ [[:xdigit:]\.:]+:123$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: Listen normally on [0-9] [[:alnum:]]+ \[[[:xdigit:]\.:%]+\]:123$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: Listen normally on [0-9]+ [[:alnum:]]+ [[:xdigit:]\.:]+:123$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: Listen normally on [0-9]+ [[:alnum:]]+ \[[[:xdigit:]\.:%]+\]:123$
+
+# Aug 16 02:00:21 instance-1 ntpd[1952]: Deleting interface #9 tun12, fe80::316f:3770:7e3f:52ea%4#123, interface stats: received=0, sent=0, dropped=0, active_time=664503 secs
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: Deleting interface \#[0-9]+ [[:alnum:]]+, [[:xdigit:]\.:%]+\#123, interface stats: received=[0-9]+, sent=[0-9]+, dropped=[0-9]+, active_time=[0-9]+ secs$
