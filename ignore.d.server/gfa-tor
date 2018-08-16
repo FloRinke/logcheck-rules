@@ -65,3 +65,7 @@
 
 # Aug 15 23:01:52 tor-exit1-1480471271410-512mb-sgp1-01 Tor[6429]: Heartbeat: Tor's uptime is 2 days 17:59 hours, with 12 circuits open. I've sent 187.73 GB and received 220.95 GB. We are currently hibernating.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Heartbeat: Tor's uptime is [0-9]+ days [[:digit:]:]+ hours, with [0-9]+ circuits open\. I've sent [[:digit:]\.]+ [M|G]B and received [[:digit:]\.]+ [M|G]B\. We are currently hibernating\.$
+
+
+# Aug 16 06:56:25 exit2-sg Tor[988]: Starting with guard context "default"
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Starting with guard context "default"$
