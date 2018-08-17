@@ -1,0 +1,2 @@
+# Sat Aug  4 17:58:14 CST 2018
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ amavis\[[[:digit:]]+\]: \([-[:digit:]]+\) Passed UNCHECKED-ENCRYPTED {(RelayedOpenRelay|RelayedInbound)},( \[(IPv6:)?[[:xdigit:].:]{3,39}\]){1,2} <[^>]*> -> <[^>]*>,( quarantine: ([[:alnum:]]\/)?(virus|badh)-[-+[:alnum:]]+(\.gz)?,)?( Message-ID: <[^>]+>( \((added by[^)]+|sfid-[_[:xdigit:]]+)\))?,)?( Resent-Message-ID: <[^>]+>,)? mail_id: [-+[:alnum:]]+, Hits: (-?[.[:digit:]]*)+, size: [[:xdigit:]]+, queued_as: [[:xdigit:]]+( OK id=[-[:alnum:]]+)?, [[:digit:]]+ ms$
