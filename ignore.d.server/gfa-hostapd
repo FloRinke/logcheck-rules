@@ -90,7 +90,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]{17} WPA: received EAPOL-Key [0-9]\/[0-9] Group with unexpected replay counter$
 
 # Aug 11 20:26:43 gw hostapd[4089]: wlp1s0: STA 14:ab:c5:71:1d:d0 IEEE 802.11: Drop repeated authentication frame seq_ctrl=0x370
-# ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]{17} IEEE 802.11: Drop repeated authentication frame seq_ctrl=[[:xdigit:]]+$
+ ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]{17} IEEE 802.11: Drop repeated authentication frame seq_ctrl=[[:xdigit:]]+$
 
 # Aug 13 20:21:40 gw hostapd[4089]: wlp1s0: STA a4:8c:c5:87:47:5d WPA: invalid MIC in msg 2/4 of 4-Way Handshake
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: WPA: invalid MIC in msg [1-4]\/[1-4] of 4-Way Handshake
