@@ -69,3 +69,6 @@
 
 # Aug 16 06:56:25 exit2-sg Tor[988]: Starting with guard context "default"
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Starting with guard context "default"$
+
+# Aug 16 12:25:17 tor-exit1-1480471271410-512mb-sgp1-01 Tor[994]: Heartbeat: Tor's uptime is 5:59 hours, with 0 circuits open. I've sent 332 kB and received 6.46 MB. We are currently hibernating.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Heartbeat: Tor's uptime is( [0-9]+ day(s)?)? [[:digit:]:]+ hours, with [[:digit:]]+ circuits open\. I've sent [[:digit:]\.]+ [kMG]B and received [[:digit:]\.]+ [kMG]B\. We are currently hibernating\.$
