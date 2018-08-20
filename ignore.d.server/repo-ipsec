@@ -1,14 +1,14 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(NET|ENV|IKE)\] (received|sending) packet: from [.:[:xdigit:]]+\[[[:digit:]]+\] to [.:[:xdigit:]]+\[[[:digit:]]+\] \([[:digit:]]+ bytes\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] sending retransmit [[:digit:]]+ of request message ID [[:digit:]]+, seq [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] (received|sending) retransmit ([[:digit:]]+ )?of (response with|request message) ID [[:digit:]]+, (resending last request|seq [[:digit:]]+)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] giving up after [[:digit:]]+ retransmits$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] (establishing IKE_SA failed, peer not responding|CHILD_SA not found, ignored|initiator did not reauthenticate as requested|reauthenticating IKE_SA [[:print:]]+\[[[:digit:]]+\] actively)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(CFG)\] selected peer config \"[[:print:]]+\"$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] [.:[:xdigit:]]+ is initiating a Main Mode IKE_SA$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] [.:[:xdigit:]]+ is initiating a (Aggressive|Main) Mode IKE_SA$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(ENC)\] (generating|parsed) [[:print:]]+ (request|response) [[:digit:]]+ \[ [ [:punct:][:alpha:]]+ \]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] sending keep alive to [.:[:xdigit:]]+\[[[:digit:]]+\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] (sending|received) (DPD request|DELETE for ESP CHILD_SA with SPI [[:xdigit:]]+)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\]( closing expired)? CHILD_SA [[:print:]]+\{[[:digit:]]+\}( established)? with SPIs [[:xdigit:]]+_i [[:xdigit:]]+_o and TS [.:[:digit:]]+\/[[:digit:]]+ \=\=\= [.:[:digit:]]+\/[[:digit:]]+
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vpn: \+ [[:print:]]+ [.:[:digit:]]+\/[[:digit:]]+ \=\= [.:[:digit:]]+(\/[[:digit:]]+)? -- [.:[:digit:]]+(\/[[:digit:]]+)? \=\= [.:[:digit:]]+(\/[[:digit:]]+)?
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vpn: (\+|\-) [[:print:]]+ [.:[:digit:]]+\/[[:digit:]]+ \=\= [.:[:digit:]]+(\/[[:digit:]]+)? -- [.:[:digit:]]+(\/[[:digit:]]+)? \=\= [.:[:digit:]]+(\/[[:digit:]]+)?
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] (initiating Main Mode|reauthenticating) IKE_SA [[:print:]]+\[[[:digit:]]+\]( to [.:[:xdigit:]]+)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE|JOB)\] (DPD check timed out, enforcing DPD action|unable to reauthenticate IKE_SA, no CHILD_SA to recreate|)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] (maximum IKE_SA lifetime|scheduling reauthentication in) [[:digit:]]+s$
@@ -19,4 +19,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(ENC)\] (generating|parsed) QUICK_MODE (request|response) [[:digit:]]+ \[ [ [:alpha:]]+\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(ENC|IKE)\] (local host is behind NAT, sending keep alives|remote host is behind NAT|received [[:print:]]+ vendor ID(: [:[:xdigit:]]+)?)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] (received|sending) DELETE for IKE_SA [[:print:]]+\[[[:digit:]]+\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] (received|sending) DELETE for different IKE_SA\, ignored$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (charon|ipsec)(\[[[:digit:]]+\])?: [[:digit:]]+\[(IKE)\] detected reauth of existing IKE_SA, adopting [[:digit:]]+ children and [[:digit:]]+ virtual IPs$
