@@ -1,0 +1,5 @@
+# ; -*- mode: text; fill-column: 99999 -*-
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postgrey\[[[:digit:]]+\]: action=(greylist|pass)+, reason=(new|client whitelist|client AWL|triplet found|early-retry)+,? (\([[:digit:]]+s missing\), )?(delay=[[:digit:]]+, )*client_name=[._[:alnum:]-]+, client_address=[[:xdigit:].:]+, sender=[[:alnum:]@._+=-]+, recipient=[[:alnum:]@._+-]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postgrey\[[[:digit:]]+\]: cleaning up old (logs|entries)?...$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postgrey\[[[:digit:]]+\]: cleaning (main|clients)+ database finished. before: [[:digit:]]+, after: [[:digit:]]+$

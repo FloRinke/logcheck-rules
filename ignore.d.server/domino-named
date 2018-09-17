@@ -1,0 +1,6 @@
+# ; -*- mode: text; fill-column: 99999 -*-
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (no longer listening on|listening on IPv4 interface [[:alnum:]]+,) [[:xdigit:].#]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (no longer listening on|listening on IPv4 interface [[:alnum:]]+,) [[:xdigit:].#]+$
+^\w{3} [ :\d]{11} [._[:alnum:]-]+ named\[\d+\]: client [@x[:xdigit:]]+ [.#[:xdigit:]]+ \([.\w]+\): rpz QNAME (Local-Data|NODATA) rewrite [.\w]+ via [.\w]+$
+^\w{3} [ :\d]{11} [._[:alnum:]-]+ named\[\d+\]: no valid RRSIG resolving \'[.\/\w]+\': [.#\d]+$
