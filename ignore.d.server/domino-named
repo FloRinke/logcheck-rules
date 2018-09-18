@@ -4,3 +4,8 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (no longer listening on|listening on IPv4 interface [[:alnum:]]+,) [[:xdigit:].#]+$
 ^\w{3} [ :\d]{11} [._[:alnum:]-]+ named\[\d+\]: client [@x[:xdigit:]]+ [.#[:xdigit:]]+ \([.\w]+\): rpz QNAME (Local-Data|NODATA) rewrite [.\w]+ via [.\w]+$
 ^\w{3} [ :\d]{11} [._[:alnum:]-]+ named\[\d+\]: no valid RRSIG resolving \'[.\/\w]+\': [.#\d]+$
+^\w{3} [ :\d]{11} [._\w-]+ named\[\d+\]:\s+validating [.\/\w]+: no valid signature found$
+^\w{3} [ :\d]{11} [._\w-]+ named\[\d+\]: DNS format error from [.#\d]+ resolving [.\/\w]+ for client [.#\d]+: Name [.\w]+ \(SOA\) not subdomain of zone [.\w]+ -- invalid response$
+^\w{3} [ :\d]{11} [._\w-]+ named\[\d+\]: managed-keys-zone: Key \d+ for zone . acceptance timer complete: key now trusted$
+^\w{3} [ :\d]{11} [._\w-]+ named\[\d+\]: _default: sending trust-anchor-telemetry query \'[_\w\d-\/]+\'$
+
