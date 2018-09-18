@@ -1,0 +1,4 @@
+# ; -*- mode: text; fill-column: 99999 -*-
+
+^\w{3} [ :\d]{11} [._\w-]+ ntpd\[\d+\]: receive: KoD packet from [.\d]+ has inconsistent xmt\/org\/rec timestamps.$
+
