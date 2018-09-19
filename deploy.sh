@@ -1,5 +1,6 @@
 #!/bin/bash
 
-rsync -av --delete-after ignore.d.server ignore.d.workstation violations.ignore.d root@linode:/etc/logcheck/
-rsync -av --delete-after ignore.d.server ignore.d.workstation violations.ignore.d root@adm:/etc/logcheck/
-rsync -av --delete-after ignore.d.server ignore.d.workstation violations.ignore.d root@edyta.org.pl:/etc/logcheck/
+rsync -av --chown=root:logcheck ignore.d.server/ root@linode:/etc/logcheck/ignore.d.server
+rsync -av --chown=root:logcheck ignore.d.server/ root@linode2:/etc/logcheck/ignore.d.server
+rsync -av --chown=root:logcheck ignore.d.server/ root@adm:/etc/logcheck/ignore.d.server
+rsync -av --chown=root:logcheck ignore.d.server/ root@edyta.org.pl:/etc/logcheck/ignore.d.server
