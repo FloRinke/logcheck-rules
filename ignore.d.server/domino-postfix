@@ -5,7 +5,8 @@
 # Sep 18 22:55:39 debian-linode postfix/smtpd[13312]: warning: TLS library problem: error:1409442E:SSL routines:ssl3_read_bytes:tlsv1 alert protocol version:../ssl/record/rec_layer_s3.c:1399:SSL alert number 70:
 # Sep 18 22:55:40 debian-linode postfix/smtpd[13312]: warning: TLS library problem: error:1409442E:SSL routines:ssl3_read_bytes:tlsv1 alert protocol version:../ssl/record/rec_layer_s3.c:1399:SSL alert number 70:
 # Sep 22 04:29:35 debian-linode postfix/smtpd[26597]: warning: TLS library problem: error:1417A0C1:SSL routines:tls_post_process_client_hello:no shared
+# Oct  3 04:20:03 linode2 postfix/smtpd[9011]: warning: TLS library problem: error:1417A0C1:SSL routines:tls_post_process_client_hello:no shared cipher:../ssl/statem/statem_srvr.c:1404:
 
-^\w{3} [ :[:digit:]]{11} [_[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: warning: TLS library problem: error:[[:xdigit:]]+:SSL routines:(tls_process_client_hello:(unknown protocol|version too low)|ssl3_read_bytes:tlsv1 alert protocol version|tls_post_process_client_hello:no shared):..\/ssl\/(statem|record)\/[._:[:alnum:]]+( alert number [0-9]+:)?$
+^\w{3} [ :[:digit:]]{11} [_[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: warning: TLS library problem: error:[[:xdigit:]]+:SSL routines:(tls_process_client_hello:(unknown protocol|version too low)|ssl3_read_bytes:tlsv1 alert protocol version|tls_post_process_client_hello:no shared( cipher)?):..\/ssl\/(statem|record)\/[._:[:alnum:]]+( alert number [0-9]+:)?$
 
 

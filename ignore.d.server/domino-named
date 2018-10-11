@@ -7,4 +7,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]:\s+validating [.\/[:alnum:]]+: no valid signature found$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (no valid RRSIG|(REFUSED|SERVFAIL) unexpected RCODE) resolving '[.\/[:alnum:]-]+': [.0-9\#]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (no longer listening on|listening on IPv4 interface [[:alnum:]]+,) [[:xdigit:].#]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (no longer listening on|listening on IPv4 interface [[:alnum:]]+,) [[:xdigit:].#]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: skipping nameserver '[.\/[:alnum:]]+' because it is a CNAME, while resolving '[.\/[:alnum:]]+'
