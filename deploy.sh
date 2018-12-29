@@ -4,7 +4,7 @@ HOSTS=(
     linode2
     linode
     adm
-    edyta.org.pl
+    edyta
 )
 
 for host in ${HOSTS[*]}; do

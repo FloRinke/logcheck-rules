@@ -1,0 +1,4 @@
+# ; -*- mode: text; fill-column: 99999 -*-
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-timesyncd\[[[:digit:]]+\]: Timed out waiting for reply from [.[:digit:]:]+ \([.[:alnum:]]+\).$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-timesyncd\[[[:digit:]]+\]: Synchronized to time server [.[:digit:]:]+ \([.[:alnum:]]+\).$

@@ -2,4 +2,4 @@
 
 # Oct  3 16:24:34 debian-linode ntpd[3668]: receive: KoD packet from 185.228.137.116 has inconsistent xmt/org/rec timestamps.  Ignoring.
 
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: receive: KoD packet from [.0-9]+ has inconsistent xmt\/org\/rec timestamps.([\s]+Ignoring.)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: receive: KoD packet from [.0-9]+ has inconsistent xmt\/org\/rec timestamps.\s+Ignoring.$

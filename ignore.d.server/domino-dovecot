@@ -1,0 +1,4 @@
+# ; -*- mode: text; fill-column: 99999 -*-
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth: plain\(\?,[.[:digit:]]+\): Request timed out waiting for client to continue authentication \([[:digit:]]+ secs\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap: Connection closed in=[[:digit:]]+ out=[[:digit:]]+$

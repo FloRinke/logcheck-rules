@@ -1,0 +1,6 @@
+# ; -*- mode: text; fill-column: 99999 -*-
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Your network connection speed appears to have changed. Resetting timeout to [[:digit:]]+s after [[:digit:]]+ timeouts and [[:digit:]]+ buildtimes.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: We now have enough directory information to build circuits.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: I learned some more directory information, but not enough to build a circuit: We're missing descriptors for [/[:digit:]]+ of our primary entry guards \(total microdescriptors: [/[:digit:]]+\).$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Our directory information is no longer up-to-date enough to build circuits: We're missing descriptors for [/[:digit:]]+ of our primary entry guards \(total microdescriptors: [/[:digit:]]+\).$
