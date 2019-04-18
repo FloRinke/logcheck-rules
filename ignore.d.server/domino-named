@@ -9,3 +9,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (no longer listening on|listening on IPv4 interface [[:alnum:]]+,) [[:xdigit:].#]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: skipping nameserver '[.\/[:alnum:]]+' because it is a CNAME, while resolving '[.\/[:alnum:]]+'
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: RRSIG failed to verify resolving '[.\/[:alnum:]-]+': [.0-9\#]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: checkhints: [-.\/[:alnum:]]+ \([.[:alnum:]]+\) (missing from|extra record in) hints$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: resolver priming query complete$
