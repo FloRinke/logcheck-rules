@@ -11,3 +11,8 @@
 ^\w{3} [ :[:digit:]]{11} [_[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: warning: TLS library problem: error:[[:xdigit:]]+:SSL routines:(tls_process_client_hello:(unknown protocol|version too low)|ssl3_read_bytes:tlsv1 alert protocol version|tls_post_process_client_hello:no shared( cipher)?):..\/ssl\/(statem|record)\/[._:[:alnum:]]+( alert number [0-9]+:)?$
 ^\w{3} [ :[:digit:]]{11} [_[:alnum:]-]+ postfix\/cleanup\[[0-9]+\]: [[:xdigit:]]+: message-id=$
 ^\w{3} [ :[:digit:]]{11} [_[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: warning: TLS library problem: error:[[:xdigit:]]+:SSL routines:ssl3_read_bytes:sslv3 alert bad certificate:[\/_.:[:alnum:]]+ alert number [[:xdigit:]]+:$
+\w{3} [ :[:digit:]]{11} [_[:alnum:]-]+ postfix(/submission|/smtps|/[0-9]+)?/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]_\.-]+\[[[:alnum:]\.:]+\] commands=[0-9]/[0-9]$
+
+# Jun 11 12:20:40 linode2 postfix/smtpd[19535]: NOQUEUE: reject: MAIL from oakwood.hyperslice.net[109.203.106.148]: 552 5.3.4 Message size exceeds fixed limit; proto=ESMTP helo=<oakwood.hyperslice.net>
+
+\w{3} [ :[:digit:]]{11} [_[:alnum:]-]+ postfix(/submission|/smtps|/[0-9]+)?/smtpd\[[[:digit:]]+\]: NOQUEUE: reject: MAIL from [\.[:alnum:]]+\[[\.[:alnum:]]+\]: 552 5\.3\.4 Message size exceeds fixed limit; proto=ESMTP helo=<[.[:alnum:]]+>$

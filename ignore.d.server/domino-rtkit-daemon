@@ -1,0 +1,5 @@
+# ; -*- mode: text; fill-column: 99999 -*-
+
+# Jun 16 08:28:17 debian rtkit-daemon[868]: Supervising 0 threads of 0 processes of 0 users.
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rtkit-daemon\[[[:digit:]]+\]: Supervising [0-9] threads of [0-9] processes of [0-9] users.$

@@ -1,0 +1,5 @@
+# ; -*- mode: text; fill-column: 99999 -*-
+
+# Jun 16 08:28:17 debian bluetoothd[870]: /org/bluez/hci0/dev_40_EF_4C_33_AE_21/fd4: fd(23) ready
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ bluetoothd\[[[:digit:]]+\]: /org/bluez/hci[0-9]+/[_[:alnum:]]+/fd[0-9]+: fd\([0-9]+\) ready$

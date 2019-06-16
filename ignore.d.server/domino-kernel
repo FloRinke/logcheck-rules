@@ -1,0 +1,5 @@
+# ; -*- mode: text; fill-column: 99999 -*-
+
+# Jun 16 08:28:17 debian kernel: [219862.976978] input: 40:EF:4C:33:AE:21 as /devices/virtual/input/input14
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[.[:digit:]]+\] input: [:[:alnum:]]+ as /devices/virtual/input/input[0-9]+$
