@@ -2,3 +2,7 @@
 
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-timesyncd\[[[:digit:]]+\]: Timed out waiting for reply from [.[:digit:]:]+ \([.[:alnum:]]+\).$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-timesyncd\[[[:digit:]]+\]: Synchronized to time server [.[:digit:]:]+ \([.[:alnum:]]+\).$
+
+# Jun 23 07:09:04 router systemd[1]: phpsessionclean.service: Succeeded.
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: phpsessionclean.service: Succeeded.$
