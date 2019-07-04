@@ -4,7 +4,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: _default: sending trust-anchor-telemetry query '[\/_[:alnum:]-]+'$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: client [@x[:xdigit:]]+ [.#[:xdigit:]]+ \([.[:alnum:]]+\): rpz QNAME (Local-Data|NODATA) rewrite [.[:alnum:]]+ via [.[:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: managed-keys-zone: Key [0-9]+ for zone . acceptance timer complete: key now trusted$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]:\s+validating [.\/[:alnum:]]+: no valid signature found$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]:\s+validating [.\/[:alnum:]-]+: no valid signature found$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (no valid RRSIG|(REFUSED|SERVFAIL) unexpected RCODE) resolving '[.\/[:alnum:]-]+': [.0-9\#]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (no longer listening on|listening on IPv4 interface [[:alnum:]]+,) [[:xdigit:].#]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: skipping nameserver '[.\/[:alnum:]]+' because it is a CNAME, while resolving '[.\/[:alnum:]]+'

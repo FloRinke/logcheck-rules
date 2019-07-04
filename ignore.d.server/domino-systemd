@@ -4,5 +4,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-timesyncd\[[[:digit:]]+\]: Synchronized to time server [.[:digit:]:]+ \([.[:alnum:]]+\).$
 
 # Jun 23 07:09:04 router systemd[1]: phpsessionclean.service: Succeeded.
+# Jun 23 16:15:03 router systemd[1]: apt-daily.service: Succeeded.
+# Jun 26 06:46:39 router systemd[1]: apt-daily-upgrade.service: Succeeded.
 
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: phpsessionclean.service: Succeeded.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: [-[:alnum:].]+.service: Succeeded.$

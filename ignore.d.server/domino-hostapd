@@ -1,0 +1,6 @@
+# ; -*- mode: text; fill-column: 99999 -*-
+
+# Aug  7 20:50:45 gw hostapd[3973]: wlp1s0: STA a4:8c:c5:87:47:5d IEEE 802.11: disassociated due to inactivity
+# Jun 29 02:02:16 debian hostapd: wlp17s9: STA 34:2d:0d:5f:25:69 IEEE 802.11: disassociated
+
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]{17} IEEE 802\.11: disassociated( due to inactivity)?$
