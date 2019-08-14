@@ -1,10 +1,28 @@
 # ; -*- mode: text; fill-column: 99999 -*-
 
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-timesyncd\[[[:digit:]]+\]: Timed out waiting for reply from [.[:digit:]:]+ \([.[:alnum:]]+\).$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-timesyncd\[[[:digit:]]+\]: Synchronized to time server [.[:digit:]:]+ \([.[:alnum:]]+\).$
-
 # Jun 23 07:09:04 router systemd[1]: phpsessionclean.service: Succeeded.
 # Jun 23 16:15:03 router systemd[1]: apt-daily.service: Succeeded.
 # Jun 26 06:46:39 router systemd[1]: apt-daily-upgrade.service: Succeeded.
+# Aug 11 20:05:44 debian systemd[1]: session-193.scope: Succeeded.
+# Aug 14 00:00:15 debian systemd[1]: cups.path: Succeeded.
+# Aug 14 00:00:15 debian systemd[1]: cups.socket: Succeeded.
 
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: [-[:alnum:].]+.service: Succeeded.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: [-[:alnum:].]+.(service|path|socket|scope): Succeeded.$
+
+# Aug 14 00:00:15 debian systemd[1]: Closed CUPS Scheduler.
+# Aug 14 00:00:15 debian systemd[1]: Listening on CUPS Scheduler.
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Closed|Listening on) CUPS Scheduler.$
+
+# timesyncd:
+# Aug 14 08:22:50 debian systemd-timesyncd[762]: Synchronized to time server for the first time 193.219.28.147:123 (2.debian.pool.ntp.org).
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-timesyncd\[[[:digit:]]+\]: Timed out waiting for reply from [.[:digit:]:]+ \([.[:alnum:]]+\).$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-timesyncd\[[[:digit:]]+\]: Synchronized to time server [.[:digit:]:]+ \([.[:alnum:]]+\).$
+
+# systemd-networkd-wait-online:
+# Aug 14 06:24:04 debian systemd-networkd-wait-online[1360]: Event loop failed: Connection timed out
+# Aug 14 06:39:06 debian systemd-networkd-wait-online[2275]: Event loop failed: Connection timed out
+# Aug 13 23:53:11 debian systemd-networkd-wait-online[7015]: Event loop failed: Connection timed out
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-networkd-wait-online\[[[:digit:]]+\]: Event loop failed: Connection timed out$

@@ -4,3 +4,5 @@
 # Jun 29 02:02:16 debian hostapd: wlp17s9: STA 34:2d:0d:5f:25:69 IEEE 802.11: disassociated
 
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]{17} IEEE 802\.11: disassociated( due to inactivity)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: STA [[:xdigit:]:]{17} IEEE 802\.11: did not acknowledge authentication response$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ hostapd(\[[0-9]+\])?: [[:alnum:]]+: RADIUS (No response from )?Accounting server [.:[:xdigit:]]+( - failover)?$

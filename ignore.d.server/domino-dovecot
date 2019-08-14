@@ -2,3 +2,10 @@
 
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth: plain\(\?,[.[:digit:]]+\): Request timed out waiting for client to continue authentication \([[:digit:]]+ secs\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap: Connection closed in=[[:digit:]]+ out=[[:digit:]]+$
+
+# Aug 13 23:21:00 debian dovecot: imap(routeruser)<18757><MyKjGgKQlqbAqAAJ>: Connection closed (IDLE running for 0.001 + waiting input for 8.605 secs, 2 B in + 10 B out, state=wait-input) in=170461 out=572606 deleted=0 expunged=0 trashed=0 hdr_count=624 hdr_bytes=168025 body_count=0 body_bytes=0
+# Aug 13 23:21:00 debian dovecot: imap(routeruser)<21818><rJ67mQKQEqjAqAAJ>: Connection closed (IDLE running for 0.001 + waiting input for 83.738 secs, 2 B in + 10 B out, state=wait-input) in=9021 out=88639 deleted=0 expunged=0 trashed=0 hdr_count=5 hdr_bytes=931 body_count=6 body_bytes=9811
+# Aug 13 23:21:00 debian dovecot: imap(routeruser)<18762><uX/NGgKQmqbAqAAJ>: Connection closed (IDLE running for 0.001 + waiting input for 7.481 secs, 2 B in + 10 B out, state=wait-input) in=273196 out=4805241 deleted=0 expunged=0 trashed=0 hdr_count=1182 hdr_bytes=208690 body_count=1193 body_bytes=3203414
+# Aug 13 19:32:47 debian dovecot: imap(routeruser)<21817><rJ67mQKQEKjAqAAJ>: Logged out in=305 out=46530 deleted=0 expunged=0 trashed=0 hdr_count=1 hdr_bytes=221 body_count=0 body_bytes=0
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([[:alnum:]\.@_-]+\)<[[:digit:]]+><[\/[:alnum:]]+>: Connection closed \(IDLE running for [[:digit:]\.]+ \+ waiting input for [[:digit:]\.]+ secs, [0-9]+ B in \+ [[:digit:]\+]+ B out, state=wait-input\) in=[0-9]+ out=[0-9]+ deleted=[0-9]+ expunged=[0-9]+ trashed=[0-9]+ hdr_count=[0-9]+ hdr_bytes=[0-9]+ body_count=[0-9]+ body_bytes=[0-9]+$
