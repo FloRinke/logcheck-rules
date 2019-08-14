@@ -2,7 +2,7 @@
 
 HOSTS=(
     linode2
-    linode
+    linode-
     adm
     edyta
 )
