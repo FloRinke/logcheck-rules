@@ -1,0 +1,6 @@
+# ; -*- mode: text; fill-column: 99999 -*-
+
+# Sep 20 13:09:49 router systemd[13665]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+# Sep 20 13:20:43 router systemd[13665]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Listening on|Closed) GnuPG cryptographic agent and passphrase cache \(access for web browsers\)\.$
