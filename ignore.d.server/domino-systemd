@@ -6,8 +6,15 @@
 # Aug 11 20:05:44 debian systemd[1]: session-193.scope: Succeeded.
 # Aug 14 00:00:15 debian systemd[1]: cups.path: Succeeded.
 # Aug 14 00:00:15 debian systemd[1]: cups.socket: Succeeded.
+# Sep 20 08:06:32 router systemd[1]: user@33.service: Succeeded.
+# Sep 20 08:06:32 router systemd[658]: run-user-33.mount: Succeeded.
+# Sep 20 08:06:32 router systemd[1]: run-user-33.mount: Succeeded.
+# Sep 20 08:06:32 router systemd[1]: user-runtime-dir@33.service: Succeeded.
+# Sep 20 08:06:33 router systemd[1]: user@1000.service: Succeeded.
+# Sep 20 08:06:33 router systemd[1]: run-user-1000.mount: Succeeded.
+# Sep 20 08:06:33 router systemd[1]: user-runtime-dir@1000.service: Succeeded.
 
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: [-[:alnum:].]+.(service|path|socket|scope): Succeeded.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: [-[:alnum:].@]+.(service|path|socket|scope|mount): Succeeded.$
 
 # Aug 14 00:00:15 debian systemd[1]: Closed CUPS Scheduler.
 # Aug 14 00:00:15 debian systemd[1]: Listening on CUPS Scheduler.
@@ -26,3 +33,19 @@
 # Aug 13 23:53:11 debian systemd-networkd-wait-online[7015]: Event loop failed: Connection timed out
 
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-networkd-wait-online\[[[:digit:]]+\]: Event loop failed: Connection timed out$
+
+# Sep 20 13:12:43 router systemd[1]: Created slice User Slice of UID 33.
+# Sep 20 08:06:32 router systemd[1]: Removed slice User Slice of UID 33.
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[ :[:digit:]]+\]: (Created|Removed) slice (User Slice of UID [[:digit:]]+)?.$
+
+# systemd-logind:
+# Sep 20 13:17:24 router systemd-logind[486]: Session 760 logged out. Waiting for processes to exit.
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-logind\[[ :[:digit:]]+\]: Session [0-9]+ logged out. Waiting for processes to exit.$
+
+# D-Bus:
+# Sep 20 08:03:29 router systemd[658]: Listening on D-Bus User Message Bus Socket.
+# Sep 20 08:06:33 router systemd[658]: Closed D-Bus User Message Bus Socket.
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Listening on|Closed) D-Bus User Message Bus Socket.

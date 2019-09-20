@@ -16,3 +16,7 @@
 # Jun 11 12:20:40 linode2 postfix/smtpd[19535]: NOQUEUE: reject: MAIL from oakwood.hyperslice.net[109.203.106.148]: 552 5.3.4 Message size exceeds fixed limit; proto=ESMTP helo=<oakwood.hyperslice.net>
 
 \w{3} [ :[:digit:]]{11} [_[:alnum:]-]+ postfix(/submission|/smtps|/[0-9]+)?/smtpd\[[[:digit:]]+\]: NOQUEUE: reject: MAIL from [\.[:alnum:]]+\[[\.[:alnum:]]+\]: 552 5\.3\.4 Message size exceeds fixed limit; proto=ESMTP helo=<[.[:alnum:]]+>$
+
+# Sep  9 09:17:58 debian-linode postfix/smtpd[5361]: Anonymous TLS connection established from mail-lj1-f177.google.com[209.85.208.177]: TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits) key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SHA256
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/[0-9]+)?\/smtpd\[[[:digit:]]+\]: Anonymous TLS connection established from [-._[:alnum:]]+\[[.[:digit:]]+\]: TLSv[\.0-9]+ with cipher [_[:alnum:]-]+ \([0-9]+\/[0-9]+ bits\) key-exchange [_[:alnum:]-]+ server-signature [_[:alnum:]-]+ \([0-9]+ bits\) server-digest [_[:alnum:]-]+$

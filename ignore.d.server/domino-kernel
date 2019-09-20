@@ -9,5 +9,6 @@ Jun 17 18:47:23 router kernel: [6425157.863842] ip6_tables: (C) 2000-2006 Netfil
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[.[:digit:]]+\] ip6_tables: \(C\) [-[:digit:]]+ Netfilter Core Team$
 
 # Jun 25 18:50:02 router kernel: [19794.295648] perf: interrupt took too long (3933 > 3925), lowering kernel.perf_event_max_sample_rate to 50750
+# Sep 19 13:07:32 router kernel: [ 6628.378187] perf: interrupt took too long (3931 > 3927), lowering kernel.perf_event_max_sample_rate to 50750
 
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[.[:digit:]]+\] perf: interrupt took too long ([0-9]+ > [0-9]+), lowering kernel.perf_event_max_sample_rate to [0-9]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[ .[:digit:]]+\] perf: interrupt took too long \([0-9]+ > [0-9]+\), lowering kernel.perf_event_max_sample_rate to [0-9]+$

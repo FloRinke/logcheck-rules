@@ -9,3 +9,6 @@
 # Aug 13 19:32:47 debian dovecot: imap(routeruser)<21817><rJ67mQKQEKjAqAAJ>: Logged out in=305 out=46530 deleted=0 expunged=0 trashed=0 hdr_count=1 hdr_bytes=221 body_count=0 body_bytes=0
 
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([[:alnum:]\.@_-]+\)<[[:digit:]]+><[\/[:alnum:]]+>: Connection closed \(IDLE running for [[:digit:]\.]+ \+ waiting input for [[:digit:]\.]+ secs, [0-9]+ B in \+ [[:digit:]\+]+ B out, state=wait-input\) in=[0-9]+ out=[0-9]+ deleted=[0-9]+ expunged=[0-9]+ trashed=[0-9]+ hdr_count=[0-9]+ hdr_bytes=[0-9]+ body_count=[0-9]+ body_bytes=[0-9]+$
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([\._@[:alnum:]-]+\)<[[:digit:]]+><[\+\/[:alnum:]]+>: Logged out in=[[:digit:]]+ out=[[:digit:]]+ deleted=[[:digit:]]+ expunged=[[:digit:]]+ trashed=[[:digit:]]+ hdr_count=[[:digit:]]+ hdr_bytes=[[:digit:]]+ body_count=[[:digit:]]+ body_bytes=[[:digit:]]+$
+
