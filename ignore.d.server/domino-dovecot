@@ -12,3 +12,12 @@
 
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([\._@[:alnum:]-]+\)<[[:digit:]]+><[\+\/[:alnum:]]+>: Logged out in=[[:digit:]]+ out=[[:digit:]]+ deleted=[[:digit:]]+ expunged=[[:digit:]]+ trashed=[[:digit:]]+ hdr_count=[[:digit:]]+ hdr_bytes=[[:digit:]]+ body_count=[[:digit:]]+ body_bytes=[[:digit:]]+$
 
+
+# Sep 18 05:09:54 debian-linode dovecot: imap-login: Disconnected (no auth attempts in 1 secs): user=<>, rip=198.108.67.48, lip=139.162.172.22, TLS handshaking: read(size=1024) failed: Connection reset by peer, session=<xDPTK8uSvlLGbEMw>
+# Sep 17 17:15:28 debian-linode dovecot: imap-login: Disconnected (no auth attempts in 10 secs): user=<>, rip=159.203.201.11, lip=139.162.172.22, TLS handshaking: Connection closed, session=<JlbEMMGSGISfy8kL>
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap-login: Disconnected \(no auth attempts in [0-9]+ secs\): user=<>, rip=[.[:digit:]]+, lip=[.[:digit:]]+, TLS handshaking: (Connection closed,|read\(size=[0-9]+\) failed: Connection reset by peer,) session=<[[:alnum:]+]+>$
+
+# Sep 17 03:09:07 debian-linode dovecot: auth: Warning: Event 0x562bf4aefcc0 leaked (parent=(nil)): auth-client-connection.c:338
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth: Warning: Event [[:alnum:]]+ leaked \(parent=\(nil\)\): auth-client-connection.c:[0-9]+$
