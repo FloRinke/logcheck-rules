@@ -1,0 +1,10 @@
+# ; -*- mode: text; fill-column: 99999 -*-
+
+# Sep 20 13:16:37 router su: (to postgres) domino on pts/0
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ su: \(to [[:alnum:]]+\) [[:alnum:]]+ on [[:alnum:]\/]+$
+
+# Sep 20 13:16:37 router su: pam_unix(su-l:session): session opened for user postgres by domino(uid=0)
+# Sep 20 13:16:44 router su: pam_unix(su-l:session): session closed for user postgres
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ su: pam_unix\(su-l:session\): session (opened|closed) for user [[:alnum:]]+( by [[:alnum:]]+\(uid=[0-9]+\))?$

@@ -16,6 +16,10 @@
 # Sep 18 05:09:54 debian-linode dovecot: imap-login: Disconnected (no auth attempts in 1 secs): user=<>, rip=198.108.67.48, lip=139.162.172.22, TLS handshaking: read(size=1024) failed: Connection reset by peer, session=<xDPTK8uSvlLGbEMw>
 # Sep 17 17:15:28 debian-linode dovecot: imap-login: Disconnected (no auth attempts in 10 secs): user=<>, rip=159.203.201.11, lip=139.162.172.22, TLS handshaking: Connection closed, session=<JlbEMMGSGISfy8kL>
 # Sep 21 17:50:17 debian-linode dovecot: imap-login: Disconnected (disconnected before auth was ready, waited 0 secs): user=<>, rip=106.12.127.211, lip=139.162.172.22, TLS handshaking: Connection closed, session=<rMypJBKTJJBqDH/T>
+# Sep 21 17:50:17 debian-linode dovecot: imap-login: Disconnected (disconnected before auth was ready, waited 0 secs): user=<>, rip=106.12.127.211, lip=139.162.172.22, TLS handshaking:
+Connection closed, session=<rMypJBKTJJBqDH/T>
+# Sep 21 17:52:07 debian-linode dovecot: imap-login: Disconnected (no auth attempts in 6 secs): user=<>, rip=106.12.127.211, lip=139.162.172.22, TLS handshaking: Connection closed,
+session=<+gg1KxKT0MlqDH/T>
 
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap-login: Disconnected \((no auth attempts in [0-9]+ secs|disconnected before auth was ready, waited [0-9]+ secs)\): user=<>, rip=[.[:digit:]]+, lip=[.[:digit:]]+, TLS handshaking: (Connection closed,|read\(size=[0-9]+\) failed: Connection reset by peer,) session=<[\/[:alnum:]+]+>$
 
