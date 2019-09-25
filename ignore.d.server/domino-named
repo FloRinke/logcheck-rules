@@ -11,3 +11,18 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: RRSIG failed to verify resolving '[.\/[:alnum:]-]+': [.0-9\#]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: checkhints: [-.\/[:alnum:]]+ \([.[:alnum:]]+\) (missing from|extra record in) hints$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: resolver priming query complete$
+
+# Sep 23 10:33:48 router named[628]: chase DS servers resolving 'l.google.com/DS/IN': 216.239.36.10#53
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]:
+
+
+# Sep 24 14:23:45 router named[628]: validating gexperiments4.com/DNSKEY: verify failed due to bad signature (keyid=25876): RRSIG has expired
+# Sep 24 14:23:45 router named[628]: validating gexperiments4.com/DNSKEY: no valid signature found (DS)
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: validating [.[:alnum:]\/]+: (verify failed due to bad signature|no valid signature found \(DS\))( \(keyid=[0-9]+\): RRSIG has expired)?$
+
+# Sep 24 14:23:45 router named[628]: broken trust chain resolving 'dnssec-df.gexperiments4.com/AAAA/IN': 216.239.34.99#53
+# Sep 24 14:23:45 router named[628]: broken trust chain resolving 'dnssec-df.gexperiments4.com/A/IN': 216.239.34.99#53
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: broken trust chain resolving '[.\-\/[:alnum:]]+': [.[:digit:]#]+$
