@@ -1,3 +1,4 @@
 # Systemd-logind messages
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-logind\[[ :[:digit:]]+\]: New session [[:xdigit:]]+ of user [._[:alnum:]-]+.$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-logind\[[ :[:digit:]]+\]: Removed session [[:xdigit:]]+.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-logind\[[ :[:digit:]]+\]: Removed session [[:xdigit:]]+\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-logind\[[ :[:digit:]]+\]: Session [[:xdigit:]]+ logged out\. Waiting for processes to exit\.$

@@ -1,1 +1,2 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ ceph-(osd|mgr|mon)\[[0-9]+\]: [[:digit:]-]+ [[:digit:]:.]+ [[:xdigit:]]+ -1 received[[:space:]]+signal: Hangup from[[:space:]]+PID: [[:digit:]]+ task name: killall -q -1 [ [:alnum:]-]+ UID: [[:digit:]]+$
+
