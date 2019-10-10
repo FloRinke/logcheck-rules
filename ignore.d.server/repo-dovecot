@@ -26,3 +26,6 @@
 # proxy
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap-login: proxy\([[:print:]]+\): disconnecting [.:[:xdigit:]]+ \(Disconnected by (server|client: EOF)\([[:digit:]]+s idle, in=[[:digit:]]+, out=[[:digit:]]+([[:digit:]+]+)?\)\): user=[[:print:]]+, method=[[:alpha:]]+, rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+, TLS(: Disconnected)?, session=[[:print:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap-login: proxy\([[:print:]]+\): started proxying to [[:print:]]+: user=[[:print:]]+, method=[[:alpha:]]+, rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+, TLS, session=[[:print:]]+$
+# New dovecot 2.3
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([\._@[:alnum:]-]+\)[\._@<>+/[:alnum:]-]+: (Logged out|Disconnected for inactivity|Connection closed \(([ [:alpha:]-]+ finished [.[:digit:]]+ secs ago|IDLE running for [.[:digit:]]+ \+ waiting input for [.[:digit:]]+ secs, [[:digit:]]+ B in \+ [+[:digit:]]+ B out, state=wait-input)\)) in=[[:digit:]]+ out=[[:digit:]]+ deleted=[[:digit:]]+ expunged=[[:digit:]]+ trashed=[[:digit:]]+ hdr_count=[[:digit:]]+ hdr_bytes=[[:digit:]]+ body_count=[[:digit:]]+ body_bytes=[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: lmtp\([\._@[:alnum:]-]+\)[\._@<>+/[:alnum:]-]+: sieve: msgid=(\? )?<[[:punct:][:alnum:]]+: stored mail into mailbox '[^']+'
