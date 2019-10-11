@@ -1,0 +1,40 @@
+# Jul  4 01:41:44 instance-2 iodined: accepted version for user #0 from 127.0.0.1
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ iodined: accepted version for user #[0-9]+ from 127\.0\.0\.1$
+
+# Jul  4 01:41:44 instance-2 iodined: accepted password from user #0, given IP 192.168.94.10
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ iodined: accepted password from user \#0, given IP 192\.168\.94\.10$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ iodined: accepted password from user \#0, given IP 192\.168\.94\.18$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ iodined: accepted password from user \#0, given IP 192\.168\.94\.9$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ iodined: accepted password from user \#1, given IP 192\.168\.94\.11$
+
+# Jul  7 05:35:10 instance-2 iodined: rejected login request from user #0 from 127.0.0.1, bad password
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ iodined: rejected login request from user \#0 from 127\.0\.0\.1, bad password$
+
+# Jul 18 23:43:23 instance-2 iodined: dropped login request from user #0 from unexpected source 127.0.0.1
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ iodined: dropped login request from user \#0 from unexpected source 127\.0\.0\.1$
+
+# Aug 16 02:22:45 instance-2 iodined[7467]: ALERT! Other dns servers expect you to run on port 53.
+
+# Aug 16 02:22:45 instance-2 iodined[7467]: You must manually forward port 53 to port 1054 for things to work.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ iodined: You must manually forward port 53 to port [0-9]+ for things to work\.$
+
+# Aug 16 02:22:45 instance-2 iodined[7467]: Opened dns2
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ iodined: Opened dns[0-9]+$
+
+# Aug 16 02:22:45 instance-2 iodined[7467]: Setting IP of dns2 to 192.168.94.15
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ iodined: Setting IP of dns[0-9]+ to [[:xdigit:]\.:]+$
+
+# Aug 16 02:22:45 instance-2 iodined[7467]: Setting MTU of dns2 to 1130
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ iodined: Setting MTU of dns[0-9]+ to 1130$
+
+# Aug 16 02:22:45 instance-2 iodined[7467]: Opened IPv4 UDP socket
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ iodined: Opened IPv4 UDP socket$
+
+# Aug 16 02:22:45 instance-2 iodined[7467]: Limiting to 5 simultaneous users because of netmask /29
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ iodined: Limiting to [0-9]+ simultaneous users because of netmask \/[0-9]+$
+
+# Aug 16 02:22:45 instance-2 iodined[7467]: Listening to dns for domain pi1-ar.motok.com.ar
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ iodined: Listening to dns for domain [[:alnum:]\._-]+$
+
+# Aug 16 02:22:45 instance-2 iodined: started, listening on port 1054
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ iodined: started, listening on port [0-9]+$

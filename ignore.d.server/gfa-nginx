@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[1\]: nginx\.service: Failed to read PID from file \/run\/nginx.pid: Invalid argument$

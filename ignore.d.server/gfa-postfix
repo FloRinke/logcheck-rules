@@ -1,0 +1,79 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/[0-9]+)?/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]_\.-]+[[:xdigit:]\.:]+ helo=[0-9] auth=[0-9]/[0-9] quit=[0-9] commands=[0-9]/[0-9]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/[0-9]+)?/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]_\.-]+[[:xdigit:]\.:]+ ehlo=[0-9] starttls=[0-9] mail=[1-9] rcpt=[0-9] data=[0-9] quit=[0-9] commands=[0-9]/[0-9]$
+
+### 10025 port instance
+#TLS
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/[0-9]+)?/smtpd\[[[:digit:]]+\]: warning: TLS library problem: ([[:digit:]]+:)?error:[[:xdigit:]]+:SSL routines:SSL2?3_[[:alnum:]_]+:[[:alnum:] ]+:[[:alnum:]_-]+\.c:[[:digit:]]+:(SSL alert number [[:digit:]]+:)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/[0-9]+)?/smtpd\[[[:digit:]]+\]: warning: TLS library problem: ([[:digit:]]+:)?error:[[:xdigit:]]+:SSL routines:ssl2?3_[[:alnum:]_]+:[[:alnum:] ]+:[[:alnum:]_-]+\.c:[[:digit:]]+:(SSL alert number [[:digit:]]+:)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/[0-9]+)?/smtpd\[[[:digit:]]+\]: warning: TLS library problem: ([[:digit:]]+:)?error:[[:xdigit:]]+:SSL routines:ssl3_read_bytes:unexpected record:\.\.\/ssl\/record\/rec_layer_s3\.c:[0-9]+:$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/[0-9]+)?/smtpd\[[[:digit:]]+\]: warning: TLS library problem: ([[:digit:]]+:)?error:[[:xdigit:]]+:SSL routines:tls_process_client_hello:unknown protocol:\.\.\/ssl\/statem\/statem_srvr\.c:[0-9]+:$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/[0-9]+)?/smtpd\[[[:digit:]]+\]: warning: network_biopair_interop: error (reading|writing) [[:digit:]]+ bytes (from|to) the network: Connection reset by peer$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/[0-9]+)?/smtpd\[[[:digit:]]+\]: SSL_accept error from [._[:alnum:]-]+\[[[:xdigit:].:]{3,39}\](: (-?[[[:digit:]]]+|lost connection|Connection timed out|Connection reset by peer))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/[0-9]+)?\/smtpd\[[[:digit:]]+\]: warning: TLS library problem: error:[[:xdigit:]]+:SSL routines:ssl3_get_record:wrong version number:\.\.\/ssl\/record\/ssl3_record\.c:[0-9]+:$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/[0-9]+)?\/smtpd\[[[:digit:]]+\]: warning: TLS library problem: error:[[:xdigit:]]+:SSL routines:ssl3_get_record:decryption failed or bad record mac:\.\.\/ssl\/record\/ssl3_record\.c:[0-9]+:$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/[0-9]+)?\/smtpd\[[[:digit:]]+\]: warning: TLS library problem: error:[[:xdigit:]]+:SSL routines:tls_process_client_hello:version too low:\.\.\/ssl\/statem\/statem_srvr\.c:[0-9]+:$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/[0-9]+)?\/smtpd\[[[:digit:]]+\]: warning: TLS library problem: error:[[:xdigit:]]+:SSL routines:tls_process_client_hello:version too low:\.\.\/ssl\/statem\/statem_srvr\.c:[0-9]+:$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/[0-9]+)?\/smtpd\[[[:digit:]]+\]: warning: TLS library problem: error:[[:xdigit:]]+:SSL routines:ssl_bytes_to_cipher_list:inappropriate fallback:\.\.\/ssl\/statem\/statem_srvr\.c:[0-9]+:$
+#connection
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/[0-9]+)?/smtpd\[[[:digit:]]+\]: (dis)?connect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\]( ehlo=[[:digit:]]+ mail=[[:digit:]]+ rcpt=[[:digit:]]+ data=[[:digit:]]+ quit=[[:digit:]]+ commands=[[:digit:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/[0-9]+)?/smtpd\[[[:digit:]]+\]: lost connection after [[:alnum:]]+( \([[:digit:]]+ bytes\))? from [._[:alnum:]-]+\[(unknown|[[:xdigit:].:]{3,39})\]$
+
+#behavior
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/[0-9]+)?\/smtpd\[[[:digit:]]+\]: improper command pipelining after (HELO|EHLO|DATA|MAIL|QUIT) from [^]]+\[[.:[:xdigit:]]+\]:( QUIT\\r\\n)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/[0-9]+)?/smtpd\[[[:digit:]]+\]: warning: hostname [[:alnum:]_\.-]+ does not resolve to address [[:xdigit:]\.:]+(: Name or service not known|: Temporary failure in name resolution)?$
+#login
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/[0-9]+)?/smtpd\[[[:digit:]]+\]: warning: [-._[:alnum:]]+\[[.[:digit:]]+\]: SASL ((LOGIN|login)|(PLAIN|plain)|(DIGEST|CRAM)-MD5|APOP) authentication failed(:[ [:alnum:]]*)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|/[0-9]+)?\/smtpd\[[[:digit:]]+\]: SSL_accept error from [._[:alnum:]-]+\[[[:xdigit:].:]{3,39}\](: (-?[[:digit:]]+|lost connection|Connection timed out|Connection reset by peer))?$
+
+# long queue id
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/[0-9]+)?/smtpd\[[[:digit:]]+\]: Untrusted TLS connection established from [-._[:alnum:]]+\[[.[:digit:]]+\]: TLSv1\.2 with cipher [[:alnum:]-]+ \([0-9]+/[0-9]+ bits\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/[0-9]+)?/smtpd\[[[:digit:]]+\]: Anonymous TLS connection established from [-._[:alnum:]]+\[[.[:digit:]]+\]: TLSv1\.2 with cipher [[:alnum:]-]+ \([0-9]+/[0-9]+ bits\)$
+
+# all kind of disconnections
+#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/[0-9]+)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/[0-9]+)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\](( helo| ehlo)=[0-9])?( auth=[0-9](\/[0-9])?)?( starttls=[0-9](\/[0-9])?)?( mail=[0-9](\/[0-9])?)?( rcpt=[0-9](\/[0-9])?)?( data=[0-9](\/[0-9])?)?( rset=[0-9](\/[0-9])?)?( quit=[0-9](\/[0-9])?)? (commands=[0-9](\/[0-9])?)?
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/[0-9]+)?\/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\] commands=[0-9](\/[0-9])?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/[0-9]+)?\/smtpd\[[[:digit:]]+\]: disconnect from localhost\[127.0.0.1\] helo=[1-9] mail=[1-9] rcpt=[1-9] data=[0-9] quit=1 commands=[0-9]$
+
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/[ls]mtp\[[[:digit:]]+\]: [[:alnum:]]+: to=<[^[:space:]]+>,( orig_to=<[^[:space:]]+>,)? relay=[^[:space:]]+,( conn_use=[[:digit:]]+,)? delay=[.[:digit:]]+, delays=[.[:digit:]]+/[.[:digit:]]+/[.[:digit:]]+/[.[:digit:]]+, dsn=[.[:digit:]]+, status=[.[:alnum:]]+ \([.[:digit:]]+ [.[:digit:]]+ <[+.[:alnum:]]+@[.[:alnum:]]+-[.[:alnum:]]+> [.[:alnum:]]+ Saved\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/[ls]mtp\[[[:digit:]]+\]: [[:alnum:]]+: to=<[^[:space:]]+>,( orig_to=<[^[:space:]]+>,)? relay=[^[:space:]]+,( conn_use=[[:digit:]]+,)? delay=[.[:digit:]]+, delays=[.[:digit:]]+/[.[:digit:]]+/[.[:digit:]]+/[.[:digit:]]+, dsn=[.[:digit:]]+, status=[.[:alnum:]]+ \([.[:digit:]]+ [.[:digit:]]+ <[+._[:alnum:]-]+@[._[:alnum:]-]+> [._[:alnum:]-]+/[._[:alnum:]-]+ Saved\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/[ls]mtp\[[[:digit:]]+\]: [[:alnum:]]+: to=<[^[:space:]]+>,( orig_to=<[^[:space:]]+>,)? relay=[^[:space:]]+,( conn_use=[[:digit:]]+,)? delay=[.[:digit:]]+, delays=[.[:digit:]]+/[.[:digit:]]+/[.[:digit:]]+/[.[:digit:]]+, dsn=[.[:digit:]]+, status=[.[:alnum:]]+ \([.[:digit:]]+ [.[:digit:]]+ <[+._[:alnum:]-]+@[._[:alnum:]-]+> .*Saved\)$
+
+# Jun 25 10:32:03 mail postfix/[0-9]+/smtpd[29692]: 41Dlpq2WZMzwHh: client=monitoreo.zumbi.com.ar[104.196.108.40]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(/submission|/smtps|/[0-9]+)?/smtpd\[[[:digit:]]+\]: [[:alnum:]]+: client=[._[:alnum:]-]+\[[[:xdigit:].:]{3,39}\]$
+
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\/cleanup\[[[:digit:]]+\]: [[:alnum:]]+: milter-reject: END-OF-MESSAGE from [-._[:alnum:]]+\[([.[:digit:]]+|[[:xdigit:]:]+)\]: 5\.7\.1 Spam message rejected; from=<[^[:space:]]*> to=<[^[:space:]]*> proto=E?SMTP helo=<[^[:space:]]+>$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\/cleanup\[[[:digit:]]+\]: [[:alnum:]]+: milter-reject: END-OF-MESSAGE from [-._[:alnum:]]+\[([.[:digit:]]+|[[:xdigit:]:]+)\]: 4\.7\.1 Try again later; from=<[^[:space:]]*> to=<[^[:space:]]*> proto=E?SMTP helo=<[^[:space:]]+>$
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/bounce\[[[:digit:]]+\]: [[:alnum:]]+: sender (delay|non-delivery|delivery status) notification: [[:alnum:]]+$
+
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(error|n?qmgr|cleanup)\[[[:digit:]]+\]: [[:alnum:]]+: to=<[^[:space:]]+>,( orig_to=<[^[:space:]]+>,)? relay=none,( conn_use=[[:digit:]]+,)? delay=[[:digit:].]+,( delays=[[:digit:]./]+,)?( dsn=[45]\.[[:digit:]]\.[[:digit:]],)? status=bounced \(Spam message rejected\)$
+
+# greylisting
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: [[:alnum:]]+: to=<[^[:space:]]+>,( orig_to=<[^[:space:]]+>,) relay=[^[:space:]]+, delay=[[:digit:]]+, status=deferred \(host [^[:space:]]+ said: [45][[:digit:]]{2} <[^[:space:]]*>: Recipient address rejected: Greylisted for [[:digit:]]+ (seconds|minutes)( \(see http://isg.ee.ethz.ch/tools/postgrey/help/[.[:alnum:]-]+.html\))? \(in reply to (HELO|EHLO|MAIL FROM|RCPT TO|DATA|end of DATA) command\)\)$
+
+# Jul 16 20:19:48 mail postfix/smtp[13407]: 41TvsD6fDzz137F: host muffat.debian.org[209.87.16.33] said: 451 Greylisted, see http://postgrey.schweikert.ch/help/debian.org.html (in reply to RCPT TO command)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\/smtp\[[[:digit:]]+\]: [[:alnum:]]+: host [[:alnum:]\.]+\[[[:xdigit:]\.:]+\] said: 451 Greylisted, see http:\/\/postgrey\.schweikert\.ch\/help\/[[:alnum:]\.]+\.html \(in reply to RCPT TO command\)$
+# Jul 18 18:35:56 mail postfix/smtp[20511]: 41W5SR1swlz1398: host mail.systemli.org[198.167.223.214] said: 450 4.2.0 <compl4xx@systemli.org>: Recipient address rejected: Greylisted for 60 seconds, see http://postgrey.schweikert.ch/help/systemli.org.html (in reply to RCPT TO command)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\/smtp\[[[:digit:]]+\]: [[:alnum:]]+: host [[:alnum:]\.]+\[[[:xdigit:]\.:]+\] said: 450 4\.2\.0 Greylisted, see http:\/\/postgrey\.schweikert\.ch\/help\/[[:alnum:]\.]+\.html \(in reply to RCPT TO command\)$
+# Jul 26 14:39:36 mail postfix/smtp[22925]: 41bvr10FSYz106v: host bendel.debian.org[82.195.75.100] said: 450 4.2.0 <debconf-discuss@lists.debian.org>: Recipient address rejected: Greylisted, see http://postgrey.schweikert.ch/help/lists.debian.org.html (in reply to RCPT TO command)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\/smtp\[[[:digit:]]+\]: [[:alnum:]]+: host [[:alnum:]\.]+\[[[:xdigit:]\.:]+\] said: 450 4\.2\.0 <[+._[:alnum:]-]+@[._[:alnum:]-]+>: Recipient address rejected: Greylisted, see http:\/\/postgrey\.schweikert\.ch\/help\/[[:alnum:]\.]+ \(in reply to RCPT TO command\)$
+
+# misc
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/[0-9]+)?\/smtpd\[[[:digit:]]+\]: warning: non-SMTP command from [[:alnum:]\.-]+\[[[:xdigit:]\.:]+\]: GET ([[:alnum:]\/]+)? HTTP/1.1$
+
+# Jul 19 15:32:14 instance-1 postfix/smtpd[27252]: improper command pipelining after AUTH from pppoe-static.178.124.188.173.telecom.mogilev.by[178.124.188.173]: QUIT\r\n
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/[0-9]+)?\/smtpd\[[[:digit:]]+\]: improper command pipelining after AUTH from [[:alnum:]\.-]+\[[[:xdigit:]:\.]+\]: QUIT\\r\\n$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/[0-9]+)?\/smtpd\[[[:digit:]]+\]: improper command pipelining after AUTH from [[:alnum:]\.-]+\[[[:xdigit:]:\.]+\]: QUIT\\r\\nQUIT\\r\\n$$
+
+# Aug  8 06:15:20 mail postfix/smtp[19414]: 41lh200d5Sz13VF: lost connection with gmail-smtp-in.l.google.com[74.125.204.27] while performing the EHLO handshake
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: [[:alnum:]]+: lost connection with [[:alnum:]\.-]+\[[[:xdigit:]:\.]+\] while performing the EHLO handshake$
+
+# Aug 13 02:42:14 lists postfix/smtps/smtpd[20900]: NOQUEUE: reject: RCPT from unknown[217.61.97.192]: 454 4.7.1 <test@gmail.com>: Relay access denied; from=<test@codespeak.net> to=<test@gmail.com> proto=SMTP helo=<rofio2018.domain>
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/[0-9]+)?\/smtpd\[[[:digit:]]+\]: NOQUEUE: reject: RCPT from [[:alnum:]_\.-]+\[[[:xdigit:]:\.]+\]: 454 4\.7\.1 <[[:alnum:]\.@_-]+>: Relay access denied; from=<[[:alnum:]\.:@_+]+> to=<[[:alnum:]\.:@_+]+> proto=SMTP helo=<[[:alnum:]\.:@_+]+>$
+
+# Aug 16 15:55:27 mail postfix/smtpd[29433]: warning: unknown[192.168.188.50]: SASL NTLM authentication failed: Invalid authentication mechanism
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/[0-9]+)?\/smtpd\[[[:digit:]]+\]: warning: [[:alnum:]\._-]+\[[[:xdigit:]:\.]+\]: SASL NTLM authentication failed: Invalid authentication mechanism$

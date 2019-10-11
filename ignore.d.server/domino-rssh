@@ -1,0 +1,7 @@
+# ; -*- mode: text; fill-column: 99999 -*-
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rssh\[[[:digit:]]+\]: setting log facility to LOG_USER$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rssh\[[[:digit:]]+\]: allowing rsync to all users$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rssh\[[[:digit:]]+\]: setting umask to 022$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rssh\[[[:digit:]]+\]: cmd 'rsync' approved$
+

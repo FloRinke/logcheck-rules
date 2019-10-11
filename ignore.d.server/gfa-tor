@@ -1,0 +1,74 @@
+#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]:
+
+# control connections
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: New control connection opened from 127\.0\.0\.1\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: New control connection opened\.$
+
+# circuits
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Tried to establish rendezvous on non-OR circuit with purpose Acting as rende(z)?vous \(pending\)$
+
+# Jun 26 18:16:11 tor-exit1-1480471271410-512mb-sgp1-01 Tor[7615]: Heartbeat: Tor's uptime is 1 day 11:59 hours, with 48 circuits open. I've sent 3.11 GB and received 5.21 GB.
+# Jul 16 00:31:14 tor-exit1-1480471271410-512mb-sgp1-01 Tor[952]: Heartbeat: Tor's uptime is 18:00 hours, with 732 circuits open. I've sent 64.11 GB and received 72.77 GB.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Heartbeat: Tor's uptime is( [0-9]+ day(s)?)? [[:digit:]:]+ hours, with [[:digit:]]+ circuits open\. I've sent [[:digit:]\.]+ [GM]B and received [[:digit:]\.]+ [GM]B\.$
+
+#Jun 26 18:16:11 tor-exit1-1480471271410-512mb-sgp1-01 Tor[7615]: Heartbeat: Accounting enabled. Sent: 517.64 GB, Received: 590.86 GB, Used: 1108.50 GB / 2000.00 GB, Rule: sum. The current accounting interval ends on 2018-07-01 00:00:00, in 4 days 5:43 hours.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Heartbeat: Accounting enabled\. Sent: [[:digit:].]+ [M|G]B, Received: [[:digit:].]+ [M|G]B, Used: [[:digit:].]+ [M|G]B \/ [[:digit:].]+ [M|G]B, Rule: (sum|out)\. The current accounting interval ends on [[:digit:].-]+ 00:00:00, in ([0-9]+ days )?[[:digit:]:]+ hours\.$
+
+# Jun 26 18:16:11 tor-exit1-1480471271410-512mb-sgp1-01 Tor[7615]: Circuit handshake stats since last time: 376/376 TAP, 5822/5822 NTor.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Circuit handshake stats since last time: [0-9]+\/[0-9]+ TAP, [0-9]+\/[0-9]+ NTor\.$
+
+# Jun 26 18:16:11 tor-exit1-1480471271410-512mb-sgp1-01 Tor[7615]: Since startup, we have initiated 0 v1 connections, 0 v2 connections, 0 v3 connections, and 1935 v4 connections; and received 0 v1 connections, 2 v2 connections, 102 v3 connections, and 50567 v4 connections.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Since startup, we have initiated [0-9]+ v1 connections, [0-9]+ v2 connections, [0-9]+ v3 connections, and [0-9]+ v4 connections; and received [0-9]+ v1 connections, [0-9]+ v2 connections, [0-9]+ v3 connections, and [0-9]+ v4 connections\.$
+
+# DoS
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: DoS mitigation since startup: [0-9]+ circuits rejected\, [0-9]+ marked addresses\. [0-9]+ connections closed\. [0-9]+ single hop clients refused\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: DoS mitigation since startup: [0-9]+ circuits killed with too many cells\. [0-9]+ circuits rejected\, [0-9]+ marked addresses\. [0-9]+ connections closed\. [0-9]+ single hop clients refused\.$
+
+# startup
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Configured hibernation\. This interval began at [[:digit:]-]+ 00:00:00; the scheduled wake-up time was [[:digit:]-]+ 00:00:00; we expect to exhaust our quota for this interval around [[:digit:]-]+ 00:00:00; the next interval begins at [[:digit:]-]+ 00:00:00 \(all times local\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Interrupt: we have stopped accepting new connections, and will shut down in 30 seconds\. Interrupt again to exit now\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Clean shutdown finished\. Exiting\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: \w{3} [[:digit:]]+ [[:digit:]:\.]+ \[notice\] Tor [[:digit:]\.]+ \(git-[[:xdigit:]]+\) running on Linux with Libevent [[:xdigit:]\.]+-stable, OpenSSL [[:xdigit:]\.]+ and Zlib 1\.2\.8\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: \w{3} [[:digit:]]+ [[:digit:]:\.]+ \[notice\] Tor can\'t help you if you use it wrong\! Learn how to be safe at https:\/\/www\.torproject\.org\/download\/download\#warning$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: \w{3} [[:digit:]]+ [[:digit:]:\.]+ \[notice\] Read configuration file \"\/usr\/share\/tor\/tor-service-defaults-torrc\"\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: \w{3} [[:digit:]]+ [[:digit:]:\.]+ \[notice\] Read configuration file \"\/etc\/tor\/torrc\"\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: \w{3} [[:digit:]]+ [[:digit:]:\.]+ \[warn\] You have set AccountingMax to use hibernation\. You have also chosen a low DirPort or OrPort\.This combination can make Tor stop working when it tries to re-attach the port after a period of hibernation\. Please choose a different port or turn off hibernation unless you know this combination will work on your platform\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: \w{3} [[:digit:]]+ [[:digit:]:\.]+ \[notice\] Based on detected system memory, MaxMemInQueues is set to [0-9]+ MB\. You can override this by setting MaxMemInQueues by hand\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Configuration was valid$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: \w{3} [[:digit:]]+ [[:digit:]:\.]+ \[notice\] Opening Control listener on 127.0.0.1:[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: \w{3} [[:digit:]]+ [[:digit:]:\.]+ \[notice\] Opening OR listener on [[:digit:]]+:[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Opening OR listener on \[[[:xdigit:]]+\]:[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Jul 01 00:01:31.520 [notice] Opening Directory listener on [[:digit:]]+:[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Jul 01 00:01:31.521 [notice] Opening Directory listener on \[[[:xdigit:]]+\]:[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Not advertising DirPort \(Reason: AccountingMax enabled\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Your Tor server\'s identity key fingerprint is \'[[:alnum:]+] [[:xdigit:]]+\'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Parsing GEOIP IPv4 file \/usr\\/share\/tor\/geoip\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Parsing GEOIP IPv6 file \/usr\/share\/tor\/geoip6\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Configured to measure statistics\. Look for the \*-stats files that will first be written to the data directory in 24 hours from now\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Bootstrapped 0%: Starting$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Bootstrapped 80%: Connecting to the Tor network$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Signaled readiness to systemd$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Opening Control listener on \/var\/run\/tor\/control$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Self-testing indicates your ORPort is reachable from the outside\. Excellent\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Bootstrapped 85%: Finishing handshake with first hop
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Bootstrapped 90%: Establishing a Tor circuit
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Tor has successfully opened a circuit\. Looks like client functionality is working\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Bootstrapped 100%: Done$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Self-testing indicates your DirPort is reachable from the outside\. Excellent\. Publishing server descriptor\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Performing bandwidth self-test\.\.\.done\.$
+
+# Jul  3 22:00:20 tor-exit1-1480471271410-512mb-sgp1-01 Tor[3353]: It looks like I should try to generate and sign a new medium-term signing key, because the one I have is going to expire soon. To do that, I'm going to have to try to load the permanent master identity key.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: It looks like I should try to generate and sign a new medium-term signing key, because the one I have is going to expire soon\. To do that, I'm going to have to try to load the permanent master identity key\.$
+
+# Aug 15 11:09:56 tor-exit1-1480471271410-512mb-sgp1-01 Tor[6429]: Bandwidth soft limit reached; commencing hibernation. No new connections will be accepted
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Bandwidth soft limit reached; commencing hibernation\. No new connections will be accepted$
+
+# Aug 15 23:01:52 tor-exit1-1480471271410-512mb-sgp1-01 Tor[6429]: Heartbeat: Tor's uptime is 2 days 17:59 hours, with 12 circuits open. I've sent 187.73 GB and received 220.95 GB. We are currently hibernating.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Heartbeat: Tor's uptime is [0-9]+ days [[:digit:]:]+ hours, with [0-9]+ circuits open\. I've sent [[:digit:]\.]+ [M|G]B and received [[:digit:]\.]+ [M|G]B\. We are currently hibernating\.$
+
+
+# Aug 16 06:56:25 exit2-sg Tor[988]: Starting with guard context "default"
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Starting with guard context "default"$
+
+# Aug 16 12:25:17 tor-exit1-1480471271410-512mb-sgp1-01 Tor[994]: Heartbeat: Tor's uptime is 5:59 hours, with 0 circuits open. I've sent 332 kB and received 6.46 MB. We are currently hibernating.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ Tor\[[[:digit:]]+\]: Heartbeat: Tor's uptime is( [0-9]+ day(s)?)? [[:digit:]:]+ hours, with [[:digit:]]+ circuits open\. I've sent [[:digit:]\.]+ [kMG]B and received [[:digit:]\.]+ [kMG]B\. We are currently hibernating\.$

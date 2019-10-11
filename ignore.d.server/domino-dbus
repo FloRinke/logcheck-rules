@@ -1,0 +1,5 @@
+# ; -*- mode: text; fill-column: 99999 -*-
+
+# Jun 16 08:28:17 debian dbus[871]: [system] Rejected send message, 3 matched rules; type="method_return", sender=":1.181" (uid=1000 pid=20898 comm="pulseaudio -D ") interface="(unset)" member="(unset)" error name="(unset)" requested_reply="0" destination=":1.1" (uid=0 pid=870 comm="/usr/lib/bluetooth/bluetoothd ")
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dbus\[[[:digit:]]+\]: \[system\] Rejected send message, [0-9] matched rules; type="[_[:alnum:]]+", sender="[.[:digit:]:]+" \(uid=[0-9]+ pid=[0-9]+ comm="[-[:alnum:] ]+"\) interface="[\(\)[:alnum:]]+" member="[\(\)[:alnum:]]+" error name="[\(\)[:alnum:]]+" requested_reply="[0-9]+" destination="[.:[:digit:]]+" \(uid=[0-9]+ pid=[0-9]+ comm="[-[:alnum:]\/ ]+"\)$

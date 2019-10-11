@@ -1,0 +1,23 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: (bytecode|daily|main)\.c(l|v)d (is up to date|updated) \(version: [0-9]+, sigs: [0-9]+, f-level: [0-9]+, builder: \w+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ freshclam\[[[:digit:]]+\]: getfile: [^[:space:]]+ not found on remote server \(IP: [.:[:digit:]a-f]+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ freshclam\[[[:digit:]]+\]: getfile: Error while reading database from [^[:space:]]+ \(IP: [^[:space:]]+ Operation now in progress$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ freshclam\[[[:digit:]]+\]: getfile: Unknown response from remote server \(IP: [.:[:digit:]a-f]+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ freshclam\[[[:digit:]]+\]: (getpatch: )?Can't download [^[:space:]]+ from [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ freshclam\[[[:digit:]]+\]: Your ClamAV installation is OUTDATED!$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ freshclam\[[[:digit:]]+\]: WARNING: Your ClamAV installation is OUTDATED!$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ freshclam\[[[:digit:]]+\]: Local version: [^[:space:]]+ Recommended version: [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ freshclam\[[[:digit:]]+\]: WARNING: Local version: [^[:space:]]+ Recommended version: [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ freshclam\[[[:digit:]]+\]: DON'T PANIC! Read http://www.clamav.net/documents/upgrading-clamav$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ freshclam\[[[:digit:]]+\]: Received signal: re-opening log file$
+
+# Aug  2 19:16:40 static freshclam[2119]: Thu Aug  2 19:16:40 2018 -> ^Your ClamAV installation is OUTDATED!
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ freshclam\[[[:digit:]]+\]: \w{3} \w{3} [[:digit:]+: ]{16} -> \^Your ClamAV installation is OUTDATED!$
+
+# Aug  2 19:16:40 static freshclam[2119]: Thu Aug  2 19:16:40 2018 -> ^Local version: 0.100.0 Recommended version: 0.100.1
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ freshclam\[[[:digit:]]+\]: \w{3} \w{3} [[:digit:]+: ]{16} -> \^Local version: [[:digit:]\.]+ Recommended version: [[:digit:]\.]+$
+
+# Aug  2 19:16:40 static freshclam[2119]: Thu Aug  2 19:16:40 2018 -> DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ freshclam\[[[:digit:]]+\]: \w{3} \w{3} [[:digit:]+: ]{16} -> DON'T PANIC! Read https:\/\/www\.clamav\.net\/documents\/upgrading-clamav
+
+# Aug  5 06:25:18 static freshclam[682]: Sun Aug  5 06:25:18 2018 -> Received signal: re-opening log file
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ freshclam\[[[:digit:]]+\]: \w{3} \w{3} [[:digit:]+: ]{16} -> Received signal: re-opening log file$

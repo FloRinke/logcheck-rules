@@ -1,0 +1,19 @@
+# ; -*- mode: text; fill-column: 99999 -*-
+
+# Jun 16 08:28:17 debian kernel: [219862.976978] input: 40:EF:4C:33:AE:21 as /devices/virtual/input/input14
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[.[:digit:]]+\] input: [:[:alnum:]]+ as /devices/virtual/input/input[0-9]+$
+
+Jun 17 18:47:23 router kernel: [6425157.863842] ip6_tables: (C) 2000-2006 Netfilter Core Team
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[.[:digit:]]+\] ip6_tables: \(C\) [-[:digit:]]+ Netfilter Core Team$
+
+# Jun 25 18:50:02 router kernel: [19794.295648] perf: interrupt took too long (3933 > 3925), lowering kernel.perf_event_max_sample_rate to 50750
+# Sep 19 13:07:32 router kernel: [ 6628.378187] perf: interrupt took too long (3931 > 3927), lowering kernel.perf_event_max_sample_rate to 50750
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[ .[:digit:]]+\] perf: interrupt took too long \([0-9]+ > [0-9]+\), lowering kernel.perf_event_max_sample_rate to [0-9]+$
+
+# Sep 21 02:28:15 router kernel: [141072.230397] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 1.057 msecs
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[ .[:digit:]]+\] INFO: NMI handler \(perf_event_nmi_handler\) took too long to run: [.[:digit:]]+ msecs$
+

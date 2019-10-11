@@ -1,0 +1,2 @@
+# Aug  9 21:58:00 gw dhclient[2229]: Discarding packet with bogus hlen.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhclient\[[[:digit:]]+\]: Discarding packet with bogus hlen\.$

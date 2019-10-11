@@ -1,0 +1,64 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Warning: SSL: where=0xdigit:+, ret=-?1: before/accept initialization [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Warning: SSL( failed)?: where=0xdigit:+(, ret=)?-?1?: SSLv3 (read|write)( client| server| key)* (certificate|change cipher spec|done|exchange|finished|hello|session ticket)( verify)? A \[[.:a-f[:digit:]]+\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Warning: SSL: where=0xdigit:+, ret=-?1: SSLv3 flush data [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Warning: SSL: where=0xdigit:+, ret=-?1: SSL negotiation finished successfully [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Warning: SSL: where=0xdigit:+, ret=-?1: unknown state [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Warning: SSL alert: where=0xdigit:+, ret=256: warning close notify [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth: Warning: auth client 0 disconnected with 1 pending requests: Connection reset by peer$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth: Warning: auth client 0 disconnected with 1 pending requests: EOF$
+
+# Jul  7 12:41:47 mail dovecot: imap-login: Maximum number of connections from user+IP exceeded (mail_max_userip_connections=10): user=<gfa@zumbi.com.ar>, method=PLAIN, rip=181.167.101.87,lip=172.104.98.54, TLS, session=<hhZ9GmhwGJW1p2VX>
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap-login: Maximum number of connections from user\+IP exceeded \(mail_max_userip_connections=[0-9]+\): user=<[[:alnum:]@\._-]+>, method=PLAIN, rip=[[:xdigit:]\.]+, lip=[[:xdigit:]\.]+, TLS, session=<[[:alnum:]\/\+_-]+>$
+
+# Jul 11 14:05:00 mail dovecot: imap(gfa@zumbi.com.ar): Connection closed: read(size=7713) failed: Connection reset by peer in=479 out=122809
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([[:alnum:]\.@_-]+\): Connection closed: read\(size=[0-9]+\) failed: Connection reset by peer in=[0-9]+ out=[0-9]+$
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([[:alnum:]\.@_-]+\): Disconnected for inactivity in reading our output in=[0-9]+ out=[0-9]+$
+
+#Jul 22 12:16:51 mail dovecot: master: Warning: Killed with signal 15 (by pid=4373 uid=0 code=kill)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: master: Warning: Killed with signal 15 \(by pid=[0-9]+ uid=0 code=kill\)$
+
+#Jul 22 12:16:51 mail dovecot: anvil: Warning: Killed with signal 15 (by pid=1 uid=0 code=kill)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: anvil: Warning: Killed with signal 15 \(by pid=[0-9]+ uid=0 code=kill\)$
+
+#Jul 22 12:16:51 mail dovecot: imap-login: Error: read(anvil) failed: EOF
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap-login: Error: read\(anvil\) failed: EOF$
+
+#Jul 22 12:16:51 mail dovecot: config: Warning: Killed with signal 15 (by pid=1 uid=0 code=kill)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: config: Warning: Killed with signal 15 \(by pid=[0-9]+ uid=0 code=kill\)$
+
+#Jul 22 12:16:51 mail dovecot: imap-login: Error: read(anvil) failed: EOF
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap-login: Error: read\(anvil\) failed: EOF$
+
+#Jul 22 12:16:51 mail dovecot: log: Warning: Killed with signal 15 (by pid=1 uid=0 code=kill)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: log: Warning: Killed with signal 15 \(by pid=[0-9]+ uid=0 code=kill\)$
+
+#Jul 22 12:16:51 mail systemd[1]: dovecot.service: PID file /var/run/dovecot/master.pid not readable (yet?) after start: No such file or directory
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[1\]: dovecot.service: PID file \/var\/run\/dovecot\/master\.pid not readable \(yet\?\) after start: No such file or directory$
+
+#Jul 22 12:16:51 mail dovecot: master: Dovecot v2.2.27 (c0f36b0) starting up for imap, lmtp, sieve (core dumps disabled)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: master: Dovecot v[[:digit:]\.]+ \([[:xdigit:]]+\) starting up for imap, lmtp, sieve \(core dumps disabled\)
+
+#Jul 22 13:12:23 mail dovecot: auth: Error: read(anvil-auth-penalty) failed: EOF
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth: Error: read\(anvil-auth-penalty\) failed: EOF$
+
+#Jul 22 13:12:23 mail dovecot: auth: Error: net_connect_unix(anvil-auth-penalty) failed: Permission denied
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth: Error: net_connect_unix\(anvil-auth-penalty\) failed: Permission denied$
+
+#Jul 22 13:12:23 mail dovecot: auth: Warning: Killed with signal 15 (by pid=1 uid=0 code=kill)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth: Warning: Killed with signal 15 \(by pid=[0-9]+ uid=0 code=kill\)$
+
+# Jul 23 23:55:37 mail dovecot: imap(gfa@zumbi.com.ar): Connection closed (UID FETCH,UID FETCH running for 0.002 + waiting nothing for 60.335 secs, 62 B in + 10955+8192 B out, state=wait-sync) in=4638 out=2349944
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([[:alnum:]\.@_-]+\): Connection closed \(UID FETCH,UID FETCH running for [[:digit:]\.]+ \+ waiting nothing for [[:digit:]\.]+ secs, [0-9]+ B in \+ [[:digit:]\+]+ B out, state=wait-sync\) in=[0-9]+ out=[0-9]+$
+
+# Jul 27 21:17:37 mail dovecot: imap(gfa@zumbi.com.ar): Disconnected in APPEND (1 msgs, 6 secs, 161623/1981063 bytes) in=385734 out=134207
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([[:alnum:]\.@_-]+\): Disconnected in APPEND \([0-9]+ msgs, [0-9]+ secs, [0-9]+\/[0-9]+ bytes\) in=[0-9]+ out=[0-9]+$
+
+# Aug 10 15:19:53 lists dovecot: master: Warning: SIGHUP received - reloading configuration
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: master: Warning: SIGHUP received - reloading configuration$
+
+# Aug 11 17:55:03 mail dovecot: imap-login: Login: user=<emilse@motok.com.ar>, method=PLAIN, rip=181.9.154.24, lip=172.104.98.54, mpid=31756, TLS: SSL_read() syscall failed: Connection reset by peer, session=<AkxBjyxzUiy1CZoY>
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([[:alnum:]\.@_-]+\): imap-login: Login: user=<[[:alnum:]\.@_-]+>, method=PLAIN, rip=[[:xdigit:]\.:]+, lip=[[:alnum:]\.:]+, mpid=[0-9]+, TLS: SSL_read\(\) syscal failed: Connection reset by peer, session=<[[:alnum:]]+>$
+
+# Aug 16 15:56:18 mail dovecot: imap-login: Disconnected (tried to use unsupported auth mechanism): user=<>, method=NTLM, rip=192.168.188.50, lip=192.168.139.250, TLS, session=<agfae49zwrvAqLwy>
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap-login: Disconnected \(tried to use unsupported auth mechanism\): user=<>, method=NTLM, rip=[[:xdigit:]:\.]+, lip=[[:xdigit:]:\.]+, TLS, session=<[[:alnum:]]+>$

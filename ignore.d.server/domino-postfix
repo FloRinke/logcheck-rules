@@ -1,0 +1,22 @@
+# ; -*- mode: text; fill-column: 99999 -*-
+
+# Sep 18 22:55:37 debian-linode postfix/smtpd[13312]: warning: TLS library problem: error:1417D0FC:SSL routines:tls_process_client_hello:unknown protocol:../ssl/statem/statem_srvr.c:938:
+# Sep 18 22:55:38 debian-linode postfix/smtpd[13312]: warning: TLS library problem: error:1417D18C:SSL routines:tls_process_client_hello:version too low:../ssl/statem/statem_srvr.c:974:
+# Sep 18 22:55:39 debian-linode postfix/smtpd[13312]: warning: TLS library problem: error:1409442E:SSL routines:ssl3_read_bytes:tlsv1 alert protocol version:../ssl/record/rec_layer_s3.c:1399:SSL alert number 70:
+# Sep 18 22:55:40 debian-linode postfix/smtpd[13312]: warning: TLS library problem: error:1409442E:SSL routines:ssl3_read_bytes:tlsv1 alert protocol version:../ssl/record/rec_layer_s3.c:1399:SSL alert number 70:
+# Sep 22 04:29:35 debian-linode postfix/smtpd[26597]: warning: TLS library problem: error:1417A0C1:SSL routines:tls_post_process_client_hello:no shared
+# Oct  3 04:20:03 linode2 postfix/smtpd[9011]: warning: TLS library problem: error:1417A0C1:SSL routines:tls_post_process_client_hello:no shared cipher:../ssl/statem/statem_srvr.c:1404:
+# Dec 13 11:50:26 linode2 postfix/cleanup[3960]: CD1D940A83: message-id=  
+
+^\w{3} [ :[:digit:]]{11} [_[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: warning: TLS library problem: error:[[:xdigit:]]+:SSL routines:(tls_process_client_hello:(unknown protocol|version too low)|ssl3_read_bytes:tlsv1 alert protocol version|tls_post_process_client_hello:no shared( cipher)?):..\/ssl\/(statem|record)\/[._:[:alnum:]]+( alert number [0-9]+:)?$
+^\w{3} [ :[:digit:]]{11} [_[:alnum:]-]+ postfix\/cleanup\[[0-9]+\]: [[:xdigit:]]+: message-id=$
+^\w{3} [ :[:digit:]]{11} [_[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: warning: TLS library problem: error:[[:xdigit:]]+:SSL routines:ssl3_read_bytes:sslv3 alert bad certificate:[\/_.:[:alnum:]]+ alert number [[:xdigit:]]+:$
+\w{3} [ :[:digit:]]{11} [_[:alnum:]-]+ postfix(/submission|/smtps|/[0-9]+)?/smtpd\[[[:digit:]]+\]: disconnect from [[:alnum:]_\.-]+\[[[:alnum:]\.:]+\] commands=[0-9]/[0-9]$
+
+# Jun 11 12:20:40 linode2 postfix/smtpd[19535]: NOQUEUE: reject: MAIL from oakwood.hyperslice.net[109.203.106.148]: 552 5.3.4 Message size exceeds fixed limit; proto=ESMTP helo=<oakwood.hyperslice.net>
+
+\w{3} [ :[:digit:]]{11} [_[:alnum:]-]+ postfix(/submission|/smtps|/[0-9]+)?/smtpd\[[[:digit:]]+\]: NOQUEUE: reject: MAIL from [\.[:alnum:]]+\[[\.[:alnum:]]+\]: 552 5\.3\.4 Message size exceeds fixed limit; proto=ESMTP helo=<[.[:alnum:]]+>$
+
+# Sep  9 09:17:58 debian-linode postfix/smtpd[5361]: Anonymous TLS connection established from mail-lj1-f177.google.com[209.85.208.177]: TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits) key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SHA256
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix(\/submission|\/smtps|\/[0-9]+)?\/smtpd\[[[:digit:]]+\]: Anonymous TLS connection established from [-._[:alnum:]]+\[[.[:digit:]]+\]: TLSv[\.0-9]+ with cipher [_[:alnum:]-]+ \([0-9]+\/[0-9]+ bits\) key-exchange [_[:alnum:]-]+ server-signature [_[:alnum:]-]+ \([0-9]+ bits\) server-digest [_[:alnum:]-]+$

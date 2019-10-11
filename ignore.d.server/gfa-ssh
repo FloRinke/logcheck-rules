@@ -1,0 +1,82 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Invalid user [^[:space:]]+ from [._[:alnum:]-]+ port [[:digit:]]+$
+# Jul 26 06:33:37 static sshd[13081]: Invalid user () {  from 63.146.93.130 port 17864
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Invalid user \(\) \{  from [._[:alnum:]-]+ port [[:digit:]]+$
+
+# Jul 26 06:33:37 static sshd[13081]: input_userauth_request: invalid user () {  [preauth]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: input_userauth_request: invalid user [^[:space:]]+ \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: input_userauth_request: invalid user \(\) { \[preauth\]$
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Connection reset by [:.[:xdigit:]]+ port [[:digit:]]+ \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Did not receive identification string from ([:[:xdigit:].]+|UNKNOWN)+ port [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnected from [:[:xdigit:].]+ port [[:digit:]]+ \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: I(llegal|nvalid) user [^[:space:]]* from ([:.[:xdigit:]]+|UNKNOWN) port [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Received disconnect from [:.[:xdigit:]]+(: | port [[:digit:]]+:)11:  \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Received disconnect from [:.[:xdigit:]]+(: | port [[:digit:]]+:)11: (disconnected by user|Closed due to user request\.) \[preauth\]$
+
+#Feb 20 03:32:33 gw1 sshd[7271]: Received disconnect from 60.248.248.148 port 57727:11: Bye Bye [preauth]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Received disconnect from [:.[:xdigit:]]+ port [[:digit:]]+:11: Bye Bye \[preauth\]$
+
+#Feb 19 22:31:10 gw1 sshd[30597]: Unable to negotiate with 195.154.102.221 port 61875: no matching key exchange method found. Their offer: diffie-hellman-group1-sha1 [preauth]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Unable to negotiate with [:.[:xdigit:]]+ port [[:digit:]]+: no matching key exchange method found. Their offer: diffie-hellman-group1-sha1 \[preauth\]$
+
+#Feb 19 17:16:14 gw1 sshd[21179]: Unable to negotiate with 134.213.156.122 port 45349: no matching cipher found. Their offer: none [preauth]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Unable to negotiate with [:.[:xdigit:]]+ port [[:digit:]]+: no matching cipher found. Their offer: none \[preauth\]$
+
+#Feb 19 17:05:36 gw1 sshd[21017]: Received disconnect from 84.200.93.71 port 45442:11: Normal Shutdown, Thank you for playing [preauth]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Received disconnect from [:.[:xdigit:]]+ port [[:digit:]]+:11: Normal Shutdown, Thank you for playing \[preauth\]$
+
+# failure to negotiate
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Unable to negotiate with [[:xdigit:].:]+ port [[:digit:]]+: no matching cipher found\. Their offer: [[:alnum:],@.-]+ \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Unable to negotiate with [[:xdigit:].:]+ port [[:digit:]]+: no matching key exchange method found\. Their offer: [[:alnum:],@.-]+ \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Unable to negotiate with [[:xdigit:].:]+ port [[:digit:]]+: no matching host key type found\. Their offer: [[:alnum:],@.-]+ \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Unable to negotiate with [[:xdigit:].:]+ port [[:digit:]]+: no matching MAC found\. Their offer: [[:alnum:],@.-]+ \[preauth\]$
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Timeout, client not responding\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnecting: Too many authentication failures \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: maximum authentication attempts exceeded for root from [[:xdigit:].:]+ port [[:digit:]]+ ssh2 \[preauth\]$
+
+
+# Jul 19 00:32:00 gw sshd[30234]: error: maximum authentication attempts exceeded for invalid user  from 193.105.134.97 port 5728 ssh2 [preauth]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: maximum authentication attempts exceeded for invalid user [[:alnum:]\]+ from [[:xdigit:]\.]+ port [[:digit:]]+ ssh2 \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: maximum authentication attempts exceeded for invalid user  from [[:xdigit:]\.]+ port [[:digit:]]+ ssh2 \[preauth\]$
+
+# Jul 11 14:26:43 tor-exit1-1480471271410-512mb-sgp1-01 sshd[15721]: error: kex protocol error: type 30 seq 1 [preauth]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: kex protocol error: type 30 seq 1 \[preauth\]$
+
+# Jul 17 02:12:16 static sshd[26934]: padding error: need 148 block 8 mod 4 [preauth]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: padding error: need [0-9]+ block [0-9] mod [0-9] \[preauth\]$
+
+# Jul 17 02:12:16 static sshd[26934]: ssh_dispatch_run_fatal: Connection from 128.232.21.75 port 42622: message authentication code incorrect [preauth]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: ssh_dispatch_run_fatal: Connection from [[:xdigit:]\.:]+ port [0-9]+: message authentication code incorrect \[preauth\]$
+
+# Aug  6 16:39:27 tor-exit1-1480471271410-512mb-sgp1-01 sshd[14806]: ssh_dispatch_run_fatal: Connection from 87.118.116.241 port 26888: Broken pipe [preauth]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: ssh_dispatch_run_fatal: Connection from [[:xdigit:]\.:]+ port [0-9]+: Broken pipe \[preauth\]$
+
+
+# Jul 18 20:56:13 gw sshd[22866]: Disconnecting: Change of username or service not allowed: (administrator,ssh-connection) -> (Administrator,ssh-conn [preauth]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnecting: Change of username or service not allowed: \([[:alnum:],!;-]+\) -> \([[:alnum:],!;-]+ \[preauth\]$
+
+# Jul 18 23:23:04 gw sshd[19007]: Disconnecting: Change of username or service not allowed: (zabbix,ssh-connection) -> (,ssh-connection) [preauth]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnecting: Change of username or service not allowed: \([[:alnum:],!;-]+\) -> \([[:alnum:],!;-]+\) \[preauth\]$
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: bind: Address already in use$
+
+# Jul 26 18:22:55 instance-2 sshd[29138]: error: channel_setup_fwd_listener_tcpip: cannot listen to port: 14891
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: channel_setup_fwd_listener_tcpip: cannot listen to port: [0-9]+$
+
+# Jul 24 14:54:12 tor-exit1-1480471271410-512mb-sgp1-01 sshd[25615]: PAM service(sshd) ignoring max retries; 5 > 3
+# ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: PAM service\(sshd\) ignoring max retries; [0-9] > [0-9]$
+# 2018-07-30 I've disabled password auth in ssh, this is no longer required
+
+# Aug  7 09:38:36 instance-2 sshd[22887]: Protocol major versions differ for 45.77.147.1 port 39674: SSH-2.0-OpenSSH_7.4p1 Debian-10+deb9u3 vs. SSH-1.5-NmapNSE_1.0
+# Aug  7 09:39:32 instance-2 sshd[22889]: Protocol major versions differ for 149.28.18.233 port 47642: SSH-2.0-OpenSSH_7.4p1 Debian-10+deb9u3 vs. SSH-1.5-Nmap-SSH1-Hostkey
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Protocol major versions differ for [[:xdigit:]\.]+ port [[:digit:]]+: SSH-2\.0-OpenSSH_[[:alnum:]\._+ -]+ vs\. SSH-[[:alnum:]\._+ -]+$
+
+# Aug 10 14:24:07 lists sshd[9231]: userauth_pubkey: key type ssh-dss not in PubkeyAcceptedKeyTypes [preauth]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: userauth_pubkey: key type ssh-dss not in PubkeyAcceptedKeyTypes \[preauth\]$
+
+#Aug 12 19:30:09 gw sshd[5872]: pam_systemd(sshd:session): Failed to release session: Interrupted system call
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: pam_systemd\(sshd:session\): Failed to release session: Interrupted system call$
+
+# Aug 14 18:57:11 exit2-sg sshd[29398]: dispatch_protocol_error: type 90 seq 5 [preauth]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: dispatch_protocol_error: type [0-9]+ seq [0-9] \[preauth\]$

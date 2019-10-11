@@ -1,0 +1,15 @@
+# Jun  1 01:11:46 instance-2 liblogging-stdlog:  [origin software="rsyslogd" swVersion="8.24.0" x-pid="27179" x-info="http://www.rsyslog.com"] exiting on signal 15.
+# Jun  1 01:11:46 instance-2 liblogging-stdlog:  [origin software="rsyslogd" swVersion="8.24.0" x-pid="6155" x-info="http://www.rsyslog.com"] start
+# Jun  1 03:04:54 instance-2 shutdown-script: INFO Starting shutdown scripts.
+# Jun  1 03:04:54 instance-2 shutdown-script: INFO No shutdown scripts found in metadata.
+# Jun  1 03:04:54 instance-2 shutdown-script: INFO Finished running shutdown scripts.
+# Jun  1 03:04:55 instance-2 systemd[1]: Configuration file /lib/systemd/system/expand-root.service is marked executable. Please remove executable permission bits. Proceeding anyway.
+
+#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+
+
+#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ liblogging-stdlog:  \[origin software=\"rsyslogd\" swVersion=\"[[:digit:].]+\" x-pid=\"[0-9]+\" x-info="http://www.rsyslog.com"\] exiting on signal 15\.$
+#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ liblogging-stdlog:  \[origin software=\"rsyslogd\" swVersion=\"[[:digit:].]+\" x-pid=\"[0-9]+\" x-info="http://www.rsyslog.com"\] start$
+#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ shutdown-script: INFO Starting shutdown scripts\.$
+#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ shutdown-script: INFO No shutdown scripts found in metadata\.$
+#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ shutdown-script: INFO Finished running shutdown scripts\.$
+#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[1\]: Configuration file \/lib\/systemd\/system\/expand-root\.service is marked executable\. Please remove executable permission bits\. Proceeding anyway\.$

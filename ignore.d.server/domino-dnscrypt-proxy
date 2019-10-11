@@ -1,0 +1,5 @@
+# ; -*- mode: text; fill-column: 99999 -*-
+
+# Aug 11 22:50:28 debian dnscrypt-proxy[25869]: [2019-08-11 22:50:28] [NOTICE] Server with the lowest initial latency: soltysiak (rtt: 29ms)
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dnscrypt-proxy\[[[:digit:]]+\]: \[[-[:digit:]]+ [\:[:digit:]]+\] \[NOTICE\] Server with the lowest initial latency: [[:alnum:]]+ \(rtt: [[:digit:]]+ms\)$

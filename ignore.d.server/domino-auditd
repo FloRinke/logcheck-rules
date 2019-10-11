@@ -1,0 +1,3 @@
+# ; -*- mode: text; fill-column: 99999 -*-
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ auditd\[[0-9]+\]: Audit daemon rotating log files$

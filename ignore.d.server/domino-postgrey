@@ -1,0 +1,8 @@
+# ; -*- mode: text; fill-column: 99999 -*-
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postgrey\[[[:digit:]]+\]: ([[:xdigit:]:]+ )?action=(greylist|pass)+, reason=(recipient whitelist|new|client whitelist|client AWL|triplet found|early-retry)+,? (\([[:digit:]]+s missing\), )?(delay=[[:digit:]]+, )*client_name=[._[:alnum:]-]+, client_address=[\/[:xdigit:].:]+, (sender=[[:alnum:]@._+=-]+, )?recipient=[[:alnum:]@._+-]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postgrey\[[[:digit:]]+\]: cleaning up old (logs|entries)?...$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postgrey\[[[:digit:]]+\]: cleaning (main|clients)+ database finished. before: [[:digit:]]+, after: [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postgrey\[[[:digit:]]+\]: whitelisted: [._[:alnum:]-]+\[[.[:digit:]]+\]$
+
+# Sep 24 18:44:20 debian-linode postgrey[18820]: action=pass, reason=recipient whitelist, client_name=mx3.lhsystems.com, client_address=80.77.214.53, sender=prvs=798bc2ad2=noreply@swiss.com, recipient=TRAVEL@minik.pl

@@ -1,0 +1,13 @@
+# Aug  7 21:00:02 instance-1 ntpd[1859]: Deleting interface #8 tun14, 192.168.93.2#123, interface stats: received=0, sent=0, dropped=0, active_time=1900701 secs
+# Aug  7 21:00:02 instance-1 ntpd[1859]: Deleting interface #9 tun14, fe80::dc73:99c0:1175:f27a%3#123, interface stats: received=0, sent=0, dropped=0, active_time=1900701 secs
+#^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]:
+
+# Aug  8 06:08:12 instance-1 ntpd[1952]: Listen and drop on 1 v4wildcard 0.0.0.0:123
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: Listen and drop on [0-9] [[:alnum:]]+ [[:xdigit:]\.:]+:123$
+
+# Aug  8 06:08:12 instance-1 ntpd[1952]: Listen normally on 2 lo 127.0.0.1:123
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: Listen normally on [0-9]+ [[:alnum:]]+ [[:xdigit:]\.:]+:123$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: Listen normally on [0-9]+ [[:alnum:]]+ \[[[:xdigit:]\.:%]+\]:123$
+
+# Aug 16 02:00:21 instance-1 ntpd[1952]: Deleting interface #9 tun12, fe80::316f:3770:7e3f:52ea%4#123, interface stats: received=0, sent=0, dropped=0, active_time=664503 secs
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: Deleting interface \#[0-9]+ [[:alnum:]]+, [[:xdigit:]\.:%]+\#123, interface stats: received=[0-9]+, sent=[0-9]+, dropped=[0-9]+, active_time=[0-9]+ secs$

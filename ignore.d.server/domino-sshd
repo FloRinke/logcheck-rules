@@ -1,0 +1,6 @@
+# ; -*- mode: text; fill-column: 99999 -*-
+
+# Sep 21 19:15:41 router sshd[1743]: Connection closed by authenticating user root 10.4.0.14 port 51354 [preauth]
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]:b Connection closed by authenticating user [[:alnum:]]+ [.[:digit:]]+ port [0-9]+ \[preauth\]$
+

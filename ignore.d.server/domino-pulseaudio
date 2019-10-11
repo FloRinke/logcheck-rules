@@ -1,0 +1,5 @@
+# ; -*- mode: text; fill-column: 99999 -*-
+
+# Jun 16 08:28:17 debian pulseaudio[20898]: Support for resampler 'src-sinc-best-quality' not compiled in, reverting to 'auto'.
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pulseaudio\[[[:digit:]]+\]: Support for resampler '[[:alnum:]-]+' not compiled in, reverting to '[[:alnum:]-]+'\.$

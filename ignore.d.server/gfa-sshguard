@@ -1,0 +1,6 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshguard\[[[:digit:]]+\]: Blocking
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshguard\[[[:digit:]]+\]: [[:digit:]\.]+ has already been blocked$
+
+# Aug  6 10:03:57 gw sshguard[22876]: 134.159.117.150: not blocking (on whitelist)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshguard\[[[:digit:]]+\]: [[:xdigit:]\.:]+: not blocking \(on whitelist\)$
+

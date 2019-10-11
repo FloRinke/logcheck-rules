@@ -1,0 +1,26 @@
+#^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq-dhcp\[[0-9]+\]:
+
+# Jul  4 01:35:41 instance-2 dnsmasq[706]: Maximum number of concurrent DNS queries reached (max: 150)
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq\[[0-9]+\]: Maximum number of concurrent DNS queries reached \(max: [0-9]+\)$
+
+# Jul 17 10:07:33 gw dnsmasq-dhcp[25289]: DHCPINFORMATION-REQUEST(br-lan) 00:02:00:00:ab:11:ba:88:26:5e:16:9f:e5:ff
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq-dhcp\[[0-9]+\]: DHCPINFORMATION-REQUEST\([[:alnum:]-]+\) [[:xdigit:]:]+([[:alnum:] ]+)?$
+
+# Aug  5 20:45:58 gw dnsmasq-dhcp[7547]: RTR-SOLICIT(br-lan) a4:8c:c5:87:47:5d
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq-dhcp\[[0-9]+\]: RTR-SOLICIT\([[:alnum:]-]+\)( [[:xdigit:]:]+)?$
+
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq-dhcp\[[0-9]+\]: read /etc/ethers - [0-9]+ addresses$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq-dhcp\[[0-9]+\]: SLAAC-CONFIRM\([[:alnum:]-]+\) [[:xdigit:]:]+ [[:alnum:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq-dhcp\[[0-9]+\]: DHCP, IP range 192\.168\.92\.50 -- 192\.168\.92\.150, lease time 90d$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq-dhcp\[[0-9]+\]: DHCP, IP range 192\.168\.91\.50 -- 192\.168\.91\.150, lease time 90d$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq-dhcp\[[0-9]+\]: DHCPv6 stateless on [[:xdigit:]:]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq-dhcp\[[0-9]+\]: DHCPv4-derived IPv6 names on [[:xdigit:]:]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq-dhcp\[[0-9]+\]: router advertisement on [[:xdigit:]:]+$
+
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq\[[0-9]+\]: dnsmasq: syntax check OK\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq\[[0-9]+\]: exiting on receipt of SIGTERM$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq\[[0-9]+\]: started, version [[:digit:]\.]+ cachesize [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq\[[0-9]+\]: compile time options: IPv6 GNU-getopt DBus i18n IDN DHCP DHCPv6 no-Lua TFTP conntrack ipset auth DNSSEC loop-detect inotify$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq\[[0-9]+\]: DNSSEC validation enabled$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq\[[0-9]+\]: using local addresses only for domain [[:alnum:]\.]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq\[[0-9]+\]: using nameserver [[:xdigit:]:\.]+\#53$
