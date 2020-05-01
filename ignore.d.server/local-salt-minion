@@ -1,0 +1,3 @@
++^\w{3} [ :0-9]{11} [._[:alnum:]-]+ salt-minion\[[0-9]+\]: \[ERROR   \] Command '\['git', 'config', '--global', '--get-regexp', 'filter\\\\.lfs\\\\.'\]' failed with return code: 1
++^\w{3} [ :0-9]{11} [._[:alnum:]-]+ salt-minion\[[0-9]+\]: \[ERROR   \] retcode: 1
+
