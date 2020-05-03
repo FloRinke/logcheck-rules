@@ -1,5 +1,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dbus(-daemon)?\[[[:digit:]]+\]: \[system\] Successfully activated service '[-_.[:alnum:] ]+'$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dbus(-daemon)?\[[[:digit:]]+\]: \[system\] Activating via systemd: service name='[-_.[:alnum:] ]+' unit='[-_.[:alnum:] ]+'( requested by '[.:[:alnum:]]+' \(uid=[0-9]+ pid=[0-9]+ comm="[-[:alnum:]\/ ]+"\))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dbus(-daemon)?\[[[:digit:]]+\]: \[system\] Activating via systemd: service name='[-_.[:alnum:] ]+' unit='[-_.[:alnum:] ]+'( requested by '[.:[:alnum:]]+' \(uid=[0-9]+ pid=[0-9]+ comm="[- .[:alnum:]\/]+"\))?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Stopping|Starting|Started|Stopped) D-Bus User Message Bus
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Closed D-Bus User Message Bus Socket\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Listening on D-Bus User Message Bus Socket\.$

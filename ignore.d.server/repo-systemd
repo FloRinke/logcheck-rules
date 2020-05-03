@@ -8,4 +8,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[ :[:digit:]]+\]: [-_[:alnum:]]+\.timer: Adding ([[:digit:]]+h )?([[:digit:]]+min )?([[:digit:].]+s )?([[:digit:].]+ms )?random time\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[ :[:digit:]]+\]: [-_@[:alnum:]]+\.(mount|path|scope|service|socket|timer): Succeeded\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[ :[:digit:]]+\]: (Listening on|Closed) D-Bus User Message Bus Socket\.$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-logind\[[ :[:digit:]]+\]: Session [0-9]+ logged out. Waiting for processes to exit\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[ :[:digit:]]+\]: [._[:alnum:]-]+.[._[:alnum:]-]+: Main process exited, code=[[:alpha:]]+, status=[[:digit:]]+\/[[:alpha:]]+$
