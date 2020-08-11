@@ -49,3 +49,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pveproxy\[[0-9]+\]: Clearing outdated entries from certificate cache$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: INFO: starting new backup job: vzdump( --[[:alnum:]]+ [-._@[:alnum:]]+)+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Stopp|Start)(ing|ed) (PVE API Proxy Server|Proxmox VE firewall logger|PVE SPICE Proxy Server)\.+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvesr\[[0-9]+\]: trying to acquire cfs lock 'file-replication_cfg' ...$
